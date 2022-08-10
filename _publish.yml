@@ -1,0 +1,4 @@
+- source: project
+  quarto-pub:
+    - id: aada2cde-5e2e-4fe0-91d1-bd54e35c621b
+      url: 'https://quartopub.com/sites/richardhanna/richardhanna_quarto'

@@ -1,0 +1,94 @@
+---
+title: "REDCapTidieR"
+subtitle: "Making analysts lives easier through the power of tidy tibbles"
+date: "`r Sys.Date()`"
+author: "Richard Hanna"
+format:
+  revealjs:
+    slide-number: c/t
+    theme: default
+    scrollable: false
+df-print: tibble
+logo: "/presentations/images/cgtdataops-bkgrnd_removed.png"
+---
+
+## Introduction
+
+In today's talk we will:
+
+-   Review REDCap
+-   Review `REDCapR`
+-   Implement `REDCapTidieR` to make our lives easier ✨
+
+## What is REDCap?
+
+![](images/redcap_logo.png){fig-align="center" width="330"}
+
+REDCap is a powerful database solution used by many research institutions. The web interface offers a secure, accessible way to architect databases of varying complexity at no cost to the institution for joining the REDCap consortium.
+
+## The Super Heroes Dataset
+
+```{r}
+#| echo: false
+redcap_uri <- Sys.getenv("REDCAP_URI")
+token <- Sys.getenv("SUPERHEROES_REDCAP_API")
+```
+
+Load applicable libraries:
+
+```{r}
+#| echo: true
+library(dplyr)
+library(knitr)
+library(REDCapR)
+```
+
+## Inspect `REDCapR` data output
+
+```{r}
+#| echo: true
+#| eval: false
+out <- redcap_read_oneshot(redcap_uri, token, verbose = FALSE)$data
+out %>% 
+  head(10)
+```
+
+```r
+# A tibble: 6,700 × 16
+   record_id redcap_repeat_instrument redcap_repeat_in…¹ name  gender eye_c…² race  hair_…³ height weight publi…⁴ skin_…⁵ align…⁶ heroe…⁷ power super…⁸
+       <dbl> <chr>                                 <dbl> <chr> <chr>  <chr>   <chr> <chr>    <dbl>  <dbl> <chr>   <chr>   <chr>     <dbl> <chr>   <dbl>
+ 1         0 NA                                       NA A-Bo… Male   yellow  Human No Hair    203    441 Marvel… -       good          0 NA         NA
+ 2         0 super_hero_powers                         1 NA    NA     NA      NA    NA          NA     NA NA      NA      NA           NA Acce…       0
+ 3         0 super_hero_powers                         2 NA    NA     NA      NA    NA          NA     NA NA      NA      NA           NA Dura…       0
+ 4         0 super_hero_powers                         3 NA    NA     NA      NA    NA          NA     NA NA      NA      NA           NA Long…       0
+ 5         0 super_hero_powers                         4 NA    NA     NA      NA    NA          NA     NA NA      NA      NA           NA Supe…       0
+ 6         0 super_hero_powers                         5 NA    NA     NA      NA    NA          NA     NA NA      NA      NA           NA Stam…       0
+ 7         0 super_hero_powers                         6 NA    NA     NA      NA    NA          NA     NA NA      NA      NA           NA Camo…       0
+ 8         0 super_hero_powers                         7 NA    NA     NA      NA    NA          NA     NA NA      NA      NA           NA Self…       0
+ 9         1 NA                                       NA Abe … Male   blue    Icth… No Hair    191     65 Dark H… blue    good          0 NA         NA
+10         1 super_hero_powers                         1 NA    NA     NA      NA    NA          NA     NA NA      NA      NA           NA Agil…       0
+# … with 6,690 more rows, and abbreviated variable names ¹​redcap_repeat_instance, ²​eye_color, ³​hair_color, ⁴​publisher, ⁵​skin_color, ⁶​alignment,
+#   ⁷​heroes_information_complete, ⁸​super_hero_powers_complete
+# ℹ Use `print(n = ...)` to see more rows
+```
+
+## Next Slide
+
+:::: {.columns}
+
+::: {.column width="40%"}
+:::
+
+::: {.column width="60%"}
+```{r}
+#| echo: true
+#| output-location: column
+out <- redcap_read_oneshot(redcap_uri, token, verbose = FALSE)$data
+out %>% 
+  head(10)
+```
+:::
+
+::::
+
+Did anything change?

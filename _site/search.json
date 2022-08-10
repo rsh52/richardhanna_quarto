@@ -1,0 +1,58 @@
+[
+  {
+    "objectID": "content.html",
+    "href": "content.html",
+    "title": "Content",
+    "section": "",
+    "text": "REDCapTidieR\n\n\nMaking analysts lives easier through the power of tidy tibbles\n\n\n\n\n\n\n\n\n\nInvalid Date\n\n\nRichard Hanna\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome",
+    "section": "",
+    "text": "This is the start of my website! More will be added later."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "This is will be the about me section (under development)."
+  },
+  {
+    "objectID": "presentations/REDCapTidieR.html#introduction",
+    "href": "presentations/REDCapTidieR.html#introduction",
+    "title": "REDCapTidieR",
+    "section": "Introduction",
+    "text": "Introduction\nIn today’s talk we will:\n\nReview REDCap\nReview REDCapR\nImplement REDCapTidieR to make our lives easier ✨"
+  },
+  {
+    "objectID": "presentations/REDCapTidieR.html#what-is-redcap",
+    "href": "presentations/REDCapTidieR.html#what-is-redcap",
+    "title": "REDCapTidieR",
+    "section": "What is REDCap?",
+    "text": "What is REDCap?\n\nREDCap is a powerful database solution used by many research institutions. The web interface offers a secure, accessible way to architect databases of varying complexity at no cost to the institution for joining the REDCap consortium."
+  },
+  {
+    "objectID": "presentations/REDCapTidieR.html#the-super-heroes-dataset",
+    "href": "presentations/REDCapTidieR.html#the-super-heroes-dataset",
+    "title": "REDCapTidieR",
+    "section": "The Super Heroes Dataset",
+    "text": "The Super Heroes Dataset\n\n\n\nLoad applicable libraries:\n\nlibrary(dplyr)\nlibrary(knitr)\nlibrary(REDCapR)"
+  },
+  {
+    "objectID": "presentations/REDCapTidieR.html#inspect-redcapr-data-output",
+    "href": "presentations/REDCapTidieR.html#inspect-redcapr-data-output",
+    "title": "REDCapTidieR",
+    "section": "Inspect REDCapR data output",
+    "text": "Inspect REDCapR data output\n\nout <- redcap_read_oneshot(redcap_uri, token, verbose = FALSE)$data\nout %>% \n  head(10)\n\n# A tibble: 6,700 × 16\n   record_id redcap_repeat_instrument redcap_repeat_in…¹ name  gender eye_c…² race  hair_…³ height weight publi…⁴ skin_…⁵ align…⁶ heroe…⁷ power super…⁸\n       <dbl> <chr>                                 <dbl> <chr> <chr>  <chr>   <chr> <chr>    <dbl>  <dbl> <chr>   <chr>   <chr>     <dbl> <chr>   <dbl>\n 1         0 NA                                       NA A-Bo… Male   yellow  Human No Hair    203    441 Marvel… -       good          0 NA         NA\n 2         0 super_hero_powers                         1 NA    NA     NA      NA    NA          NA     NA NA      NA      NA           NA Acce…       0\n 3         0 super_hero_powers                         2 NA    NA     NA      NA    NA          NA     NA NA      NA      NA           NA Dura…       0\n 4         0 super_hero_powers                         3 NA    NA     NA      NA    NA          NA     NA NA      NA      NA           NA Long…       0\n 5         0 super_hero_powers                         4 NA    NA     NA      NA    NA          NA     NA NA      NA      NA           NA Supe…       0\n 6         0 super_hero_powers                         5 NA    NA     NA      NA    NA          NA     NA NA      NA      NA           NA Stam…       0\n 7         0 super_hero_powers                         6 NA    NA     NA      NA    NA          NA     NA NA      NA      NA           NA Camo…       0\n 8         0 super_hero_powers                         7 NA    NA     NA      NA    NA          NA     NA NA      NA      NA           NA Self…       0\n 9         1 NA                                       NA Abe … Male   blue    Icth… No Hair    191     65 Dark H… blue    good          0 NA         NA\n10         1 super_hero_powers                         1 NA    NA     NA      NA    NA          NA     NA NA      NA      NA           NA Agil…       0\n# … with 6,690 more rows, and abbreviated variable names ¹​redcap_repeat_instance, ²​eye_color, ³​hair_color, ⁴​publisher, ⁵​skin_color, ⁶​alignment,\n#   ⁷​heroes_information_complete, ⁸​super_hero_powers_complete\n# ℹ Use `print(n = ...)` to see more rows"
+  },
+  {
+    "objectID": "presentations/REDCapTidieR.html#next-slide",
+    "href": "presentations/REDCapTidieR.html#next-slide",
+    "title": "REDCapTidieR",
+    "section": "Next Slide",
+    "text": "Next Slide\n\n\n\n\n\nout <- redcap_read_oneshot(redcap_uri, token, verbose = FALSE)$data\nout %>% \n  head(10)\n\n# A tibble: 10 × 16\n   record_id redcap_r…¹ redca…² name  gender eye_c…³ race  hair_…⁴ height weight\n       <dbl> <chr>        <dbl> <chr> <chr>  <chr>   <chr> <chr>    <dbl>  <dbl>\n 1         0 <NA>            NA A-Bo… Male   yellow  Human No Hair    203    441\n 2         0 super_her…       1 <NA>  <NA>   <NA>    <NA>  <NA>        NA     NA\n 3         0 super_her…       2 <NA>  <NA>   <NA>    <NA>  <NA>        NA     NA\n 4         0 super_her…       3 <NA>  <NA>   <NA>    <NA>  <NA>        NA     NA\n 5         0 super_her…       4 <NA>  <NA>   <NA>    <NA>  <NA>        NA     NA\n 6         0 super_her…       5 <NA>  <NA>   <NA>    <NA>  <NA>        NA     NA\n 7         0 super_her…       6 <NA>  <NA>   <NA>    <NA>  <NA>        NA     NA\n 8         0 super_her…       7 <NA>  <NA>   <NA>    <NA>  <NA>        NA     NA\n 9         1 <NA>            NA Abe … Male   blue    Icth… No Hair    191     65\n10         1 super_her…       1 <NA>  <NA>   <NA>    <NA>  <NA>        NA     NA\n# … with 6 more variables: publisher <chr>, skin_color <chr>, alignment <chr>,\n#   heroes_information_complete <dbl>, power <chr>,\n#   super_hero_powers_complete <dbl>, and abbreviated variable names\n#   ¹​redcap_repeat_instrument, ²​redcap_repeat_instance, ³​eye_color, ⁴​hair_color\n# ℹ Use `colnames()` to see all variable names\n\n\n\n\nDid anything change?"
+  }
+]
