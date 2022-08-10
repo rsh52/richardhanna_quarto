@@ -21,46 +21,11 @@
     "text": "This is will be the about me section (under development)."
   },
   {
-    "objectID": "presentations/REDCapTidieR.html#introduction",
-    "href": "presentations/REDCapTidieR.html#introduction",
+    "objectID": "presentations/REDCapTidieR.html#who-am-i",
+    "href": "presentations/REDCapTidieR.html#who-am-i",
     "title": "REDCapTidieR",
-    "section": "Introduction",
-    "text": "Introduction\nIn today’s talk we will:\n\nReview REDCap\nReview REDCapR\nImplement REDCapTidieR to make our lives easier ✨"
-  },
-  {
-    "objectID": "presentations/REDCapTidieR.html#what-is-redcap",
-    "href": "presentations/REDCapTidieR.html#what-is-redcap",
-    "title": "REDCapTidieR",
-    "section": "What is REDCap?",
-    "text": "What is REDCap?\n\n\n\n\n\n\nFree1 database solution for research\nSecure and accessible from a web browser\nCan collect “any type of data in any environment”\n\nParticularly useful for compliance with 21 CFR Part 11, HIPAA, etc.\n\nRequires little to get up and running, but offers complexity as needed\n\n\nREDCap is a powerful database solution used by many research institutions. The web interface offers a secure, accessible way to architect databases of varying complexity at no cost to the institution for joining the REDCap consortium.\nYou can access REDCap on the web from anywhere, and it can store any data you can realistically imagine for research purposes. It is also attractive to research institutions for being capable of clearance for various compliance requirements.\nIn my opinion, REDCap is strongest in it’s front end UI ability to supply users with the tools to make databases quickly and with plenty of customization, but also provides complexity to those who wish to use it.\n\nFor participants of the REDCap consortium"
-  },
-  {
-    "objectID": "presentations/REDCapTidieR.html#the-super-heroes-dataset",
-    "href": "presentations/REDCapTidieR.html#the-super-heroes-dataset",
-    "title": "REDCapTidieR",
-    "section": "The Super Heroes Dataset",
-    "text": "The Super Heroes Dataset\n\n\n\nOpen source dataset from SuperHeroDB and available on Kaggle. It contains two tables:\n\nSuper Hero Information (i.e. demographic data)\nSuper Hero Powers (i.e. TRUE/FALSE if a hero has a named power)\n\n\n\nSo by now you’ve noticed we aren’t using patient data, so it’s worth briefly touching on the data we are using. We will be using open source super hero data from SuperHeroDB, delivered via Kaggle. There are two CSV tables available where one contains Hero Information like name, height, weight, eye color, etc. and the other contains a wide table of hero name to a boolean of power name.\nLet’s assume I’ve already done the work of preparing and importing this into a REDCap database so we can see what an export of the data looks like via REDCapR."
-  },
-  {
-    "objectID": "presentations/REDCapTidieR.html#inspect-redcapr-data-output",
-    "href": "presentations/REDCapTidieR.html#inspect-redcapr-data-output",
-    "title": "REDCapTidieR",
-    "section": "Inspect REDCapR data output",
-    "text": "Inspect REDCapR data output\n\nout <- redcap_read_oneshot(redcap_uri, token, verbose = FALSE)$data\nout %>% \n  head(10)\n\n# A tibble: 10 × 16\n   record_id redcap_r…¹ redca…² name  gender eye_c…³ race  hair_…⁴ height weight\n       <dbl> <chr>        <dbl> <chr> <chr>  <chr>   <chr> <chr>    <dbl>  <dbl>\n 1         0 <NA>            NA A-Bo… Male   yellow  Human No Hair    203    441\n 2         0 super_her…       1 <NA>  <NA>   <NA>    <NA>  <NA>        NA     NA\n 3         0 super_her…       2 <NA>  <NA>   <NA>    <NA>  <NA>        NA     NA\n 4         0 super_her…       3 <NA>  <NA>   <NA>    <NA>  <NA>        NA     NA\n 5         0 super_her…       4 <NA>  <NA>   <NA>    <NA>  <NA>        NA     NA\n 6         0 super_her…       5 <NA>  <NA>   <NA>    <NA>  <NA>        NA     NA\n 7         0 super_her…       6 <NA>  <NA>   <NA>    <NA>  <NA>        NA     NA\n 8         0 super_her…       7 <NA>  <NA>   <NA>    <NA>  <NA>        NA     NA\n 9         1 <NA>            NA Abe … Male   blue    Icth… No Hair    191     65\n10         1 super_her…       1 <NA>  <NA>   <NA>    <NA>  <NA>        NA     NA\n# … with 6 more variables: publisher <chr>, skin_color <chr>, alignment <chr>,\n#   heroes_information_complete <dbl>, power <chr>,\n#   super_hero_powers_complete <dbl>, and abbreviated variable names\n#   ¹​redcap_repeat_instrument, ²​redcap_repeat_instance, ³​eye_color, ⁴​hair_color\n# ℹ Use `colnames()` to see all variable names"
-  },
-  {
-    "objectID": "presentations/REDCapTidieR.html#next-slide",
-    "href": "presentations/REDCapTidieR.html#next-slide",
-    "title": "REDCapTidieR",
-    "section": "Next Slide",
-    "text": "Next Slide\n\n\n\n\n\n\n\nDid anything change?"
-  },
-  {
-    "objectID": "presentations/REDCapTidieR.html#inspect-redcapr-data-output-kable",
-    "href": "presentations/REDCapTidieR.html#inspect-redcapr-data-output-kable",
-    "title": "REDCapTidieR",
-    "section": "Inspect REDCapR data output (Kable)",
-    "text": "Inspect REDCapR data output (Kable)\n\nout <- redcap_read_oneshot(redcap_uri, token, verbose = FALSE)$data\nout %>% \n  head(10) %>% \n  kable()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nrecord_id\nredcap_repeat_instrument\nredcap_repeat_instance\nname\ngender\neye_color\nrace\nhair_color\nheight\nweight\npublisher\nskin_color\nalignment\nheroes_information_complete\npower\nsuper_hero_powers_complete\n\n\n\n\n0\nNA\nNA\nA-Bomb\nMale\nyellow\nHuman\nNo Hair\n203\n441\nMarvel Comics\n-\ngood\n0\nNA\nNA\n\n\n0\nsuper_hero_powers\n1\nNA\nNA\nNA\nNA\nNA\nNA\nNA\nNA\nNA\nNA\nNA\nAccelerated Healing\n0\n\n\n0\nsuper_hero_powers\n2\nNA\nNA\nNA\nNA\nNA\nNA\nNA\nNA\nNA\nNA\nNA\nDurability\n0\n\n\n0\nsuper_hero_powers\n3\nNA\nNA\nNA\nNA\nNA\nNA\nNA\nNA\nNA\nNA\nNA\nLongevity\n0\n\n\n0\nsuper_hero_powers\n4\nNA\nNA\nNA\nNA\nNA\nNA\nNA\nNA\nNA\nNA\nNA\nSuper Strength\n0\n\n\n0\nsuper_hero_powers\n5\nNA\nNA\nNA\nNA\nNA\nNA\nNA\nNA\nNA\nNA\nNA\nStamina\n0\n\n\n0\nsuper_hero_powers\n6\nNA\nNA\nNA\nNA\nNA\nNA\nNA\nNA\nNA\nNA\nNA\nCamouflage\n0\n\n\n0\nsuper_hero_powers\n7\nNA\nNA\nNA\nNA\nNA\nNA\nNA\nNA\nNA\nNA\nNA\nSelf-Sustenance\n0\n\n\n1\nNA\nNA\nAbe Sapien\nMale\nblue\nIcthyo Sapien\nNo Hair\n191\n65\nDark Horse Comics\nblue\ngood\n0\nNA\nNA\n\n\n1\nsuper_hero_powers\n1\nNA\nNA\nNA\nNA\nNA\nNA\nNA\nNA\nNA\nNA\nNA\nAgility\n0"
+    "section": "Who am I?",
+    "text": "Who am I?\n\n\n\n\n\nData Scientist in CGT DataOps\n\n5 years at CHOP\nEngineering background\n\nTwo fuzzy coworkers\nTrying to implement quarto today\n\n\n\n\nHi everyone! Thank you for joining me today, my name is Rich Hanna and I am a data scientist in the Cell & Gene Therapy Data Operations team. For those of you listening in or may not be able to see me, that’s me so you can place a face to the voice. I joined CHOP about 5 years ago coming from a mechanical engineering background and about 4 years ago found my way into coding with R to solve problems, make products, you name it. Around that same time I met Stephan Kadauke who leads the DataOps team and helped found the R User Group and that more or less brings me in front of you today.\nAround the same time I started R I was working with REDCap, and I found that the two go hand in hand rather well. Today I’m excited to talk to you about a package we’re developing that, for those of you also working with both R and REDCap, may hopefully become a useful tool to help your data analytics processes."
   },
   {
     "objectID": "presentations/REDCapTidieR.html#agenda",
@@ -70,11 +35,11 @@
     "text": "Agenda\nIn today’s talk we will:\n\nReview REDCap as a database solution 💡\nReview REDCapR as an API 🔌\nImplement REDCapTidieR to make our lives easier 🧹\n\nWhat you need:\n\nFamiliarity with R 💻\nFamiliarity with REDCap 🧢\n\n\nToday’s talk will primarily be beneficial to those of you who have some familiarity with R, namely how to work your way around with the tidyverse and especially those familiar with the REDCapR package, but we will also briefly touch on what REDCap is, how REDCapR works, and the use case that called for REDCapTidieR in the first place."
   },
   {
-    "objectID": "presentations/REDCapTidieR.html#who-am-i",
-    "href": "presentations/REDCapTidieR.html#who-am-i",
+    "objectID": "presentations/REDCapTidieR.html#what-is-redcap",
+    "href": "presentations/REDCapTidieR.html#what-is-redcap",
     "title": "REDCapTidieR",
-    "section": "Who am I?",
-    "text": "Who am I?\n\n\n\n\n\nData Scientist in CGT DataOps\n\n5 years at CHOP\nEngineering background\n\nTwo fuzzy coworkers\nTrying to implement quarto today\n\n\n\n\nHi everyone! Thank you for joining me today, my name is Rich Hanna and I am a data scientist in the Cell & Gene Therapy Data Operations team. For those of you listening in or may not be able to see me, that’s me so you can place a face to the voice. I joined CHOP about 5 years ago coming from a mechanical engineering background and about 4 years ago found my way into coding with R to solve problems, make products, you name it. Around that same time I met Stephan Kadauke who leads the DataOps team and helped found the R User Group and that more or less brings me in front of you today.\nAround the same time I started R I was working with REDCap, and I found that the two go hand in hand rather well. Today I’m excited to talk to you about a package we’re developing that, for those of you also working with both R and REDCap, may hopefully become a useful tool to help your data analytics processes."
+    "section": "What is REDCap?",
+    "text": "What is REDCap?\n\n\n\n\n\n\nFree1 database solution for research\nSecure and accessible from a web browser\nCan collect “any type of data in any environment”\n\nParticularly useful for compliance with 21 CFR Part 11, HIPAA, etc.\n\nRequires little to get up and running, but offers complexity as needed\n\n\nREDCap is a powerful database solution used by many research institutions. The web interface offers a secure, accessible way to architect databases of varying complexity at no cost to the institution for joining the REDCap consortium.\nYou can access REDCap on the web from anywhere, and it can store any data you can realistically imagine for research purposes. It is also attractive to research institutions for being capable of clearance for various compliance requirements.\nIn my opinion, REDCap is strongest in it’s front end UI ability to supply users with the tools to make databases quickly and with plenty of customization, but also provides complexity to those who wish to use it.\n\nFor participants of the REDCap consortium"
   },
   {
     "objectID": "presentations/REDCapTidieR.html#what-is-redcap-1",
@@ -84,18 +49,18 @@
     "text": "What is REDCap?\n\n\nRecord Status Dashboard \n\nFront-End Data Entry UI \n\n\n\nThe REDCap front-end consists of many tools but the two we’re interested in are the top-level database display, known as the record status dashboard, and the actual area that data entry personnel enter data.\nHere on the left is a visual representation of what essentially amounts to a tabular structure. We have a record ID, and two “instruments” with underlying data. The first is a single sub-table or “form”, while the second is stacked or “repeating.”\nOn the right is a drilled-down display where the data gets entered. Here we see all of the Heroes Information associated with Record ID number 0. You can think of these as the column data elements tied to a single row for the hero A-Bomb."
   },
   {
+    "objectID": "presentations/REDCapTidieR.html#the-super-heroes-dataset",
+    "href": "presentations/REDCapTidieR.html#the-super-heroes-dataset",
+    "title": "REDCapTidieR",
+    "section": "The Super Heroes Dataset",
+    "text": "The Super Heroes Dataset\n\n\n\nOpen source dataset from SuperHeroDB and available on Kaggle. It contains two tables:\n\nSuper Hero Information (i.e. demographic data)\nSuper Hero Powers (i.e. TRUE/FALSE if a hero has a named power)\n\n\n\nSo by now you’ve noticed we aren’t using patient data, so it’s worth briefly touching on the data we are using. We will be using open source super hero data from SuperHeroDB, delivered via Kaggle. There are two CSV tables available where one contains Hero Information like name, height, weight, eye color, etc. and the other contains a wide table of hero name to a boolean of power name.\nLet’s assume I’ve already done the work of preparing and importing this into a REDCap database so we can see what an export of the data looks like via REDCapR."
+  },
+  {
     "objectID": "presentations/REDCapTidieR.html#introducing-redcapr",
     "href": "presentations/REDCapTidieR.html#introducing-redcapr",
     "title": "REDCapTidieR",
     "section": "Introducing REDCapR",
     "text": "Introducing REDCapR\nSome core REDCapR functions:\n\nredcap_read_oneshot\nredcap_metadata_read\nredcap_event_instruments\n\nRequirements:\n\nUser API privileges\n\n\nWe’ve been using REDCapR extensively for a while, and at it’s core the package does all the heavy lifting required to extract data and metadata on a REDCap project all within the R console. If we stand on the shoulders of giants, then REDCapR is the giant that REDCapTidieR has to thank."
-  },
-  {
-    "objectID": "presentations/REDCapTidieR.html#introducing-redcapr-1",
-    "href": "presentations/REDCapTidieR.html#introducing-redcapr-1",
-    "title": "REDCapTidieR",
-    "section": "Introducing REDCapR",
-    "text": "Introducing REDCapR\n\nsuperheroes_db %>% \n  head(10)\n\n# A tibble: 10 × 16\n   record_id redcap_r…¹ redca…² name  gender eye_c…³ race  hair_…⁴ height weight\n       <dbl> <chr>        <dbl> <chr> <chr>  <chr>   <chr> <chr>    <dbl>  <dbl>\n 1         0 <NA>            NA A-Bo… Male   yellow  Human No Hair    203    441\n 2         0 super_her…       1 <NA>  <NA>   <NA>    <NA>  <NA>        NA     NA\n 3         0 super_her…       2 <NA>  <NA>   <NA>    <NA>  <NA>        NA     NA\n 4         0 super_her…       3 <NA>  <NA>   <NA>    <NA>  <NA>        NA     NA\n 5         0 super_her…       4 <NA>  <NA>   <NA>    <NA>  <NA>        NA     NA\n 6         0 super_her…       5 <NA>  <NA>   <NA>    <NA>  <NA>        NA     NA\n 7         0 super_her…       6 <NA>  <NA>   <NA>    <NA>  <NA>        NA     NA\n 8         0 super_her…       7 <NA>  <NA>   <NA>    <NA>  <NA>        NA     NA\n 9         1 <NA>            NA Abe … Male   blue    Icth… No Hair    191     65\n10         1 super_her…       1 <NA>  <NA>   <NA>    <NA>  <NA>        NA     NA\n# … with 6 more variables: publisher <chr>, skin_color <chr>, alignment <chr>,\n#   heroes_information_complete <dbl>, power <chr>,\n#   super_hero_powers_complete <dbl>, and abbreviated variable names\n#   ¹​redcap_repeat_instrument, ²​redcap_repeat_instance, ³​eye_color, ⁴​hair_color\n# ℹ Use `colnames()` to see all variable names"
   },
   {
     "objectID": "presentations/REDCapTidieR.html#superheroes-redcap-overview",

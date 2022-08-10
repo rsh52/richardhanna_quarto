@@ -14,21 +14,19 @@ logo: "/presentations/images/cgtdataops-bkgrnd_removed.png"
 
 ## Who am I?
 
-
 ::: columns
 ::: {.column width="50%"}
-![](images/REDCapTidieR/whoami.png)
+![](images/REDCapTidieR/whoami.png){width="300"}
 :::
 
 ::: {.column width="50%"}
-- Data Scientist in CGT DataOps
-  - 5 years at CHOP
-  - Engineering background
-- Two fuzzy coworkers 
-- Trying to implement `quarto` today
+-   Data Scientist in CGT DataOps
+    -   5 years at CHOP
+    -   Engineering background
+-   Two fuzzy coworkers
+-   Trying to implement `quarto` today
 :::
 :::
-
 
 ::: notes
 Hi everyone! Thank you for joining me today, my name is Rich Hanna and I am a data scientist in the Cell & Gene Therapy Data Operations team. For those of you listening in or may not be able to see me, that's me so you can place a face to the voice. I joined CHOP about 5 years ago coming from a mechanical engineering background and about 4 years ago found my way into coding with R to solve problems, make products, you name it. Around that same time I met Stephan Kadauke who leads the DataOps team and helped found the R User Group and that more or less brings me in front of you today.
@@ -118,13 +116,13 @@ Let's assume I've already done the work of preparing and importing this into a R
 
 Some core `REDCapR` functions:
 
-- `redcap_read_oneshot`
-- `redcap_metadata_read`
-- `redcap_event_instruments`
+-   `redcap_read_oneshot`
+-   `redcap_metadata_read`
+-   `redcap_event_instruments`
 
 Requirements:
 
-- User API privileges
+-   User API privileges
 
 ::: notes
 We've been using REDCapR extensively for a while, and at it's core the package does all the heavy lifting required to extract data and metadata on a REDCap project all within the R console. If we stand on the shoulders of giants, then REDCapR is the giant that REDCapTidieR has to thank.
@@ -151,7 +149,7 @@ Remember `redcap_repeat_instrument` and `redcap_repeat_instance`, they're coming
 Let's first load some applicable libraries and extract both the data and metadata of the database. A glimpse of the database shows us 6,700 rows with 16 columns, but oddly we seem to have a lot of `NA` data. And what might be a little more confusing is that our record_IDs are being repeated a number of times. Let's look at a tibble structure to see if we can piece why this is.
 :::
 
-## SuperHeroes REDCap Overview  {.smaller}
+## SuperHeroes REDCap Overview {.smaller}
 
 ```{r}
 #| echo: true
@@ -160,12 +158,11 @@ superheroes_db %>%
   head(10)
 ```
 
-
 ::: notes
 Perhaps still confusing, but we can at least see a pattern here. Now we can notice how all of the `NA`'s trade off with the `redcap_repeat_*` variables. Notice how the first row for `record_id` 0 has all of its hero information filled out, but the repeat variables are `NA`, and then for the remainder of `record_id` 0's rows that behavior reverses.
 :::
 
-## SuperHeroes REDCap Overview  {.smaller}
+## SuperHeroes REDCap Overview {.smaller}
 
 ::: columns
 ::: {.column width="50%"}
@@ -173,9 +170,8 @@ Record Status Dashboard ![](images/REDCapTidieR/super_dashboard_repeat.png)
 :::
 
 ::: {.column width="50%"}
-::: {.r-stack}
-Front-End Data Entry UI ![](images/REDCapTidieR/superpower_repeat_1.png){.fragment}
-![](images/REDCapTidieR/superpower_repeat_2.png){.fragment}
+::: r-stack
+Front-End Data Entry UI ![](images/REDCapTidieR/superpower_repeat_1.png){.fragment} ![](images/REDCapTidieR/superpower_repeat_2.png){.fragment}
 :::
 :::
 :::
@@ -183,14 +179,14 @@ Front-End Data Entry UI ![](images/REDCapTidieR/superpower_repeat_1.png){.fragme
 ::: notes
 Here on the left we have the same record status dashboard but now we have details expanded for two super power forms. Now we can see that not only do super heroes in this database have different powers assigned to them, but they can have variables numbers as well as shown by 7 assigned to A-Bomb while only 3 are assigned to Adam Monroe.
 
-On the drilled-down UI side, while small (my apologies), 
+On the drilled-down UI side, while small (my apologies),
 
 **Next**
 
 we see that A-Bomb's first power is "Accelerated Healing" under instance 1.
 :::
 
-## SuperHeroes REDCap Overview  {.smaller}
+## SuperHeroes REDCap Overview {.smaller}
 
 ```{r}
 #| echo: true
@@ -199,12 +195,11 @@ superheroes_db %>%
   select(record_id, contains("redcap_"), name, power)
 ```
 
-
-:::{.fragment}
+::: fragment
 > `record_id`, `redcap_repeat_instrument`, and `recap_repeat_instance` form a **composite key** once REDCap databases make use of repeating instances.
 :::
 
-::: {.fragment}
+::: fragment
 > A **composite key** is the combination of 2+ columns necessary to identify a row uniquely in a table
 :::
 
