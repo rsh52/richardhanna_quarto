@@ -1,30 +1,97 @@
 ---
 title: "REDCapTidieR"
 subtitle: "Making analysts lives easier through the power of tidy tibbles"
-date: "`r Sys.Date()`"
+date: "2022-08-18"
 author: "Richard Hanna"
 format:
   revealjs:
     slide-number: c/t
     theme: default
     scrollable: false
-df-print: tibble
+    df-print: tibble
 logo: "/presentations/images/cgtdataops-bkgrnd_removed.png"
 ---
 
-## Introduction
+## Who am I?
+
+
+::: columns
+::: {.column width="50%"}
+![](images/REDCapTidieR/whoami.png)
+:::
+
+::: {.column width="50%"}
+- Data Scientist in CGT DataOps
+  - 5 years at CHOP
+  - Engineering background
+- Two fuzzy coworkers 
+- Trying to implement `quarto` today
+:::
+:::
+
+
+::: notes
+Hi everyone! Thank you for joining me today, my name is Rich Hanna and I am a data scientist in the Cell & Gene Therapy Data Operations team. For those of you listening in or may not be able to see me, that's me so you can place a face to the voice. I joined CHOP about 5 years ago coming from a mechanical engineering background and about 4 years ago found my way into coding with R to solve problems, make products, you name it. Around that same time I met Stephan Kadauke who leads the DataOps team and helped found the R User Group and that more or less brings me in front of you today.
+
+Around the same time I started R I was working with REDCap, and I found that the two go hand in hand rather well. Today I'm excited to talk to you about a package we're developing that, for those of you also working with both R and REDCap, may hopefully become a useful tool to help your data analytics processes.
+:::
+
+## Agenda
 
 In today's talk we will:
 
--   Review REDCap
--   Review `REDCapR`
--   Implement `REDCapTidieR` to make our lives easier ✨
+-   Review REDCap as a database solution 💡
+-   Review `REDCapR` as an API 🔌
+-   Implement `REDCapTidieR` to make our lives easier 🧹
+
+What you need:
+
+-   Familiarity with R 💻
+-   Familiarity with REDCap 🧢
+
+::: notes
+Today's talk will primarily be beneficial to those of you who have some familiarity with R, namely how to work your way around with the tidyverse and especially those familiar with the REDCapR package, but we will also briefly touch on what REDCap is, how REDCapR works, and the use case that called for REDCapTidieR in the first place.
+:::
+
+## What is REDCap? {.smaller}
+
+![](images/REDCapTidieR/redcap_logo.png){fig-align="center" width="450"}
+
+-   Free[^1] database solution for research
+-   Secure and accessible from a web browser
+-   Can collect "any type of data in any environment"
+    -   Particularly useful for compliance with 21 CFR Part 11, HIPAA, etc.
+-   Requires little to get up and running, but offers complexity as needed
+
+[^1]: For participants of the REDCap consortium
+
+::: notes
+REDCap is a powerful database solution used by many research institutions. The web interface offers a secure, accessible way to architect databases of varying complexity at no cost to the institution for joining the REDCap consortium.
+
+You can access REDCap on the web from anywhere, and it can store any data you can realistically imagine for research purposes. It is also attractive to research institutions for being capable of clearance for various compliance requirements.
+
+In my opinion, REDCap is strongest in it's front end UI ability to supply users with the tools to make databases quickly and with plenty of customization, but also provides complexity to those who wish to use it.
+:::
 
 ## What is REDCap?
 
-![](images/redcap_logo.png){fig-align="center" width="330"}
+::: columns
+::: {.column width="50%"}
+Record Status Dashboard ![](images/REDCapTidieR/redcap_record_status_dash.png){width="457"}
+:::
 
-REDCap is a powerful database solution used by many research institutions. The web interface offers a secure, accessible way to architect databases of varying complexity at no cost to the institution for joining the REDCap consortium.
+::: {.column width="50%"}
+Front-End Data Entry UI ![](images/REDCapTidieR/redcap_data_entry_example1.png){width="800"}
+:::
+:::
+
+::: notes
+The REDCap front-end consists of many tools but the two we're interested in are the top-level database display, known as the record status dashboard, and the actual area that data entry personnel enter data.
+
+Here on the left is a visual representation of what essentially amounts to a tabular structure. We have a record ID, and two "instruments" with underlying data. The first is a single sub-table or "form", while the second is stacked or "repeating."
+
+On the right is a drilled-down display where the data gets entered. Here we see all of the Heroes Information associated with Record ID number 0. You can think of these as the column data elements tied to a single row for the hero A-Bomb.
+:::
 
 ## The Super Heroes Dataset
 
@@ -34,61 +101,121 @@ redcap_uri <- Sys.getenv("REDCAP_URI")
 token <- Sys.getenv("SUPERHEROES_REDCAP_API")
 ```
 
-Load applicable libraries:
+Open source dataset from [SuperHeroDB](https://www.superherodb.com/) and available on [Kaggle](https://www.kaggle.com/datasets/claudiodavi/superhero-set). It contains two tables:
+
+-   Super Hero Information (i.e. demographic data)
+-   Super Hero Powers (i.e. `TRUE`/`FALSE` if a hero has a named power)
+
+![](images/REDCapTidieR/super_heroes_border.webp)
+
+::: notes
+So by now you've noticed we aren't using patient data, so it's worth briefly touching on the data we are using. We will be using open source super hero data from SuperHeroDB, delivered via Kaggle. There are two CSV tables available where one contains Hero Information like name, height, weight, eye color, etc. and the other contains a wide table of hero name to a boolean of power name.
+
+Let's assume I've already done the work of preparing and importing this into a REDCap database so we can see what an export of the data looks like via REDCapR.
+:::
+
+## Introducing `REDCapR`
+
+Some core `REDCapR` functions:
+
+- `redcap_read_oneshot`
+- `redcap_metadata_read`
+- `redcap_event_instruments`
+
+Requirements:
+
+- User API privileges
+
+::: notes
+We've been using REDCapR extensively for a while, and at it's core the package does all the heavy lifting required to extract data and metadata on a REDCap project all within the R console. If we stand on the shoulders of giants, then REDCapR is the giant that REDCapTidieR has to thank.
+:::
+
+## SuperHeroes REDCap Overview {.smaller}
 
 ```{r}
 #| echo: true
+# Load applicable libraries:
 library(dplyr)
-library(knitr)
 library(REDCapR)
+
+superheroes_db <- redcap_read_oneshot(redcap_uri, token, verbose = FALSE)$data
+superheroes_meta <- redcap_metadata_read(redcap_uri, token, verbose = FALSE)$data
+
+superheroes_db %>% 
+  glimpse()
 ```
 
-## Inspect `REDCapR` data output
+Remember `redcap_repeat_instrument` and `redcap_repeat_instance`, they're coming back!
+
+::: notes
+Let's first load some applicable libraries and extract both the data and metadata of the database. A glimpse of the database shows us 6,700 rows with 16 columns, but oddly we seem to have a lot of `NA` data. And what might be a little more confusing is that our record_IDs are being repeated a number of times. Let's look at a tibble structure to see if we can piece why this is.
+:::
+
+## SuperHeroes REDCap Overview  {.smaller}
 
 ```{r}
 #| echo: true
-#| eval: false
-out <- redcap_read_oneshot(redcap_uri, token, verbose = FALSE)$data
-out %>% 
+# View first 10 entries of SuperHeroes db tibble
+superheroes_db %>% 
   head(10)
 ```
 
-```r
-# A tibble: 6,700 × 16
-   record_id redcap_repeat_instrument redcap_repeat_in…¹ name  gender eye_c…² race  hair_…³ height weight publi…⁴ skin_…⁵ align…⁶ heroe…⁷ power super…⁸
-       <dbl> <chr>                                 <dbl> <chr> <chr>  <chr>   <chr> <chr>    <dbl>  <dbl> <chr>   <chr>   <chr>     <dbl> <chr>   <dbl>
- 1         0 NA                                       NA A-Bo… Male   yellow  Human No Hair    203    441 Marvel… -       good          0 NA         NA
- 2         0 super_hero_powers                         1 NA    NA     NA      NA    NA          NA     NA NA      NA      NA           NA Acce…       0
- 3         0 super_hero_powers                         2 NA    NA     NA      NA    NA          NA     NA NA      NA      NA           NA Dura…       0
- 4         0 super_hero_powers                         3 NA    NA     NA      NA    NA          NA     NA NA      NA      NA           NA Long…       0
- 5         0 super_hero_powers                         4 NA    NA     NA      NA    NA          NA     NA NA      NA      NA           NA Supe…       0
- 6         0 super_hero_powers                         5 NA    NA     NA      NA    NA          NA     NA NA      NA      NA           NA Stam…       0
- 7         0 super_hero_powers                         6 NA    NA     NA      NA    NA          NA     NA NA      NA      NA           NA Camo…       0
- 8         0 super_hero_powers                         7 NA    NA     NA      NA    NA          NA     NA NA      NA      NA           NA Self…       0
- 9         1 NA                                       NA Abe … Male   blue    Icth… No Hair    191     65 Dark H… blue    good          0 NA         NA
-10         1 super_hero_powers                         1 NA    NA     NA      NA    NA          NA     NA NA      NA      NA           NA Agil…       0
-# … with 6,690 more rows, and abbreviated variable names ¹​redcap_repeat_instance, ²​eye_color, ³​hair_color, ⁴​publisher, ⁵​skin_color, ⁶​alignment,
-#   ⁷​heroes_information_complete, ⁸​super_hero_powers_complete
-# ℹ Use `print(n = ...)` to see more rows
-```
 
-## Next Slide
-
-:::: {.columns}
-
-::: {.column width="40%"}
+::: notes
+Perhaps still confusing, but we can at least see a pattern here. Now we can notice how all of the `NA`'s trade off with the `redcap_repeat_*` variables. Notice how the first row for `record_id` 0 has all of its hero information filled out, but the repeat variables are `NA`, and then for the remainder of `record_id` 0's rows that behavior reverses.
 :::
 
-::: {.column width="60%"}
+## SuperHeroes REDCap Overview  {.smaller}
+
+::: columns
+::: {.column width="50%"}
+Record Status Dashboard ![](images/REDCapTidieR/super_dashboard_repeat.png)
+:::
+
+::: {.column width="50%"}
+::: {.r-stack}
+Front-End Data Entry UI ![](images/REDCapTidieR/superpower_repeat_1.png){.fragment}
+![](images/REDCapTidieR/superpower_repeat_2.png){.fragment}
+:::
+:::
+:::
+
+::: notes
+Here on the left we have the same record status dashboard but now we have details expanded for two super power forms. Now we can see that not only do super heroes in this database have different powers assigned to them, but they can have variables numbers as well as shown by 7 assigned to A-Bomb while only 3 are assigned to Adam Monroe.
+
+On the drilled-down UI side, while small (my apologies), 
+
+**Next**
+
+we see that A-Bomb's first power is "Accelerated Healing" under instance 1.
+:::
+
+## SuperHeroes REDCap Overview  {.smaller}
+
 ```{r}
 #| echo: true
-#| output-location: column
-out <- redcap_read_oneshot(redcap_uri, token, verbose = FALSE)$data
-out %>% 
-  head(10)
+superheroes_db %>% 
+  filter(record_id == 0) %>% 
+  select(record_id, contains("redcap_"), name, power)
 ```
+
+
+:::{.fragment}
+> `record_id`, `redcap_repeat_instrument`, and `recap_repeat_instance` form a **composite key** once REDCap databases make use of repeating instances.
 :::
 
-::::
+::: {.fragment}
+> A **composite key** is the combination of 2+ columns necessary to identify a row uniquely in a table
+:::
 
-Did anything change?
+::: notes
+So if we revisit `record_id` 0, our good friend A-Bomb, and select variables of interest we can see here that his hero information is only associated with non-repeating rows while each of his powers information gets a separate row associated with what repeat instrument and instance it belongs to.
+
+**Next**
+
+Because of this structure, once repeating instruments are introduced to REDCap they form what's known as a composite key for identifying individual observations. You can't rely on the `record_id` anymore, even though its the primary identifier for our hero.
+
+**Next**
+
+Composite keys are combinations of 2 or more columns that together give the information necessary to uniquely identify a row in a table.
+:::

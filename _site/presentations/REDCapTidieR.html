@@ -10,7 +10,7 @@
   <meta name="generator" content="quarto-1.0.38">
 
   <meta name="author" content="Richard Hanna">
-  <meta name="dcterms.date" content="2022-08-09">
+  <meta name="dcterms.date" content="2022-08-18">
   <title>richardhanna_quarto - REDCapTidieR</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -387,69 +387,231 @@
   <h1 class="title">REDCapTidieR</h1>
   <p class="subtitle">Making analysts lives easier through the power of tidy tibbles</p>
   <p class="author">Richard Hanna</p>
-  <p class="date">2022-08-09</p>
+  <p class="date">2022-08-18</p>
 </section>
 
-<section id="introduction" class="slide level2">
-<h2>Introduction</h2>
+<section id="who-am-i" class="slide level2">
+<h2>Who am I?</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="images/REDCapTidieR/whoami.png"></p>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>Data Scientist in CGT DataOps
+<ul>
+<li>5 years at CHOP</li>
+<li>Engineering background</li>
+</ul></li>
+<li>Two fuzzy coworkers</li>
+<li>Trying to implement <code>quarto</code> today</li>
+</ul>
+</div>
+</div>
+<aside class="notes">
+<p>Hi everyone! Thank you for joining me today, my name is Rich Hanna and I am a data scientist in the Cell &amp; Gene Therapy Data Operations team. For those of you listening in or may not be able to see me, that’s me so you can place a face to the voice. I joined CHOP about 5 years ago coming from a mechanical engineering background and about 4 years ago found my way into coding with R to solve problems, make products, you name it. Around that same time I met Stephan Kadauke who leads the DataOps team and helped found the R User Group and that more or less brings me in front of you today.</p>
+<p>Around the same time I started R I was working with REDCap, and I found that the two go hand in hand rather well. Today I’m excited to talk to you about a package we’re developing that, for those of you also working with both R and REDCap, may hopefully become a useful tool to help your data analytics processes.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="agenda" class="slide level2">
+<h2>Agenda</h2>
 <p>In today’s talk we will:</p>
 <ul>
-<li>Review REDCap</li>
-<li>Review <code>REDCapR</code></li>
-<li>Implement <code>REDCapTidieR</code> to make our lives easier ✨</li>
+<li>Review REDCap as a database solution 💡</li>
+<li>Review <code>REDCapR</code> as an API 🔌</li>
+<li>Implement <code>REDCapTidieR</code> to make our lives easier 🧹</li>
 </ul>
+<p>What you need:</p>
+<ul>
+<li>Familiarity with R 💻</li>
+<li>Familiarity with REDCap 🧢</li>
+</ul>
+<aside class="notes">
+<p>Today’s talk will primarily be beneficial to those of you who have some familiarity with R, namely how to work your way around with the tidyverse and especially those familiar with the REDCapR package, but we will also briefly touch on what REDCap is, how REDCapR works, and the use case that called for REDCapTidieR in the first place.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="what-is-redcap" class="slide level2">
+<section id="what-is-redcap" class="slide level2 smaller">
 <h2>What is REDCap?</h2>
-
-<img data-src="images/redcap_logo.png" width="330" class="r-stretch quarto-figure-center"><p>REDCap is a powerful database solution used by many research institutions. The web interface offers a secure, accessible way to architect databases of varying complexity at no cost to the institution for joining the REDCap consortium.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/REDCapTidieR/redcap_logo.png" width="450"></p>
+</figure>
+</div>
+<ul>
+<li>Free<sup>1</sup> database solution for research</li>
+<li>Secure and accessible from a web browser</li>
+<li>Can collect “any type of data in any environment”
+<ul>
+<li>Particularly useful for compliance with 21 CFR Part 11, HIPAA, etc.</li>
+</ul></li>
+<li>Requires little to get up and running, but offers complexity as needed</li>
+</ul>
+<aside class="notes">
+<p>REDCap is a powerful database solution used by many research institutions. The web interface offers a secure, accessible way to architect databases of varying complexity at no cost to the institution for joining the REDCap consortium.</p>
+<p>You can access REDCap on the web from anywhere, and it can store any data you can realistically imagine for research purposes. It is also attractive to research institutions for being capable of clearance for various compliance requirements.</p>
+<p>In my opinion, REDCap is strongest in it’s front end UI ability to supply users with the tools to make databases quickly and with plenty of customization, but also provides complexity to those who wish to use it.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<aside><ol class="aside-footnotes"><li id="fn1" role="doc-endnote"><p>For participants of the REDCap consortium</p></li></ol></aside></section>
+<section id="what-is-redcap-1" class="slide level2">
+<h2>What is REDCap?</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Record Status Dashboard <img data-src="images/REDCapTidieR/redcap_record_status_dash.png" width="457"></p>
+</div><div class="column" style="width:50%;">
+<p>Front-End Data Entry UI <img data-src="images/REDCapTidieR/redcap_data_entry_example1.png" width="800"></p>
+</div>
+</div>
+<aside class="notes">
+<p>The REDCap front-end consists of many tools but the two we’re interested in are the top-level database display, known as the record status dashboard, and the actual area that data entry personnel enter data.</p>
+<p>Here on the left is a visual representation of what essentially amounts to a tabular structure. We have a record ID, and two “instruments” with underlying data. The first is a single sub-table or “form”, while the second is stacked or “repeating.”</p>
+<p>On the right is a drilled-down display where the data gets entered. Here we see all of the Heroes Information associated with Record ID number 0. You can think of these as the column data elements tied to a single row for the hero A-Bomb.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="the-super-heroes-dataset" class="slide level2">
 <h2>The Super Heroes Dataset</h2>
 <div class="cell">
 
 </div>
-<p>Load applicable libraries:</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">library</span>(dplyr)</span>
-<span id="cb1-2"><a href="#cb1-2"></a><span class="fu">library</span>(knitr)</span>
-<span id="cb1-3"><a href="#cb1-3"></a><span class="fu">library</span>(REDCapR)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
+<p>Open source dataset from <a href="https://www.superherodb.com/">SuperHeroDB</a> and available on <a href="https://www.kaggle.com/datasets/claudiodavi/superhero-set">Kaggle</a>. It contains two tables:</p>
+<ul>
+<li>Super Hero Information (i.e.&nbsp;demographic data)</li>
+<li>Super Hero Powers (i.e.&nbsp;<code>TRUE</code>/<code>FALSE</code> if a hero has a named power)</li>
+</ul>
+<p><img data-src="images/REDCapTidieR/super_heroes_border.webp"></p>
+<aside class="notes">
+<p>So by now you’ve noticed we aren’t using patient data, so it’s worth briefly touching on the data we are using. We will be using open source super hero data from SuperHeroDB, delivered via Kaggle. There are two CSV tables available where one contains Hero Information like name, height, weight, eye color, etc. and the other contains a wide table of hero name to a boolean of power name.</p>
+<p>Let’s assume I’ve already done the work of preparing and importing this into a REDCap database so we can see what an export of the data looks like via REDCapR.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="inspect-redcapr-data-output" class="slide level2">
-<h2>Inspect <code>REDCapR</code> data output</h2>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a>out <span class="ot">&lt;-</span> <span class="fu">redcap_read_oneshot</span>(redcap_uri, token, <span class="at">verbose =</span> <span class="cn">FALSE</span>)<span class="sc">$</span>data</span>
-<span id="cb2-2"><a href="#cb2-2"></a>out <span class="sc">%&gt;%</span> </span>
-<span id="cb2-3"><a href="#cb2-3"></a>  <span class="fu">head</span>(<span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="co"># A tibble: 6,700 × 16</span></span>
-<span id="cb3-2"><a href="#cb3-2"></a>   record_id redcap_repeat_instrument redcap_repeat_in…¹ name  gender eye_c…² race  hair_…³ height weight publi…⁴ skin_…⁵ align…⁶ heroe…⁷ power super…⁸</span>
-<span id="cb3-3"><a href="#cb3-3"></a>       <span class="sc">&lt;</span>dbl<span class="sc">&gt;</span> <span class="er">&lt;</span>chr<span class="sc">&gt;</span>                                 <span class="er">&lt;</span>dbl<span class="sc">&gt;</span> <span class="er">&lt;</span>chr<span class="sc">&gt;</span> <span class="er">&lt;</span>chr<span class="sc">&gt;</span>  <span class="er">&lt;</span>chr<span class="sc">&gt;</span>   <span class="er">&lt;</span>chr<span class="sc">&gt;</span> <span class="er">&lt;</span>chr<span class="sc">&gt;</span>    <span class="er">&lt;</span>dbl<span class="sc">&gt;</span>  <span class="er">&lt;</span>dbl<span class="sc">&gt;</span> <span class="er">&lt;</span>chr<span class="sc">&gt;</span>   <span class="er">&lt;</span>chr<span class="sc">&gt;</span>   <span class="er">&lt;</span>chr<span class="sc">&gt;</span>     <span class="er">&lt;</span>dbl<span class="sc">&gt;</span> <span class="er">&lt;</span>chr<span class="sc">&gt;</span>   <span class="er">&lt;</span>dbl<span class="sc">&gt;</span></span>
-<span id="cb3-4"><a href="#cb3-4"></a> <span class="dv">1</span>         <span class="dv">0</span> <span class="cn">NA</span>                                       <span class="cn">NA</span> A<span class="sc">-</span>Bo… Male   yellow  Human No Hair    <span class="dv">203</span>    <span class="dv">441</span> Marvel… <span class="sc">-</span>       good          <span class="dv">0</span> <span class="cn">NA</span>         <span class="cn">NA</span></span>
-<span id="cb3-5"><a href="#cb3-5"></a> <span class="dv">2</span>         <span class="dv">0</span> super_hero_powers                         <span class="dv">1</span> <span class="cn">NA</span>    <span class="cn">NA</span>     <span class="cn">NA</span>      <span class="cn">NA</span>    <span class="cn">NA</span>          <span class="cn">NA</span>     <span class="cn">NA</span> <span class="cn">NA</span>      <span class="cn">NA</span>      <span class="cn">NA</span>           <span class="cn">NA</span> Acce…       <span class="dv">0</span></span>
-<span id="cb3-6"><a href="#cb3-6"></a> <span class="dv">3</span>         <span class="dv">0</span> super_hero_powers                         <span class="dv">2</span> <span class="cn">NA</span>    <span class="cn">NA</span>     <span class="cn">NA</span>      <span class="cn">NA</span>    <span class="cn">NA</span>          <span class="cn">NA</span>     <span class="cn">NA</span> <span class="cn">NA</span>      <span class="cn">NA</span>      <span class="cn">NA</span>           <span class="cn">NA</span> Dura…       <span class="dv">0</span></span>
-<span id="cb3-7"><a href="#cb3-7"></a> <span class="dv">4</span>         <span class="dv">0</span> super_hero_powers                         <span class="dv">3</span> <span class="cn">NA</span>    <span class="cn">NA</span>     <span class="cn">NA</span>      <span class="cn">NA</span>    <span class="cn">NA</span>          <span class="cn">NA</span>     <span class="cn">NA</span> <span class="cn">NA</span>      <span class="cn">NA</span>      <span class="cn">NA</span>           <span class="cn">NA</span> Long…       <span class="dv">0</span></span>
-<span id="cb3-8"><a href="#cb3-8"></a> <span class="dv">5</span>         <span class="dv">0</span> super_hero_powers                         <span class="dv">4</span> <span class="cn">NA</span>    <span class="cn">NA</span>     <span class="cn">NA</span>      <span class="cn">NA</span>    <span class="cn">NA</span>          <span class="cn">NA</span>     <span class="cn">NA</span> <span class="cn">NA</span>      <span class="cn">NA</span>      <span class="cn">NA</span>           <span class="cn">NA</span> Supe…       <span class="dv">0</span></span>
-<span id="cb3-9"><a href="#cb3-9"></a> <span class="dv">6</span>         <span class="dv">0</span> super_hero_powers                         <span class="dv">5</span> <span class="cn">NA</span>    <span class="cn">NA</span>     <span class="cn">NA</span>      <span class="cn">NA</span>    <span class="cn">NA</span>          <span class="cn">NA</span>     <span class="cn">NA</span> <span class="cn">NA</span>      <span class="cn">NA</span>      <span class="cn">NA</span>           <span class="cn">NA</span> Stam…       <span class="dv">0</span></span>
-<span id="cb3-10"><a href="#cb3-10"></a> <span class="dv">7</span>         <span class="dv">0</span> super_hero_powers                         <span class="dv">6</span> <span class="cn">NA</span>    <span class="cn">NA</span>     <span class="cn">NA</span>      <span class="cn">NA</span>    <span class="cn">NA</span>          <span class="cn">NA</span>     <span class="cn">NA</span> <span class="cn">NA</span>      <span class="cn">NA</span>      <span class="cn">NA</span>           <span class="cn">NA</span> Camo…       <span class="dv">0</span></span>
-<span id="cb3-11"><a href="#cb3-11"></a> <span class="dv">8</span>         <span class="dv">0</span> super_hero_powers                         <span class="dv">7</span> <span class="cn">NA</span>    <span class="cn">NA</span>     <span class="cn">NA</span>      <span class="cn">NA</span>    <span class="cn">NA</span>          <span class="cn">NA</span>     <span class="cn">NA</span> <span class="cn">NA</span>      <span class="cn">NA</span>      <span class="cn">NA</span>           <span class="cn">NA</span> Self…       <span class="dv">0</span></span>
-<span id="cb3-12"><a href="#cb3-12"></a> <span class="dv">9</span>         <span class="dv">1</span> <span class="cn">NA</span>                                       <span class="cn">NA</span> Abe … Male   blue    Icth… No Hair    <span class="dv">191</span>     <span class="dv">65</span> Dark H… blue    good          <span class="dv">0</span> <span class="cn">NA</span>         <span class="cn">NA</span></span>
-<span id="cb3-13"><a href="#cb3-13"></a><span class="dv">10</span>         <span class="dv">1</span> super_hero_powers                         <span class="dv">1</span> <span class="cn">NA</span>    <span class="cn">NA</span>     <span class="cn">NA</span>      <span class="cn">NA</span>    <span class="cn">NA</span>          <span class="cn">NA</span>     <span class="cn">NA</span> <span class="cn">NA</span>      <span class="cn">NA</span>      <span class="cn">NA</span>           <span class="cn">NA</span> Agil…       <span class="dv">0</span></span>
-<span id="cb3-14"><a href="#cb3-14"></a><span class="co"># … with 6,690 more rows, and abbreviated variable names ¹​redcap_repeat_instance, ²​eye_color, ³​hair_color, ⁴​publisher, ⁵​skin_color, ⁶​alignment,</span></span>
-<span id="cb3-15"><a href="#cb3-15"></a><span class="co">#   ⁷​heroes_information_complete, ⁸​super_hero_powers_complete</span></span>
-<span id="cb3-16"><a href="#cb3-16"></a><span class="co"># ℹ Use `print(n = ...)` to see more rows</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="introducing-redcapr" class="slide level2">
+<h2>Introducing <code>REDCapR</code></h2>
+<p>Some core <code>REDCapR</code> functions:</p>
+<ul>
+<li><code>redcap_read_oneshot</code></li>
+<li><code>redcap_metadata_read</code></li>
+<li><code>redcap_event_instruments</code></li>
+</ul>
+<p>Requirements:</p>
+<ul>
+<li>User API privileges</li>
+</ul>
+<aside class="notes">
+<p>We’ve been using REDCapR extensively for a while, and at it’s core the package does all the heavy lifting required to extract data and metadata on a REDCap project all within the R console. If we stand on the shoulders of giants, then REDCapR is the giant that REDCapTidieR has to thank.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="next-slide" class="slide level2">
-<h2>Next Slide</h2>
-<div class="columns">
-<div class="column" style="width:40%;">
-
-</div><div class="column" style="width:60%;">
-<div class="cell" data-output-location="column">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a>out <span class="ot">&lt;-</span> <span class="fu">redcap_read_oneshot</span>(redcap_uri, token, <span class="at">verbose =</span> <span class="cn">FALSE</span>)<span class="sc">$</span>data</span>
-<span id="cb4-2"><a href="#cb4-2"></a>out <span class="sc">%&gt;%</span> </span>
-<span id="cb4-3"><a href="#cb4-3"></a>  <span class="fu">head</span>(<span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="superheroes-redcap-overview" class="slide level2 smaller">
+<h2>SuperHeroes REDCap Overview</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="co"># Load applicable libraries:</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="fu">library</span>(REDCapR)</span>
+<span id="cb1-4"><a href="#cb1-4"></a></span>
+<span id="cb1-5"><a href="#cb1-5"></a>superheroes_db <span class="ot">&lt;-</span> <span class="fu">redcap_read_oneshot</span>(redcap_uri, token, <span class="at">verbose =</span> <span class="cn">FALSE</span>)<span class="sc">$</span>data</span>
+<span id="cb1-6"><a href="#cb1-6"></a>superheroes_meta <span class="ot">&lt;-</span> <span class="fu">redcap_metadata_read</span>(redcap_uri, token, <span class="at">verbose =</span> <span class="cn">FALSE</span>)<span class="sc">$</span>data</span>
+<span id="cb1-7"><a href="#cb1-7"></a></span>
+<span id="cb1-8"><a href="#cb1-8"></a>superheroes_db <span class="sc">%&gt;%</span> </span>
+<span id="cb1-9"><a href="#cb1-9"></a>  <span class="fu">glimpse</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Rows: 6,700
+Columns: 16
+$ record_id                   &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, …
+$ redcap_repeat_instrument    &lt;chr&gt; NA, "super_hero_powers", "super_hero_power…
+$ redcap_repeat_instance      &lt;dbl&gt; NA, 1, 2, 3, 4, 5, 6, 7, NA, 1, 2, 3, 4, 5…
+$ name                        &lt;chr&gt; "A-Bomb", NA, NA, NA, NA, NA, NA, NA, "Abe…
+$ gender                      &lt;chr&gt; "Male", NA, NA, NA, NA, NA, NA, NA, "Male"…
+$ eye_color                   &lt;chr&gt; "yellow", NA, NA, NA, NA, NA, NA, NA, "blu…
+$ race                        &lt;chr&gt; "Human", NA, NA, NA, NA, NA, NA, NA, "Icth…
+$ hair_color                  &lt;chr&gt; "No Hair", NA, NA, NA, NA, NA, NA, NA, "No…
+$ height                      &lt;dbl&gt; 203, NA, NA, NA, NA, NA, NA, NA, 191, NA, …
+$ weight                      &lt;dbl&gt; 441, NA, NA, NA, NA, NA, NA, NA, 65, NA, N…
+$ publisher                   &lt;chr&gt; "Marvel Comics", NA, NA, NA, NA, NA, NA, N…
+$ skin_color                  &lt;chr&gt; "-", NA, NA, NA, NA, NA, NA, NA, "blue", N…
+$ alignment                   &lt;chr&gt; "good", NA, NA, NA, NA, NA, NA, NA, "good"…
+$ heroes_information_complete &lt;dbl&gt; 0, NA, NA, NA, NA, NA, NA, NA, 0, NA, NA, …
+$ power                       &lt;chr&gt; NA, "Accelerated Healing", "Durability", "…
+$ super_hero_powers_complete  &lt;dbl&gt; NA, 0, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0…</code></pre>
+</div>
+</div>
+<p>Remember <code>redcap_repeat_instrument</code> and <code>redcap_repeat_instance</code>, they’re coming back!</p>
+<aside class="notes">
+<p>Let’s first load some applicable libraries and extract both the data and metadata of the database. A glimpse of the database shows us 6,700 rows with 16 columns, but oddly we seem to have a lot of <code>NA</code> data. And what might be a little more confusing is that our record_IDs are being repeated a number of times. Let’s look at a tibble structure to see if we can piece why this is.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="superheroes-redcap-overview-1" class="slide level2 smaller">
+<h2>SuperHeroes REDCap Overview</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="co"># View first 10 entries of SuperHeroes db tibble</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a>superheroes_db <span class="sc">%&gt;%</span> </span>
+<span id="cb3-3"><a href="#cb3-3"></a>  <span class="fu">head</span>(<span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 10 × 16
    record_id redcap_r…¹ redca…² name  gender eye_c…³ race  hair_…⁴ height weight
@@ -471,15 +633,102 @@
 # ℹ Use `colnames()` to see all variable names</code></pre>
 </div>
 </div>
+<aside class="notes">
+<p>Perhaps still confusing, but we can at least see a pattern here. Now we can notice how all of the <code>NA</code>’s trade off with the <code>redcap_repeat_*</code> variables. Notice how the first row for <code>record_id</code> 0 has all of its hero information filled out, but the repeat variables are <code>NA</code>, and then for the remainder of <code>record_id</code> 0’s rows that behavior reverses.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="superheroes-redcap-overview-2" class="slide level2 smaller">
+<h2>SuperHeroes REDCap Overview</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Record Status Dashboard <img data-src="images/REDCapTidieR/super_dashboard_repeat.png"></p>
+</div><div class="column" style="width:50%;">
+<div class="r-stack">
+<p>Front-End Data Entry UI <img data-src="images/REDCapTidieR/superpower_repeat_1.png" class="fragment"> <img data-src="images/REDCapTidieR/superpower_repeat_2.png" class="fragment"></p>
 </div>
 </div>
-<p>Did anything change?</p>
+</div>
+<aside class="notes">
+<p>Here on the left we have the same record status dashboard but now we have details expanded for two super power forms. Now we can see that not only do super heroes in this database have different powers assigned to them, but they can have variables numbers as well as shown by 7 assigned to A-Bomb while only 3 are assigned to Adam Monroe.</p>
+<p>On the drilled-down UI side, while small (my apologies),</p>
+<p><strong>Next</strong></p>
+<p>we see that A-Bomb’s first power is “Accelerated Healing” under instance 1.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="superheroes-redcap-overview-3" class="slide level2 smaller">
+<h2>SuperHeroes REDCap Overview</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a>superheroes_db <span class="sc">%&gt;%</span> </span>
+<span id="cb5-2"><a href="#cb5-2"></a>  <span class="fu">filter</span>(record_id <span class="sc">==</span> <span class="dv">0</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb5-3"><a href="#cb5-3"></a>  <span class="fu">select</span>(record_id, <span class="fu">contains</span>(<span class="st">"redcap_"</span>), name, power)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 8 × 5
+  record_id redcap_repeat_instrument redcap_repeat_instance name   power        
+      &lt;dbl&gt; &lt;chr&gt;                                     &lt;dbl&gt; &lt;chr&gt;  &lt;chr&gt;        
+1         0 &lt;NA&gt;                                         NA A-Bomb &lt;NA&gt;         
+2         0 super_hero_powers                             1 &lt;NA&gt;   Accelerated …
+3         0 super_hero_powers                             2 &lt;NA&gt;   Durability   
+4         0 super_hero_powers                             3 &lt;NA&gt;   Longevity    
+5         0 super_hero_powers                             4 &lt;NA&gt;   Super Streng…
+6         0 super_hero_powers                             5 &lt;NA&gt;   Stamina      
+7         0 super_hero_powers                             6 &lt;NA&gt;   Camouflage   
+8         0 super_hero_powers                             7 &lt;NA&gt;   Self-Sustena…</code></pre>
+</div>
+</div>
+<div class="fragment">
+<blockquote>
+<p><code>record_id</code>, <code>redcap_repeat_instrument</code>, and <code>recap_repeat_instance</code> form a <strong>composite key</strong> once REDCap databases make use of repeating instances.</p>
+</blockquote>
+</div>
+<div class="fragment">
+<blockquote>
+<p>A <strong>composite key</strong> is the combination of 2+ columns necessary to identify a row uniquely in a table</p>
+</blockquote>
+</div>
+<aside class="notes">
+<p>So if we revisit <code>record_id</code> 0, our good friend A-Bomb, and select variables of interest we can see here that his hero information is only associated with non-repeating rows while each of his powers information gets a separate row associated with what repeat instrument and instance it belongs to.</p>
+<p><strong>Next</strong></p>
+<p>Because of this structure, once repeating instruments are introduced to REDCap they form what’s known as a composite key for identifying individual observations. You can’t rely on the <code>record_id</code> anymore, even though its the primary identifier for our hero.</p>
+<p><strong>Next</strong></p>
+<p>Composite keys are combinations of 2 or more columns that together give the information necessary to uniquely identify a row in a table.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 
-
-<img src="../presentations/images/cgtdataops-bkgrnd_removed.png" class="slide-logo r-stretch"><div class="footer footer-default">
+<p><img src="../presentations/images/cgtdataops-bkgrnd_removed.png" class="slide-logo"></p>
+<div class="footer footer-default">
 
 </div>
 </section>
+
     </div>
   </div>
 
