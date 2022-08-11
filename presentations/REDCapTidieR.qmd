@@ -8,21 +8,56 @@ format:
     slide-number: c/t
     theme: default
     scrollable: false
-    df-print: tibble
+    df-print: kable
 logo: "/presentations/images/cgtdataops-bkgrnd_removed.png"
 ---
+
+```{r}
+#| include: false
+options("kableExtra.html.bsTable" = TRUE)
+```
+
+
+```{r}
+#| include: false
+library(knitr)
+library(kableExtra)
+
+render_kable <- function(df, na_handling = TRUE, ...){
+  if (na_handling){
+    df <-  df %>% 
+      mutate(across(.cols = everything(), 
+                    .fns = ~cell_spec(., bold = if_else(is.na(.), T, F),
+                                      color = if_else(is.na(.), "red", "black")))
+      )
+  }
+  
+  out <- df %>%
+    kbl(booktabs = T, escape = F, table.attr = "style='width:20%;'") %>%
+    # options for HTML output
+    kable_styling(bootstrap_options = c("striped", "hover", "bordered"), 
+                  position = "center",
+                  full_width = F,
+                  font_size = 14,
+                  fixed_thead = T) %>% 
+    column_spec(1, bold = T)
+  
+  out
+}
+
+```
 
 ## Who am I?
 
 ::: columns
-::: {.column width="50%"}
-![](images/REDCapTidieR/whoami.png){width="300"}
+::: {.column width="60%"}
+![](images/REDCapTidieR/hexes.png){width="500"}
 :::
 
-::: {.column width="50%"}
+::: {.column width="40%"}
 -   Data Scientist in CGT DataOps
-    -   5 years at CHOP
-    -   Engineering background
+-   5 years at CHOP
+-   Engineering background
 -   Two fuzzy coworkers
 -   Trying to implement `quarto` today
 :::
@@ -58,7 +93,7 @@ Today's talk will primarily be beneficial to those of you who have some familiar
 -   Free[^1] database solution for research
 -   Secure and accessible from a web browser
 -   Can collect "any type of data in any environment"
-    -   Particularly useful for compliance with 21 CFR Part 11, HIPAA, etc.
+-   Particularly useful for compliance with 21 CFR Part 11, HIPAA, etc.
 -   Requires little to get up and running, but offers complexity as needed
 
 [^1]: For participants of the REDCap consortium
@@ -149,13 +184,25 @@ Remember `redcap_repeat_instrument` and `redcap_repeat_instance`, they're coming
 Let's first load some applicable libraries and extract both the data and metadata of the database. A glimpse of the database shows us 6,700 rows with 16 columns, but oddly we seem to have a lot of `NA` data. And what might be a little more confusing is that our record_IDs are being repeated a number of times. Let's look at a tibble structure to see if we can piece why this is.
 :::
 
-## SuperHeroes REDCap Overview {.smaller}
+## SuperHeroes REDCap Overview {.smaller .scrollable}
 
 ```{r}
 #| echo: true
+#| eval: false
 # View first 10 entries of SuperHeroes db tibble
 superheroes_db %>% 
   head(10)
+```
+
+```{r}
+#| echo: false
+#| eval: true
+# Use this for display purposes
+
+superheroes_db %>% 
+  head(10) %>% 
+  render_kable() %>% 
+  scroll_box(width = "100%", height = "500px")
 ```
 
 ::: notes
@@ -192,7 +239,8 @@ we see that A-Bomb's first power is "Accelerated Healing" under instance 1.
 #| echo: true
 superheroes_db %>% 
   filter(record_id == 0) %>% 
-  select(record_id, contains("redcap_"), name, power)
+  select(record_id, contains("redcap_"), name, power) %>% 
+  render_kable()
 ```
 
 ::: fragment

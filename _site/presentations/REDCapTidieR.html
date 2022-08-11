@@ -378,6 +378,11 @@
       margin-right: 0; 
     }
   </style>
+  
+  <script src="../site_libs/kePrint-0.0.1/kePrint.js"></script>
+  <link href="../site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
+  <link href="../site_libs/bsTable-3.3.7/bootstrapTable.min.css" rel="stylesheet">
+  <script src="../site_libs/bsTable-3.3.7/bootstrapTable.js"></script>
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -393,15 +398,13 @@
 <section id="who-am-i" class="slide level2">
 <h2>Who am I?</h2>
 <div class="columns">
-<div class="column" style="width:50%;">
-<p><img data-src="images/REDCapTidieR/whoami.png" width="300"></p>
-</div><div class="column" style="width:50%;">
+<div class="column" style="width:60%;">
+<p><img data-src="images/REDCapTidieR/hexes.png" width="500"></p>
+</div><div class="column" style="width:40%;">
 <ul>
-<li>Data Scientist in CGT DataOps
-<ul>
+<li>Data Scientist in CGT DataOps</li>
 <li>5 years at CHOP</li>
 <li>Engineering background</li>
-</ul></li>
 <li>Two fuzzy coworkers</li>
 <li>Trying to implement <code>quarto</code> today</li>
 </ul>
@@ -459,10 +462,8 @@
 <ul>
 <li>Free<sup>1</sup> database solution for research</li>
 <li>Secure and accessible from a web browser</li>
-<li>Can collect “any type of data in any environment”
-<ul>
+<li>Can collect “any type of data in any environment”</li>
 <li>Particularly useful for compliance with 21 CFR Part 11, HIPAA, etc.</li>
-</ul></li>
 <li>Requires little to get up and running, but offers complexity as needed</li>
 </ul>
 <aside class="notes">
@@ -606,31 +607,221 @@ $ super_hero_powers_complete  &lt;dbl&gt; NA, 0, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 
           display:block!important;
       }</style></aside>
 </section>
-<section id="superheroes-redcap-overview-1" class="slide level2 smaller">
+<section id="superheroes-redcap-overview-1" class="slide level2 smaller scrollable">
 <h2>SuperHeroes REDCap Overview</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="co"># View first 10 entries of SuperHeroes db tibble</span></span>
 <span id="cb3-2"><a href="#cb3-2"></a>superheroes_db <span class="sc">%&gt;%</span> </span>
 <span id="cb3-3"><a href="#cb3-3"></a>  <span class="fu">head</span>(<span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 10 × 16
-   record_id redcap_r…¹ redca…² name  gender eye_c…³ race  hair_…⁴ height weight
-       &lt;dbl&gt; &lt;chr&gt;        &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt;  &lt;chr&gt;   &lt;chr&gt; &lt;chr&gt;    &lt;dbl&gt;  &lt;dbl&gt;
- 1         0 &lt;NA&gt;            NA A-Bo… Male   yellow  Human No Hair    203    441
- 2         0 super_her…       1 &lt;NA&gt;  &lt;NA&gt;   &lt;NA&gt;    &lt;NA&gt;  &lt;NA&gt;        NA     NA
- 3         0 super_her…       2 &lt;NA&gt;  &lt;NA&gt;   &lt;NA&gt;    &lt;NA&gt;  &lt;NA&gt;        NA     NA
- 4         0 super_her…       3 &lt;NA&gt;  &lt;NA&gt;   &lt;NA&gt;    &lt;NA&gt;  &lt;NA&gt;        NA     NA
- 5         0 super_her…       4 &lt;NA&gt;  &lt;NA&gt;   &lt;NA&gt;    &lt;NA&gt;  &lt;NA&gt;        NA     NA
- 6         0 super_her…       5 &lt;NA&gt;  &lt;NA&gt;   &lt;NA&gt;    &lt;NA&gt;  &lt;NA&gt;        NA     NA
- 7         0 super_her…       6 &lt;NA&gt;  &lt;NA&gt;   &lt;NA&gt;    &lt;NA&gt;  &lt;NA&gt;        NA     NA
- 8         0 super_her…       7 &lt;NA&gt;  &lt;NA&gt;   &lt;NA&gt;    &lt;NA&gt;  &lt;NA&gt;        NA     NA
- 9         1 &lt;NA&gt;            NA Abe … Male   blue    Icth… No Hair    191     65
-10         1 super_her…       1 &lt;NA&gt;  &lt;NA&gt;   &lt;NA&gt;    &lt;NA&gt;  &lt;NA&gt;        NA     NA
-# … with 6 more variables: publisher &lt;chr&gt;, skin_color &lt;chr&gt;, alignment &lt;chr&gt;,
-#   heroes_information_complete &lt;dbl&gt;, power &lt;chr&gt;,
-#   super_hero_powers_complete &lt;dbl&gt;, and abbreviated variable names
-#   ¹​redcap_repeat_instrument, ²​redcap_repeat_instance, ³​eye_color, ⁴​hair_color
-# ℹ Use `colnames()` to see all variable names</code></pre>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+
+<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:500px; overflow-x: scroll; width:100%; "><table style="width:20%; font-size: 14px; width: auto !important; margin-left: auto; margin-right: auto;" class="table table-striped table-hover table-bordered">
+ <thead>
+  <tr>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> record_id </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> redcap_repeat_instrument </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> redcap_repeat_instance </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> name </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> gender </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> eye_color </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> race </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> hair_color </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> height </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> weight </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> publisher </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> skin_color </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> alignment </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> heroes_information_complete </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> power </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> super_hero_powers_complete </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> <span style="     color: black !important;">0</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">A-Bomb</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Male</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">yellow</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Human</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">No Hair</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">203</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">441</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Marvel Comics</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">-</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">good</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">0</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> <span style="     color: black !important;">0</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">super_hero_powers</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">1</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Accelerated Healing</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">0</span> </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> <span style="     color: black !important;">0</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">super_hero_powers</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">2</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Durability</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">0</span> </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> <span style="     color: black !important;">0</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">super_hero_powers</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">3</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Longevity</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">0</span> </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> <span style="     color: black !important;">0</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">super_hero_powers</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">4</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Super Strength</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">0</span> </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> <span style="     color: black !important;">0</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">super_hero_powers</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">5</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Stamina</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">0</span> </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> <span style="     color: black !important;">0</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">super_hero_powers</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">6</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Camouflage</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">0</span> </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> <span style="     color: black !important;">0</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">super_hero_powers</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">7</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Self-Sustenance</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">0</span> </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> <span style="     color: black !important;">1</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Abe Sapien</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Male</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">blue</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Icthyo Sapien</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">No Hair</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">191</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">65</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Dark Horse Comics</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">blue</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">good</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">0</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> <span style="     color: black !important;">1</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">super_hero_powers</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">1</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Agility</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">0</span> </td>
+  </tr>
+</tbody>
+</table></div>
+
 </div>
 </div>
 <aside class="notes">
@@ -678,21 +869,82 @@ $ super_hero_powers_complete  &lt;dbl&gt; NA, 0, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 
 <section id="superheroes-redcap-overview-3" class="slide level2 smaller">
 <h2>SuperHeroes REDCap Overview</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a>superheroes_db <span class="sc">%&gt;%</span> </span>
-<span id="cb5-2"><a href="#cb5-2"></a>  <span class="fu">filter</span>(record_id <span class="sc">==</span> <span class="dv">0</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb5-3"><a href="#cb5-3"></a>  <span class="fu">select</span>(record_id, <span class="fu">contains</span>(<span class="st">"redcap_"</span>), name, power)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 8 × 5
-  record_id redcap_repeat_instrument redcap_repeat_instance name   power        
-      &lt;dbl&gt; &lt;chr&gt;                                     &lt;dbl&gt; &lt;chr&gt;  &lt;chr&gt;        
-1         0 &lt;NA&gt;                                         NA A-Bomb &lt;NA&gt;         
-2         0 super_hero_powers                             1 &lt;NA&gt;   Accelerated …
-3         0 super_hero_powers                             2 &lt;NA&gt;   Durability   
-4         0 super_hero_powers                             3 &lt;NA&gt;   Longevity    
-5         0 super_hero_powers                             4 &lt;NA&gt;   Super Streng…
-6         0 super_hero_powers                             5 &lt;NA&gt;   Stamina      
-7         0 super_hero_powers                             6 &lt;NA&gt;   Camouflage   
-8         0 super_hero_powers                             7 &lt;NA&gt;   Self-Sustena…</code></pre>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a>superheroes_db <span class="sc">%&gt;%</span> </span>
+<span id="cb4-2"><a href="#cb4-2"></a>  <span class="fu">filter</span>(record_id <span class="sc">==</span> <span class="dv">0</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb4-3"><a href="#cb4-3"></a>  <span class="fu">select</span>(record_id, <span class="fu">contains</span>(<span class="st">"redcap_"</span>), name, power) <span class="sc">%&gt;%</span> </span>
+<span id="cb4-4"><a href="#cb4-4"></a>  <span class="fu">render_kable</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+
+<table style="width:20%; font-size: 14px; width: auto !important; margin-left: auto; margin-right: auto;" class="table table-striped table-hover table-bordered">
+ <thead>
+  <tr>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> record_id </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> redcap_repeat_instrument </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> redcap_repeat_instance </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> name </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> power </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> <span style="     color: black !important;">0</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">A-Bomb</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> <span style="     color: black !important;">0</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">super_hero_powers</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">1</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Accelerated Healing</span> </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> <span style="     color: black !important;">0</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">super_hero_powers</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">2</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Durability</span> </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> <span style="     color: black !important;">0</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">super_hero_powers</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">3</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Longevity</span> </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> <span style="     color: black !important;">0</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">super_hero_powers</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">4</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Super Strength</span> </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> <span style="     color: black !important;">0</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">super_hero_powers</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">5</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Stamina</span> </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> <span style="     color: black !important;">0</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">super_hero_powers</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">6</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Camouflage</span> </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> <span style="     color: black !important;">0</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">super_hero_powers</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">7</span> </td>
+   <td style="text-align:left;"> <span style=" font-weight: bold;    color: red !important;">NA</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Self-Sustenance</span> </td>
+  </tr>
+</tbody>
+</table>
+
 </div>
 </div>
 <div class="fragment">
