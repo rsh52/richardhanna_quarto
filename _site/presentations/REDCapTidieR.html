@@ -395,24 +395,18 @@
   <p class="date">2022-08-18</p>
 </section>
 
-<section id="who-am-i" class="slide level2">
-<h2>Who am I?</h2>
-<div class="columns">
-<div class="column" style="width:60%;">
-<p><img data-src="images/REDCapTidieR/hexes.png" width="500"></p>
-</div><div class="column" style="width:40%;">
-<ul>
-<li>Data Scientist in CGT DataOps</li>
-<li>5 years at CHOP</li>
-<li>Engineering background</li>
-<li>Two fuzzy coworkers</li>
-<li>Trying to implement <code>quarto</code> today</li>
-</ul>
+<section id="r-medicine-2022" class="slide level2 smaller">
+<h2>R / Medicine 2022</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="https://events.linuxfoundation.org/r-medicine/"><img data-src="images/REDCapTidieR/r-medicine-logo.png"></a></p>
+</figure>
 </div>
-</div>
+<blockquote>
+<p><code>https://events.linuxfoundation.org/r-medicine/</code></p>
+</blockquote>
 <aside class="notes">
-<p>Hi everyone! Thank you for joining me today, my name is Rich Hanna and I am a data scientist in the Cell &amp; Gene Therapy Data Operations team. For those of you listening in or may not be able to see me, that’s me so you can place a face to the voice. I joined CHOP about 5 years ago coming from a mechanical engineering background and about 4 years ago found my way into coding with R to solve problems, make products, you name it. Around that same time I met Stephan Kadauke who leads the DataOps team and helped found the R User Group and that more or less brings me in front of you today.</p>
-<p>Around the same time I started R I was working with REDCap, and I found that the two go hand in hand rather well. Today I’m excited to talk to you about a package we’re developing that, for those of you also working with both R and REDCap, may hopefully become a useful tool to help your data analytics processes.</p>
+<p>Real quick, before we jump into our talk wanted to give a brief announcement to remind or alert everyone to the upcoming R / Medicine conference. This will be an entirely virtual conference with the first two days dedicated to some excellent workshops and a series of speakers for the latter two, all of which can be found on the schedule at the website here.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -425,12 +419,83 @@
           display:block!important;
       }</style></aside>
 </section>
+<section id="r-medicine-2022---workshops" class="slide level2 smaller">
+<h2>R / Medicine 2022 - Workshops</h2>
+
+<img data-src="images/REDCapTidieR/rmedicine_sched.png" class="r-stretch quarto-figure-center"><blockquote>
+<p>Discount Code: <strong>RMED22CHOP</strong> for 10% off!</p>
+</blockquote>
+</section>
+<section id="r-medicine-2022---speaker-highlights" class="slide level2 smaller">
+<h2>R / Medicine 2022 - Speaker Highlights</h2>
+<ul>
+<li><strong>Stephan Kadauke (CHOP CGT DataOps)</strong>
+<ul>
+<li><span style="color: #008cba;"><em>R/Medicine 101: Intro to R for Clinical Data</em></span></li>
+<li><span style="color: #008cba;"><em>Should we Teach Data Science to Physicians-in-Training?</em></span></li>
+</ul></li>
+<li><strong>Joy Payton (CHOP Arcus Education)</strong>
+<ul>
+<li><span style="color: #008cba;"><em>Using Public Data and Maps for Powerful Data Visualizations</em></span></li>
+</ul></li>
+<li><strong>Lihai Song (CHOP Data Scientist)</strong>
+<ul>
+<li><span style="color: #008cba;"><em>Automation of statistics summary and analysis using R Shiny</em></span></li>
+</ul></li>
+<li><strong>Jaclyn Janis (RStudio/Posit, CHOP Representative)</strong>
+<ul>
+<li><span style="color: #008cba;"><em>It’s time for nurses to learn R</em></span></li>
+</ul></li>
+</ul>
+<aside class="notes">
+<p>We also have some familiar faces who will be delivering workdshops and talks including Stephan Kadauke, Joy Payton, and Lihai Song from CHOP as well as Jaclyn Janis our customer success rep from RStudio (now known as Posit).</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="who-am-i" class="slide level2">
+<h2>Who am I?</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<p><img data-src="images/REDCapTidieR/hexes.png" width="500"></p>
+</div><div class="column" style="width:40%;">
+<ul>
+<li>CGT DataOps Data Scientist</li>
+<li>5 years at CHOP</li>
+<li>Engineering background</li>
+<li>Trying to implement <code>quarto</code> today<sup>1</sup></li>
+</ul>
+</div>
+</div>
+<aside class="notes">
+<p>I am a data scientist in the Cell &amp; Gene Therapy Data Operations team. I joined CHOP about 5 years ago coming from a mechanical engineering background and about 4 years ago found my way into coding with R to solve problems, make products, you name it. Around that same time I met Stephan Kadauke who leads the DataOps team and helped found the R User Group and that more or less brings me in front of you today.</p>
+<p>Around the same time I started using R I was working with REDCap, and I found that the two go hand in hand rather well. Today I’m excited to talk to you about a package we’re developing that, for those of you also working with both R and REDCap, may hopefully become a useful tool to help your analytic processes.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<aside><ol class="aside-footnotes"><li id="fn1" role="doc-endnote"><p>Huge shoutout to Jake Riley for helping troubleshoot <code>quarto</code> and <code>kableExtra</code></p></li></ol></aside></section>
 <section id="agenda" class="slide level2">
 <h2>Agenda</h2>
 <p>In today’s talk we will:</p>
 <ul>
-<li>Review REDCap as a database solution 💡</li>
-<li>Review <code>REDCapR</code> as an API 🔌</li>
+<li>Review what REDCap is 💡</li>
+<li>Review <code>REDCapR</code> as an extraction tool for the API 🔌</li>
 <li>Implement <code>REDCapTidieR</code> to make our lives easier 🧹</li>
 </ul>
 <p>What you need:</p>
@@ -481,8 +546,8 @@
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-<aside><ol class="aside-footnotes"><li id="fn1" role="doc-endnote"><p>For participants of the REDCap consortium</p></li></ol></aside></section>
-<section id="what-is-redcap-1" class="slide level2">
+<aside><ol class="aside-footnotes"><li id="fn2" role="doc-endnote"><p>For participants of the REDCap consortium</p></li></ol></aside></section>
+<section id="what-is-redcap-1" class="slide level2 smaller">
 <h2>What is REDCap?</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
@@ -491,10 +556,17 @@
 <p>Front-End Data Entry UI <img data-src="images/REDCapTidieR/redcap_data_entry_example1.png" width="800"></p>
 </div>
 </div>
+<blockquote>
+<p>REDCap functions as a large data table, but data distribution can be complex depending on architectural choices.</p>
+</blockquote>
+<blockquote>
+<p>Repeating instances can create headaches on the backend.</p>
+</blockquote>
 <aside class="notes">
 <p>The REDCap front-end consists of many tools but the two we’re interested in are the top-level database display, known as the record status dashboard, and the actual area that data entry personnel enter data.</p>
-<p>Here on the left is a visual representation of what essentially amounts to a tabular structure. We have a record ID, and two “instruments” with underlying data. The first is a single sub-table or “form”, while the second is stacked or “repeating.”</p>
+<p>Here on the left is a visual representation of what essentially amounts to a tabular structure. We have a record ID, and two “instruments” with underlying data. The first is a single sub-table or “form”, while the second is stacked or “repeating.” We’ll touch more on these shortly but they can be a bit cumbersome to work with.</p>
 <p>On the right is a drilled-down display where the data gets entered. Here we see all of the Heroes Information associated with Record ID number 0. You can think of these as the column data elements tied to a single row for the hero A-Bomb.</p>
+<p>Because of this, as mentioned earlier, REDCap can be about as complex as you want or need it to be.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -515,11 +587,53 @@
 <p>Open source dataset from <a href="https://www.superherodb.com/">SuperHeroDB</a> and available on <a href="https://www.kaggle.com/datasets/claudiodavi/superhero-set">Kaggle</a>. It contains two tables:</p>
 <ul>
 <li>Super Hero Information (i.e.&nbsp;demographic data)</li>
-<li>Super Hero Powers (i.e.&nbsp;<code>TRUE</code>/<code>FALSE</code> if a hero has a named power)</li>
+<li>Super Hero Powers (i.e.&nbsp;<code>TRUE</code>/<code>FALSE</code> for specific powers)</li>
 </ul>
 <p><img data-src="images/REDCapTidieR/super_heroes_border.webp"></p>
 <aside class="notes">
-<p>So by now you’ve noticed we aren’t using patient data, so it’s worth briefly touching on the data we are using. We will be using open source super hero data from SuperHeroDB, delivered via Kaggle. There are two CSV tables available where one contains Hero Information like name, height, weight, eye color, etc. and the other contains a wide table of hero name to a boolean of power name.</p>
+<p>So by now you’ve noticed we aren’t using patient data, so it’s worth briefly touching on the data we are using. We will be using open source super hero data from SuperHeroDB, delivered via Kaggle. There are two CSV tables available where one contains Hero Information like name, height, weight, eye color, etc. and the other contains a wide table pairing hero names to a boolean of specific powers.</p>
+<p>Next let’s look at how we’re actually going to extract this data using the <code>REDCapR</code> package</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="on-the-shoulders-of-giants" class="slide level2 smaller">
+<h2>On the Shoulders of Giants</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<p>Some core <code>REDCapR</code> functions:</p>
+<ul>
+<li><code>redcap_read_oneshot</code></li>
+<li><code>redcap_metadata_read</code></li>
+<li><code>redcap_event_instruments</code>
+<ul>
+<li>New as of <code>v1.1.0</code></li>
+</ul></li>
+</ul>
+<p>Requirements:</p>
+<ul>
+<li>Active REDCap project</li>
+<li>A REDCap API URI<sup>1</sup></li>
+<li>API token<sup>2</sup></li>
+</ul>
+</div><div class="column" style="width:40%;">
+<div class="quarto-figure quarto-figure-right">
+<figure>
+<p><img data-src="images/REDCapTidieR/giants.png" width="1500"></p>
+</figure>
+</div>
+</div>
+</div>
+<aside class="notes">
+<p>We’ve been using REDCapR extensively for a while, and at it’s core the package does all the heavy lifting required to extract data and metadata on a REDCap project from the R console. If we all stand on the shoulders of giants, then <code>REDCapR</code> is the giant that REDCapTidieR has to thank.</p>
 <p>Let’s assume I’ve already done the work of preparing and importing this into a REDCap database so we can see what an export of the data looks like via REDCapR.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -532,35 +646,9 @@
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-</section>
-<section id="introducing-redcapr" class="slide level2">
-<h2>Introducing <code>REDCapR</code></h2>
-<p>Some core <code>REDCapR</code> functions:</p>
-<ul>
-<li><code>redcap_read_oneshot</code></li>
-<li><code>redcap_metadata_read</code></li>
-<li><code>redcap_event_instruments</code></li>
-</ul>
-<p>Requirements:</p>
-<ul>
-<li>User API privileges</li>
-</ul>
-<aside class="notes">
-<p>We’ve been using REDCapR extensively for a while, and at it’s core the package does all the heavy lifting required to extract data and metadata on a REDCap project all within the R console. If we stand on the shoulders of giants, then REDCapR is the giant that REDCapTidieR has to thank.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="superheroes-redcap-overview" class="slide level2 smaller">
-<h2>SuperHeroes REDCap Overview</h2>
+<aside><ol class="aside-footnotes"><li id="fn3" role="doc-endnote"><p>Such as <code>https://redcap.chop.edu/api/</code></p></li><li id="fn4" role="doc-endnote"><p>Requires user API and Read/Write access</p></li></ol></aside></section>
+<section id="superheroes-output" class="slide level2 smaller">
+<h2>SuperHeroes Output</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="co"># Load applicable libraries:</span></span>
 <span id="cb1-2"><a href="#cb1-2"></a><span class="fu">library</span>(dplyr)</span>
@@ -607,8 +695,8 @@ $ super_hero_powers_complete  &lt;dbl&gt; NA, 0, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 
           display:block!important;
       }</style></aside>
 </section>
-<section id="superheroes-redcap-overview-1" class="slide level2 smaller scrollable">
-<h2>SuperHeroes REDCap Overview</h2>
+<section id="superheroes-output-1" class="slide level2 smaller scrollable">
+<h2>SuperHeroes Output</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="co"># View first 10 entries of SuperHeroes db tibble</span></span>
 <span id="cb3-2"><a href="#cb3-2"></a>superheroes_db <span class="sc">%&gt;%</span> </span>
@@ -838,8 +926,8 @@ $ super_hero_powers_complete  &lt;dbl&gt; NA, 0, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 
           display:block!important;
       }</style></aside>
 </section>
-<section id="superheroes-redcap-overview-2" class="slide level2 smaller">
-<h2>SuperHeroes REDCap Overview</h2>
+<section id="redcap-repeating-instruments" class="slide level2 smaller">
+<h2>REDCap Repeating Instruments</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
 <p>Record Status Dashboard <img data-src="images/REDCapTidieR/super_dashboard_repeat.png"></p>
@@ -866,23 +954,24 @@ $ super_hero_powers_complete  &lt;dbl&gt; NA, 0, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 
           display:block!important;
       }</style></aside>
 </section>
-<section id="superheroes-redcap-overview-3" class="slide level2 smaller">
-<h2>SuperHeroes REDCap Overview</h2>
+<section id="superheroes-repeating-output" class="slide level2 smaller">
+<h2>SuperHeroes Repeating Output</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a>superheroes_db <span class="sc">%&gt;%</span> </span>
 <span id="cb4-2"><a href="#cb4-2"></a>  <span class="fu">filter</span>(record_id <span class="sc">==</span> <span class="dv">0</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb4-3"><a href="#cb4-3"></a>  <span class="fu">select</span>(record_id, <span class="fu">contains</span>(<span class="st">"redcap_"</span>), name, power) <span class="sc">%&gt;%</span> </span>
-<span id="cb4-4"><a href="#cb4-4"></a>  <span class="fu">render_kable</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb4-3"><a href="#cb4-3"></a>  <span class="fu">select</span>(record_id, <span class="fu">contains</span>(<span class="st">"redcap_"</span>), name, power)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
 <div class="cell-output-display">
 
-<table style="width:20%; font-size: 14px; width: auto !important; margin-left: auto; margin-right: auto;" class="table table-striped table-hover table-bordered">
+<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:250px; overflow-x: scroll; width:100%; "><table style="width:20%; font-size: 14px; width: auto !important; margin-left: auto; margin-right: auto;" class="table table-striped table-hover table-bordered">
  <thead>
   <tr>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> record_id </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> redcap_repeat_instrument </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> redcap_repeat_instance </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> name </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> power </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> record_id </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> redcap_repeat_instrument </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> redcap_repeat_instance </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> name </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> power </th>
   </tr>
  </thead>
 <tbody>
@@ -943,13 +1032,13 @@ $ super_hero_powers_complete  &lt;dbl&gt; NA, 0, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 
    <td style="text-align:left;"> <span style="     color: black !important;">Self-Sustenance</span> </td>
   </tr>
 </tbody>
-</table>
+</table></div>
 
 </div>
 </div>
 <div class="fragment">
 <blockquote>
-<p><code>record_id</code>, <code>redcap_repeat_instrument</code>, and <code>recap_repeat_instance</code> form a <strong>composite key</strong> once REDCap databases make use of repeating instances.</p>
+<p><code>record_id</code>, <code>redcap_repeat_instrument</code>, and <code>recap_repeat_instance</code> form a <strong>composite key</strong>.</p>
 </blockquote>
 </div>
 <div class="fragment">
@@ -974,9 +1063,355 @@ $ super_hero_powers_complete  &lt;dbl&gt; NA, 0, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
+</section>
+<section id="the-problem" class="slide level2">
+<h2>The Problem</h2>
+<ul>
+<li>Empty data introduced as an artifact of repeating instruments</li>
+<li>Data export is often times large and unwieldy</li>
+<li>Missing metadata linking field association to instruments</li>
+<li>Row identification is confusing and inconsistent</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/REDCapTidieR/theproblem.png"></p>
+</figure>
+</div>
+<aside class="notes">
+<p>There are a number of problems with this which anyone here who has worked with repeating instruments or longitudinal REDCap projects has probably run into.</p>
+<p>First: empty data shown by all those <code>NA</code> values is not actually indicative of missingness, instead this is an artifact introduced as a side effect of having these composite keys tied to repeating instruments. This can force analysts to go back and either recreate data they need or jump through hoops to make up for data sparsity.</p>
+<p>Second: Data exports often wind up becoming much larger than anticipated because of how many rows get introduced, making exports messy and unwieldy.</p>
+<p>Third: Without an innate link to the metadata, it isn’t possible from the data export to determine what forms are linked to what instrument. This can be a problem in longitudinal studies when you want to reference variables that only appear in specific events.</p>
+<p>Fourth: Row identification is confusing and inconsistent. As we saw, composite keys make for variable row identifiers that may or may not contain all of the data analysts need.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="introducing-redcaptidier" class="slide level2">
+<h2>Introducing <code>REDCapTidieR</code></h2>
+<p>At a glance:</p>
+<ul>
+<li>Built on top of <code>REDCapR</code></li>
+<li>Takes two inputs: REDCap URI and REDCap API token</li>
+<li>Returns a set of tidy <code>tibble</code>s
+<ul>
+<li>One for each REDCap instrument</li>
+</ul></li>
+</ul>
+<aside class="notes">
+<p>So we went over the problem, now let’s bring in the solution: <code>REDCapTidieR</code>. At a glance, there are only two main functions relying on the same two inputs from <code>REDCapR</code>: a URI and a valid API token. Under the hood, the package relies on <code>REDCapR</code> for all data extraction but instead does all the work of taking that large, messy table and turning it into a series of <strong>tidy tibble</strong>s for each project instrument.</p>
+<ul>
+<li><code>tibble</code>s FYI are just tidy ways of displaying dataframes.</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="revisiting-superheroes" class="slide level2 smaller">
+<h2>Revisiting Superheroes</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a><span class="fu">library</span>(REDCapTidieR)</span>
+<span id="cb5-2"><a href="#cb5-2"></a>superheroes_tidy <span class="ot">&lt;-</span> <span class="fu">read_redcap_tidy</span>(redcap_uri, token)</span>
+<span id="cb5-3"><a href="#cb5-3"></a></span>
+<span id="cb5-4"><a href="#cb5-4"></a>superheroes_tidy</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 2 × 3
+  names              data             structure   
+  &lt;chr&gt;              &lt;list&gt;           &lt;chr&gt;       
+1 super_hero_powers  &lt;df [5,966 × 3]&gt; repeating   
+2 heroes_information &lt;df [734 × 11]&gt;  nonrepeating</code></pre>
+</div>
+</div>
+<div class="fragment">
+<div class="columns">
+<div class="column" style="width:60%;">
+<p>Non-Repeating Hero Information</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a>superheroes_tidy<span class="sc">$</span>data[[<span class="dv">2</span>]] <span class="sc">%&gt;%</span> </span>
+<span id="cb7-2"><a href="#cb7-2"></a>  <span class="fu">head</span>(<span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
 
-<p><img src="../presentations/images/cgtdataops-bkgrnd_removed.png" class="slide-logo"></p>
-<div class="footer footer-default">
+<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:300px; overflow-x: scroll; width:100%; "><table style="width:20%; font-size: 12px; width: auto !important; margin-left: auto; margin-right: auto;" class="table table-striped table-hover table-bordered">
+ <thead>
+  <tr>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> record_id </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> name </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> gender </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> eye_color </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> race </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> hair_color </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> height </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> weight </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> publisher </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> skin_color </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> alignment </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> <span style="     color: black !important;">0</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">A-Bomb</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Male</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">yellow</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Human</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">No Hair</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">203</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">441</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Marvel Comics</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">-</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">good</span> </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> <span style="     color: black !important;">1</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Abe Sapien</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Male</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">blue</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Icthyo Sapien</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">No Hair</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">191</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">65</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Dark Horse Comics</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">blue</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">good</span> </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> <span style="     color: black !important;">2</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Abin Sur</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Male</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">blue</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Ungaran</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">No Hair</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">185</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">90</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">DC Comics</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">red</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">good</span> </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> <span style="     color: black !important;">3</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Abomination</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Male</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">green</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Human / Radiation</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">No Hair</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">203</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">441</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Marvel Comics</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">-</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">bad</span> </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> <span style="     color: black !important;">4</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Abraxas</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Male</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">blue</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Cosmic Entity</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Black</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">-99</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">-99</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Marvel Comics</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">-</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">bad</span> </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> <span style="     color: black !important;">5</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Absorbing Man</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Male</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">blue</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Human</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">No Hair</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">193</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">122</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Marvel Comics</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">-</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">bad</span> </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> <span style="     color: black !important;">6</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Adam Monroe</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Male</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">blue</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">-</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Blond</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">-99</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">-99</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">NBC - Heroes</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">-</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">good</span> </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> <span style="     color: black !important;">7</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Adam Strange</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Male</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">blue</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Human</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Blond</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">185</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">88</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">DC Comics</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">-</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">good</span> </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> <span style="     color: black !important;">8</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Agent 13</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Female</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">blue</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">-</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Blond</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">173</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">61</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Marvel Comics</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">-</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">good</span> </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> <span style="     color: black !important;">9</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Agent Bob</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Male</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">brown</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Human</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Brown</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">178</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">81</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Marvel Comics</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">-</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">good</span> </td>
+  </tr>
+</tbody>
+</table></div>
+
+</div>
+</div>
+</div><div class="column" style="width:40%;">
+<p>Repeating Hero Powers</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a>superheroes_tidy<span class="sc">$</span>data[[<span class="dv">1</span>]] <span class="sc">%&gt;%</span> </span>
+<span id="cb8-2"><a href="#cb8-2"></a>  <span class="fu">head</span>(<span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+
+<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:300px; overflow-x: scroll; width:100%; "><table style="width:20%; font-size: 12px; width: auto !important; margin-left: auto; margin-right: auto;" class="table table-striped table-hover table-bordered">
+ <thead>
+  <tr>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> record_id </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> redcap_repeat_instance </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> power </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> <span style="     color: black !important;">0</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">1</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Accelerated Healing</span> </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> <span style="     color: black !important;">0</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">2</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Durability</span> </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> <span style="     color: black !important;">0</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">3</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Longevity</span> </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> <span style="     color: black !important;">0</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">4</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Super Strength</span> </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> <span style="     color: black !important;">0</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">5</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Stamina</span> </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> <span style="     color: black !important;">0</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">6</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Camouflage</span> </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> <span style="     color: black !important;">0</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">7</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Self-Sustenance</span> </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> <span style="     color: black !important;">1</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">1</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Agility</span> </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> <span style="     color: black !important;">1</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">2</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Accelerated Healing</span> </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> <span style="     color: black !important;">1</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">3</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Cold Resistance</span> </td>
+  </tr>
+</tbody>
+</table></div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<aside class="notes">
+<p>The core <code>REDCapTidieR</code> function is <code>read_redcap_tidy</code>, and here we can see the output which might look a little odd. What we have is a <code>tibble</code> where on the left we have the raw names of the instruments from REDCap, these were the two colorful columns on the Record Status Dashboard. On the right is the structure, i.e.&nbsp;“repeating” or “nonrepeating.”</p>
+<p>Here in the middle, under <code>data</code> is where processed data resides in a list column.</p>
+<p>If we expand the list column elements we can take a deeper look at the nonrepeating and repeating dataframe outputs. There are a number of things worth noting here:</p>
+<ol type="1">
+<li><code>redcap_repeat_</code> variables only exist under the repeating instrument dataframes</li>
+</ol>
+<ul>
+<li>This means under the hero information table, each hero gets one row instead of many like we saw originally</li>
+</ul>
+<ol start="2" type="1">
+<li>There are no artificially created <code>NA</code> values, no missing data artifacts</li>
+<li>Only the variables that are tied to the instrument appear</li>
+<li>Everything needed for joining the data desired is available in each table</li>
+</ol>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="future-work" class="slide level2">
+<h2>Future Work</h2>
+<ul>
+<li><code>raw_or_label</code> compatibility</li>
+</ul>
+
+
+<img src="../presentations/images/cgtdataops-bkgrnd_removed.png" class="slide-logo r-stretch"><div class="footer footer-default">
 
 </div>
 </section>
