@@ -67,6 +67,8 @@ render_kable <- function(df, font_size = 14, na_handling = TRUE, ...){
 I am a data scientist in the Cell & Gene Therapy Data Operations team. I joined CHOP about 5 years ago coming from a mechanical engineering background and about 4 years ago found my way into coding with R to solve problems, make products, you name it. Around that same time I met Stephan Kadauke who leads the DataOps team and helped found the R User Group and that more or less brings me in front of you today.
 
 Around the same time I started using R I was working with REDCap, and I found that the two go hand in hand rather well. Today I'm excited to talk to you about a package we're developing that, for those of you also working with both R and REDCap, may hopefully become a useful tool to help your analytic processes.
+
+A quick shoutout also to Jake Riley. This is my first time doing a quarto presentation (quarto is the new rmarkdown) and he helped considerably with my frustrations over getting tables to render better in the slides. So thanks Jake!
 :::
 
 ## R / Medicine 2022 {.smaller}
@@ -88,14 +90,15 @@ Real quick, before we jump into our talk wanted to give a brief announcement to 
 ## R / Medicine 2022 - Speaker Highlights {.smaller}
 
 -   **Stephan Kadauke (CHOP CGT DataOps)**
--   [*R/Medicine 101: Intro to R for Clinical Data*]{style="color: #008cba;"}
--   [*Should we Teach Data Science to Physicians-in-Training?*]{style="color: #008cba;"}
+    -   [*R/Medicine 101: Intro to R for Clinical Data*]{style="color: #008cba;"}
+
+    -   [*Should we Teach Data Science to Physicians-in-Training?*]{style="color: #008cba;"}
 -   **Joy Payton (CHOP Arcus Education)**
--   [*Using Public Data and Maps for Powerful Data Visualizations*]{style="color: #008cba;"}
+    -   [*Using Public Data and Maps for Powerful Data Visualizations*]{style="color: #008cba;"}
 -   **Lihai Song (CHOP Data Scientist)**
--   [*Automation of statistics summary and analysis using R Shiny*]{style="color: #008cba;"}
+    -   [*Automation of statistics summary and analysis using R Shiny*]{style="color: #008cba;"}
 -   **Jaclyn Janis (RStudio/Posit, CHOP Representative)**
--   [*It's time for nurses to learn R*]{style="color: #008cba;"}
+    -   [*It's time for nurses to learn R*]{style="color: #008cba;"}
 
 ::: notes
 We also have some familiar faces who will be delivering workdshops and talks including Stephan Kadauke, Joy Payton, and Lihai Song from CHOP as well as Jaclyn Janis our customer success rep from RStudio (now known as Posit).
@@ -194,7 +197,7 @@ Some core `REDCapR` functions:
 -   `redcap_read_oneshot`
 -   `redcap_metadata_read`
 -   `redcap_event_instruments`
--   New as of `v1.1.0`
+    -   New as of `v1.1.0`
 
 Requirements:
 
@@ -215,6 +218,8 @@ Requirements:
 ::: notes
 We've been using REDCapR extensively for a while, and at it's core the package does all the heavy lifting required to extract data and metadata on a REDCap project from the R console. If we all stand on the shoulders of giants, then `REDCapR` is the giant that REDCapTidieR has to thank.
 
+To get started with API calls through these packages, you need a couple of things. First, an active REDCap database or project. Second, a REDCap API URI (in our case redcap.chop.edu/api/). Third an API token, since this is associated to your user rights you need to make sure you have the appropriate read/write privileges.
+
 Let's assume I've already done the work of preparing and importing this into a REDCap database so we can see what an export of the data looks like via REDCapR.
 :::
 
@@ -227,7 +232,6 @@ library(dplyr)
 library(REDCapR)
 
 superheroes_db <- redcap_read_oneshot(redcap_uri, token, verbose = FALSE)$data
-superheroes_meta <- redcap_metadata_read(redcap_uri, token, verbose = FALSE)$data
 
 superheroes_db %>% 
   glimpse()
@@ -236,7 +240,11 @@ superheroes_db %>%
 Remember `redcap_repeat_instrument` and `redcap_repeat_instance`, they're coming back!
 
 ::: notes
-Let's first load some applicable libraries and extract both the data and metadata of the database. A glimpse of the database shows us 6,700 rows with 16 columns, but oddly we seem to have a lot of `NA` data. And what might be a little more confusing is that our record_IDs are being repeated a number of times. Let's look at a tibble structure to see if we can piece why this is.
+Let's first load some applicable libraries and extract both the data and metadata of the database. A glimpse of the database shows us 6,700 rows with 16 columns, but oddly we seem to have a lot of `NA`s/missing data. And what might be a little more confusing is that our record_IDs are being repeated a number of times.
+
+Lastly, there are two variables here (`redcap_repeat_instrument` and `redcap_repeat_instance`) which weren't in our original database from the user side. They'll be coming up a lot today.
+
+Let's look at a tibble structure to see if we can piece why this is.
 :::
 
 ## SuperHeroes Output {.smaller .scrollable}
@@ -261,7 +269,9 @@ superheroes_db %>%
 ```
 
 ::: notes
-Perhaps still confusing, but we can at least see a pattern here. Now we can notice how all of the `NA`'s trade off with the `redcap_repeat_*` variables. Notice how the first row for `record_id` 0 has all of its hero information filled out, but the repeat variables are `NA`, and then for the remainder of `record_id` 0's rows that behavior reverses.
+Perhaps still confusing, but we can at least see a pattern here. Now we can see how all of the `NA`'s trade off with the `redcap_repeat_*` variables. Notice how the first row for `record_id` 0 has all of its hero information filled out, but the repeat variables are `NA`, and then for the remainder of `record_id` 0's rows that behavior reverses.
+
+I want to call out a few things here, this is the way REDCap presents you with a raw database. It's one massive table, not always the most intuitive, and perhaps not even what we originally expect. This can be very cognitively overloading and a barrier to getting started with working with your data. The introduction of repeating instruments, as shown here, further complicates this.
 :::
 
 ## REDCap Repeating Instruments {.smaller}
@@ -279,13 +289,13 @@ Front-End Data Entry UI ![](images/REDCapTidieR/superpower_repeat_1.png){.fragme
 :::
 
 ::: notes
-Here on the left we have the same record status dashboard but now we have details expanded for two super power forms. Now we can see that not only do super heroes in this database have different powers assigned to them, but they can have variables numbers as well as shown by 7 assigned to A-Bomb while only 3 are assigned to Adam Monroe.
+From the user side, this is what a repeating instance and associated instrument look like. Here on the left we have the same record status dashboard but now we have details expanded for two super power forms. Now we can see that heroes can have multiple powers, and heroes can have a different number of powers assigned to them as shown by 7 assigned to A-Bomb while only 3 are assigned to Adam Monroe.
 
 On the drilled-down UI side, while small (my apologies),
 
 **Next**
 
-we see that A-Bomb's first power is "Accelerated Healing" under instance 1.
+we see that A-Bomb's first power is "Accelerated Healing" under instance 1. The repeating form is a single text box entry field but can be repeated any number of times.
 :::
 
 ## SuperHeroes Repeating Output {.smaller}
@@ -317,7 +327,7 @@ superheroes_db %>%
 :::
 
 ::: notes
-So if we revisit `record_id` 0, our good friend A-Bomb, and select variables of interest we can see here that his hero information is only associated with non-repeating rows while each of his powers information gets a separate row associated with what repeat instrument and instance it belongs to.
+So if we revisit `record_id` 0, and select variables of interest we can see that his hero information is only associated with non-repeating rows while each of his powers information gets a separate row associated with what repeat instrument and instance it belongs to.
 
 **Next**
 
@@ -356,7 +366,7 @@ At a glance:
 -   Built on top of `REDCapR`
 -   Takes two inputs: REDCap URI and REDCap API token
 -   Returns a set of tidy `tibble`s
--   One for each REDCap instrument
+    -   One for each REDCap instrument
 
 ::: notes
 So we went over the problem, now let's bring in the solution: `REDCapTidieR`. At a glance, there are only two main functions relying on the same two inputs from `REDCapR`: a URI and a valid API token. Under the hood, the package relies on `REDCapR` for all data extraction but instead does all the work of taking that large, messy table and turning it into a series of **tidy tibble**s for each project instrument.
@@ -376,7 +386,7 @@ superheroes_tidy
 ```
 
 ::: notes
-The core `REDCapTidieR` function is `read_redcap_tidy`, and here we can see the output which might look a little odd. What we have is a `tibble` where on the left we have the raw names of the instruments from REDCap, these were the two colorful columns on the Record Status Dashboard. On the right is the structure, i.e. "repeating" or "nonrepeating."
+The core `REDCapTidieR` function is `read_redcap_tidy`, and here we can see the output which might look a little odd, but it's definitely less overwhelming than the giant table we saw earier. What we have is a `tibble` where on the left we have the raw names of the instruments from REDCap, these were the two colorful columns on the Record Status Dashboard. On the right is the structure, i.e. "repeating" or "nonrepeating."
 
 Here in the middle, under `data` is where processed data resides in a list column.
 :::
@@ -429,9 +439,9 @@ superheroes_tidy$redcap_data[[1]] %>%
 If we expand the list column elements through indexing, we can take a deeper look at the nonrepeating and repeating dataframe outputs. There are a number of things worth noting here:
 
 1)  First in both of these tables we see there are no artificially generated `NA` artifact values.
-2)  On the left side, the non-repeating table shows that every `record_id` has a single row. On the right are repeating `record_id`s forming a compound key with the `redcap_repeat_instance` which leads me to
-3)  point 3, that`redcap_repeat_` variables only appear in repeating sub tables.
-4)  Additionally only the variables associated with the table will appear in it.
+2)  On the left side, the non-repeating table shows that every `record_id` has a single row. On the right are repeating `record_id`s forming a compound key with the `redcap_repeat_instance`
+3)  Additionally, the `redcap_repeat_` variables only appear in repeating sub tables.
+4)  This means that only the variables associated with the table will appear in it.
 5)  The presence of the primary key in the nonrepeating hero information table, and the compound key in the repeating hero powers table allows for easy joining.
 
 While this example REDCap only has two tables, most are going to have much more and it is very powerful to be able to join only the data you need and trust that the output contains all the relevant information.
@@ -510,6 +520,7 @@ However, indexing isn't always the best way to go about data extraction. So whil
 
 ## `bind_tables` Direct to Environment {.smaller}
 
+The function:
 ```{r}
 #| echo: true
 #| eval: false
@@ -525,6 +536,7 @@ bind_tables <- function(.data,
   bind_tables()
 ```
 
+Clear out our envionrment:
 ```{r}
 #| echo: true
 #| eval: true
@@ -544,6 +556,7 @@ rm(redcap_uri)
 rm(token)
 ```
 
+Reload the `superheroes_tidy` dataset, pipe to `bind_tables`, check environment:
 ```{r}
 #| echo: true
 #| eval: true
@@ -554,9 +567,9 @@ ls.str(envir = globalenv())
 ```
 
 ::: notes
-The second main function we've introduced to `REDCapTidieR` is Stephan's brain child. Using this nice helper function, we can take the table outputs of the `redcap_data` column from our TidieR output and place them directly into the global enviornment or any environment of our choosing.
+The second main function we've introduced to `REDCapTidieR` is Stephan's brain child. Using the `bind_tables` helper function, we can take the table outputs of the `redcap_data` column from our `TidieR` output and place them directly into the global environment or any environment of our choosing.
 
-For those of you who don't know, environments are essentially a variant of lists in R. The most common one you probably work with is the global environment displayed in the panel of your RStudio IDE, but you can also make other environments to call from.
+For those of you who don't know, environments are essentially a variant of `list`s in R. The most common one you probably work with is the global environment displayed in the panel of your RStudio IDE, but you can also make other environments to call from.
 
 For this function, you can specify an environment to load to, the repeat/nonrepeat structure you're interested in, and any specific tables. However, the default behavior with no arguments supplied will load directly to the global environment with all available objects.
 :::
@@ -566,7 +579,7 @@ For this function, you can specify an environment to load to, the repeat/nonrepe
 ![](images/REDCapTidieR/bind_tables_env_output.png){fig-align="center"}
 
 ::: notes
-And if you're used to looking at your environment in RStudio, this is exactly the same as taking your environment window on the left and populating it with the objects on the right.
+And if you're used to looking at your environment in RStudio, this is exactly the same as taking your environment window pane on the left and populating it with the objects on the right.
 :::
 
 ## Longitudinal REDCap Projects {.smaller}
@@ -685,6 +698,10 @@ Install from public GitHub and view the `pkgdown` site
 
 [\*`REDCapTidieR` is in early alpha, but hopefully for not for long!]{style="font-size: 18px;"}
 
+::: notes
+So thank you for sticking with me this far, I realize it can be a bit dry but hopefully you can see how our package can help alleviate some of the mental burden of dealing with raw REDCap data exports. You can learn more on our `pkgdown` and install the package yourself on our public GitHub repo, just be aware it is still in early development.
+:::
+
 ## Future Work
 
 -   `raw_or_label` compatibility
@@ -698,3 +715,55 @@ We will be adding a few extraction functions to allow for tables to be extracted
 
 And lastly, hopefully we'll get this accepted to CRAN! Would be pretty neat and my first CRAN package if possible so stay tuned!
 :::
+
+## REDCap Metadata {.smaller}
+
+```{r}
+#| echo: false
+#| eval: true
+#| include: false
+library(knitr)
+library(kableExtra)
+
+render_kable <- function(df, font_size = 14, na_handling = TRUE, ...){
+  if (na_handling){
+    df <-  df %>% 
+      mutate(across(.cols = everything(), 
+                    .fns = ~cell_spec(., bold = if_else(is.na(.), T, F),
+                                      color = if_else(is.na(.), "red", "black")))
+      )
+  }
+  
+  out <- df %>%
+    kbl(booktabs = T, escape = F, table.attr = "style='width:20%;'") %>%
+    # options for HTML output
+    kable_styling(bootstrap_options = c("striped", "hover", "bordered"), 
+                  position = "center",
+                  full_width = F,
+                  font_size = font_size,
+                  fixed_thead = T) %>% 
+    column_spec(1, bold = T)
+  
+  out
+}
+
+token <- Sys.getenv("REDCAPTIDIER_CLASSIC_API")
+```
+
+```{r}
+#| echo: true
+#| eval: true
+metadata <- redcap_metadata_read(redcap_uri, token)$data
+
+metadata %>%
+  kbl(booktabs = T, escape = F, table.attr = "style='width:20%;'") %>%
+    # options for HTML output
+    kable_styling(bootstrap_options = c("striped", "hover", "bordered"), 
+                  position = "center",
+                  full_width = F,
+                  font_size = 12,
+                  fixed_thead = T) %>% 
+  column_spec(1, bold = T) %>% 
+  scroll_box(width = "100%", height = "300px")
+```
+

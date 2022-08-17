@@ -412,6 +412,7 @@
 <aside class="notes">
 <p>I am a data scientist in the Cell &amp; Gene Therapy Data Operations team. I joined CHOP about 5 years ago coming from a mechanical engineering background and about 4 years ago found my way into coding with R to solve problems, make products, you name it. Around that same time I met Stephan Kadauke who leads the DataOps team and helped found the R User Group and that more or less brings me in front of you today.</p>
 <p>Around the same time I started using R I was working with REDCap, and I found that the two go hand in hand rather well. Today I’m excited to talk to you about a package we’re developing that, for those of you also working with both R and REDCap, may hopefully become a useful tool to help your analytic processes.</p>
+<p>A quick shoutout also to Jake Riley. This is my first time doing a quarto presentation (quarto is the new rmarkdown) and he helped considerably with my frustrations over getting tables to render better in the slides. So thanks Jake!</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -458,15 +459,23 @@
 <section id="r-medicine-2022---speaker-highlights" class="slide level2 smaller">
 <h2>R / Medicine 2022 - Speaker Highlights</h2>
 <ul>
-<li><strong>Stephan Kadauke (CHOP CGT DataOps)</strong></li>
-<li><span style="color: #008cba;"><em>R/Medicine 101: Intro to R for Clinical Data</em></span></li>
-<li><span style="color: #008cba;"><em>Should we Teach Data Science to Physicians-in-Training?</em></span></li>
-<li><strong>Joy Payton (CHOP Arcus Education)</strong></li>
+<li><strong>Stephan Kadauke (CHOP CGT DataOps)</strong>
+<ul>
+<li><p><span style="color: #008cba;"><em>R/Medicine 101: Intro to R for Clinical Data</em></span></p></li>
+<li><p><span style="color: #008cba;"><em>Should we Teach Data Science to Physicians-in-Training?</em></span></p></li>
+</ul></li>
+<li><strong>Joy Payton (CHOP Arcus Education)</strong>
+<ul>
 <li><span style="color: #008cba;"><em>Using Public Data and Maps for Powerful Data Visualizations</em></span></li>
-<li><strong>Lihai Song (CHOP Data Scientist)</strong></li>
+</ul></li>
+<li><strong>Lihai Song (CHOP Data Scientist)</strong>
+<ul>
 <li><span style="color: #008cba;"><em>Automation of statistics summary and analysis using R Shiny</em></span></li>
-<li><strong>Jaclyn Janis (RStudio/Posit, CHOP Representative)</strong></li>
+</ul></li>
+<li><strong>Jaclyn Janis (RStudio/Posit, CHOP Representative)</strong>
+<ul>
 <li><span style="color: #008cba;"><em>It’s time for nurses to learn R</em></span></li>
+</ul></li>
 </ul>
 <aside class="notes">
 <p>We also have some familiar faces who will be delivering workdshops and talks including Stephan Kadauke, Joy Payton, and Lihai Song from CHOP as well as Jaclyn Janis our customer success rep from RStudio (now known as Posit).</p>
@@ -605,8 +614,10 @@
 <ul>
 <li><code>redcap_read_oneshot</code></li>
 <li><code>redcap_metadata_read</code></li>
-<li><code>redcap_event_instruments</code></li>
+<li><code>redcap_event_instruments</code>
+<ul>
 <li>New as of <code>v1.1.0</code></li>
+</ul></li>
 </ul>
 <p>Requirements:</p>
 <ul>
@@ -624,6 +635,7 @@
 </div>
 <aside class="notes">
 <p>We’ve been using REDCapR extensively for a while, and at it’s core the package does all the heavy lifting required to extract data and metadata on a REDCap project from the R console. If we all stand on the shoulders of giants, then <code>REDCapR</code> is the giant that REDCapTidieR has to thank.</p>
+<p>To get started with API calls through these packages, you need a couple of things. First, an active REDCap database or project. Second, a REDCap API URI (in our case redcap.chop.edu/api/). Third an API token, since this is associated to your user rights you need to make sure you have the appropriate read/write privileges.</p>
 <p>Let’s assume I’ve already done the work of preparing and importing this into a REDCap database so we can see what an export of the data looks like via REDCapR.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -645,10 +657,9 @@
 <span id="cb1-3"><a href="#cb1-3"></a><span class="fu">library</span>(REDCapR)</span>
 <span id="cb1-4"><a href="#cb1-4"></a></span>
 <span id="cb1-5"><a href="#cb1-5"></a>superheroes_db <span class="ot">&lt;-</span> <span class="fu">redcap_read_oneshot</span>(redcap_uri, token, <span class="at">verbose =</span> <span class="cn">FALSE</span>)<span class="sc">$</span>data</span>
-<span id="cb1-6"><a href="#cb1-6"></a>superheroes_meta <span class="ot">&lt;-</span> <span class="fu">redcap_metadata_read</span>(redcap_uri, token, <span class="at">verbose =</span> <span class="cn">FALSE</span>)<span class="sc">$</span>data</span>
-<span id="cb1-7"><a href="#cb1-7"></a></span>
-<span id="cb1-8"><a href="#cb1-8"></a>superheroes_db <span class="sc">%&gt;%</span> </span>
-<span id="cb1-9"><a href="#cb1-9"></a>  <span class="fu">glimpse</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-6"><a href="#cb1-6"></a></span>
+<span id="cb1-7"><a href="#cb1-7"></a>superheroes_db <span class="sc">%&gt;%</span> </span>
+<span id="cb1-8"><a href="#cb1-8"></a>  <span class="fu">glimpse</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Rows: 6,700
 Columns: 16
@@ -672,7 +683,9 @@ $ super_hero_powers_complete  &lt;dbl&gt; NA, 0, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 
 </div>
 <p>Remember <code>redcap_repeat_instrument</code> and <code>redcap_repeat_instance</code>, they’re coming back!</p>
 <aside class="notes">
-<p>Let’s first load some applicable libraries and extract both the data and metadata of the database. A glimpse of the database shows us 6,700 rows with 16 columns, but oddly we seem to have a lot of <code>NA</code> data. And what might be a little more confusing is that our record_IDs are being repeated a number of times. Let’s look at a tibble structure to see if we can piece why this is.</p>
+<p>Let’s first load some applicable libraries and extract both the data and metadata of the database. A glimpse of the database shows us 6,700 rows with 16 columns, but oddly we seem to have a lot of <code>NA</code>s/missing data. And what might be a little more confusing is that our record_IDs are being repeated a number of times.</p>
+<p>Lastly, there are two variables here (<code>redcap_repeat_instrument</code> and <code>redcap_repeat_instance</code>) which weren’t in our original database from the user side. They’ll be coming up a lot today.</p>
+<p>Let’s look at a tibble structure to see if we can piece why this is.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -903,7 +916,8 @@ $ super_hero_powers_complete  &lt;dbl&gt; NA, 0, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 
 </div>
 </div>
 <aside class="notes">
-<p>Perhaps still confusing, but we can at least see a pattern here. Now we can notice how all of the <code>NA</code>’s trade off with the <code>redcap_repeat_*</code> variables. Notice how the first row for <code>record_id</code> 0 has all of its hero information filled out, but the repeat variables are <code>NA</code>, and then for the remainder of <code>record_id</code> 0’s rows that behavior reverses.</p>
+<p>Perhaps still confusing, but we can at least see a pattern here. Now we can see how all of the <code>NA</code>’s trade off with the <code>redcap_repeat_*</code> variables. Notice how the first row for <code>record_id</code> 0 has all of its hero information filled out, but the repeat variables are <code>NA</code>, and then for the remainder of <code>record_id</code> 0’s rows that behavior reverses.</p>
+<p>I want to call out a few things here, this is the way REDCap presents you with a raw database. It’s one massive table, not always the most intuitive, and perhaps not even what we originally expect. This can be very cognitively overloading and a barrier to getting started with working with your data. The introduction of repeating instruments, as shown here, further complicates this.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -928,10 +942,10 @@ $ super_hero_powers_complete  &lt;dbl&gt; NA, 0, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 
 </div>
 </div>
 <aside class="notes">
-<p>Here on the left we have the same record status dashboard but now we have details expanded for two super power forms. Now we can see that not only do super heroes in this database have different powers assigned to them, but they can have variables numbers as well as shown by 7 assigned to A-Bomb while only 3 are assigned to Adam Monroe.</p>
+<p>From the user side, this is what a repeating instance and associated instrument look like. Here on the left we have the same record status dashboard but now we have details expanded for two super power forms. Now we can see that heroes can have multiple powers, and heroes can have a different number of powers assigned to them as shown by 7 assigned to A-Bomb while only 3 are assigned to Adam Monroe.</p>
 <p>On the drilled-down UI side, while small (my apologies),</p>
 <p><strong>Next</strong></p>
-<p>we see that A-Bomb’s first power is “Accelerated Healing” under instance 1.</p>
+<p>we see that A-Bomb’s first power is “Accelerated Healing” under instance 1. The repeating form is a single text box entry field but can be repeated any number of times.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1037,7 +1051,7 @@ $ super_hero_powers_complete  &lt;dbl&gt; NA, 0, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 
 </blockquote>
 </div>
 <aside class="notes">
-<p>So if we revisit <code>record_id</code> 0, our good friend A-Bomb, and select variables of interest we can see here that his hero information is only associated with non-repeating rows while each of his powers information gets a separate row associated with what repeat instrument and instance it belongs to.</p>
+<p>So if we revisit <code>record_id</code> 0, and select variables of interest we can see that his hero information is only associated with non-repeating rows while each of his powers information gets a separate row associated with what repeat instrument and instance it belongs to.</p>
 <p><strong>Next</strong></p>
 <p>Because of this structure, once repeating instruments are introduced to REDCap they form what’s known as a compound key for identifying individual observations. You can’t rely on the <code>record_id</code> anymore, even though its the primary identifier for our hero.</p>
 <p><strong>Next</strong></p>
@@ -1091,8 +1105,10 @@ $ super_hero_powers_complete  &lt;dbl&gt; NA, 0, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 
 <ul>
 <li>Built on top of <code>REDCapR</code></li>
 <li>Takes two inputs: REDCap URI and REDCap API token</li>
-<li>Returns a set of tidy <code>tibble</code>s</li>
+<li>Returns a set of tidy <code>tibble</code>s
+<ul>
 <li>One for each REDCap instrument</li>
+</ul></li>
 </ul>
 <aside class="notes">
 <p>So we went over the problem, now let’s bring in the solution: <code>REDCapTidieR</code>. At a glance, there are only two main functions relying on the same two inputs from <code>REDCapR</code>: a URI and a valid API token. Under the hood, the package relies on <code>REDCapR</code> for all data extraction but instead does all the work of taking that large, messy table and turning it into a series of <strong>tidy tibble</strong>s for each project instrument.</p>
@@ -1127,7 +1143,7 @@ $ super_hero_powers_complete  &lt;dbl&gt; NA, 0, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 
 </div>
 </div>
 <aside class="notes">
-<p>The core <code>REDCapTidieR</code> function is <code>read_redcap_tidy</code>, and here we can see the output which might look a little odd. What we have is a <code>tibble</code> where on the left we have the raw names of the instruments from REDCap, these were the two colorful columns on the Record Status Dashboard. On the right is the structure, i.e.&nbsp;“repeating” or “nonrepeating.”</p>
+<p>The core <code>REDCapTidieR</code> function is <code>read_redcap_tidy</code>, and here we can see the output which might look a little odd, but it’s definitely less overwhelming than the giant table we saw earier. What we have is a <code>tibble</code> where on the left we have the raw names of the instruments from REDCap, these were the two colorful columns on the Record Status Dashboard. On the right is the structure, i.e.&nbsp;“repeating” or “nonrepeating.”</p>
 <p>Here in the middle, under <code>data</code> is where processed data resides in a list column.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -1406,9 +1422,9 @@ $ super_hero_powers_complete  &lt;dbl&gt; NA, 0, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 
 <p>If we expand the list column elements through indexing, we can take a deeper look at the nonrepeating and repeating dataframe outputs. There are a number of things worth noting here:</p>
 <ol type="1">
 <li>First in both of these tables we see there are no artificially generated <code>NA</code> artifact values.</li>
-<li>On the left side, the non-repeating table shows that every <code>record_id</code> has a single row. On the right are repeating <code>record_id</code>s forming a compound key with the <code>redcap_repeat_instance</code> which leads me to</li>
-<li>point 3, that<code>redcap_repeat_</code> variables only appear in repeating sub tables.</li>
-<li>Additionally only the variables associated with the table will appear in it.</li>
+<li>On the left side, the non-repeating table shows that every <code>record_id</code> has a single row. On the right are repeating <code>record_id</code>s forming a compound key with the <code>redcap_repeat_instance</code></li>
+<li>Additionally, the <code>redcap_repeat_</code> variables only appear in repeating sub tables.</li>
+<li>This means that only the variables associated with the table will appear in it.</li>
 <li>The presence of the primary key in the nonrepeating hero information table, and the compound key in the repeating hero powers table allows for easy joining.</li>
 </ol>
 <p>While this example REDCap only has two tables, most are going to have much more and it is very powerful to be able to join only the data you need and trust that the output contains all the relevant information.</p>
@@ -1574,6 +1590,7 @@ $ super_hero_powers_complete  &lt;dbl&gt; NA, 0, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 
 </section>
 <section id="bind_tables-direct-to-environment" class="slide level2 smaller">
 <h2><code>bind_tables</code> Direct to Environment</h2>
+<p>The function:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1"></a><span class="co"># How `bind_tables()` is called:</span></span>
 <span id="cb13-2"><a href="#cb13-2"></a>bind_tables <span class="ot">&lt;-</span> <span class="cf">function</span>(.data,</span>
@@ -1585,6 +1602,7 @@ $ super_hero_powers_complete  &lt;dbl&gt; NA, 0, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 
 <span id="cb13-8"><a href="#cb13-8"></a>  <span class="fu">read_redcap_tidy</span>(redcap_uri, token) <span class="sc">%&gt;%</span> </span>
 <span id="cb13-9"><a href="#cb13-9"></a>  <span class="fu">bind_tables</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<p>Clear out our envionrment:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1"></a><span class="fu">rm</span>(<span class="at">list =</span> <span class="fu">ls</span>())</span>
 <span id="cb14-2"><a href="#cb14-2"></a><span class="fu">ls.str</span>(<span class="at">envir =</span> <span class="fu">globalenv</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -1592,6 +1610,7 @@ $ super_hero_powers_complete  &lt;dbl&gt; NA, 0, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 
 <blockquote>
 <p>Empty output, no global environment objects</p>
 </blockquote>
+<p>Reload the <code>superheroes_tidy</code> dataset, pipe to <code>bind_tables</code>, check environment:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1"></a>superheroes_tidy <span class="sc">%&gt;%</span></span>
 <span id="cb15-2"><a href="#cb15-2"></a>  <span class="fu">bind_tables</span>()</span>
@@ -1604,8 +1623,8 @@ superheroes_tidy : tibble [2 × 3] (S3: tbl_df/tbl/data.frame)</code></pre>
 </div>
 </div>
 <aside class="notes">
-<p>The second main function we’ve introduced to <code>REDCapTidieR</code> is Stephan’s brain child. Using this nice helper function, we can take the table outputs of the <code>redcap_data</code> column from our TidieR output and place them directly into the global enviornment or any environment of our choosing.</p>
-<p>For those of you who don’t know, environments are essentially a variant of lists in R. The most common one you probably work with is the global environment displayed in the panel of your RStudio IDE, but you can also make other environments to call from.</p>
+<p>The second main function we’ve introduced to <code>REDCapTidieR</code> is Stephan’s brain child. Using the <code>bind_tables</code> helper function, we can take the table outputs of the <code>redcap_data</code> column from our <code>TidieR</code> output and place them directly into the global environment or any environment of our choosing.</p>
+<p>For those of you who don’t know, environments are essentially a variant of <code>list</code>s in R. The most common one you probably work with is the global environment displayed in the panel of your RStudio IDE, but you can also make other environments to call from.</p>
 <p>For this function, you can specify an environment to load to, the repeat/nonrepeat structure you’re interested in, and any specific tables. However, the default behavior with no arguments supplied will load directly to the global environment with all available objects.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -1627,7 +1646,7 @@ superheroes_tidy : tibble [2 × 3] (S3: tbl_df/tbl/data.frame)</code></pre>
 </figure>
 </div>
 <aside class="notes">
-<p>And if you’re used to looking at your environment in RStudio, this is exactly the same as taking your environment window on the left and populating it with the objects on the right.</p>
+<p>And if you’re used to looking at your environment in RStudio, this is exactly the same as taking your environment window pane on the left and populating it with the objects on the right.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1913,9 +1932,26 @@ superheroes_tidy : tibble [2 × 3] (S3: tbl_df/tbl/data.frame)</code></pre>
 </section>
 <section id="try-it-for-yourself" class="slide level2">
 <h2>Try it for Yourself!*</h2>
-
-<img data-src="images/REDCapTidieR/redcaptidier_pkgdown.png" class="r-stretch quarto-figure-center"><p>Install from public GitHub and view the <code>pkgdown</code> site</p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/REDCapTidieR/redcaptidier_pkgdown.png"></p>
+</figure>
+</div>
+<p>Install from public GitHub and view the <code>pkgdown</code> site</p>
 <p><span style="font-size: 18px;">*<code>REDCapTidieR</code> is in early alpha, but hopefully for not for long!</span></p>
+<aside class="notes">
+<p>So thank you for sticking with me this far, I realize it can be a bit dry but hopefully you can see how our package can help alleviate some of the mental burden of dealing with raw REDCap data exports. You can learn more on our <code>pkgdown</code> and install the package yourself on our public GitHub repo, just be aware it is still in early development.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="future-work" class="slide level2">
 <h2>Future Work</h2>
@@ -1939,9 +1975,776 @@ superheroes_tidy : tibble [2 × 3] (S3: tbl_df/tbl/data.frame)</code></pre>
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
+</section>
+<section id="redcap-metadata" class="slide level2 smaller">
+<h2>REDCap Metadata</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1"></a>metadata <span class="ot">&lt;-</span> <span class="fu">redcap_metadata_read</span>(redcap_uri, token)<span class="sc">$</span>data</span>
+<span id="cb21-2"><a href="#cb21-2"></a></span>
+<span id="cb21-3"><a href="#cb21-3"></a>metadata <span class="sc">%&gt;%</span></span>
+<span id="cb21-4"><a href="#cb21-4"></a>  <span class="fu">kbl</span>(<span class="at">booktabs =</span> T, <span class="at">escape =</span> F, <span class="at">table.attr =</span> <span class="st">"style='width:20%;'"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb21-5"><a href="#cb21-5"></a>    <span class="co"># options for HTML output</span></span>
+<span id="cb21-6"><a href="#cb21-6"></a>    <span class="fu">kable_styling</span>(<span class="at">bootstrap_options =</span> <span class="fu">c</span>(<span class="st">"striped"</span>, <span class="st">"hover"</span>, <span class="st">"bordered"</span>), </span>
+<span id="cb21-7"><a href="#cb21-7"></a>                  <span class="at">position =</span> <span class="st">"center"</span>,</span>
+<span id="cb21-8"><a href="#cb21-8"></a>                  <span class="at">full_width =</span> F,</span>
+<span id="cb21-9"><a href="#cb21-9"></a>                  <span class="at">font_size =</span> <span class="dv">12</span>,</span>
+<span id="cb21-10"><a href="#cb21-10"></a>                  <span class="at">fixed_thead =</span> T) <span class="sc">%&gt;%</span> </span>
+<span id="cb21-11"><a href="#cb21-11"></a>  <span class="fu">column_spec</span>(<span class="dv">1</span>, <span class="at">bold =</span> T) <span class="sc">%&gt;%</span> </span>
+<span id="cb21-12"><a href="#cb21-12"></a>  <span class="fu">scroll_box</span>(<span class="at">width =</span> <span class="st">"100%"</span>, <span class="at">height =</span> <span class="st">"300px"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
 
-<p><img src="../presentations/images/cgtdataops-bkgrnd_removed.png" class="slide-logo"></p>
-<div class="footer footer-default">
+<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:300px; overflow-x: scroll; width:100%; "><table style="width:20%; font-size: 12px; width: auto !important; margin-left: auto; margin-right: auto;" class="table table-striped table-hover table-bordered">
+ <thead>
+  <tr>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> field_name </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> form_name </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> section_header </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> field_type </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> field_label </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> select_choices_or_calculations </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> field_note </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> text_validation_type_or_show_slider_number </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> text_validation_min </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> text_validation_max </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> identifier </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> branching_logic </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> required_field </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> custom_alignment </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> question_number </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> matrix_group_name </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> matrix_ranking </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> field_annotation </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> record_id </td>
+   <td style="text-align:left;"> nonrepeated </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> text </td>
+   <td style="text-align:left;"> Record ID </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> nonrepeat_1 </td>
+   <td style="text-align:left;"> nonrepeated </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> text </td>
+   <td style="text-align:left;"> Text Box Input </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> nonrepeat_2 </td>
+   <td style="text-align:left;"> nonrepeated </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> text </td>
+   <td style="text-align:left;"> Text Box Input </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> nonrepeat_3 </td>
+   <td style="text-align:left;"> nonrepeated2 </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> text </td>
+   <td style="text-align:left;"> Test data </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> nonrepeat_4 </td>
+   <td style="text-align:left;"> nonrepeated2 </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> text </td>
+   <td style="text-align:left;"> Test data </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> repeat_1 </td>
+   <td style="text-align:left;"> repeated </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> text </td>
+   <td style="text-align:left;"> Text Box Input: </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> repeat_2 </td>
+   <td style="text-align:left;"> repeated </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> text </td>
+   <td style="text-align:left;"> Text Box Input: </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> text </td>
+   <td style="text-align:left;"> data_field_types </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> text </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> note </td>
+   <td style="text-align:left;"> data_field_types </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> notes </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> calculated </td>
+   <td style="text-align:left;"> data_field_types </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> calc </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> 1+1 </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> dropdown_single </td>
+   <td style="text-align:left;"> data_field_types </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> dropdown </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> choice_1, one | choice_2, two | choice_3, three </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> radio_single </td>
+   <td style="text-align:left;"> data_field_types </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> radio </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> choice_1, A | choice_2, B | choice_3, C </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> checkbox_multiple </td>
+   <td style="text-align:left;"> data_field_types </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> checkbox </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10 </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> checkbox_multiple_2 </td>
+   <td style="text-align:left;"> data_field_types </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> checkbox </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> Aa, Red | B1b, Green | Ccc2, Blue | 3dddd, Yellow | 4eeee5, Purple </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> yesno </td>
+   <td style="text-align:left;"> data_field_types </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> yesno </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> truefalse </td>
+   <td style="text-align:left;"> data_field_types </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> truefalse </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> signature </td>
+   <td style="text-align:left;"> data_field_types </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> file </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> signature </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> fileupload </td>
+   <td style="text-align:left;"> data_field_types </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> file </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> slider </td>
+   <td style="text-align:left;"> data_field_types </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> slider </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> RH </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> descriptive </td>
+   <td style="text-align:left;"> data_field_types </td>
+   <td style="text-align:left;"> begin new section </td>
+   <td style="text-align:left;"> descriptive </td>
+   <td style="text-align:left;"> DESCRIPTIVE </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> text_dmy </td>
+   <td style="text-align:left;"> text_input_validation_types </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> text </td>
+   <td style="text-align:left;"> Text DMY </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> date_dmy </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> text_mdy </td>
+   <td style="text-align:left;"> text_input_validation_types </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> text </td>
+   <td style="text-align:left;"> Text MDY </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> date_mdy </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> text_ymd </td>
+   <td style="text-align:left;"> text_input_validation_types </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> text </td>
+   <td style="text-align:left;"> Text YMD </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> date_ymd </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> text_dmy_hm </td>
+   <td style="text-align:left;"> text_input_validation_types </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> text </td>
+   <td style="text-align:left;"> Text DMY HM </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> datetime_dmy </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> text_mdy_hm </td>
+   <td style="text-align:left;"> text_input_validation_types </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> text </td>
+   <td style="text-align:left;"> Text MDY HM </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> datetime_mdy </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> text_ymd_hm </td>
+   <td style="text-align:left;"> text_input_validation_types </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> text </td>
+   <td style="text-align:left;"> Text YMD HM </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> datetime_ymd </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> text_dmy_hms </td>
+   <td style="text-align:left;"> text_input_validation_types </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> text </td>
+   <td style="text-align:left;"> Text DMY HMS </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> datetime_seconds_dmy </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> text_mdy_hms </td>
+   <td style="text-align:left;"> text_input_validation_types </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> text </td>
+   <td style="text-align:left;"> Text MDY HMS </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> datetime_seconds_mdy </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> text_ymd_hms </td>
+   <td style="text-align:left;"> text_input_validation_types </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> text </td>
+   <td style="text-align:left;"> Text YMD HMS </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> datetime_seconds_ymd </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> text_mrn </td>
+   <td style="text-align:left;"> text_input_validation_types </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> text </td>
+   <td style="text-align:left;"> Text MRN </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> mrn_8d </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> text_phone </td>
+   <td style="text-align:left;"> text_input_validation_types </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> text </td>
+   <td style="text-align:left;"> Text Phone </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> phone </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> text_ssn </td>
+   <td style="text-align:left;"> text_input_validation_types </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> text </td>
+   <td style="text-align:left;"> Text SSN </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> ssn </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> text_hms </td>
+   <td style="text-align:left;"> text_input_validation_types </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> text </td>
+   <td style="text-align:left;"> Text HMS </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> time_hh_mm_ss </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> text_hm </td>
+   <td style="text-align:left;"> text_input_validation_types </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> text </td>
+   <td style="text-align:left;"> Text HM </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> time </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> text_ms </td>
+   <td style="text-align:left;"> text_input_validation_types </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> text </td>
+   <td style="text-align:left;"> Text MS </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> time_mm_ss </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> text_zip </td>
+   <td style="text-align:left;"> text_input_validation_types </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> text </td>
+   <td style="text-align:left;"> Text ZIP </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> zipcode </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+</tbody>
+</table></div>
+
+</div>
+</div>
+
+
+<img src="../presentations/images/cgtdataops-bkgrnd_removed.png" class="slide-logo r-stretch"><div class="footer footer-default">
 
 </div>
 </section>
