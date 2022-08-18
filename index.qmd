@@ -2,4 +2,4 @@
 title: "Welcome"
 ---
 
-This is the start of my website! More will be added later.
+This is the start of my website! This page is currently under construction and will be added to in the future.

@@ -2,4 +2,10 @@
 title: "About"
 ---
 
-This is will be the about me section (under development).
+Welcome to my page! I am a data scientist with a background in biomedical and mechanical engineering currently developing software and data-driven solutions in pediatric medicine to support cutting-edge clinical research. The purpose of this website is to be both a portfolio of my work and a space for learning and collaboration.
+
+At the Children’s Hospital of Philadelphia, I am a data scientist for the [Cell & Gene Therapy]( https://www.chop.edu/centers-programs/cell-and-gene-therapy-collaborative) DataOps team supporting the [Cellular Therapy and Transplant Section]( https://www.chop.edu/centers-programs/cellular-therapy-and-transplant-section), [Bone and Marrow Transplant Program]( https://www.chop.edu/centers-programs/blood-and-marrow-transplant-program), and various parts of the oncology and pathology divisions of the hospital. 
+
+In the past I have also worked closely with the Critical Care Medicine and Emergency Medicine departments and spent considerable time in the development of data solutions for the [pediatric resuscitation quality collaborative](https://www.pedires-q.org/the-pedires-q-team), [National Emergency Airway Registry](https://www.ncbi.nlm.nih.gov/pubmed/23328260), and [Videography in Pediatric Emergency Resuscitation Collaborative]( https://medschool.cuanschutz.edu/pediatrics/sections/emergency-medicine/research-and-quality-improvement/the-videography-in-pediatric-emergency-resuscitation-(viper)-collaborative).
+
+I will be updating this site as I’m able to bring tutorials, projects, publications, and posts on various topics in the medical and data science fields. Feel free to connect with me and thank you for visiting!

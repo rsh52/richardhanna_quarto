@@ -5,5 +5,3 @@ listing:
   - "presentations/*.qmd"
   type: default
 ---
-
-Contents Coming Soon!
