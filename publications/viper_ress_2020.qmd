@@ -1,0 +1,23 @@
+---
+title: "Analysis of CPR quality by individual providers in the pediatric emergency department"
+author: Aaron J. Donoghue, Sage R. Myers, Benjamin T. Kerrey, Alexis B. Sandler, Ryan Keane, Ichiro Watanabe, Richard Hanna, Mary Kate Abbadessa,  Mary Frey,  Karen J. O'Connell
+date: 2020-08-01
+doi: "https://doi.org/10.1016/j.resuscitation.2020.05.026"
+link-external-newwindow: true
+link-external-icon: true
+---
+
+![](images/resuscitation/resuscitation_logo.png){fig-align="center" width="179"}
+
+# Abstract
+## Objectives
+To describe chest compression (CC) quality by individual providers in two pediatric emergency departments (EDs) using video review and compression monitor output during pediatric cardiac arrests.
+
+## Methods
+Prospective observational study. Patients <18 yo receiving CC for >1 min were eligible. Data was collected from video review and CC monitor device in a synchronized fashion and reported in ‘segments’ by individual providers. Univariate comparison by age (<1 yo, 1–8 yo, >8 yo) was performed by chi-square testing for dichotomous variables (‘high-quality’ CPR) and nonparametric testing for continuous variables (CC rate and depth). Univariate comparison of ventilation rate (V) was made between segments with an advanced airway versus without.
+
+## Results
+524 segments had data available; 42/524 (8%) met criteria for ‘high-quality CC’. Patients >8 yo had more segments meeting criteria (18% vs. 2% and 0.5%; p < 0.001). Segments compliant for rate were less frequent in <1 yo (17% vs. 24% vs. 27%; p = 0.03). Segments compliant for depth were less frequent in <1 year olds and 1–8 year olds (5% and 9% vs. 20%, p < 0.001.) Mean V for segments with an advanced airway was higher than with a natural airway (24 ± 18 vs. 14 ± 10 bpm, p < 0.001). Hyperventilation was more prevalent in CPR segments with an advanced airway (66% vs. 32%, p < 0.001).
+
+##Conclusions
+CC depth is rarely guideline compliant in infants. Hyperventilation is more prevalent during CPR periods with an advanced airway in place. Measuring individual provider CPR quality is feasible, allowing future studies to evaluate the impact of CPR training.

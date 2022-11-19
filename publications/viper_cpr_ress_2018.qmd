@@ -1,0 +1,24 @@
+---
+title: " Verbal Prompts During Pediatric Cardiopulmonary Resuscitation in Emergency Department: A Report From the Videography in Pediatric Emergency Resuscitation (VIPER) Collaborative"
+author: Karen J. O'Connell, Alexis B. Sandler, Matthew Leda, Benjamin T. Kerrey,  Sage R. Myers, Mary Frey, Ichiro Watanabe, Richard Hanna, Aaron J. Donoghue
+date: 2018-11-05
+doi: "https://doi.org/10.1161/circ.138.suppl_2.274"
+link-external-newwindow: true
+link-external-icon: true
+---
+
+![](images/amsa_jaha_publication/aha_logo.png)
+
+# Abstract
+
+## Introduction
+The quality of chest compressions (CC) is crucial for good outcomes for pediatric cardiac arrest. Verbal prompts from resuscitation leader or CPR coach may help to optimize it. The objective of this study is to describe the frequency of appropriate verbal prompts during pediatric CPR. We hypothesized that verbal prompts for CC would be given less frequently to infants compared to children.
+
+## Methods
+A report from the Videography In Pediatric Emergency Resuscitation (VIPER) Collaborative, a prospective observational database from three tertiary PEDs from December 2016 to April 2018. All study sites videorecord and review resuscitations and use a pressure sensor/monitor device during CPR. All events where chest compressions (CC) were performed under videorecorded conditions with the monitor device in use were eligible for inclusion. Events where real-time feedback from monitoring devices for CC was available were excluded (ages > 8). Data on CPR performance was collected by a combination of video review and monitor device; CC rate and depth and ventilation rate were extracted in time periods corresponding to individual CPR providers. Data on verbal prompts (time, who gave prompts, what prompt consisted of) were identified during video review.
+
+## Results
+There were 21 cases with total 182 providers included in database during study periods (infants: n=15, children: n=6). Verbal prompts for compression rate and depth were given in 14/21 (67%) of cases. 19/80 (24%) came from the resuscitation leader; 32/80 (40%) and from a CPR coach. 7 (3.9%) providers doing CC watched ZOLL monitor for feedback. Appropriate verbal prompts for CC rate were given to 4.2 % of providers in infants and 8.8 % in children (p=0.024). And 9.2% in infants and 10.5 % in children (p=0.064) were given to providers for CC depth. After adjusting by confounders, there weren’t any significant differences between age groups for both CC rate: OR1.22 (95%CI 0.49-3.05, P=0.670) and depth: OR 2.82 (95%CI 0.73-10.9, P=0.134).
+
+## Conclusions
+Verbal prompts frequency for CC rate and depth during pediatric CPR was described. There weren’t any significant differences between infants and children under 8 years old.

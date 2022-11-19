@@ -1,0 +1,21 @@
+---
+title: "Development of a Small rear Facing Child Restraint System Virtual Surrogate to Evaluate CRS-to-Vehicle Fitment"
+author: Richard Hanna, Aditya Belwadi
+date: 2015-07-01
+abstract: "The publication in SAE was also presented at the Ohio State University Injury Biomechanics Symposium and the publically available write-up is made available here."
+doi: "https://doi.org/10.4271/2015-01-1457"
+link-external-newwindow: true
+link-external-icon: true
+---
+
+> The publication in SAE was also presented at the Ohio State University Injury Biomechanics Symposium and the publically available write-up is made available [here](http://ibrc.osu.edu/wp-content/uploads/2015/03/Abstract_Hanna_2015.pdf). You can also find an additional write-up on my research by visiting [CHOP's Research Institute Cornerstone](https://www.research.chop.edu/cornerstone-blog/center-for-injury-research-and-prevention-engineering-students-honored) blog page and on [Chevrolet's Pressroom](https://media.chevrolet.com/media/us/en/chevrolet/news.detail.html/content/Pages/news/us/en/2015/apr/0424-kinect.html).
+
+![](images/sae_logo.png){fig-align="center"}
+
+# Abstract
+
+Automotive interior design optimization must balance the design of the vehicle seat and occupant space for safety, comfort and aesthetics with the accommodation of add-on restraint products such as child restraint systems (CRS). It is important to understand the range of CRS dimensions so that this balance can be successfully negotiated. CRS design is constantly changing. In particular, the introduction of side impact protection for CRS as well as emphasis on ease of CRS installation has likely changed key design points of many child restraints. This ever-changing target creates a challenge for vehicle manufacturers to assure their vehicle seats and occupant spaces are compatible with the range of CRS on the market. To date, there is no accepted method for quantifying the geometry of child seats such that new designs can be catalogued in a simple, straightforward way. In this project, we propose to quantify the geometry of a selection of CRSs currently on the market and develop an easily implementable method to continue to collect this data as new CRSs become available.
+
+Computer Aided Design (CAD) data was collected for 40 CRS models (Rear-facing infant seats, convertible, and combination CRS). These 40 models represent 72 CRS models on the US market as of April 2013. Twenty-two CRS were scanned and digitized using a novel approach with the Microsoft Kinect Sensor. The scans were converted into surface models and finite element (FE) models using Hypermesh 12.0 (Altair Inc., MI). CRS manufacturers provided digital drawings of 18 additional CRS. The scans and digital drawings were overlapped at typical seat angles from literature data to create virtual surrogates.
+
+The use of virtual surrogates by vehicle manufacturers in the design and development of the rear-seat vehicle environment early on in the design-development cycle has the potential to facilitate improved CRS-vehicle fitment.

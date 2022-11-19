@@ -1,0 +1,9 @@
+---
+title: "Data Science"
+listing:
+  contents:
+  - "data_science/*.qmd"
+  type: default
+  sort: "date desc"
+  categories: numbered
+---

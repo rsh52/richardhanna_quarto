@@ -1,0 +1,23 @@
+---
+title: "Effect of Amplitude Spectral Area on Termination of Fibrillation and Outcomes in Pediatric Cardiac Arrest"
+author: Tia T. Raymond, Sandeep V. Pandit, Heather Griffis, Xuemei Zhang, Richard Hanna, Dana E. Niles, Annemarie Silver, Javier J. Lasa, Sarah E. Haskell, Dianne L. Atkins, Vinay M. Nadkarni
+date: 2021-06-14
+abstract: "Amplitude spectral area (AMSA) predicts termination of fibrillation (TOF) with return of spontaneous circulation (ROSC) and survival in adults but has not been studied in pediatric cardiac arrest. We characterized AMSA during pediatric cardiac arrest from a Pediatric Resuscitation Quality Collaborative and hypothesized that AMSA would be associated with TOF and ROSC."
+doi: "10.1161/JAHA.120.020353"
+link-external-newwindow: true
+link-external-icon: true
+---
+
+![](images/amsa_jaha_publication/aha_logo.png)
+
+## Background
+
+Amplitude spectral area (AMSA) predicts termination of fibrillation (TOF) with return of spontaneous circulation (ROSC) and survival in adults but has not been studied in pediatric cardiac arrest. We characterized AMSA during pediatric cardiac arrest from a Pediatric Resuscitation Quality Collaborative and hypothesized that AMSA would be associated with TOF and ROSC.
+
+## Methods and Results
+
+Children aged \<18 years with cardiac arrest and ventricular fibrillation were studied. AMSA was calculated for 2 seconds before shock and averaged for each subject (AMSA‐avg). TOF was defined as termination of ventricular fibrillation 10 seconds after defibrillation to any non‐ventricular fibrillation rhythm. ROSC was defined as \>20 minutes without chest compressions. Univariate and multivariable logistic regression analyses controlling for weight, current, and illness category were performed. Primary end points were TOF and ROSC. Secondary end points were 24‐hour survival and survival to discharge. Between 2015 and 2019, 50 children from 14 hospitals with 111 shocks were identified. In univariate analyses AMSA was not associated with TOF and AMS‐Aavg was not associated with ROSC. Multivariable logistic regression showed no association between AMSA and TOF but controlling for defibrillation average current and illness category, there was a trend to significant association between AMSA‐avg and ROSC (odds ratio, 1.10 \[1.00‒1.22\] P=0.058). There was no significant association between AMSA‐avg and 24‐hour survival or survival to hospital discharge.
+
+## Conclusions
+
+In pediatric patients, AMSA was not associated with TOF, whereas AMSA‐avg had a trend to significance for association in ROSC, but not 24‐hour survival or survival to hospital discharge.

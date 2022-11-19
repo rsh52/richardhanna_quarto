@@ -1,0 +1,29 @@
+---
+title: "Pediatric In-Hospital CPR Quality at Night and on Weekends"
+author: Tia T. Raymond, Sandeep V. Pandit, Heather Griffis, Xuemei Zhang, Richard Hanna, Dana E. Niles, Annemarie Silver, Javier J. Lasa, Sarah E. Haskell, Dianne L. Atkins, Vinay M. Nadkarni
+date: 2019-11-14
+abstract: "Survival after in-hospital cardiac arrest (IHCA) has been reported to be worse for arrests at night or during weekends.This study aimed to determine whether measured cardiopulmonary resuscitation (CPR) quality metrics might explain this difference in outcomes."
+doi: "https://doi.org/10.1016/j.resuscitation.2019.10.039"
+link-external-newwindow: true
+link-external-icon: true
+---
+
+![](images/amsa_jaha_publication/aha_logo.png)
+
+# Abstract
+
+##Introduction
+
+Survival after in-hospital cardiac arrest (IHCA) has been reported to be worse for arrests at night or during weekends.This study aimed to determine whether measured cardiopulmonary resuscitation (CPR) quality metrics might explain this difference in outcomes.
+
+## Methods
+
+IHCA data was collected by the Pediatric Resuscitation Quality (pediRES-Q) collaborative for patients <18 years. Metrics of CPR quality [chest compression rate, depth and fraction] were measured using monitordefibrillator pads, and events were compared by time of day and day of week.
+
+## Results
+
+We evaluated 6915 sixty-second epochs of chest compression (CC) data from 239 subjects between October 2015 and March 2019, across 18 hospitals. There was no significant difference in CPR quality metrics during day (07:00–22:59) versus night (23:00–06:59), or weekdays (Monday 07:00 to Friday 22:59) versus weekends (Friday 23:00 to Monday 06:59).There was also no difference in rate of return of circulation. However, survival to hospital discharge was higher for arrests that occurred during the day (39.1%) vs. nights (22.4%, p = 0.015), as well as on weekdays (39.9%) vs. weekends (19.1%, p = 0.003).
+
+## Conclusions
+
+For pediatric IHCA where CC metrics were obtained, there was no significant difference in CPR quality metrics or rate of return of circulation by time of day or day of week. There was higher survival to hospital discharge when arrests occurred during the day (vs. nights), or on weekdays (vs. weekends), and this difference was not related to disparities in CC quality.

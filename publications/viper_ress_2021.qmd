@@ -1,0 +1,24 @@
+---
+title: "Longitudinal effect of high frequency training on CPR performance during simulated and actual pediatric cardiac arrest"
+author: Aaron J. Donoghue, Debra Heard, Russell Griffin, Mary Kate Abbadessa, Shannon Gaines, Sangmo Je, Richard Hanna,  John Erbayri,  Sage Myers, Dana Niles, Vinay Nadkarni
+date: 2021-10-01
+doi: "https://doi.org/10.1016/j.resplu.2021.100117"
+abstract: "To determine the impact of high-frequency CPR training on performance during simulated and real pediatric CPR events in a pediatric emergency department (ED)."
+link-external-newwindow: true
+link-external-icon: true
+---
+
+![](images/resuscitation/resuscitation_logo.png){fig-align="center" width="179"}
+
+# Abstract
+## Study aim
+To determine the impact of high-frequency CPR training on performance during simulated and real pediatric CPR events in a pediatric emergency department (ED).
+
+## Methods
+Prospective observational study. A high-frequency CPR training program (Resuscitation Quality Improvement (RQI)) was implemented among ED providers in a children’s hospital. Data on CPR performance was collected longitundinally during quarterly retraining sessions; scores were analyzed between quarter 1 and quarter 4 by nonparametric methods. Data on CPR performance during actual patient events was collected by simultaneous combination of video review and compression monitor devices to allow measurement of CPR quality by individual providers; linear mixed effects models were used to analyze the association between RQI components and CPR quality.
+
+## Results
+159 providers completed four consecutive RQI sessions. Scores for all CPR tasks during retraining sessions significantly improved during the study period. 28 actual CPR events were captured during the study period; 49 observations of RQI trained providers performing CPR on children were analyzed. A significant association was found between the number of prior RQI sessions and the percent of compressions meeting guidelines for rate (β coefficient -0.08; standard error 0.04; p = 0.03).
+
+## Conclusions
+Over a 15 month period, RQI resulted in improved performance during training sessions for all skills. A significant association was found between number of sessions and adherence to compression rate guidelines during real patient events. Fewer than 30% of providers performed CPR on a patient during the study period. Multicenter studies over longer time periods should be undertaken to overcome the limitation of these rare events.

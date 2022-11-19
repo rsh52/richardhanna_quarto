@@ -1,7 +1,0 @@
----
-title: "Content"
-listing:
-  contents:
-  - "presentations/*.qmd"
-  type: default
----

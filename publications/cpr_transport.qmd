@@ -1,0 +1,27 @@
+---
+title: "Pediatric cardiopulmonary resuscitation quality during intra-hospital transport"
+author: Morgan Loaec, Adam S Himebauch, Todd J Kilbaugh,  Robert A Berg, Kathryn Graham, Richard Hanna, Heather A Wolfe, Robert M Sutton, Ryan W Morgan
+date: 2020-05-15
+abstract: "To evaluate pediatric cardiopulmonary resuscitation (CPR) quality during intra-hospital transport to facilitate extracorporeal membrane oxygenation (ECMO)-CPR (ECPR). We compared chest compression (CC) rate, depth, and fraction (CCF) between the pre-transport and intra-transport periods."
+doi: "https://doi.org/10.1016/j.resuscitation.2020.05.003"
+link-external-newwindow: true
+link-external-icon: true
+---
+
+![](images/resuscitation/resuscitation_logo.png){fig-align="center" width="234"}
+
+# Aim
+
+To evaluate pediatric cardiopulmonary resuscitation (CPR) quality during intra-hospital transport to facilitate extracorporeal membrane oxygenation (ECMO)-CPR (ECPR). We compared chest compression (CC) rate, depth, and fraction (CCF) between the pre-transport and intra-transport periods.
+
+# Methods
+
+Observational study of children \<18 years with either in-hospital cardiac arrest (IHCA) or out-of-hospital cardiac arrest (OHCA) who underwent transport between two care locations within the hospital for ECPR and who had CPR mechanics data available. Descriptive patient and arrest characteristics were summarized. The primary analysis compared pre- to intra-transport CC rate, depth, and fraction. A secondary analysis compared the proportion of pre- versus intra-transport 60-s epochs meeting guideline recommendations for rate (100-120/min), depth (≥4 cm for infants; ≥5 cm for children ≥1 year), and CCF (≥0.80).
+
+# Results
+
+Seven patients (four IHCA; three witnessed OHCA) met eligibility criteria. Six (86%) patients survived the event and two (28%) survived to hospital discharge. Median transport CPR duration was 7 \[IQR 5.5, 8.5\] minutes. There were no differences in pre- vs. intra-transport CC rate (115 \[113, 118\] vs. 118 \[114, 127\] CCs/minute; p = 0.18), depth (3.2 \[2.7, 4.4\] vs. 3.6 \[2.5, 4.6\] cm; p = 0.50), or CCF (0.89 \[0.82, 0.90\] vs. 0.92 \[0.79, 0.97\]; p = 0.31). Equivalent proportions of 60-s CPR epochs met guideline recommendations between pre- and intra-transport (rate: 66% vs. 57% \[p = 0.22\]; depth: 14% vs. 19% \[p = 0.39\]; CCF: 80% vs. 75% \[p = 0.43\]).
+
+# Conclusions
+
+Pediatric CPR quality was maintained during intra-hospital patient transport, suggesting that it is reasonable for ECPR systems to incorporate patient transport to facilitate ECMO cannulation.

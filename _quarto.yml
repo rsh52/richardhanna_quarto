@@ -7,9 +7,13 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
-      - content.qmd
-
+      - href: about.qmd
+        text: About
+      - href: publications.qmd
+        text: Publications
+      - href: data_science.qmd
+        text: Data Science
+        
 format:
   html:
     theme: flatly

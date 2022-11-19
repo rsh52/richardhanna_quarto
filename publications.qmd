@@ -1,0 +1,9 @@
+---
+title: "Publications"
+listing:
+  contents:
+  - "publications/*.qmd"
+  type: default
+  sort: "date desc"
+  categories: numbered
+---
