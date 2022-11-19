@@ -7,7 +7,7 @@
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.0.38">
+  <meta name="generator" content="quarto-1.1.189">
 
   <meta name="author" content="Richard Hanna">
   <meta name="dcterms.date" content="2022-08-18">
@@ -20,10 +20,15 @@
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    span.underline{text-decoration: underline;}
-    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
     pre > code.sourceCode { white-space: pre; position: relative; }
     pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
     pre > code.sourceCode > span:empty { height: 1.2em; }
@@ -424,15 +429,11 @@
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-<aside><ol class="aside-footnotes"><li id="fn1" role="doc-endnote"><p>Huge shoutout to Jake Riley for helping troubleshoot <code>quarto</code> and <code>kableExtra</code></p></li></ol></aside></section>
+<aside><ol class="aside-footnotes"><li id="fn1"><p>Huge shoutout to Jake Riley for helping troubleshoot <code>quarto</code> and <code>kableExtra</code></p></li></ol></aside></section>
 <section id="r-medicine-2022" class="slide level2 smaller">
 <h2>R / Medicine 2022</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><a href="https://events.linuxfoundation.org/r-medicine/"><img data-src="images/REDCapTidieR/r-medicine-logo.png"></a></p>
-</figure>
-</div>
-<blockquote>
+
+<img data-src="images/REDCapTidieR/r-medicine-logo.png" class="r-stretch quarto-figure-center"><blockquote>
 <p><code>https://events.linuxfoundation.org/r-medicine/</code></p>
 </blockquote>
 <aside class="notes">
@@ -547,7 +548,7 @@
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-<aside><ol class="aside-footnotes"><li id="fn2" role="doc-endnote"><p>For participants of the REDCap consortium</p></li></ol></aside></section>
+<aside><ol class="aside-footnotes"><li id="fn2"><p>For participants of the REDCap consortium</p></li></ol></aside></section>
 <section id="what-is-redcap-1" class="slide level2 smaller">
 <h2>What is REDCap?</h2>
 <div class="columns">
@@ -582,7 +583,7 @@
 </section>
 <section id="the-super-heroes-dataset" class="slide level2">
 <h2>The Super Heroes Dataset</h2>
-<div class="cell">
+<div class="cell" data-hash="REDCapTidieR_cache/revealjs/unnamed-chunk-3_38d03bc96e264b31edd23aa42b70617d">
 
 </div>
 <p>Open source dataset from <a href="https://www.superherodb.com/">SuperHeroDB</a> and available on <a href="https://www.kaggle.com/datasets/claudiodavi/superhero-set">Kaggle</a>. It contains two tables:</p>
@@ -590,8 +591,8 @@
 <li>Super Hero Information (i.e.&nbsp;demographic data)</li>
 <li>Super Hero Powers (i.e.&nbsp;<code>TRUE</code>/<code>FALSE</code> for specific powers)</li>
 </ul>
-<p><img data-src="images/REDCapTidieR/super_heroes_border.webp"></p>
-<aside class="notes">
+
+<img data-src="images/REDCapTidieR/super_heroes_border.webp" class="r-stretch"><aside class="notes">
 <p>So by now you’ve noticed we aren’t using patient data, so it’s worth briefly touching on the data we are using. We will be using open source super hero data from SuperHeroDB, delivered via Kaggle. There are two CSV tables available where one contains Hero Information like name, height, weight, eye color, etc. and the other contains a wide table pairing hero names to a boolean of specific powers.</p>
 <p>Next let’s look at how we’re actually going to extract this data using the <code>REDCapR</code> package</p>
 <style type="text/css">
@@ -648,10 +649,10 @@
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-<aside><ol class="aside-footnotes"><li id="fn3" role="doc-endnote"><p>Such as <code>https://redcap.chop.edu/api/</code></p></li><li id="fn4" role="doc-endnote"><p>Requires user API and Read/Write access</p></li></ol></aside></section>
+<aside><ol class="aside-footnotes"><li id="fn3"><p>Such as <code>https://redcap.chop.edu/api/</code></p></li><li id="fn4"><p>Requires user API and Read/Write access</p></li></ol></aside></section>
 <section id="superheroes-output" class="slide level2 smaller">
 <h2>SuperHeroes Output</h2>
-<div class="cell">
+<div class="cell" data-hash="REDCapTidieR_cache/revealjs/unnamed-chunk-4_fa54b690401862665454bcc8af137dd7">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="co"># Load applicable libraries:</span></span>
 <span id="cb1-2"><a href="#cb1-2"></a><span class="fu">library</span>(dplyr)</span>
 <span id="cb1-3"><a href="#cb1-3"></a><span class="fu">library</span>(REDCapR)</span>
@@ -700,12 +701,12 @@ $ super_hero_powers_complete  &lt;dbl&gt; NA, 0, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 
 </section>
 <section id="superheroes-output-1" class="slide level2 smaller scrollable">
 <h2>SuperHeroes Output</h2>
-<div class="cell">
+<div class="cell" data-hash="REDCapTidieR_cache/revealjs/unnamed-chunk-5_b87d12f7fbedb3dbd6e4a00b13b654aa">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="co"># View first 10 entries of SuperHeroes db tibble</span></span>
 <span id="cb3-2"><a href="#cb3-2"></a>superheroes_db <span class="sc">%&gt;%</span> </span>
 <span id="cb3-3"><a href="#cb3-3"></a>  <span class="fu">head</span>(<span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell">
+<div class="cell" data-hash="REDCapTidieR_cache/revealjs/unnamed-chunk-6_9f0f5b09550b0768c56c8cd255dae95a">
 <div class="cell-output-display">
 
 <div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:500px; overflow-x: scroll; width:100%; "><table style="width:20%; font-size: 14px; width: auto !important; margin-left: auto; margin-right: auto;" class="table table-striped table-hover table-bordered">
@@ -960,12 +961,12 @@ $ super_hero_powers_complete  &lt;dbl&gt; NA, 0, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 
 </section>
 <section id="superheroes-repeating-output" class="slide level2 smaller">
 <h2>SuperHeroes Repeating Output</h2>
-<div class="cell">
+<div class="cell" data-hash="REDCapTidieR_cache/revealjs/unnamed-chunk-7_9305407ac531ed3826487a3471c06a8f">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a>superheroes_db <span class="sc">%&gt;%</span> </span>
 <span id="cb4-2"><a href="#cb4-2"></a>  <span class="fu">filter</span>(record_id <span class="sc">==</span> <span class="dv">0</span>) <span class="sc">%&gt;%</span> </span>
 <span id="cb4-3"><a href="#cb4-3"></a>  <span class="fu">select</span>(record_id, <span class="fu">contains</span>(<span class="st">"redcap_"</span>), name, power)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell">
+<div class="cell" data-hash="REDCapTidieR_cache/revealjs/unnamed-chunk-8_b7c7f1e3135b672cee55014655bcd23e">
 <div class="cell-output-display">
 
 <div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:250px; overflow-x: scroll; width:100%; "><table style="width:20%; font-size: 14px; width: auto !important; margin-left: auto; margin-right: auto;" class="table table-striped table-hover table-bordered">
@@ -1076,12 +1077,8 @@ $ super_hero_powers_complete  &lt;dbl&gt; NA, 0, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 
 <li>Missing metadata linking field association to instruments</li>
 <li>Row identification is confusing and inconsistent</li>
 </ul>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/REDCapTidieR/theproblem.png"></p>
-</figure>
-</div>
-<aside class="notes">
+
+<img data-src="images/REDCapTidieR/theproblem.png" class="r-stretch quarto-figure-center"><aside class="notes">
 <p>There are a number of problems with this which anyone here who has worked with repeating instruments or longitudinal REDCap projects has probably run into.</p>
 <p>First: empty data shown by all those <code>NA</code> values is not actually indicative of missingness, instead this is an artifact introduced as a side effect of having these compound keys tied to repeating instruments. This can force analysts to go back and either recreate data they need or jump through hoops to make up for data sparsity.</p>
 <p>Second: Data exports often wind up becoming much larger than anticipated because of how many rows get introduced, making exports messy and unwieldy.</p>
@@ -1129,7 +1126,7 @@ $ super_hero_powers_complete  &lt;dbl&gt; NA, 0, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 
 </section>
 <section id="revisiting-superheroes" class="slide level2">
 <h2>Revisiting Superheroes</h2>
-<div class="cell">
+<div class="cell" data-hash="REDCapTidieR_cache/revealjs/unnamed-chunk-9_cb8fc607986d07d8f25716013edd8a87">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a><span class="fu">library</span>(REDCapTidieR)</span>
 <span id="cb5-2"><a href="#cb5-2"></a>superheroes_tidy <span class="ot">&lt;-</span> <span class="fu">read_redcap_tidy</span>(redcap_uri, token)</span>
 <span id="cb5-3"><a href="#cb5-3"></a></span>
@@ -1162,11 +1159,11 @@ $ super_hero_powers_complete  &lt;dbl&gt; NA, 0, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 
 <div class="columns">
 <div class="column" style="width:60%;">
 <p>Non-Repeating Hero Information</p>
-<div class="cell">
+<div class="cell" data-hash="REDCapTidieR_cache/revealjs/unnamed-chunk-10_46498f8223769207205d529d56ef9ed7">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a>superheroes_tidy<span class="sc">$</span>redcap_data[[<span class="dv">2</span>]] <span class="sc">%&gt;%</span> </span>
 <span id="cb7-2"><a href="#cb7-2"></a>  <span class="fu">head</span>(<span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell">
+<div class="cell" data-hash="REDCapTidieR_cache/revealjs/unnamed-chunk-11_83b19065a0eafd916a8d1409079f4531">
 <div class="cell-output-display">
 
 <div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:500px; overflow-x: scroll; width:100%; "><table style="width:20%; font-size: 11px; width: auto !important; margin-left: auto; margin-right: auto;" class="table table-striped table-hover table-bordered">
@@ -1199,7 +1196,7 @@ $ super_hero_powers_complete  &lt;dbl&gt; NA, 0, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 
    <td style="text-align:left;"> <span style="     color: black !important;">Marvel Comics</span> </td>
    <td style="text-align:left;"> <span style="     color: black !important;">-</span> </td>
    <td style="text-align:left;"> <span style="     color: black !important;">good</span> </td>
-   <td style="text-align:left;"> <span style="     color: black !important;">0</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Incomplete</span> </td>
   </tr>
   <tr>
    <td style="text-align:left;font-weight: bold;"> <span style="     color: black !important;">1</span> </td>
@@ -1213,7 +1210,7 @@ $ super_hero_powers_complete  &lt;dbl&gt; NA, 0, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 
    <td style="text-align:left;"> <span style="     color: black !important;">Dark Horse Comics</span> </td>
    <td style="text-align:left;"> <span style="     color: black !important;">blue</span> </td>
    <td style="text-align:left;"> <span style="     color: black !important;">good</span> </td>
-   <td style="text-align:left;"> <span style="     color: black !important;">0</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Incomplete</span> </td>
   </tr>
   <tr>
    <td style="text-align:left;font-weight: bold;"> <span style="     color: black !important;">2</span> </td>
@@ -1227,7 +1224,7 @@ $ super_hero_powers_complete  &lt;dbl&gt; NA, 0, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 
    <td style="text-align:left;"> <span style="     color: black !important;">DC Comics</span> </td>
    <td style="text-align:left;"> <span style="     color: black !important;">red</span> </td>
    <td style="text-align:left;"> <span style="     color: black !important;">good</span> </td>
-   <td style="text-align:left;"> <span style="     color: black !important;">0</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Incomplete</span> </td>
   </tr>
   <tr>
    <td style="text-align:left;font-weight: bold;"> <span style="     color: black !important;">3</span> </td>
@@ -1241,7 +1238,7 @@ $ super_hero_powers_complete  &lt;dbl&gt; NA, 0, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 
    <td style="text-align:left;"> <span style="     color: black !important;">Marvel Comics</span> </td>
    <td style="text-align:left;"> <span style="     color: black !important;">-</span> </td>
    <td style="text-align:left;"> <span style="     color: black !important;">bad</span> </td>
-   <td style="text-align:left;"> <span style="     color: black !important;">0</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Incomplete</span> </td>
   </tr>
   <tr>
    <td style="text-align:left;font-weight: bold;"> <span style="     color: black !important;">4</span> </td>
@@ -1255,7 +1252,7 @@ $ super_hero_powers_complete  &lt;dbl&gt; NA, 0, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 
    <td style="text-align:left;"> <span style="     color: black !important;">Marvel Comics</span> </td>
    <td style="text-align:left;"> <span style="     color: black !important;">-</span> </td>
    <td style="text-align:left;"> <span style="     color: black !important;">bad</span> </td>
-   <td style="text-align:left;"> <span style="     color: black !important;">0</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Incomplete</span> </td>
   </tr>
   <tr>
    <td style="text-align:left;font-weight: bold;"> <span style="     color: black !important;">5</span> </td>
@@ -1269,7 +1266,7 @@ $ super_hero_powers_complete  &lt;dbl&gt; NA, 0, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 
    <td style="text-align:left;"> <span style="     color: black !important;">Marvel Comics</span> </td>
    <td style="text-align:left;"> <span style="     color: black !important;">-</span> </td>
    <td style="text-align:left;"> <span style="     color: black !important;">bad</span> </td>
-   <td style="text-align:left;"> <span style="     color: black !important;">0</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Incomplete</span> </td>
   </tr>
   <tr>
    <td style="text-align:left;font-weight: bold;"> <span style="     color: black !important;">6</span> </td>
@@ -1283,7 +1280,7 @@ $ super_hero_powers_complete  &lt;dbl&gt; NA, 0, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 
    <td style="text-align:left;"> <span style="     color: black !important;">NBC - Heroes</span> </td>
    <td style="text-align:left;"> <span style="     color: black !important;">-</span> </td>
    <td style="text-align:left;"> <span style="     color: black !important;">good</span> </td>
-   <td style="text-align:left;"> <span style="     color: black !important;">0</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Incomplete</span> </td>
   </tr>
   <tr>
    <td style="text-align:left;font-weight: bold;"> <span style="     color: black !important;">7</span> </td>
@@ -1297,7 +1294,7 @@ $ super_hero_powers_complete  &lt;dbl&gt; NA, 0, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 
    <td style="text-align:left;"> <span style="     color: black !important;">DC Comics</span> </td>
    <td style="text-align:left;"> <span style="     color: black !important;">-</span> </td>
    <td style="text-align:left;"> <span style="     color: black !important;">good</span> </td>
-   <td style="text-align:left;"> <span style="     color: black !important;">0</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Incomplete</span> </td>
   </tr>
   <tr>
    <td style="text-align:left;font-weight: bold;"> <span style="     color: black !important;">8</span> </td>
@@ -1311,7 +1308,7 @@ $ super_hero_powers_complete  &lt;dbl&gt; NA, 0, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 
    <td style="text-align:left;"> <span style="     color: black !important;">Marvel Comics</span> </td>
    <td style="text-align:left;"> <span style="     color: black !important;">-</span> </td>
    <td style="text-align:left;"> <span style="     color: black !important;">good</span> </td>
-   <td style="text-align:left;"> <span style="     color: black !important;">0</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Incomplete</span> </td>
   </tr>
   <tr>
    <td style="text-align:left;font-weight: bold;"> <span style="     color: black !important;">9</span> </td>
@@ -1325,7 +1322,7 @@ $ super_hero_powers_complete  &lt;dbl&gt; NA, 0, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 
    <td style="text-align:left;"> <span style="     color: black !important;">Marvel Comics</span> </td>
    <td style="text-align:left;"> <span style="     color: black !important;">-</span> </td>
    <td style="text-align:left;"> <span style="     color: black !important;">good</span> </td>
-   <td style="text-align:left;"> <span style="     color: black !important;">0</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Incomplete</span> </td>
   </tr>
 </tbody>
 </table></div>
@@ -1334,11 +1331,11 @@ $ super_hero_powers_complete  &lt;dbl&gt; NA, 0, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 
 </div>
 </div><div class="column" style="width:40%;">
 <p>Repeating Hero Powers</p>
-<div class="cell">
+<div class="cell" data-hash="REDCapTidieR_cache/revealjs/unnamed-chunk-12_c2cbb707cf8536f921f43539a7e47555">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a>superheroes_tidy<span class="sc">$</span>redcap_data[[<span class="dv">1</span>]] <span class="sc">%&gt;%</span> </span>
 <span id="cb8-2"><a href="#cb8-2"></a>  <span class="fu">head</span>(<span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell">
+<div class="cell" data-hash="REDCapTidieR_cache/revealjs/unnamed-chunk-13_185d11ad3cfa0df9fbad45578d8cfcf6">
 <div class="cell-output-display">
 
 <div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:500px; overflow-x: scroll; width:100%; "><table style="width:20%; font-size: 11px; width: auto !important; margin-left: auto; margin-right: auto;" class="table table-striped table-hover table-bordered">
@@ -1355,61 +1352,61 @@ $ super_hero_powers_complete  &lt;dbl&gt; NA, 0, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 
    <td style="text-align:left;font-weight: bold;"> <span style="     color: black !important;">0</span> </td>
    <td style="text-align:left;"> <span style="     color: black !important;">1</span> </td>
    <td style="text-align:left;"> <span style="     color: black !important;">Accelerated Healing</span> </td>
-   <td style="text-align:left;"> <span style="     color: black !important;">0</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Incomplete</span> </td>
   </tr>
   <tr>
    <td style="text-align:left;font-weight: bold;"> <span style="     color: black !important;">0</span> </td>
    <td style="text-align:left;"> <span style="     color: black !important;">2</span> </td>
    <td style="text-align:left;"> <span style="     color: black !important;">Durability</span> </td>
-   <td style="text-align:left;"> <span style="     color: black !important;">0</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Incomplete</span> </td>
   </tr>
   <tr>
    <td style="text-align:left;font-weight: bold;"> <span style="     color: black !important;">0</span> </td>
    <td style="text-align:left;"> <span style="     color: black !important;">3</span> </td>
    <td style="text-align:left;"> <span style="     color: black !important;">Longevity</span> </td>
-   <td style="text-align:left;"> <span style="     color: black !important;">0</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Incomplete</span> </td>
   </tr>
   <tr>
    <td style="text-align:left;font-weight: bold;"> <span style="     color: black !important;">0</span> </td>
    <td style="text-align:left;"> <span style="     color: black !important;">4</span> </td>
    <td style="text-align:left;"> <span style="     color: black !important;">Super Strength</span> </td>
-   <td style="text-align:left;"> <span style="     color: black !important;">0</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Incomplete</span> </td>
   </tr>
   <tr>
    <td style="text-align:left;font-weight: bold;"> <span style="     color: black !important;">0</span> </td>
    <td style="text-align:left;"> <span style="     color: black !important;">5</span> </td>
    <td style="text-align:left;"> <span style="     color: black !important;">Stamina</span> </td>
-   <td style="text-align:left;"> <span style="     color: black !important;">0</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Incomplete</span> </td>
   </tr>
   <tr>
    <td style="text-align:left;font-weight: bold;"> <span style="     color: black !important;">0</span> </td>
    <td style="text-align:left;"> <span style="     color: black !important;">6</span> </td>
    <td style="text-align:left;"> <span style="     color: black !important;">Camouflage</span> </td>
-   <td style="text-align:left;"> <span style="     color: black !important;">0</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Incomplete</span> </td>
   </tr>
   <tr>
    <td style="text-align:left;font-weight: bold;"> <span style="     color: black !important;">0</span> </td>
    <td style="text-align:left;"> <span style="     color: black !important;">7</span> </td>
    <td style="text-align:left;"> <span style="     color: black !important;">Self-Sustenance</span> </td>
-   <td style="text-align:left;"> <span style="     color: black !important;">0</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Incomplete</span> </td>
   </tr>
   <tr>
    <td style="text-align:left;font-weight: bold;"> <span style="     color: black !important;">1</span> </td>
    <td style="text-align:left;"> <span style="     color: black !important;">1</span> </td>
    <td style="text-align:left;"> <span style="     color: black !important;">Agility</span> </td>
-   <td style="text-align:left;"> <span style="     color: black !important;">0</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Incomplete</span> </td>
   </tr>
   <tr>
    <td style="text-align:left;font-weight: bold;"> <span style="     color: black !important;">1</span> </td>
    <td style="text-align:left;"> <span style="     color: black !important;">2</span> </td>
    <td style="text-align:left;"> <span style="     color: black !important;">Accelerated Healing</span> </td>
-   <td style="text-align:left;"> <span style="     color: black !important;">0</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Incomplete</span> </td>
   </tr>
   <tr>
    <td style="text-align:left;font-weight: bold;"> <span style="     color: black !important;">1</span> </td>
    <td style="text-align:left;"> <span style="     color: black !important;">3</span> </td>
    <td style="text-align:left;"> <span style="     color: black !important;">Cold Resistance</span> </td>
-   <td style="text-align:left;"> <span style="     color: black !important;">0</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Incomplete</span> </td>
   </tr>
 </tbody>
 </table></div>
@@ -1445,11 +1442,11 @@ $ super_hero_powers_complete  &lt;dbl&gt; NA, 0, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 
 <div class="columns">
 <div class="column" style="width:50%;">
 <p>Non-Repeating Hero Information</p>
-<div class="cell">
+<div class="cell" data-hash="REDCapTidieR_cache/revealjs/unnamed-chunk-14_8e0fef2020eb44b8736c4f4f62f82f7f">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a>superheroes_tidy<span class="sc">$</span>redcap_data[[<span class="dv">2</span>]] <span class="sc">%&gt;%</span> </span>
 <span id="cb9-2"><a href="#cb9-2"></a>  <span class="fu">head</span>(<span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell">
+<div class="cell" data-hash="REDCapTidieR_cache/revealjs/unnamed-chunk-15_77707c4ce6914bf5967016ec8ece190a">
 <div class="cell-output-display">
 
 <div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:300px; overflow-x: scroll; width:100%; "><table style="width:20%; font-size: 20px; width: auto !important; margin-left: auto; margin-right: auto;" class="table table-striped table-hover table-bordered">
@@ -1464,27 +1461,27 @@ $ super_hero_powers_complete  &lt;dbl&gt; NA, 0, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 
   <tr>
    <td style="text-align:left;font-weight: bold;"> <span style="     color: black !important;">0</span> </td>
    <td style="text-align:left;"> <span style="     color: black !important;">...</span> </td>
-   <td style="text-align:left;"> <span style="     color: black !important;">0</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Incomplete</span> </td>
   </tr>
   <tr>
    <td style="text-align:left;font-weight: bold;"> <span style="     color: black !important;">1</span> </td>
    <td style="text-align:left;"> <span style="     color: black !important;">...</span> </td>
-   <td style="text-align:left;"> <span style="     color: black !important;">0</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Incomplete</span> </td>
   </tr>
   <tr>
    <td style="text-align:left;font-weight: bold;"> <span style="     color: black !important;">2</span> </td>
    <td style="text-align:left;"> <span style="     color: black !important;">...</span> </td>
-   <td style="text-align:left;"> <span style="     color: black !important;">0</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Incomplete</span> </td>
   </tr>
   <tr>
    <td style="text-align:left;font-weight: bold;"> <span style="     color: black !important;">3</span> </td>
    <td style="text-align:left;"> <span style="     color: black !important;">...</span> </td>
-   <td style="text-align:left;"> <span style="     color: black !important;">0</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Incomplete</span> </td>
   </tr>
   <tr>
    <td style="text-align:left;font-weight: bold;"> <span style="     color: black !important;">4</span> </td>
    <td style="text-align:left;"> <span style="     color: black !important;">...</span> </td>
-   <td style="text-align:left;"> <span style="     color: black !important;">0</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Incomplete</span> </td>
   </tr>
 </tbody>
 </table></div>
@@ -1493,11 +1490,11 @@ $ super_hero_powers_complete  &lt;dbl&gt; NA, 0, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 
 </div>
 </div><div class="column" style="width:50%;">
 <p>Repeating Hero Powers</p>
-<div class="cell">
+<div class="cell" data-hash="REDCapTidieR_cache/revealjs/unnamed-chunk-16_2ed1320e3d0c6e284a16f02013a63188">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1"></a>superheroes_tidy<span class="sc">$</span>redcap_data[[<span class="dv">1</span>]] <span class="sc">%&gt;%</span> </span>
 <span id="cb10-2"><a href="#cb10-2"></a>  <span class="fu">head</span>(<span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell">
+<div class="cell" data-hash="REDCapTidieR_cache/revealjs/unnamed-chunk-17_3ced0aad206e8d9a9ee52b0c0f3c23e3">
 <div class="cell-output-display">
 
 <div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:300px; overflow-x: scroll; width:100%; "><table style="width:20%; font-size: 20px; width: auto !important; margin-left: auto; margin-right: auto;" class="table table-striped table-hover table-bordered">
@@ -1512,27 +1509,27 @@ $ super_hero_powers_complete  &lt;dbl&gt; NA, 0, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 
   <tr>
    <td style="text-align:left;font-weight: bold;"> <span style="     color: black !important;">0</span> </td>
    <td style="text-align:left;"> <span style="     color: black !important;">...</span> </td>
-   <td style="text-align:left;"> <span style="     color: black !important;">0</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Incomplete</span> </td>
   </tr>
   <tr>
    <td style="text-align:left;font-weight: bold;"> <span style="     color: black !important;">0</span> </td>
    <td style="text-align:left;"> <span style="     color: black !important;">...</span> </td>
-   <td style="text-align:left;"> <span style="     color: black !important;">0</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Incomplete</span> </td>
   </tr>
   <tr>
    <td style="text-align:left;font-weight: bold;"> <span style="     color: black !important;">0</span> </td>
    <td style="text-align:left;"> <span style="     color: black !important;">...</span> </td>
-   <td style="text-align:left;"> <span style="     color: black !important;">0</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Incomplete</span> </td>
   </tr>
   <tr>
    <td style="text-align:left;font-weight: bold;"> <span style="     color: black !important;">0</span> </td>
    <td style="text-align:left;"> <span style="     color: black !important;">...</span> </td>
-   <td style="text-align:left;"> <span style="     color: black !important;">0</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Incomplete</span> </td>
   </tr>
   <tr>
    <td style="text-align:left;font-weight: bold;"> <span style="     color: black !important;">0</span> </td>
    <td style="text-align:left;"> <span style="     color: black !important;">...</span> </td>
-   <td style="text-align:left;"> <span style="     color: black !important;">0</span> </td>
+   <td style="text-align:left;"> <span style="     color: black !important;">Incomplete</span> </td>
   </tr>
 </tbody>
 </table></div>
@@ -1561,7 +1558,7 @@ $ super_hero_powers_complete  &lt;dbl&gt; NA, 0, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 
 </section>
 <section id="the-default-output" class="slide level2">
 <h2>The Default Output</h2>
-<div class="cell">
+<div class="cell" data-hash="REDCapTidieR_cache/revealjs/unnamed-chunk-18_da442f0bcea8390dac653200f47fbb7f">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1"></a><span class="fu">library</span>(REDCapTidieR)</span>
 <span id="cb11-2"><a href="#cb11-2"></a>superheroes_tidy <span class="ot">&lt;-</span> <span class="fu">read_redcap_tidy</span>(redcap_uri, token)</span>
 <span id="cb11-3"><a href="#cb11-3"></a></span>
@@ -1591,7 +1588,7 @@ $ super_hero_powers_complete  &lt;dbl&gt; NA, 0, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 
 <section id="bind_tables-direct-to-environment" class="slide level2 smaller">
 <h2><code>bind_tables</code> Direct to Environment</h2>
 <p>The function:</p>
-<div class="cell">
+<div class="cell" data-hash="REDCapTidieR_cache/revealjs/unnamed-chunk-19_44d6748b05ed6b43f672dca72490f000">
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1"></a><span class="co"># How `bind_tables()` is called:</span></span>
 <span id="cb13-2"><a href="#cb13-2"></a>bind_tables <span class="ot">&lt;-</span> <span class="cf">function</span>(.data,</span>
 <span id="cb13-3"><a href="#cb13-3"></a>                        <span class="at">environment =</span> <span class="fu">global_env</span>(),</span>
@@ -1603,7 +1600,7 @@ $ super_hero_powers_complete  &lt;dbl&gt; NA, 0, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 
 <span id="cb13-9"><a href="#cb13-9"></a>  <span class="fu">bind_tables</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Clear out our envionrment:</p>
-<div class="cell">
+<div class="cell" data-hash="REDCapTidieR_cache/revealjs/unnamed-chunk-20_f08cfd6a022c3c4ae22f603f4d765b74">
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1"></a><span class="fu">rm</span>(<span class="at">list =</span> <span class="fu">ls</span>())</span>
 <span id="cb14-2"><a href="#cb14-2"></a><span class="fu">ls.str</span>(<span class="at">envir =</span> <span class="fu">globalenv</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
@@ -1611,7 +1608,7 @@ $ super_hero_powers_complete  &lt;dbl&gt; NA, 0, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 
 <p>Empty output, no global environment objects</p>
 </blockquote>
 <p>Reload the <code>superheroes_tidy</code> dataset, pipe to <code>bind_tables</code>, check environment:</p>
-<div class="cell">
+<div class="cell" data-hash="REDCapTidieR_cache/revealjs/unnamed-chunk-22_67e6e90f3d0b625d6d884492e21172aa">
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1"></a>superheroes_tidy <span class="sc">%&gt;%</span></span>
 <span id="cb15-2"><a href="#cb15-2"></a>  <span class="fu">bind_tables</span>()</span>
 <span id="cb15-3"><a href="#cb15-3"></a></span>
@@ -1640,12 +1637,8 @@ superheroes_tidy : tibble [2 × 3] (S3: tbl_df/tbl/data.frame)</code></pre>
 </section>
 <section id="bind_tables-direct-to-environment-1" class="slide level2 smaller">
 <h2><code>bind_tables</code> Direct to Environment</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/REDCapTidieR/bind_tables_env_output.png"></p>
-</figure>
-</div>
-<aside class="notes">
+
+<img data-src="images/REDCapTidieR/bind_tables_env_output.png" class="r-stretch quarto-figure-center"><aside class="notes">
 <p>And if you’re used to looking at your environment in RStudio, this is exactly the same as taking your environment window pane on the left and populating it with the objects on the right.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -1661,21 +1654,21 @@ superheroes_tidy : tibble [2 × 3] (S3: tbl_df/tbl/data.frame)</code></pre>
 </section>
 <section id="longitudinal-redcap-projects" class="slide level2 smaller">
 <h2>Longitudinal REDCap Projects</h2>
-<table>
+<table style="width:99%;">
 <colgroup>
 <col style="width: 22%">
 <col style="width: 28%">
-<col style="width: 24%">
-<col style="width: 24%">
+<col style="width: 23%">
+<col style="width: 23%">
 </colgroup>
 <thead>
 <tr class="header">
 <th></th>
 <th><span class="smallcaps"><strong>Classic</strong></span></th>
 <th><p><span class="smallcaps"><strong>Longitudinal,</strong></span></p>
-<span class="smallcaps"><strong>one arm</strong></span></th>
+<p><span class="smallcaps"><strong>one arm</strong></span></p></th>
 <th><p><span class="smallcaps"><strong>Longitudinal,</strong></span></p>
-<span class="smallcaps"><strong>multi-arm</strong></span></th>
+<p><span class="smallcaps"><strong>multi-arm</strong></span></p></th>
 </tr>
 </thead>
 <tbody>
@@ -1720,15 +1713,11 @@ superheroes_tidy : tibble [2 × 3] (S3: tbl_df/tbl/data.frame)</code></pre>
 </section>
 <section id="redcap-projects-with-arms" class="slide level2">
 <h2>REDCap Projects with Arms</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/REDCapTidieR/redcap_arms_example.png"></p>
-</figure>
-</div>
-<div class="cell">
+
+<img data-src="images/REDCapTidieR/redcap_arms_example.png" class="r-stretch quarto-figure-center"><div class="cell" data-hash="REDCapTidieR_cache/revealjs/unnamed-chunk-23_691e9d8ba2305f471a47b695fac70d87">
 
 </div>
-<div class="cell">
+<div class="cell" data-hash="REDCapTidieR_cache/revealjs/unnamed-chunk-24_73fba1fb5b8724db88c75b9f585b173e">
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1"></a>redcap_long_arms_tidy <span class="ot">&lt;-</span> <span class="fu">read_redcap_tidy</span>(redcap_uri, token)</span>
 <span id="cb17-2"><a href="#cb17-2"></a></span>
 <span id="cb17-3"><a href="#cb17-3"></a>redcap_long_arms_tidy</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -1760,10 +1749,10 @@ superheroes_tidy : tibble [2 × 3] (S3: tbl_df/tbl/data.frame)</code></pre>
 <h2>REDCap Projects with Arms</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<div class="cell">
+<div class="cell" data-hash="REDCapTidieR_cache/revealjs/unnamed-chunk-25_2e14957c53325c6dbf94c48de836da07">
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1"></a>redcap_long_arms_tidy<span class="sc">$</span>redcap_data[[<span class="dv">1</span>]]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell">
+<div class="cell" data-hash="REDCapTidieR_cache/revealjs/unnamed-chunk-26_9c60cd72315d0d817d4b03027954e760">
 <div class="cell-output-display">
 
 <table style="width:20%; font-size: 11px; width: auto !important; margin-left: auto; margin-right: auto;" class="table table-striped table-hover table-bordered">
@@ -1775,7 +1764,7 @@ superheroes_tidy : tibble [2 × 3] (S3: tbl_df/tbl/data.frame)</code></pre>
    <th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;"> redcap_arm </th>
    <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> repeat_1 </th>
    <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> repeat_2 </th>
-   <th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;"> form_status_complete </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> form_status_complete </th>
   </tr>
  </thead>
 <tbody>
@@ -1786,7 +1775,7 @@ superheroes_tidy : tibble [2 × 3] (S3: tbl_df/tbl/data.frame)</code></pre>
    <td style="text-align:right;font-weight: bold;background-color: #66ff99 !important;"> 1 </td>
    <td style="text-align:left;"> 1 </td>
    <td style="text-align:left;"> 2 </td>
-   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:left;"> Incomplete </td>
   </tr>
   <tr>
    <td style="text-align:right;font-weight: bold;"> 1 </td>
@@ -1795,7 +1784,7 @@ superheroes_tidy : tibble [2 × 3] (S3: tbl_df/tbl/data.frame)</code></pre>
    <td style="text-align:right;font-weight: bold;background-color: #66ff99 !important;"> 1 </td>
    <td style="text-align:left;"> 3 </td>
    <td style="text-align:left;"> 4 </td>
-   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:left;"> Incomplete </td>
   </tr>
   <tr>
    <td style="text-align:right;font-weight: bold;"> 1 </td>
@@ -1804,7 +1793,7 @@ superheroes_tidy : tibble [2 × 3] (S3: tbl_df/tbl/data.frame)</code></pre>
    <td style="text-align:right;font-weight: bold;background-color: #66ff99 !important;"> 1 </td>
    <td style="text-align:left;"> 5 </td>
    <td style="text-align:left;"> 6 </td>
-   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:left;"> Incomplete </td>
   </tr>
   <tr>
    <td style="text-align:right;font-weight: bold;"> 1 </td>
@@ -1813,7 +1802,7 @@ superheroes_tidy : tibble [2 × 3] (S3: tbl_df/tbl/data.frame)</code></pre>
    <td style="text-align:right;font-weight: bold;background-color: #66ff99 !important;"> 1 </td>
    <td style="text-align:left;"> A </td>
    <td style="text-align:left;"> B </td>
-   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:left;"> Incomplete </td>
   </tr>
   <tr>
    <td style="text-align:right;font-weight: bold;"> 1 </td>
@@ -1822,7 +1811,7 @@ superheroes_tidy : tibble [2 × 3] (S3: tbl_df/tbl/data.frame)</code></pre>
    <td style="text-align:right;font-weight: bold;background-color: #66ff99 !important;"> 1 </td>
    <td style="text-align:left;"> C </td>
    <td style="text-align:left;"> D </td>
-   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:left;"> Incomplete </td>
   </tr>
   <tr>
    <td style="text-align:right;font-weight: bold;"> 3 </td>
@@ -1831,7 +1820,7 @@ superheroes_tidy : tibble [2 × 3] (S3: tbl_df/tbl/data.frame)</code></pre>
    <td style="text-align:right;font-weight: bold;background-color: #66ff99 !important;"> 1 </td>
    <td style="text-align:left;"> C </td>
    <td style="text-align:left;"> D </td>
-   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:left;"> Incomplete </td>
   </tr>
   <tr>
    <td style="text-align:right;font-weight: bold;"> 3 </td>
@@ -1840,7 +1829,7 @@ superheroes_tidy : tibble [2 × 3] (S3: tbl_df/tbl/data.frame)</code></pre>
    <td style="text-align:right;font-weight: bold;background-color: #66ff99 !important;"> 1 </td>
    <td style="text-align:left;"> E </td>
    <td style="text-align:left;"> F </td>
-   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:left;"> Incomplete </td>
   </tr>
   <tr>
    <td style="text-align:right;font-weight: bold;"> 3 </td>
@@ -1849,7 +1838,7 @@ superheroes_tidy : tibble [2 × 3] (S3: tbl_df/tbl/data.frame)</code></pre>
    <td style="text-align:right;font-weight: bold;background-color: #66ff99 !important;"> 1 </td>
    <td style="text-align:left;"> G </td>
    <td style="text-align:left;"> H </td>
-   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:left;"> Incomplete </td>
   </tr>
   <tr>
    <td style="text-align:right;font-weight: bold;"> 4 </td>
@@ -1858,7 +1847,7 @@ superheroes_tidy : tibble [2 × 3] (S3: tbl_df/tbl/data.frame)</code></pre>
    <td style="text-align:right;font-weight: bold;background-color: #66ff99 !important;"> 2 </td>
    <td style="text-align:left;"> R1 </td>
    <td style="text-align:left;"> R2 </td>
-   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:left;"> Incomplete </td>
   </tr>
 </tbody>
 </table>
@@ -1866,10 +1855,10 @@ superheroes_tidy : tibble [2 × 3] (S3: tbl_df/tbl/data.frame)</code></pre>
 </div>
 </div>
 </div><div class="column" style="width:50%;">
-<div class="cell">
+<div class="cell" data-hash="REDCapTidieR_cache/revealjs/unnamed-chunk-27_0f714ff6a84bb69a977677198d5b0096">
 <div class="sourceCode cell-code" id="cb20"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1"></a>redcap_long_arms_tidy<span class="sc">$</span>redcap_data[[<span class="dv">3</span>]]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell">
+<div class="cell" data-hash="REDCapTidieR_cache/revealjs/unnamed-chunk-28_86ea31749b82f388cf27e049a8dbde94">
 <div class="cell-output-display">
 
 <table style="width:20%; font-size: 11px; width: auto !important; margin-left: auto; margin-right: auto;" class="table table-striped table-hover table-bordered">
@@ -1880,7 +1869,7 @@ superheroes_tidy : tibble [2 × 3] (S3: tbl_df/tbl/data.frame)</code></pre>
    <th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;"> redcap_arm </th>
    <th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;"> nonrepeat_3 </th>
    <th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;"> nonrepeat_4 </th>
-   <th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;"> form_status_complete </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> form_status_complete </th>
   </tr>
  </thead>
 <tbody>
@@ -1890,7 +1879,7 @@ superheroes_tidy : tibble [2 × 3] (S3: tbl_df/tbl/data.frame)</code></pre>
    <td style="text-align:right;font-weight: bold;background-color: #66ff99 !important;"> 1 </td>
    <td style="text-align:right;"> 3 </td>
    <td style="text-align:right;"> 4 </td>
-   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:left;"> Incomplete </td>
   </tr>
   <tr>
    <td style="text-align:right;font-weight: bold;"> 2 </td>
@@ -1898,7 +1887,7 @@ superheroes_tidy : tibble [2 × 3] (S3: tbl_df/tbl/data.frame)</code></pre>
    <td style="text-align:right;font-weight: bold;background-color: #66ff99 !important;"> 1 </td>
    <td style="text-align:right;"> 5 </td>
    <td style="text-align:right;"> 6 </td>
-   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:left;"> Incomplete </td>
   </tr>
   <tr>
    <td style="text-align:right;font-weight: bold;"> 3 </td>
@@ -1906,7 +1895,7 @@ superheroes_tidy : tibble [2 × 3] (S3: tbl_df/tbl/data.frame)</code></pre>
    <td style="text-align:right;font-weight: bold;background-color: #66ff99 !important;"> 1 </td>
    <td style="text-align:right;"> NA </td>
    <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:left;"> Incomplete </td>
   </tr>
 </tbody>
 </table>
@@ -1932,12 +1921,8 @@ superheroes_tidy : tibble [2 × 3] (S3: tbl_df/tbl/data.frame)</code></pre>
 </section>
 <section id="try-it-for-yourself" class="slide level2">
 <h2>Try it for Yourself!*</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/REDCapTidieR/redcaptidier_pkgdown.png"></p>
-</figure>
-</div>
-<p>Install from public GitHub and view the <code>pkgdown</code> site</p>
+
+<img data-src="images/REDCapTidieR/redcaptidier_pkgdown.png" class="r-stretch quarto-figure-center"><p>Install from public GitHub and view the <code>pkgdown</code> site</p>
 <p><span style="font-size: 18px;">*<code>REDCapTidieR</code> is in early alpha, but hopefully for not for long!</span></p>
 <aside class="notes">
 <p>So thank you for sticking with me this far, I realize it can be a bit dry but hopefully you can see how our package can help alleviate some of the mental burden of dealing with raw REDCap data exports. You can learn more on our <code>pkgdown</code> and install the package yourself on our public GitHub repo, just be aware it is still in early development.</p>
@@ -1978,7 +1963,7 @@ superheroes_tidy : tibble [2 × 3] (S3: tbl_df/tbl/data.frame)</code></pre>
 </section>
 <section id="redcap-metadata" class="slide level2 smaller">
 <h2>REDCap Metadata</h2>
-<div class="cell">
+<div class="cell" data-hash="REDCapTidieR_cache/revealjs/unnamed-chunk-30_0eb06cadf3a1a537fe94458d76c10f42">
 <div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1"></a>metadata <span class="ot">&lt;-</span> <span class="fu">redcap_metadata_read</span>(redcap_uri, token)<span class="sc">$</span>data</span>
 <span id="cb21-2"><a href="#cb21-2"></a></span>
 <span id="cb21-3"><a href="#cb21-3"></a>metadata <span class="sc">%&gt;%</span></span>
@@ -2263,7 +2248,7 @@ superheroes_tidy : tibble [2 × 3] (S3: tbl_df/tbl/data.frame)</code></pre>
    <td style="text-align:left;"> NA </td>
    <td style="text-align:left;"> checkbox </td>
    <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10 </td>
+   <td style="text-align:left;"> 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10 | -99, Unknown | -98, Not Given </td>
    <td style="text-align:left;"> NA </td>
    <td style="text-align:left;"> NA </td>
    <td style="text-align:left;"> NA </td>
@@ -2392,6 +2377,26 @@ superheroes_tidy : tibble [2 × 3] (S3: tbl_df/tbl/data.frame)</code></pre>
    <td style="text-align:left;"> NA </td>
    <td style="text-align:left;"> NA </td>
    <td style="text-align:left;"> RH </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> radio_dtxt_error </td>
+   <td style="text-align:left;"> data_field_types </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> radio </td>
+   <td style="text-align:left;"> This is a radio selection meant to be a descriptive text field. </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
    <td style="text-align:left;"> NA </td>
    <td style="text-align:left;"> NA </td>
    <td style="text-align:left;"> NA </td>
@@ -2737,6 +2742,246 @@ superheroes_tidy : tibble [2 × 3] (S3: tbl_df/tbl/data.frame)</code></pre>
    <td style="text-align:left;"> NA </td>
    <td style="text-align:left;"> NA </td>
   </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> api_test_dtxt </td>
+   <td style="text-align:left;"> api_no_access </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> descriptive </td>
+   <td style="text-align:left;"> This instrument to be used to test user API privileges and administer warnings when metadata and db outputs don't align. </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> api_text </td>
+   <td style="text-align:left;"> api_no_access </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> text </td>
+   <td style="text-align:left;"> Test Field </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> api_test_dtxt_2 </td>
+   <td style="text-align:left;"> api_no_access_2 </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> descriptive </td>
+   <td style="text-align:left;"> This instrument to be used to test user API privileges and administer warnings when metadata and db outputs don't align. </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> api_text_2 </td>
+   <td style="text-align:left;"> api_no_access_2 </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> text </td>
+   <td style="text-align:left;"> Test Field </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> api_text_3 </td>
+   <td style="text-align:left;"> api_no_access_2 </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> text </td>
+   <td style="text-align:left;"> Test Field </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> api_text_4 </td>
+   <td style="text-align:left;"> api_no_access_2 </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> text </td>
+   <td style="text-align:left;"> Test Field </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> survey_yesno </td>
+   <td style="text-align:left;"> survey </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> yesno </td>
+   <td style="text-align:left;"> Yes - No field: </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> survey_radio </td>
+   <td style="text-align:left;"> survey </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> radio </td>
+   <td style="text-align:left;"> Radio field: </td>
+   <td style="text-align:left;"> 1, Choice 1 | 2, Choice 2 | 3, Choice 3 </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> survey_checkbox </td>
+   <td style="text-align:left;"> survey </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> checkbox </td>
+   <td style="text-align:left;"> Checkbox Field: </td>
+   <td style="text-align:left;"> one, Choice 1 | two, Choice 2 | three, Choice 3 </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> repeatsurvey_yesno </td>
+   <td style="text-align:left;"> repeat_survey </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> yesno </td>
+   <td style="text-align:left;"> Yes - No field: </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> repeatsurvey_radio_v2 </td>
+   <td style="text-align:left;"> repeat_survey </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> radio </td>
+   <td style="text-align:left;"> Radio field: </td>
+   <td style="text-align:left;"> 1, Choice 1 | 2, Choice 2 | 3, Choice 3 </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> repeatsurvey_checkbox_v2 </td>
+   <td style="text-align:left;"> repeat_survey </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> checkbox </td>
+   <td style="text-align:left;"> Checkbox Field: </td>
+   <td style="text-align:left;"> one, Choice 1 | two, Choice 2 | three, Choice 3 </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
 </tbody>
 </table></div>
 
@@ -3070,7 +3315,8 @@ superheroes_tidy : tibble [2 × 3] (S3: tbl_df/tbl/data.frame)</code></pre>
       for (var i=0; i<noterefs.length; i++) {
         const ref = noterefs[i];
         tippyHover(ref, function() {
-          let href = ref.getAttribute('href');
+          // use id or data attribute instead here
+          let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
           try { href = new URL(href).hash; } catch {}
           const id = href.replace(/^#\/?/, "");
           const note = window.document.getElementById(id);

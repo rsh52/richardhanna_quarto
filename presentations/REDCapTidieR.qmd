@@ -19,6 +19,7 @@ options("kableExtra.html.bsTable" = TRUE)
 
 ```{r}
 #| include: false
+#| cache: true
 library(knitr)
 library(kableExtra)
 
@@ -171,6 +172,7 @@ Because of this, as mentioned earlier, REDCap can be about as complex as you wan
 
 ```{r}
 #| echo: false
+#| cache: true
 redcap_uri <- Sys.getenv("REDCAP_URI")
 token <- Sys.getenv("SUPERHEROES_REDCAP_API")
 ```
@@ -227,6 +229,7 @@ Let's assume I've already done the work of preparing and importing this into a R
 
 ```{r}
 #| echo: true
+#| cache: true
 # Load applicable libraries:
 library(dplyr)
 library(REDCapR)
@@ -252,6 +255,7 @@ Let's look at a tibble structure to see if we can piece why this is.
 ```{r}
 #| echo: true
 #| eval: false
+#| cache: true
 # View first 10 entries of SuperHeroes db tibble
 superheroes_db %>% 
   head(10)
@@ -260,6 +264,7 @@ superheroes_db %>%
 ```{r}
 #| echo: false
 #| eval: true
+#| cache: true
 # Use this for display purposes
 
 superheroes_db %>% 
@@ -303,6 +308,7 @@ we see that A-Bomb's first power is "Accelerated Healing" under instance 1. The 
 ```{r}
 #| echo: true
 #| eval: false
+#| cache: true
 superheroes_db %>% 
   filter(record_id == 0) %>% 
   select(record_id, contains("redcap_"), name, power)
@@ -311,6 +317,7 @@ superheroes_db %>%
 ```{r}
 #| echo: false
 #| eval: true
+#| cache: true
 superheroes_db %>% 
   filter(record_id == 0) %>% 
   select(record_id, contains("redcap_"), name, power) %>% 
@@ -379,6 +386,7 @@ So we went over the problem, now let's bring in the solution: `REDCapTidieR`. At
 ```{r, message=FALSE}
 #| echo: true
 #| eval: true
+#| cache: true
 library(REDCapTidieR)
 superheroes_tidy <- read_redcap_tidy(redcap_uri, token)
 
@@ -400,6 +408,7 @@ Non-Repeating Hero Information
 ```{r}
 #| echo: true
 #| eval: false
+#| cache: true
 superheroes_tidy$redcap_data[[2]] %>% 
   head(10)
 ```
@@ -407,6 +416,7 @@ superheroes_tidy$redcap_data[[2]] %>%
 ```{r}
 #| echo: false
 #| eval: true
+#| cache: true
 superheroes_tidy$redcap_data[[2]] %>% 
   head(10) %>% 
   render_kable(font_size = 11) %>% 
@@ -420,6 +430,7 @@ Repeating Hero Powers
 ```{r}
 #| echo: true
 #| eval: false
+#| cache: true
 superheroes_tidy$redcap_data[[1]] %>% 
   head(10)
 ```
@@ -427,6 +438,7 @@ superheroes_tidy$redcap_data[[1]] %>%
 ```{r}
 #| echo: false
 #| eval: true
+#| cache: true
 superheroes_tidy$redcap_data[[1]] %>% 
   head(10) %>%
   render_kable(font_size = 11) %>% 
@@ -456,6 +468,7 @@ Non-Repeating Hero Information
 ```{r}
 #| echo: true
 #| eval: false
+#| cache: true
 superheroes_tidy$redcap_data[[2]] %>% 
   head(5)
 ```
@@ -463,6 +476,7 @@ superheroes_tidy$redcap_data[[2]] %>%
 ```{r}
 #| echo: false
 #| eval: true
+#| cache: true
 superheroes_tidy$redcap_data[[2]] %>% 
   head(5) %>% 
   mutate("---" = "...") %>% 
@@ -478,6 +492,7 @@ Repeating Hero Powers
 ```{r}
 #| echo: true
 #| eval: false
+#| cache: true
 superheroes_tidy$redcap_data[[1]] %>% 
   head(5)
 ```
@@ -485,6 +500,7 @@ superheroes_tidy$redcap_data[[1]] %>%
 ```{r}
 #| echo: false
 #| eval: true
+#| cache: true
 superheroes_tidy$redcap_data[[1]] %>% 
   head(5) %>%
   mutate("---" = "...") %>% 
@@ -508,6 +524,7 @@ Since the name of the form is indicated in the super tibble, we have a single va
 ```{r, message=FALSE}
 #| echo: true
 #| eval: true
+#| cache: true
 library(REDCapTidieR)
 superheroes_tidy <- read_redcap_tidy(redcap_uri, token)
 
@@ -524,6 +541,7 @@ The function:
 ```{r}
 #| echo: true
 #| eval: false
+#| cache: true
 
 # How `bind_tables()` is called:
 bind_tables <- function(.data,
@@ -540,6 +558,7 @@ Clear out our envionrment:
 ```{r}
 #| echo: true
 #| eval: true
+#| cache: true
 rm(list = ls())
 ls.str(envir = globalenv())
 ```
@@ -549,6 +568,7 @@ ls.str(envir = globalenv())
 ```{r}
 #| echo: false
 #| include: false
+#| cache: true
 redcap_uri <- Sys.getenv("REDCAP_URI")
 token <- Sys.getenv("SUPERHEROES_REDCAP_API")
 superheroes_tidy <- read_redcap_tidy(redcap_uri, token)
@@ -560,6 +580,7 @@ Reload the `superheroes_tidy` dataset, pipe to `bind_tables`, check environment:
 ```{r}
 #| echo: true
 #| eval: true
+#| cache: true
 superheroes_tidy %>%
   bind_tables()
 
@@ -614,7 +635,7 @@ We're already familiar with `record_id` and `redcap_repeat_instance`/`instrument
 ```{r}
 #| echo: false
 #| eval: true
-
+#| cache: true
 redcap_uri <- Sys.getenv("REDCAP_URI")
 token <- Sys.getenv("REDCAPTIDIER_LONGITUDINAL_API")
 ```
@@ -622,7 +643,7 @@ token <- Sys.getenv("REDCAPTIDIER_LONGITUDINAL_API")
 ```{r}
 #| echo: true
 #| eval: true
-
+#| cache: true
 redcap_long_arms_tidy <- read_redcap_tidy(redcap_uri, token)
 
 redcap_long_arms_tidy
@@ -641,12 +662,14 @@ The output of a `read_redcap_tidy` call is still the same. The forms we expect a
 ```{r}
 #| echo: true
 #| eval: false
+#| cache: true
 redcap_long_arms_tidy$redcap_data[[1]]
 ```
 
 ```{r}
 #| echo: false
 #| eval: true
+#| cache: true
 redcap_long_arms_tidy$redcap_data[[1]] %>% 
   kbl(booktabs = T, escape = F, table.attr = "style='width:20%;'") %>%
   # options for HTML output
@@ -664,12 +687,14 @@ redcap_long_arms_tidy$redcap_data[[1]] %>%
 ```{r}
 #| echo: true
 #| eval: false
+#| cache: true
 redcap_long_arms_tidy$redcap_data[[3]]
 ```
 
 ```{r}
 #| echo: false
 #| eval: true
+#| cache: true
 redcap_long_arms_tidy$redcap_data[[3]] %>% 
   kbl(booktabs = T, escape = F, table.attr = "style='width:20%;'") %>%
   # options for HTML output
@@ -722,6 +747,7 @@ And lastly, hopefully we'll get this accepted to CRAN! Would be pretty neat and 
 #| echo: false
 #| eval: true
 #| include: false
+#| cache: true
 library(knitr)
 library(kableExtra)
 
@@ -753,6 +779,7 @@ token <- Sys.getenv("REDCAPTIDIER_CLASSIC_API")
 ```{r}
 #| echo: true
 #| eval: true
+#| cache: true
 metadata <- redcap_metadata_read(redcap_uri, token)$data
 
 metadata %>%
