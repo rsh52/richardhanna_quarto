@@ -207,7 +207,7 @@
     "href": "data_science.html",
     "title": "Data Science",
     "section": "",
-    "text": "Making analysts lives easier through the power of tidy tibbles\n\n\n\n\nR\n\n\nREDCap\n\n\nPackage\n\n\nData Science\n\n\n\n\nThis slide deck was presented to the CHOP R User group in preparation of the package’s v0.1.0 release to CRAN.\n\n\n\n\n\n\nAug 18, 2022\n\n\nRichard Hanna\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nData Science\n\n\nR\n\n\nShiny\n\n\nGolem\n\n\nStem Cell\n\n\n\n\nWe developed a {shiny} application using the {golem} framework to support research staff in calculating and recording stem cell engraftment that helped eliminate errors in data entry.\n\n\n\n\n\n\nSep 18, 2021\n\n\nRichard Hanna\n\n\n\n\n\n\nNo matching items"
+    "text": "Making analysts lives easier through the power of tidy tibbles\n\n\n\n\nR\n\n\nREDCap\n\n\nPackage\n\n\nData Science\n\n\n\n\nThis slide deck was made in {quarto} and presented to the CHOP R User group in preparation of the package’s v0.1.0 release to CRAN.\n\n\n\n\n\n\nAug 18, 2022\n\n\nRichard Hanna\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nData Science\n\n\nR\n\n\nShiny\n\n\nGolem\n\n\nStem Cell\n\n\n\n\nWe developed a {shiny} application using the {golem} framework to support research staff in calculating and recording stem cell engraftment that helped eliminate errors in data entry.\n\n\n\n\n\n\nSep 18, 2021\n\n\nRichard Hanna\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",

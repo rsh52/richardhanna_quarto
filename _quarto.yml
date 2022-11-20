@@ -13,6 +13,11 @@ website:
         text: Publications
       - href: data_science.qmd
         text: Data Science
+    right: 
+      - href: https://github.com/rsh52
+        icon: "github"
+      - href: https://www.linkedin.com/in/richard-hanna-ms-0164162a/
+        icon: "linkedin"
         
 format:
   html:
