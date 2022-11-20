@@ -13,8 +13,6 @@ categories:
   - Videography
 ---
 
-![](images/amsa_jaha_publication/aha_logo.png)
-
 # Abstract
 
 ## Introduction

@@ -12,8 +12,6 @@ categories:
   - Cardiac Arrest
 ---
 
-![](images/amsa_jaha_publication/aha_logo.png)
-
 ## Background
 
 Amplitude spectral area (AMSA) predicts termination of fibrillation (TOF) with return of spontaneous circulation (ROSC) and survival in adults but has not been studied in pediatric cardiac arrest. We characterized AMSA during pediatric cardiac arrest from a Pediatric Resuscitation Quality Collaborative and hypothesized that AMSA would be associated with TOF and ROSC.

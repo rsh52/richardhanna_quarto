@@ -12,8 +12,6 @@ categories:
   - Cardiac Arrest
 ---
 
-![](images/resuscitation/resuscitation_logo.png){fig-align="center" width="230"}
-
 # Abstract
 
 ## Aim of Study

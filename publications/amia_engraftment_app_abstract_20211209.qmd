@@ -10,8 +10,6 @@ categories:
   - R
 ---
 
-![](images/amia_engraftment_app_abstract/amia_logo.png)
-
 > A PDF version of this abstract is available [here](https://drive.google.com/file/d/1VxdETMle70FDS3jzBI-SyS_rBGl6ddYE/view?usp=share_link)
 
 # Proposal

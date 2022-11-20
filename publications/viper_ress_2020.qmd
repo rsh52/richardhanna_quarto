@@ -13,8 +13,6 @@ categories:
   - Videography
 ---
 
-![](images/resuscitation/resuscitation_logo.png){fig-align="center" width="179"}
-
 # Abstract
 ## Objectives
 To describe chest compression (CC) quality by individual providers in two pediatric emergency departments (EDs) using video review and compression monitor output during pediatric cardiac arrests.

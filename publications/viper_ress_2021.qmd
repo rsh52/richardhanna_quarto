@@ -13,8 +13,6 @@ categories:
   - Videography
 ---
 
-![](images/resuscitation/resuscitation_logo.png){fig-align="center" width="179"}
-
 # Abstract
 ## Study aim
 To determine the impact of high-frequency CPR training on performance during simulated and real pediatric CPR events in a pediatric emergency department (ED).

@@ -12,8 +12,6 @@ categories:
   - Cardiac Arrest
 ---
 
-![](images/resuscitation/resuscitation_logo.png){fig-align="center" width="234"}
-
 # Aim
 
 To evaluate pediatric cardiopulmonary resuscitation (CPR) quality during intra-hospital transport to facilitate extracorporeal membrane oxygenation (ECMO)-CPR (ECPR). We compared chest compression (CC) rate, depth, and fraction (CCF) between the pre-transport and intra-transport periods.

@@ -12,8 +12,6 @@ categories:
   - Cardiac Arrest
 ---
 
-![](images/cardiology_in_the_young_publication/cardiology-in-the-young.png)
-
 # Background
 
 Survival after paediatric in-hospital cardiac arrest is worse on nights and weekends without demonstration of disparity in cardiopulmonary resuscitation quality. It is unknown whether these findings differ in children with CHD. This study aimed to determine whether cardiopulmonary resuscitation quality might explain the hypothesised worse outcomes of children with CHD during nights and weekends.
