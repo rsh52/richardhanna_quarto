@@ -1,5 +1,5 @@
 ---
-title: "Stem Cell Engraftment Applications"
+title: "Stem Cell Engraftment Application"
 author: Richard Hanna
 date: 2021-09-18
 description: "We developed a {shiny} application using the {golem} framework to support research staff in calculating and recording stem cell engraftment that helped eliminate errors in data entry."
@@ -13,7 +13,7 @@ categories:
   - Stem Cell
 ---
 
-To assist research staff with outcomes reporting, we developed a R/Shiny application we refer to as the **Stem Cell Engraftment Application**. I presented on the development and reception of the app on at R/Medicine 2021 and you can view the video recording [here](https://www.youtube.com/watch?v=ihVgS6MFHgw) as well as in the links at the top of the page. The repository for this app is private to CHOP and not made publicly available but I welcome any questions any viewers have regarding it.
+To assist research staff with outcomes reporting, we developed a R/Shiny application we refer to as the **Stem Cell Engraftment Application**. I presented on the development and reception of the app on at R/Medicine 2021 and you can view the video recording [**here**](https://www.youtube.com/watch?v=ihVgS6MFHgw) as well as in the links at the top of the page. The repository for this app is private to CHOP and not made publicly available but I welcome any questions any viewers have regarding it.
 
 Stem cell transplantation is a life-saving therapeutic solution for cancers and other malignancies. During the process, a donor provides stem cells from their bone marrow which are separated from the blood using apheresis. Before the stem cells can be provided, the recipient must first have their blood-forming cells destroyed through chemotherapy so that both cancerous and non-cancerous cells are eliminated. The patient then receives the stem cells to replenish the lost cells and produce non-cancerous ones.
 

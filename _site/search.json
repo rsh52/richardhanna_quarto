@@ -2,9 +2,23 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "About Me",
     "section": "",
-    "text": "At the Children’s Hospital of Philadelphia, I am a data scientist for the Cell & Gene Therapy Informatics team supporting the Cellular Therapy and Transplant Section, Bone and Marrow Transplant Program, and various parts of the oncology and pathology divisions of the hospital.\nIn the past I have also worked closely with the Critical Care Medicine and Emergency Medicine departments and spent considerable time in the development of data solutions for the pediatric resuscitation quality collaborative, National Emergency Airway Registry, and Videography in Pediatric Emergency Resuscitation Collaborative.\nI will be updating this site as I’m able to bring tutorials, projects, publications, and posts on various topics in the medical and data science fields. Feel free to connect with me and thank you for visiting!"
+    "text": "Thank you for visiting my site! I’m Rich Hanna, a data scientist with a background in biomedical and mechanical engineering currently developing software and data-driven solutions in pediatric medicine to support cutting-edge clinical research. This site is meant to serve as a portfolio of my work, a space for collaboration, and place for some of my own interests and hobbies."
+  },
+  {
+    "objectID": "about.html#professional-side",
+    "href": "about.html#professional-side",
+    "title": "About Me",
+    "section": "Professional Side",
+    "text": "Professional Side\nAt the Children’s Hospital of Philadelphia, I am a member of the Cell & Gene Therapy Informatics team supporting the Cellular Therapy and Transplant Section, Bone and Marrow Transplant Program, and various parts of the oncology and pathology divisions of the hospital.\nIn the past I have also worked closely with the Critical Care Medicine and Emergency Medicine departments and spent considerable time in the development of data driven solutions for the pediatric resuscitation quality collaborative, National Emergency Airway Registry, and Videography in Pediatric Emergency Resuscitation Collaborative.\nR is my premier language, but I enjoy learning wherever possible. I am very proud to be the developer of multiple shiny applications, a CRAN certified R package, and a co-author on multiple publications thanks my data science pursuits. I have also worked with Matlab, Python, SQL, and am AWS Solutions Architect certified."
+  },
+  {
+    "objectID": "about.html#unprofessional-side",
+    "href": "about.html#unprofessional-side",
+    "title": "About Me",
+    "section": "Unprofessional Side",
+    "text": "Unprofessional Side\nSince I spend most waking hours in front of screens (who amongst us hasn’t flipped from “work screen” directly over to “fun screen” a la video games), I spend much of my free time away from them.\nI’m an avid fake-it-till-you-make it runner because I’m very stubborn. Having flat feet and asthma should probably amount to a pretty terrible athlete, but I’ve been running ~5ks intermittently because on top of being stubborn I’m also spiteful. When possible, my wife and I like to take hikes, ride out bikes, and explore the world around us.\nOn the opposite end of the spectrum from fitness, I greatly enjoy cooking and baking. For some reason, working with my hands taps into the “engineering” side of what I like doing. After all, kitchen creations borderline alchemical in their design. I hope to add a lot to this site showcasing my creations!\nI also enjoy drawing and photography, you may see some of those hobbies appear across this site as well!"
   },
   {
     "objectID": "data_science/REDCapTidieR.html#who-am-i",
@@ -198,7 +212,7 @@
   {
     "objectID": "data_science/stem_cell_engraftment_app.html",
     "href": "data_science/stem_cell_engraftment_app.html",
-    "title": "Stem Cell Engraftment Applications",
+    "title": "Stem Cell Engraftment Application",
     "section": "",
     "text": "Stem cell transplantation is a life-saving therapeutic solution for cancers and other malignancies. During the process, a donor provides stem cells from their bone marrow which are separated from the blood using apheresis. Before the stem cells can be provided, the recipient must first have their blood-forming cells destroyed through chemotherapy so that both cancerous and non-cancerous cells are eliminated. The patient then receives the stem cells to replenish the lost cells and produce non-cancerous ones.\nThe key factor to monitor when undergoing this process is known as engraftment: the process when cells of interest re-emerge at appropriate count levels. In this case, we’re most interested in neutrophils (white blood cells responsible for fighting off infection) and platelets (responsible for blood clotting). We want the patient’s neutrophil level to reach a count of 500cells/uL and their platelet count to reach 20cells/uL.\nFor research staff, reporting these outcome values requires labor-intensive and error-prone calculations taken from multiple sources. By using the application, users need only supply a patient medical record number and receive all related transplants with easy to use buttons that copy the automated calculation directly to their clipboard for direct transcription into the data registry. This is further supported with interactive visuals for confirmation that the calculations are correct.\nAfter using the application for just a few months, research staff were able to correct numerous past entry errors as well as effectively eliminate prospective error reporting. Please feel free to watch the video recording to learn more!\n\n\n\nEngraftment App"
   },
