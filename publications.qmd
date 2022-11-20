@@ -3,7 +3,11 @@ title: "Publications"
 listing:
   contents:
   - "publications/*.qmd"
-  type: default
+  type: table
   sort: "date desc"
+  fields: 
+    - date
+    - title
+    - author
   categories: numbered
 ---
