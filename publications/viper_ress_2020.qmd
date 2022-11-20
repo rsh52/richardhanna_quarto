@@ -1,11 +1,16 @@
 ---
 title: "Analysis of CPR quality by individual providers in the pediatric emergency department"
 author: Aaron J. Donoghue, Sage R. Myers, Benjamin T. Kerrey, Alexis B. Sandler, Ryan Keane, Ichiro Watanabe, Richard Hanna, Mary Kate Abbadessa,  Mary Frey,  Karen J. O'Connell
-abstract: "To describe chest compression (CC) quality by individual providers in two pediatric emergency departments (EDs) using video review and compression monitor output during pediatric cardiac arrests."
+description: "To describe chest compression (CC) quality by individual providers in two pediatric emergency departments (EDs) using video review and compression monitor output during pediatric cardiac arrests."
 date: 2020-08-01
 doi: "https://doi.org/10.1016/j.resuscitation.2020.05.026"
 link-external-newwindow: true
 link-external-icon: true
+categories:
+  - CPR
+  - Resuscitation
+  - Cardiac Arrest
+  - Videography
 ---
 
 ![](images/resuscitation/resuscitation_logo.png){fig-align="center" width="179"}

@@ -6,6 +6,10 @@ abstract: "To evaluate pediatric cardiopulmonary resuscitation (CPR) quality dur
 doi: "https://doi.org/10.1016/j.resuscitation.2020.05.003"
 link-external-newwindow: true
 link-external-icon: true
+categories:
+  - CPR
+  - Resuscitation
+  - Cardiac Arrest
 ---
 
 ![](images/resuscitation/resuscitation_logo.png){fig-align="center" width="234"}

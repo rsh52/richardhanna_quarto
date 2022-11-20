@@ -6,6 +6,11 @@ doi: "https://doi.org/10.1161/circ.138.suppl_2.274"
 abstract: "The quality of chest compressions (CC) is crucial for good outcomes for pediatric cardiac arrest. Verbal prompts from resuscitation leader or CPR coach may help to optimize it. The objective of this study is to describe the frequency of appropriate verbal prompts during pediatric CPR. We hypothesized that verbal prompts for CC would be given less frequently to infants compared to children."
 link-external-newwindow: true
 link-external-icon: true
+categories:
+  - CPR
+  - Resuscitation
+  - Cardiac Arrest
+  - Videography
 ---
 
 ![](images/amsa_jaha_publication/aha_logo.png)

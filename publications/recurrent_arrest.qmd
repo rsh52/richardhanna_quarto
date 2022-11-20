@@ -6,6 +6,10 @@ abstract: "Recurrent in-hospital cardiac arrest (IHCA) is associated with morbid
 doi: "https://doi.org/10.1016/j.resuscitation.2021.10.015"
 link-external-newwindow: true
 link-external-icon: true
+categories:
+  - CPR
+  - Resuscitation
+  - Cardiac Arrest
 ---
 
 ![](images/resuscitation/resuscitation_logo.png){fig-align="center" width="230"}

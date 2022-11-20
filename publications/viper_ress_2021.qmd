@@ -3,9 +3,14 @@ title: "Longitudinal effect of high frequency training on CPR performance during
 author: Aaron J. Donoghue, Debra Heard, Russell Griffin, Mary Kate Abbadessa, Shannon Gaines, Sangmo Je, Richard Hanna,  John Erbayri,  Sage Myers, Dana Niles, Vinay Nadkarni
 date: 2021-10-01
 doi: "https://doi.org/10.1016/j.resplu.2021.100117"
-abstract: "To determine the impact of high-frequency CPR training on performance during simulated and real pediatric CPR events in a pediatric emergency department (ED)."
+description: "To determine the impact of high-frequency CPR training on performance during simulated and real pediatric CPR events in a pediatric emergency department (ED)."
 link-external-newwindow: true
 link-external-icon: true
+categories:
+  - CPR
+  - Resuscitation
+  - Cardiac Arrest
+  - Videography
 ---
 
 ![](images/resuscitation/resuscitation_logo.png){fig-align="center" width="179"}

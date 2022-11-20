@@ -2,10 +2,14 @@
 title: "Development of a Small rear Facing Child Restraint System Virtual Surrogate to Evaluate CRS-to-Vehicle Fitment"
 author: Richard Hanna, Aditya Belwadi
 date: 2015-07-01
-abstract: "The publication in SAE was also presented at the Ohio State University Injury Biomechanics Symposium and the publically available write-up is made available here."
+description: "The publication in SAE was also presented at the Ohio State University Injury Biomechanics Symposium and the publically available write-up is made available here."
 doi: "https://doi.org/10.4271/2015-01-1457"
 link-external-newwindow: true
 link-external-icon: true
+categories:
+  - CRS
+  - 3D Modeling
+  - Automotive Safety
 ---
 
 > The publication in SAE was also presented at the Ohio State University Injury Biomechanics Symposium and the publically available write-up is made available [here](http://ibrc.osu.edu/wp-content/uploads/2015/03/Abstract_Hanna_2015.pdf). You can also find an additional write-up on my research by visiting [CHOP's Research Institute Cornerstone](https://www.research.chop.edu/cornerstone-blog/center-for-injury-research-and-prevention-engineering-students-honored) blog page and on [Chevrolet's Pressroom](https://media.chevrolet.com/media/us/en/chevrolet/news.detail.html/content/Pages/news/us/en/2015/apr/0424-kinect.html).

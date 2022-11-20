@@ -6,6 +6,10 @@ abstract: "Survival after paediatric in-hospital cardiac arrest is worse on nigh
 doi: "https://doi.org/10.1017/S1047951122000099"
 link-external-newwindow: true
 link-external-icon: true
+categories:
+  - CPR
+  - Resuscitation
+  - Cardiac Arrest
 ---
 
 ![](images/cardiology_in_the_young_publication/cardiology-in-the-young.png)

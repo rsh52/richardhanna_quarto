@@ -6,6 +6,10 @@ abstract: "Survival after in-hospital cardiac arrest (IHCA) has been reported to
 doi: "https://doi.org/10.1016/j.resuscitation.2019.10.039"
 link-external-newwindow: true
 link-external-icon: true
+categories:
+  - CPR
+  - Resuscitation
+  - Cardiac Arrest
 ---
 
 ![](images/amsa_jaha_publication/aha_logo.png)

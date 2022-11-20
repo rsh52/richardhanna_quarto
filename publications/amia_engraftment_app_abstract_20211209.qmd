@@ -2,7 +2,12 @@
 title: "Automation of Stem Cell Transplant Outcomes Reporting Leads to Dramatic Reduction of Errors Reported to Real-World Data Registry"
 author: Stephan Kadauke, Richard Hanna
 date: 2021-12-09
-abstract: Real-world data on outcomes after stem cell transplant are aggregated in the international CIBMTR registry. The process of determining engraftment, a key outcome after transplant, is manual, tedious, error-prone. In this talk, we present an application we built and deployed at our center that virtually eliminated errors in engraftment dates reported to the CIBMTR.
+description: Real-world data on outcomes after stem cell transplant are aggregated in the international CIBMTR registry. The process of determining engraftment, a key outcome after transplant, is manual, tedious, error-prone. In this talk, we present an application we built and deployed at our center that virtually eliminated errors in engraftment dates reported to the CIBMTR.
+categories:
+  - Stem Cell
+  - Shiny
+  - Data Science
+  - R
 ---
 
 ![](images/amia_engraftment_app_abstract/amia_logo.png)
