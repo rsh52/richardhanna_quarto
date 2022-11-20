@@ -1,7 +1,7 @@
 ---
 title: "Development of an Automated Couette Viscometer"
 author: Richard Hanna
-date: 2021-06-14
+date: 2015-06-01
 description: "Drexel Senior Design Project: Viscosity of human blood as a diagnostic indicator for patient health through principles of Couette flow."
 link-external-newwindow: true
 link-external-icon: true
