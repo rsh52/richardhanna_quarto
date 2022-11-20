@@ -3,6 +3,7 @@ title: " Verbal Prompts During Pediatric Cardiopulmonary Resuscitation in Emerge
 author: Karen J. O'Connell, Alexis B. Sandler, Matthew Leda, Benjamin T. Kerrey,  Sage R. Myers, Mary Frey, Ichiro Watanabe, Richard Hanna, Aaron J. Donoghue
 date: 2018-11-05
 doi: "https://doi.org/10.1161/circ.138.suppl_2.274"
+abstract: "The quality of chest compressions (CC) is crucial for good outcomes for pediatric cardiac arrest. Verbal prompts from resuscitation leader or CPR coach may help to optimize it. The objective of this study is to describe the frequency of appropriate verbal prompts during pediatric CPR. We hypothesized that verbal prompts for CC would be given less frequently to infants compared to children."
 link-external-newwindow: true
 link-external-icon: true
 ---

@@ -10,18 +10,18 @@ link-external-icon: true
 
 ![](images/cardiology_in_the_young_publication/cardiology-in-the-young.png)
 
-# Background:
+# Background
 
 Survival after paediatric in-hospital cardiac arrest is worse on nights and weekends without demonstration of disparity in cardiopulmonary resuscitation quality. It is unknown whether these findings differ in children with CHD. This study aimed to determine whether cardiopulmonary resuscitation quality might explain the hypothesised worse outcomes of children with CHD during nights and weekends.
 
-# Methods:
+# Methods
 
 In-hospital cardiac arrest data collected by the Pediatric Resuscitation Quality Collaborative for children with CHD. Chest compression quality metrics and survival outcomes were compared between events that occurred during day versus night, and during weekday versus weekend using multivariable logistic regression.
 
-# Results:
+# Results
 
 We evaluated 3614 sixty-second epochs of chest compression data from 132 subjects between 2015 and 2020. There was no difference in chest compression quality metrics during day versus night or weekday versus weekend. Weekday versus weekend was associated with improved survival to hospital discharge (adjusted odds ratio 4.56 [1.29,16.11]; p = 0.02] and survival to hospital discharge with favourable neurological outcomes (adjusted odds ratio 6.35 [1.36,29.6]; p = 0.02), but no difference with rate of return of spontaneous circulation or return of circulation. There was no difference in outcomes for day versus night.
 
-# Conclusion:
+# Conclusion
 
 For children with CHD and in-hospital cardiac arrest, there was no difference in chest compression quality metrics by time of day or day of week. Although there was no difference in outcomes for events during days versus nights, there was improved survival to hospital discharge and survival to hospital discharge with favourable neurological outcome for events occurring on weekdays compared to weekends.
