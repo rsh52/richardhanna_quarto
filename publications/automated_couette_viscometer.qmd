@@ -11,6 +11,8 @@ categories:
   - Hematology
 ---
 
+> Our [**final report**](https://drive.google.com/file/d/14IvNN2A_4kwoSu30_wQg7xGS1DTJIOM_/view?usp=share_link) as well as our [**design presentation**](https://drive.google.com/file/d/10wbNXAPEOHCXNPttoyyLmOSdOUx7zoGl/view?usp=share_link) are also available for you to view.
+
 As modern medicine increasingly pushes for predictive, prospective action over retrospective response the need for diagnostic devices has become ever more prevalent. This senior design project, developed at Drexel University, looked to produce a device which could employ the theory of **Couette flow** to measure human blood viscosity. The idea being that blood viscosity can provide strong clinical indications about a person's health, but producing a device that is inexpensive, fast, and accurate would prove challenging.
 
 **Couette flow** involves three main components: a stationary outer cylinder, a rotational inner cylinder, and the fluid trapped between for analysis. Viscosity can be obtained by analyzing the rotational speed of the inner cylinder due to material properties of the test fluid and shear stresses imposed upon it.
@@ -35,6 +37,6 @@ I highly encourage checking out the slide deck and report in the links above thi
 
 -   This rotational speed correlates with viscosity of the analyzed fluid (blood).
 
-Check out this link for a demo on the Haemopoise in action (with a real human blood sample): [Haemopoise Demo](https://drive.google.com/open?id=1yaGRNpFUqUlfYk1Ytu1puuVekdW9k6IH)
+Check out this link for a demo on the Haemopoise in action (with a real human blood sample): [Haemopoise Demo](https://drive.google.com/file/d/1yaGRNpFUqUlfYk1Ytu1puuVekdW9k6IH/view?usp=share_link)
 
 I couldn't very well discuss this project without giving credit to my fantastic team: Michael Sinisi, Dan Nguyen, Austin Farber, and Matt Lorenz under the tutelage and supervision of Dr. Young Cho, PhD.

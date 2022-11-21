@@ -18,6 +18,8 @@ website:
         icon: "github"
       - href: https://www.linkedin.com/in/richard-hanna-ms-0164162a/
         icon: "linkedin"
+      - href: https://drive.google.com/file/d/1jJ9cVSzasSPW_H-31jADtBhUuU_uK5wW/view
+        icon: "file-earmark-person"
         
 format:
   html:

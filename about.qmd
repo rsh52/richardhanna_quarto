@@ -12,12 +12,10 @@ In the past I have also worked closely with the Critical Care Medicine and Emerg
 
 R is my premier language, but I enjoy learning wherever possible. I am very proud to be the developer of multiple `shiny` applications, a [CRAN certified R package](https://cran.r-project.org/web/packages/REDCapTidieR/index.html), and  a co-author on [multiple publications](https://www.richardshanna.com/publications.html) thanks my data science pursuits. I have also worked with Matlab, Python, SQL, and am [AWS Solutions Architect certified](https://www.credly.com/badges/44361ea8-9eb9-4f27-99ca-05b582f5b962?source=linked_in_profile).
 
-## Unprofessional Side
+## (Un)professional Side
 
-Since I spend most waking hours in front of screens (who amongst us hasn't flipped from "work screen" directly over to "fun screen" a la video games), I spend much of my free time away from them. 
+Since I spend most waking hours in front of screens, I like to spend much of my free time away from them. 
 
-I'm an avid fake-it-till-you-make it runner because I'm very stubborn. Having flat feet and asthma should probably amount to a pretty terrible athlete, but I've been running ~5ks intermittently because on top of being stubborn I'm also spiteful. When possible, my wife and I like to take hikes, ride out bikes, and explore the world around us.
+I'm an avid "fake-it-till-you-make-it" runner: I have flat feet and asthma, but I'm spiteful enough to keep doing it anyway. When possible, my wife and I like to take hikes, ride out bikes, and explore the world around us. 
 
-On the opposite end of the spectrum from fitness, I greatly enjoy cooking and baking. For some reason, working with my hands taps into the "engineering" side of what I like doing. After all, kitchen creations borderline alchemical in their design. I hope to add a lot to this site showcasing my creations!
-
-I also enjoy drawing and photography, you may see some of those hobbies appear across this site as well!
+At home I greatly enjoy cooking and baking. To me, culinary creations in the kitchen overlap plenty with engineering and design. When I feel up to being a bit more artistic, I also enjoy drawing and photography. I hope to use this site to showcase some of these hobbies in the future as well.
