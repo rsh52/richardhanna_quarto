@@ -11,14 +11,14 @@
     "href": "about.html#professional-side",
     "title": "About Me",
     "section": "Professional Side",
-    "text": "Professional Side\nAt the Children’s Hospital of Philadelphia, I am a member of the Cell & Gene Therapy Informatics team supporting the Cellular Therapy and Transplant Section, Bone and Marrow Transplant Program, and various parts of the oncology and pathology divisions of the hospital.\nIn the past I have also worked closely with the Critical Care Medicine and Emergency Medicine departments and spent considerable time in the development of data driven solutions for the pediatric resuscitation quality collaborative, National Emergency Airway Registry, and Videography in Pediatric Emergency Resuscitation Collaborative.\nR is my premier language, but I enjoy learning wherever possible. I am very proud to be the developer of multiple shiny applications, a CRAN certified R package, and a co-author on multiple publications thanks my data science pursuits. I have also worked with Matlab, Python, SQL, and am AWS Solutions Architect certified."
+    "text": "Professional Side\nAt the Children’s Hospital of Philadelphia, I am a member of the Cell & Gene Therapy Informatics team supporting the Cellular Therapy and Transplant Section, Bone and Marrow Transplant Program, and various parts of the oncology and pathology divisions of the hospital.\nIn the past I have also worked closely with the Critical Care Medicine and Emergency Medicine departments and spent considerable time in the development of data-driven solutions for the Pediatric Resuscitation Quality Collaborative, National Emergency Airway Registry, and Videography in Pediatric Emergency Resuscitation Collaborative.\nR is my premier language, but I enjoy learning wherever possible. I am very proud to be the developer of multiple shiny applications, a CRAN certified R package, and a co-author on multiple publications. I have also worked with Matlab, Python, SQL, and am AWS Solutions Architect certified.\nPrior to entering the world of data science, I worked in medical devices designing spinal implants and with the Center for Injury Research & Prevention researching pediatric automotive safety and restraint system modeling."
   },
   {
     "objectID": "about.html#unprofessional-side",
     "href": "about.html#unprofessional-side",
     "title": "About Me",
     "section": "(Un)professional Side",
-    "text": "(Un)professional Side\nSince I spend most waking hours in front of screens, I like to spend much of my free time away from them.\nI’m an avid “fake-it-till-you-make-it” runner: I have flat feet and asthma, but I’m spiteful enough to keep doing it anyway. When possible, my wife and I like to take hikes, ride out bikes, and explore the world around us.\nAt home I greatly enjoy cooking and baking. To me, culinary creations in the kitchen overlap plenty with engineering and design. When I feel up to being a bit more artistic, I also enjoy drawing and photography. I hope to use this site to showcase some of these hobbies in the future as well."
+    "text": "(Un)professional Side\nSince I spend most waking hours in front of screens, I like to spend much of my free time away from them.\nI’m an avid “fake-it-till-you-make-it” runner: I have flat feet and asthma, but I’m spiteful enough to keep doing it anyway. When possible, my wife and I like to take hikes, ride out bikes, and explore the world around us.\nAt home I greatly enjoy cooking and baking. To me, culinary creations in the kitchen have a lot in common with engineering: design, precision, and gratification from a well-made (and hopefully tasty) product. When I feel up to being a bit more artistic, I also enjoy drawing and photography. This site will also serve to showcase some of these hobbies."
   },
   {
     "objectID": "data_science/REDCapTidieR.html#who-am-i",
@@ -226,9 +226,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Welcome",
+    "title": "Richard Hanna",
     "section": "",
-    "text": "This is the start of my website! This page is currently under construction and will be added to in the future."
+    "text": "Thank you for visiting my site. My name is Rich Hanna and, while there are a few others out there, I’m doing my best to be the most “Google-able” one.\nThis site serves professional content of my portfolio as well as some of my hobbies and interests. It’s a pleasure to connect with you.\n\n\n\n\n\nGraduation Cap MS in Biomedical Engineering, 2015\n\n\nDrexel University, Philadelphia\n\n\nGraduation Cap BS in Mechanical Engineering, 2015\n\n\nDrexel University, Philadelphia\n\n\n\n\n\n\n\n\nDatabase Data Scientist\n\n\nChildren’s Hospital of Philadelphia, 2021 - Present\n\n\nDatabase Data Analyst & Programmer\n\n\nChildren’s Hospital of Philadelphia, 2019-2021\n\n\nDatabase Research Project Engineer\n\n\nChildren’s Hospital of Philadelphia, 2017-2019\n\n\nGears Project/Associate Project Engineer\n\n\nGS Medical USA, 2015-2017\n\n\nGears Biomechanics Researcher\n\n\nChildren’s Hospital of Philadelphia, 2014-2015\n\n\n\n\n\n\n\n\nScroll Graduate Certificate in Engineering Management\n\n\nDrexel University, Philadelphia, 2015\n\n\nComputer Solutions Architect - Associate\n\n\nAWS, 2021\n\n\nGears FE/EIT Certified\n\n\nNCEES, 2014"
   },
   {
     "objectID": "publications/amia_engraftment_app_abstract_20211209.html",
