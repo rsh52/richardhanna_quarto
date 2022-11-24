@@ -6,11 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Richard Hanna">
-<meta name="dcterms.date" content="2021-09-18">
-<meta name="description" content="We developed a {shiny} application using the {golem} framework to support research staff in calculating and recording stem cell engraftment that helped eliminate errors in data entry.">
 
-<title>Richard Hanna - Stem Cell Engraftment Application</title>
+<title>Richard Hanna - For BakRs &amp; CookRs</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -26,22 +23,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -61,9 +60,39 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
 
-<link rel="stylesheet" href="../styles.css">
+    const options = {
+      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -73,7 +102,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Richard Hanna</span>
     </a>
   </div>
@@ -83,19 +112,19 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html">Home</a>
+    <a class="nav-link" href="./index.html">Home</a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../about.html">About</a>
+    <a class="nav-link" href="./about.html">About</a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../publications.html">Publications</a>
+    <a class="nav-link" href="./publications.html">Publications</a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../data_science.html">Data Science</a>
+    <a class="nav-link" href="./data_science.html">Data Science</a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../bakrs_cookrs.html">BakRs &amp; CookRs</a>
+    <a class="nav-link active" href="./bakrs_cookrs.html" aria-current="page">BakRs &amp; CookRs</a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -110,7 +139,7 @@ ul.task-list li input[type="checkbox"] {
  </a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="../docs/Richard_S._Hanna’s_Resume.pdf"><i class="bi bi-file-earmark-person" role="img">
+    <a class="nav-link" href="./docs/Richard_S._Hanna’s_Resume.pdf"><i class="bi bi-file-earmark-person" role="img">
 </i> 
  </a>
   </li>  
@@ -126,65 +155,109 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    </div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Apple Pie">Apple Pie <span class="quarto-category-count">(1)</span></div><div class="category" data-category="CookR">CookR <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Dessert">Dessert <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Pastry">Pastry <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Pizza">Pizza <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Stem Cell Engraftment Application</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">Data Science</div>
-    <div class="quarto-category">R</div>
-    <div class="quarto-category">Shiny</div>
-    <div class="quarto-category">Golem</div>
-    <div class="quarto-category">Stem Cell</div>
-  </div>
-  </div>
-
-<div>
-  <div class="description">
-    We developed a {shiny} application using the {golem} framework to support research staff in calculating and recording stem cell engraftment that helped eliminate errors in data entry.
-  </div>
+<h1 class="title">For BakRs &amp; CookRs</h1>
 </div>
+
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Richard Hanna </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">September 18, 2021</p>
-    </div>
-  </div>
     
   </div>
   
 
 </header>
 
-<p>To assist research staff with outcomes reporting, we developed a R/Shiny application we refer to as the <strong>Stem Cell Engraftment Application</strong>. I presented on the development and reception of the app on at R/Medicine 2021 and you can view the video recording <a href="https://www.youtube.com/watch?v=ihVgS6MFHgw"><strong>here</strong></a> as well as in the links at the top of the page. The repository for this app is private to CHOP and not made publicly available but I welcome any questions any viewers have regarding it.</p>
-<p>Stem cell transplantation is a life-saving therapeutic solution for cancers and other malignancies. During the process, a donor provides stem cells from their bone marrow which are separated from the blood using apheresis. Before the stem cells can be provided, the recipient must first have their blood-forming cells destroyed through chemotherapy so that both cancerous and non-cancerous cells are eliminated. The patient then receives the stem cells to replenish the lost cells and produce non-cancerous ones.</p>
-<p>The key factor to monitor when undergoing this process is known as <em>engraftment</em>: the process when cells of interest re-emerge at appropriate count levels. In this case, we’re most interested in neutrophils (white blood cells responsible for fighting off infection) and platelets (responsible for blood clotting). We want the patient’s neutrophil level to reach a count of <strong>500cells/uL</strong> and their platelet count to reach <strong>20cells/uL</strong>.</p>
-<p>For research staff, reporting these outcome values requires labor-intensive and error-prone calculations taken from multiple sources. By using the application, users need only supply a patient medical record number and receive all related transplants with easy to use buttons that copy the automated calculation directly to their clipboard for direct transcription into the data registry. This is further supported with interactive visuals for confirmation that the calculations are correct.</p>
-<p>After using the application for just a few months, research staff were able to correct numerous past entry errors as well as effectively eliminate prospective error reporting. Please feel free to watch the video recording to learn more!</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/stem_cell_engraftment_app/engraftment_app.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Engraftment App</figcaption><p></p>
-</figure>
+
+
+
+
+<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="CookR,Apple Pie,Dessert,Pastry" data-listing-date-sort="1637470800000" data-listing-file-modified-sort="1669255643753" data-listing-reading-time-sort="0.4">
+<a href="./bakrs_cookrs/apple_pie.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./bakrs_cookrs/images/apple_pie_pastry_dough1.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Homemade Salted Caramel Apple Pie
+</h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('CookR'); return false;">
+CookR
 </div>
+<div class="listing-category" onclick="window.quartoListingCategory('Apple Pie'); return false;">
+Apple Pie
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Dessert'); return false;">
+Dessert
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Pastry'); return false;">
+Pastry
+</div>
+</div>
+<div class="card-text listing-description">
+Salted caramel apple pie with homemade pastry doug and salted caramel sauce.
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
 
+</div>
+<div class="listing-date">
+Nov 21, 2021
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="CookR,Pizza" data-listing-date-sort="1637470800000" data-listing-file-modified-sort="1669255304170" data-listing-reading-time-sort="1.045">
+<a href="./bakrs_cookrs/pizza.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./bakrs_cookrs/images/pizza1.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Oven Baked Pizza with Pizza Stone
+</h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('CookR'); return false;">
+CookR
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Pizza'); return false;">
+Pizza
+</div>
+</div>
+<div class="card-text listing-description">
+Oven baked pizza using a pizza stone with homemade tomato sauce, mozzarella, and prosciutto.
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
 
-
-</main> <!-- /main -->
+</div>
+<div class="listing-date">
+Nov 21, 2021
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -281,22 +354,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return popup.innerHTML;
     });
   }
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href);
-    }
-    // Inspect non-navigation links and adorn them if external
-    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-          // target, if specified
-          link.setAttribute("target", "_blank");
-          // default icon
-          link.classList.add("external");
-      }
-    }
 });
 </script>
 </div> <!-- /content -->

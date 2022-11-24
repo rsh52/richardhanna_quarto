@@ -1,0 +1,9 @@
+---
+title: "For BakRs & CookRs"
+listing:
+  contents:
+  - "bakrs_cookrs/*.qmd"
+  type: grid
+  sort: "date desc"
+  categories: numbered
+---

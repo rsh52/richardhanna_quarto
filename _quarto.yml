@@ -13,6 +13,8 @@ website:
         text: Publications
       - href: data_science.qmd
         text: Data Science
+      - href: bakrs_cookrs.qmd
+        text: BakRs & CookRs
     right: 
       - href: https://github.com/rsh52
         icon: "github"
@@ -20,6 +22,10 @@ website:
         icon: "linkedin"
       - href: "docs/Richard_S._Hanna’s_Resume.pdf"
         icon: "file-earmark-person"
+  page-footer: 
+    background: light
+    center: "Made using [Quarto](https://quarto.org/), Copyright 2022, Richard Hanna"
+    
         
 format:
   html:

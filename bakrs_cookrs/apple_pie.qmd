@@ -1,0 +1,44 @@
+---
+title: "Homemade Salted Caramel Apple Pie"
+date: 2021-11-21
+description: Salted caramel apple pie with homemade pastry doug and salted caramel sauce.
+categories:
+  - CookR
+  - Apple Pie
+  - Dessert
+  - Pastry
+---
+
+## Details
+
+This was my first attempt at pastry baking, let alone pies. It came recommended from a friend of mine and, after a solid chunk of time over a couple of days, it came out beautifully. Definitely recommend making the pastry dough ahead of time.
+
+## Photos
+
+#### Pastry Dough Preparation
+
+![](images/apple_pie_pastry_dough1.png){fig-align="center" width="600"}
+
+![](images/apple_pie_pastry_dough2.png){fig-align="center" width="600"}
+
+![](images/apple_pie_pastry_dough3.png){fig-align="center" width="600"}
+
+#### Filling & Lattice Work
+
+![](images/apple_pie_filling.png){fig-align="center" width="600"}
+
+![](images/apple_pie_lattice1.png){fig-align="center" width="600"}
+
+![](images/apple_pie_lattice2.png){fig-align="center" width="600"}
+
+#### Final Product
+
+![](images/apple_pie_final1.png){fig-align="center" width="600"}
+
+![](images/apple_pie_final2.png){fig-align="center" width="600"}
+
+## Resources
+
+- [Sally's Baking Addiction Salted Caramel Apple Pie](https://sallysbakingaddiction.com/salted-caramel-apple-pie/)
+  - [Homemade Pie Crust](https://sallysbakingaddiction.com/baking-basics-homemade-buttery-flaky-pie-crust/)
+  - [Salted Caramel Sauce](https://sallysbakingaddiction.com/homemade-salted-caramel-recipe/)
