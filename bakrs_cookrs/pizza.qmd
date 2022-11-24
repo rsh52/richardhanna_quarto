@@ -1,6 +1,6 @@
 ---
 title: "Oven Baked Pizza with Pizza Stone"
-date: 2021-11-20
+date: 2022-11-20
 description: Oven baked pizza using a pizza stone with homemade tomato sauce, mozzarella, and prosciutto.
 categories:
   - CookR

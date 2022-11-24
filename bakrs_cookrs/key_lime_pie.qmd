@@ -1,5 +1,5 @@
 ---
-title: "~Key~ Lime Pie with Graham Cracker Crust"
+title: "'Key' Lime Pie with Graham Cracker Crust"
 date: 2022-11-23
 image: images/keylime_pie_final1.png
 description: Using fresh, non-key limes for a custard set in a graham cracker crust.

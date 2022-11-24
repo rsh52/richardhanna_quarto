@@ -1,8 +1,8 @@
 ---
-title: "Homemade Salted Caramel Apple Pie"
-date: 2021-11-21
-description: Salted caramel apple pie with homemade pastry doug and salted caramel sauce.
-image: images/apple_pie_final2.png
+title: "Baked Cinnamon Sugar Donuts"
+date: 2022-11-23
+description: Oven baked donuts with a cinnamon sugar topping using a donut tray.
+image: images/donuts_final2.png
 categories:
   - BakR
   - Dessert
