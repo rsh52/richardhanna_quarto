@@ -5,7 +5,7 @@ description: Salted caramel apple pie with homemade pastry doug and salted caram
 image: images/apple_pie_final2.png
 categories:
   - BakR
-  - Apple Pie
+  - Pie
   - Dessert
   - Pastry
 ---

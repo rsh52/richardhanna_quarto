@@ -1,0 +1,43 @@
+---
+title: "Homemade Salted Caramel Apple Pie"
+date: 2021-11-21
+description: Salted caramel apple pie with homemade pastry doug and salted caramel sauce.
+image: images/apple_pie_final2.png
+categories:
+  - BakR
+  - Dessert
+  - Donuts
+---
+
+## Details
+
+Key points to getting oven baked donuts to come out right:
+
+- Add a little extra spray to the donut trays
+- When spooning in the batter, spoon all the way around each donut receptacle
+  - If you don't the oil from the spray will pool up as the batter fills and it will cause little separations in the final donut
+- Let cool for ~5 minutes once done baking so you can "tap" the donuts out without having to pry them by hand and risk damaging them
+
+## Photos
+
+#### Prep Work
+
+![](images/donuts_prep.png){fig-align="center" width="600"}
+
+![](images/donuts_tray.png){fig-align="center" width="600"}
+
+![](images/donuts_mixer.png){fig-align="center" width="600"}
+
+![](images/donuts_tray2.png){fig-align="center" width="600"}
+
+#### Final Product
+
+![](images/donuts_final1.png){fig-align="center" width="600"}
+
+![](images/donuts_final2.png){fig-align="center" width="600"}
+
+![](images/donuts_final3.png){fig-align="center" width="600"}
+
+## Resources
+
+- [Cinnamon Baked Donuts from AllRecipes' Ina Garten](https://www.foodnetwork.com/recipes/ina-garten/cinnamon-baked-doughnuts-recipe-2135621)

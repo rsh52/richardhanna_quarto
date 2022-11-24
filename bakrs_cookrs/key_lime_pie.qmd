@@ -1,0 +1,37 @@
+---
+title: "~Key~ Lime Pie with Graham Cracker Crust"
+date: 2022-11-23
+image: images/keylime_pie_final1.png
+description: Using fresh, non-key limes for a custard set in a graham cracker crust.
+categories:
+  - BakR
+  - Pie
+  - Dessert
+---
+
+## Details
+
+I've made key lime pie twice now, and it's very easy to get the flavor right. The hard part is having a set custard and firm crust. 
+
+Originally I used a recipe from Bravetart by Stella Parks, but this recipe I tried a different one from unpeeled (in Resources below).
+
+## Photos
+
+#### Prep Work
+
+![](images/keylime_pie_prep1.png){fig-align="center" width="600"}
+
+![](images/keylime_pie_prep2.png){fig-align="center" width="600"}
+
+![](images/keylime_pie_crust.png){fig-align="center" width="600"}
+
+#### Final Product
+
+![](images/keylime_pie_final1.png){fig-align="center" width="600"}
+
+![](images/keylime_pie_final2.png){fig-align="center" width="600"}
+
+## Resources
+
+- [Valentino's Pizza Crust](https://unpeeledjournal.com/key-lime-pie-graham-crust-whipped-cream/)
+- Homemade Whipped Cream (not pictured here): Bravetart by Stella Parks
