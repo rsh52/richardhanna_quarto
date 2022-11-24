@@ -7,3 +7,14 @@ listing:
   sort: "date desc"
   categories: numbered
 ---
+
+::: topbr
+```{=html}
+<p style = "font-size: 18px">Baking and cooking are side hobbies of mine, this page was made to host some of my favorite recipes (and showcase the most photogenic ones).</p>
+```
+```{=html}
+<p style = "font-size: 18px">Since this is a data science website primarily, there had to be an R-based theme. Use the categories on the right to look for "<b>CookR</b>" and "<b>BakR</b>" recipes, all resources are cited at the bottom of their respective pages.</p>
+```
+:::
+
+------------------------------------------------------------------------

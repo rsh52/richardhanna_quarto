@@ -29,8 +29,9 @@ website:
         
 format:
   html:
-    theme: litera
-    css: styles.css
+    theme: 
+      - litera
+     # - custom.scss
     toc: true
 
 editor: source
