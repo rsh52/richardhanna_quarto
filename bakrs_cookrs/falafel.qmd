@@ -1,0 +1,43 @@
+---
+title: "Falafel"
+date: 2022-11-29
+description: Homemade falafel with tzatziki sauce.
+categories:
+  - CookR
+  - Pizza
+---
+
+## Details
+
+Falafel is delicious, when done right it comes out with a nicely crispy exterior and a mealy, crumbly interior.
+
+Unfortunately I didn't plan super far ahead for this so my garnishes are lacking, but ideally I would have paired this with some diced tomatoes and an actual pita instead of naan (what I had on hand).
+
+## Photos
+
+### Prep Work
+
+![](images/falafel_prep1.png){fig-align="center" width="600"}
+
+![](images/falafel_prep2.png){fig-align="center" width="600"}
+
+![](images/falafel_prep3.png){fig-align="center" width="600"}
+
+![](images/falafel_prep4.png){fig-align="center" width="600"}
+
+### Frying Time!
+
+![](images/falafel_fry1.png){fig-align="center" width="600"}
+
+![](images/falafel_fry2.png){fig-align="center" width="600"}
+
+### Final Product
+
+![](images/falafel_final1.png){fig-align="center" width="600"}
+
+![](images/falafel_final3.png){fig-align="center" width="600"}
+
+## Resources
+
+-   Falafel Recipe: [The Complete Mediterranean Cookbook by America's Test Kitchen](https://www.amazon.com/Complete-Mediterranean-Cookbook-Vibrant-Kitchen-Tested/dp/1940352649) (pg.181
+-   [Easy Tzatziki Sauce](https://www.foodnetwork.com/recipes/claire-robinson/easy-tzatziki-recipe-1924366) from Food Network
