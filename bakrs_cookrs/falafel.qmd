@@ -2,6 +2,7 @@
 title: "Falafel"
 date: 2022-11-29
 description: Homemade falafel with tzatziki sauce.
+image: images/falafel_final1.png
 categories:
   - CookR
   - Falafel
