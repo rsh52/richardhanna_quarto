@@ -1,0 +1,32 @@
+---
+title: "Snickerdoodle Cookies"
+date: 2022-12-17
+description: Sugary, cinnamon cookies with a hit of coconut.
+image: images/snickerdoodles_final1.png
+categories:
+  - BakR
+  - Dessert
+  - Cookie
+---
+
+## Details
+
+Snickerdoodles are a favorite treat around the holidays. This recipe in particular incorporates coconut oil, giving the cookies extra decadence and making consumers exercise some control after one (or two).
+
+## Photos
+
+#### Prep Work
+
+![](images/snickerdoodles_prep.png){fig-align="center" width="600"}
+
+![](images/snickerdoodles_prep2.png){fig-align="center" width="600"}
+
+#### Final Product
+
+![](images/snickerdoodles_final1.png){fig-align="center" width="600"}
+
+![](images/snickerdoodles_final2.png){fig-align="center" width="600"}
+
+## Resources
+
+- Snickerdoodles: Bravetart by Stella Parks

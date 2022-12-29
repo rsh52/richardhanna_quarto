@@ -1,0 +1,32 @@
+---
+title: "Cheddar Scallion Biscuits"
+date: 2022-12-25
+image: images/cs_biscuits_final3.png
+description: Decadent, flavorful biscuits for a breakfast treat.
+categories:
+  - BakR
+  - Pastry
+  - Biscuit
+---
+
+## Details
+
+For Christmas Day this year, we hosted my in-laws for the first time for a holiday brunch. In addition to the usual offerings of coffee and scrambled eggs, this year I decided to try my hand at from-scratch biscuits. 
+
+These cheddar scallion biscuits are extremely decadent, wonderfully salty, and need nothing additional. Despite how heavy the recipe is, there were almost none left at the end of brunch!
+
+## Photos
+
+#### Prep Work
+
+![](images/cs_biscuits_prep.png){fig-align="center" width="600"}
+
+#### Final Product
+
+![](images/cs_biscuits_final1.png){fig-align="center" width="600"}
+
+![](images/cs_biscuits_final2.png){fig-align="center" width="600"}
+
+## Resources
+
+- Buttermilk Biscuits: The Food Lab by J. Kenji Lopez-Alt
