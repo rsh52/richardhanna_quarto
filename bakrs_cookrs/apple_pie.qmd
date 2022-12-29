@@ -1,7 +1,7 @@
 ---
 title: "Homemade Salted Caramel Apple Pie"
 date: 2022-11-21
-description: Salted caramel apple pie with homemade pastry doug and salted caramel sauce.
+description: Salted caramel apple pie with homemade pastry dough and salted caramel sauce.
 image: images/apple_pie_final2.png
 categories:
   - BakR
