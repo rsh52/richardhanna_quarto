@@ -1,0 +1,36 @@
+---
+title: "Maki Sushi Rolls"
+date: 2022-12-27
+description: Sushi prepared using rolling mats and a bazooka press.
+image: images/sushi_final3.png
+categories:
+  - CookR
+  - Sushi
+  - Fish
+---
+
+## Details
+
+Sushi has to be one of my favorite treats, typically we order it after a particularly long week. One of our holiday gifts this year was our own sushi making kit, including a "bazooka" instrument that helps roll and form the sushi roll before placing it on the rolling mat.
+
+Unfortunately, for two people, we vastly overestimated the amount of fish we needed to buy for our sushi and wound up with way too much (worse problems though, am I right?). But for a first attempt, I'd say it was better than your typical grocery store sushi.
+
+## Photos
+
+#### Prep Work
+
+![](images/sushi_prep1.png){fig-align="center" width="600"}
+
+![](images/sushi_prep2.png){fig-align="center" width="600"}
+
+![](images/sushi_roll1.png){fig-align="center" width="600"}
+
+#### Final Product
+
+![](images/sushi_final1.png){fig-align="center" width="600"}
+
+![](images/sushi_final2.png){fig-align="center" width="600"}
+
+## Resources
+
+- [Alas Sushi Making Kit](https://www.amazon.com/Complete-Rolling-Premium-Bazooka-Beginners/dp/B09L3FH1F5)
