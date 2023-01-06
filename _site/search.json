@@ -1,199 +1,136 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About Me",
+    "objectID": "publications/amia_engraftment_app_abstract_20211209.html",
+    "href": "publications/amia_engraftment_app_abstract_20211209.html",
+    "title": "Automation of Stem Cell Transplant Outcomes Reporting Leads to Dramatic Reduction of Errors Reported to Real-World Data Registry",
     "section": "",
-    "text": "Thank you for visiting my site! I’m Rich Hanna, a data scientist with a background in biomedical and mechanical engineering currently developing software and data-driven solutions in pediatric medicine to support cutting-edge clinical research. This site is meant to serve as a portfolio of my work, a space for collaboration, and place for some of my own interests and hobbies."
+    "text": "A PDF version of this abstract is available here\n\n\nProposal\nStem cell transplantation is a life-saving therapy for various malignant and non-malignant diseases. To aggregate real-world data on stem cell transplant patients, all cancer centers in the U.S. are required by law to report outcomes such as the time from transplant to the emergence of neutrophils and platelets, known as “engraftment,” to the Center for International Blood and Marrow Transplant Research (CIBMTR).\nTraditionally, engraftment data is curated by data managers who manually look up information in medical records and complete web-based forms. This tedious manual process requires integration of multiple data sources and, at a top-tier pediatric cancer center, was found to have error rates as high as 28%.\nTo mitigate this problem, we developed an application that calculates engraftment dates automatically. We used the AMIA Usability Framework as a guide to create a minimalist and consistent design with informative and useful feedback and error messages. The Engraftment application passed clinical validation, and it is now in day-to-day use by our data managers, having eliminated the manual process. In a post-implementation validation, we found that the rate of incorrect engraftment dates reported to the CIBMTR had decreased to zero.\nIn this Systems Demonstration presentation, we will outline the clinical validation, production engineering, and operationalization of the Engraftment application. We will then demonstrate features built into the application that optimize usability and user experience. Finally, we will discuss how the application could be implemented at other cancer centers."
   },
   {
-    "objectID": "about.html#professional-side",
-    "href": "about.html#professional-side",
-    "title": "About Me",
-    "section": "Professional Side",
-    "text": "Professional Side\nAt the Children’s Hospital of Philadelphia, I am a member of the Cell & Gene Therapy Informatics team supporting the Cellular Therapy and Transplant Section, Bone and Marrow Transplant Program, and various parts of the oncology and pathology divisions of the hospital.\nIn the past I have also worked closely with the Critical Care Medicine and Emergency Medicine departments and spent considerable time in the development of data-driven solutions for the Pediatric Resuscitation Quality Collaborative, National Emergency Airway Registry, and Videography in Pediatric Emergency Resuscitation Collaborative.\nR is my premier language, but I enjoy learning wherever possible. I am very proud to be the developer of multiple shiny applications, a CRAN certified R package, and a co-author on multiple publications. I have also worked with Matlab, Python, SQL, and am AWS Solutions Architect certified.\nPrior to entering the world of data science, I worked in medical devices designing spinal implants and with the Center for Injury Research & Prevention researching pediatric automotive safety and restraint system modeling."
-  },
-  {
-    "objectID": "about.html#unprofessional-side",
-    "href": "about.html#unprofessional-side",
-    "title": "About Me",
-    "section": "(Un)professional Side",
-    "text": "(Un)professional Side\nSince I spend most waking hours in front of screens, I like to spend much of my free time away from them.\nI’m an avid “fake-it-till-you-make-it” runner: I have flat feet and asthma, but I’m spiteful enough to keep doing it anyway. When possible, my wife and I like to take hikes, ride out bikes, and explore the world around us.\nAt home I greatly enjoy cooking and baking. To me, culinary creations in the kitchen have a lot in common with engineering: design, precision, and gratification from a well-made (and hopefully tasty) product. When I feel up to being a bit more artistic, I also enjoy drawing and photography. This site will also serve to showcase some of these hobbies."
-  },
-  {
-    "objectID": "bakrs_cookrs/apple_pie.html",
-    "href": "bakrs_cookrs/apple_pie.html",
-    "title": "Homemade Salted Caramel Apple Pie",
+    "objectID": "publications/amsa_jaha_publication_20210614.html",
+    "href": "publications/amsa_jaha_publication_20210614.html",
+    "title": "Effect of Amplitude Spectral Area on Termination of Fibrillation and Outcomes in Pediatric Cardiac Arrest",
     "section": "",
-    "text": "This was my first attempt at pastry baking, let alone pies. It came recommended from a friend of mine and, after a solid chunk of time over a couple of days, it came out beautifully. Definitely recommend making the pastry dough ahead of time."
+    "text": "Amplitude spectral area (AMSA) predicts termination of fibrillation (TOF) with return of spontaneous circulation (ROSC) and survival in adults but has not been studied in pediatric cardiac arrest. We characterized AMSA during pediatric cardiac arrest from a Pediatric Resuscitation Quality Collaborative and hypothesized that AMSA would be associated with TOF and ROSC."
   },
   {
-    "objectID": "bakrs_cookrs/apple_pie.html#photos",
-    "href": "bakrs_cookrs/apple_pie.html#photos",
-    "title": "Homemade Salted Caramel Apple Pie",
-    "section": "Photos",
-    "text": "Photos\n\nPastry Dough Preparation\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFilling & Lattice Work\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFinal Product"
+    "objectID": "publications/amsa_jaha_publication_20210614.html#methods-and-results",
+    "href": "publications/amsa_jaha_publication_20210614.html#methods-and-results",
+    "title": "Effect of Amplitude Spectral Area on Termination of Fibrillation and Outcomes in Pediatric Cardiac Arrest",
+    "section": "Methods and Results",
+    "text": "Methods and Results\nChildren aged <18 years with cardiac arrest and ventricular fibrillation were studied. AMSA was calculated for 2 seconds before shock and averaged for each subject (AMSA‐avg). TOF was defined as termination of ventricular fibrillation 10 seconds after defibrillation to any non‐ventricular fibrillation rhythm. ROSC was defined as >20 minutes without chest compressions. Univariate and multivariable logistic regression analyses controlling for weight, current, and illness category were performed. Primary end points were TOF and ROSC. Secondary end points were 24‐hour survival and survival to discharge. Between 2015 and 2019, 50 children from 14 hospitals with 111 shocks were identified. In univariate analyses AMSA was not associated with TOF and AMS‐Aavg was not associated with ROSC. Multivariable logistic regression showed no association between AMSA and TOF but controlling for defibrillation average current and illness category, there was a trend to significant association between AMSA‐avg and ROSC (odds ratio, 1.10 [1.00‒1.22] P=0.058). There was no significant association between AMSA‐avg and 24‐hour survival or survival to hospital discharge."
   },
   {
-    "objectID": "bakrs_cookrs/apple_pie.html#resources",
-    "href": "bakrs_cookrs/apple_pie.html#resources",
-    "title": "Homemade Salted Caramel Apple Pie",
-    "section": "Resources",
-    "text": "Resources\n\nSally’s Baking Addiction Salted Caramel Apple Pie\n\nHomemade Pie Crust\nSalted Caramel Sauce"
+    "objectID": "publications/amsa_jaha_publication_20210614.html#conclusions",
+    "href": "publications/amsa_jaha_publication_20210614.html#conclusions",
+    "title": "Effect of Amplitude Spectral Area on Termination of Fibrillation and Outcomes in Pediatric Cardiac Arrest",
+    "section": "Conclusions",
+    "text": "Conclusions\nIn pediatric patients, AMSA was not associated with TOF, whereas AMSA‐avg had a trend to significance for association in ROSC, but not 24‐hour survival or survival to hospital discharge."
   },
   {
-    "objectID": "bakrs_cookrs/cheddar_scallion_biscuits.html",
-    "href": "bakrs_cookrs/cheddar_scallion_biscuits.html",
-    "title": "Cheddar Scallion Biscuits",
+    "objectID": "publications/cpr_transport.html",
+    "href": "publications/cpr_transport.html",
+    "title": "Pediatric cardiopulmonary resuscitation quality during intra-hospital transport",
     "section": "",
-    "text": "For Christmas Day this year, we hosted my in-laws for the first time for a holiday brunch. In addition to the usual offerings of coffee and scrambled eggs, this year I decided to try my hand at from-scratch biscuits.\nThese cheddar scallion biscuits are extremely decadent, wonderfully salty, and need nothing additional. Despite how heavy the recipe is, there were almost none left at the end of brunch!"
+    "text": "Aim\nTo evaluate pediatric cardiopulmonary resuscitation (CPR) quality during intra-hospital transport to facilitate extracorporeal membrane oxygenation (ECMO)-CPR (ECPR). We compared chest compression (CC) rate, depth, and fraction (CCF) between the pre-transport and intra-transport periods.\n\n\nMethods\nObservational study of children <18 years with either in-hospital cardiac arrest (IHCA) or out-of-hospital cardiac arrest (OHCA) who underwent transport between two care locations within the hospital for ECPR and who had CPR mechanics data available. Descriptive patient and arrest characteristics were summarized. The primary analysis compared pre- to intra-transport CC rate, depth, and fraction. A secondary analysis compared the proportion of pre- versus intra-transport 60-s epochs meeting guideline recommendations for rate (100-120/min), depth (≥4 cm for infants; ≥5 cm for children ≥1 year), and CCF (≥0.80).\n\n\nResults\nSeven patients (four IHCA; three witnessed OHCA) met eligibility criteria. Six (86%) patients survived the event and two (28%) survived to hospital discharge. Median transport CPR duration was 7 [IQR 5.5, 8.5] minutes. There were no differences in pre- vs. intra-transport CC rate (115 [113, 118] vs. 118 [114, 127] CCs/minute; p = 0.18), depth (3.2 [2.7, 4.4] vs. 3.6 [2.5, 4.6] cm; p = 0.50), or CCF (0.89 [0.82, 0.90] vs. 0.92 [0.79, 0.97]; p = 0.31). Equivalent proportions of 60-s CPR epochs met guideline recommendations between pre- and intra-transport (rate: 66% vs. 57% [p = 0.22]; depth: 14% vs. 19% [p = 0.39]; CCF: 80% vs. 75% [p = 0.43]).\n\n\nConclusions\nPediatric CPR quality was maintained during intra-hospital patient transport, suggesting that it is reasonable for ECPR systems to incorporate patient transport to facilitate ECMO cannulation."
   },
   {
-    "objectID": "bakrs_cookrs/cheddar_scallion_biscuits.html#photos",
-    "href": "bakrs_cookrs/cheddar_scallion_biscuits.html#photos",
-    "title": "Cheddar Scallion Biscuits",
-    "section": "Photos",
-    "text": "Photos\n\nPrep Work\n\n\n\n\n\n\n\nFinal Product"
-  },
-  {
-    "objectID": "bakrs_cookrs/cheddar_scallion_biscuits.html#resources",
-    "href": "bakrs_cookrs/cheddar_scallion_biscuits.html#resources",
-    "title": "Cheddar Scallion Biscuits",
-    "section": "Resources",
-    "text": "Resources\n\nButtermilk Biscuits: The Food Lab by J. Kenji Lopez-Alt"
-  },
-  {
-    "objectID": "bakrs_cookrs/cinnamon_donuts.html",
-    "href": "bakrs_cookrs/cinnamon_donuts.html",
-    "title": "Baked Cinnamon Sugar Donuts",
+    "objectID": "publications/rear_facing_crs_fitment.html",
+    "href": "publications/rear_facing_crs_fitment.html",
+    "title": "Development of a Small rear Facing Child Restraint System Virtual Surrogate to Evaluate CRS-to-Vehicle Fitment",
     "section": "",
-    "text": "Key points to getting oven baked donuts to come out right:\n\nAdd a little extra spray to the donut trays\nWhen spooning in the batter, spoon all the way around each donut receptacle\n\nIf you don’t the oil from the spray will pool up as the batter fills and it will cause little separations in the final donut\n\nLet cool for ~5 minutes once done baking so you can “tap” the donuts out without having to pry them by hand and risk damaging them"
+    "text": "The publication in SAE was also presented at the Ohio State University Injury Biomechanics Symposium and the publically available write-up is made available here. You can also find an additional write-up on my research by visiting CHOP’s Research Institute Cornerstone blog page and on Chevrolet’s Pressroom.\n\n\nAbstract\nAutomotive interior design optimization must balance the design of the vehicle seat and occupant space for safety, comfort and aesthetics with the accommodation of add-on restraint products such as child restraint systems (CRS). It is important to understand the range of CRS dimensions so that this balance can be successfully negotiated. CRS design is constantly changing. In particular, the introduction of side impact protection for CRS as well as emphasis on ease of CRS installation has likely changed key design points of many child restraints. This ever-changing target creates a challenge for vehicle manufacturers to assure their vehicle seats and occupant spaces are compatible with the range of CRS on the market. To date, there is no accepted method for quantifying the geometry of child seats such that new designs can be catalogued in a simple, straightforward way. In this project, we propose to quantify the geometry of a selection of CRSs currently on the market and develop an easily implementable method to continue to collect this data as new CRSs become available.\nComputer Aided Design (CAD) data was collected for 40 CRS models (Rear-facing infant seats, convertible, and combination CRS). These 40 models represent 72 CRS models on the US market as of April 2013. Twenty-two CRS were scanned and digitized using a novel approach with the Microsoft Kinect Sensor. The scans were converted into surface models and finite element (FE) models using Hypermesh 12.0 (Altair Inc., MI). CRS manufacturers provided digital drawings of 18 additional CRS. The scans and digital drawings were overlapped at typical seat angles from literature data to create virtual surrogates.\nThe use of virtual surrogates by vehicle manufacturers in the design and development of the rear-seat vehicle environment early on in the design-development cycle has the potential to facilitate improved CRS-vehicle fitment."
   },
   {
-    "objectID": "bakrs_cookrs/cinnamon_donuts.html#photos",
-    "href": "bakrs_cookrs/cinnamon_donuts.html#photos",
-    "title": "Baked Cinnamon Sugar Donuts",
-    "section": "Photos",
-    "text": "Photos\n\nPrep Work\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFinal Product"
-  },
-  {
-    "objectID": "bakrs_cookrs/cinnamon_donuts.html#resources",
-    "href": "bakrs_cookrs/cinnamon_donuts.html#resources",
-    "title": "Baked Cinnamon Sugar Donuts",
-    "section": "Resources",
-    "text": "Resources\n\nCinnamon Baked Donuts from AllRecipes’ Ina Garten"
-  },
-  {
-    "objectID": "bakrs_cookrs/falafel.html",
-    "href": "bakrs_cookrs/falafel.html",
-    "title": "Falafel",
+    "objectID": "publications/viper_ress_2021.html",
+    "href": "publications/viper_ress_2021.html",
+    "title": "Longitudinal effect of high frequency training on CPR performance during simulated and actual pediatric cardiac arrest",
     "section": "",
-    "text": "Falafel is delicious, when done right it comes out with a nicely crispy exterior and a mealy, crumbly interior.\nUnfortunately I didn’t plan super far ahead for this so my garnishes are lacking, but ideally I would have paired this with some diced tomatoes and an actual pita instead of naan (what I had on hand)."
+    "text": "To determine the impact of high-frequency CPR training on performance during simulated and real pediatric CPR events in a pediatric emergency department (ED).\n\n\n\nProspective observational study. A high-frequency CPR training program (Resuscitation Quality Improvement (RQI)) was implemented among ED providers in a children’s hospital. Data on CPR performance was collected longitundinally during quarterly retraining sessions; scores were analyzed between quarter 1 and quarter 4 by nonparametric methods. Data on CPR performance during actual patient events was collected by simultaneous combination of video review and compression monitor devices to allow measurement of CPR quality by individual providers; linear mixed effects models were used to analyze the association between RQI components and CPR quality.\n\n\n\n159 providers completed four consecutive RQI sessions. Scores for all CPR tasks during retraining sessions significantly improved during the study period. 28 actual CPR events were captured during the study period; 49 observations of RQI trained providers performing CPR on children were analyzed. A significant association was found between the number of prior RQI sessions and the percent of compressions meeting guidelines for rate (β coefficient -0.08; standard error 0.04; p = 0.03).\n\n\n\nOver a 15 month period, RQI resulted in improved performance during training sessions for all skills. A significant association was found between number of sessions and adherence to compression rate guidelines during real patient events. Fewer than 30% of providers performed CPR on a patient during the study period. Multicenter studies over longer time periods should be undertaken to overcome the limitation of these rare events."
   },
   {
-    "objectID": "bakrs_cookrs/falafel.html#photos",
-    "href": "bakrs_cookrs/falafel.html#photos",
-    "title": "Falafel",
-    "section": "Photos",
-    "text": "Photos\n\nPrep Work\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFrying Time!\n\n\n\n\n\n\n\n\n\n\n\n\nFinal Product"
-  },
-  {
-    "objectID": "bakrs_cookrs/falafel.html#resources",
-    "href": "bakrs_cookrs/falafel.html#resources",
-    "title": "Falafel",
-    "section": "Resources",
-    "text": "Resources\n\nFalafel Recipe: The Complete Mediterranean Cookbook by America’s Test Kitchen (pg.181\nEasy Tzatziki Sauce from Food Network"
-  },
-  {
-    "objectID": "bakrs_cookrs/key_lime_pie.html",
-    "href": "bakrs_cookrs/key_lime_pie.html",
-    "title": "‘Key’ Lime Pie with Graham Cracker Crust",
+    "objectID": "publications/viper_ress_2020.html",
+    "href": "publications/viper_ress_2020.html",
+    "title": "Analysis of CPR quality by individual providers in the pediatric emergency department",
     "section": "",
-    "text": "I’ve made key lime pie twice now, and it’s very easy to get the flavor right. The hard part is having a set custard and firm crust.\nOriginally I used a recipe from Bravetart by Stella Parks, but this recipe I tried a different one from unpeeled (in Resources below)."
+    "text": "To describe chest compression (CC) quality by individual providers in two pediatric emergency departments (EDs) using video review and compression monitor output during pediatric cardiac arrests.\n\n\n\nProspective observational study. Patients <18 yo receiving CC for >1 min were eligible. Data was collected from video review and CC monitor device in a synchronized fashion and reported in ‘segments’ by individual providers. Univariate comparison by age (<1 yo, 1–8 yo, >8 yo) was performed by chi-square testing for dichotomous variables (‘high-quality’ CPR) and nonparametric testing for continuous variables (CC rate and depth). Univariate comparison of ventilation rate (V) was made between segments with an advanced airway versus without.\n\n\n\n524 segments had data available; 42/524 (8%) met criteria for ‘high-quality CC’. Patients >8 yo had more segments meeting criteria (18% vs. 2% and 0.5%; p < 0.001). Segments compliant for rate were less frequent in <1 yo (17% vs. 24% vs. 27%; p = 0.03). Segments compliant for depth were less frequent in <1 year olds and 1–8 year olds (5% and 9% vs. 20%, p < 0.001.) Mean V for segments with an advanced airway was higher than with a natural airway (24 ± 18 vs. 14 ± 10 bpm, p < 0.001). Hyperventilation was more prevalent in CPR segments with an advanced airway (66% vs. 32%, p < 0.001).\n##Conclusions CC depth is rarely guideline compliant in infants. Hyperventilation is more prevalent during CPR periods with an advanced airway in place. Measuring individual provider CPR quality is feasible, allowing future studies to evaluate the impact of CPR training."
   },
   {
-    "objectID": "bakrs_cookrs/key_lime_pie.html#photos",
-    "href": "bakrs_cookrs/key_lime_pie.html#photos",
-    "title": "‘Key’ Lime Pie with Graham Cracker Crust",
-    "section": "Photos",
-    "text": "Photos\n\nPrep Work\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFinal Product"
-  },
-  {
-    "objectID": "bakrs_cookrs/key_lime_pie.html#resources",
-    "href": "bakrs_cookrs/key_lime_pie.html#resources",
-    "title": "‘Key’ Lime Pie with Graham Cracker Crust",
-    "section": "Resources",
-    "text": "Resources\n\nValentino’s Pizza Crust\nHomemade Whipped Cream (not pictured here): Bravetart by Stella Parks"
-  },
-  {
-    "objectID": "bakrs_cookrs/pizza.html",
-    "href": "bakrs_cookrs/pizza.html",
-    "title": "Oven Baked Pizza with Pizza Stone",
+    "objectID": "publications/ih_cpr_night_weekend.html",
+    "href": "publications/ih_cpr_night_weekend.html",
+    "title": "Pediatric In-Hospital CPR Quality at Night and on Weekends",
     "section": "",
-    "text": "The pizza stone has for a while been elusive to me. My first few attempts at making pizza were tragedies and what was served more resembled soup than what I had promised my wife would be on the table.\nHere’s what I learned:\n\nThe oven must be at 500°F\nThe pizza stone must be in the oven at 500°F for an hour before placing a pizza on it\nThe pizza stone and wooden peel should seldom be washed, and if they are they should be stored in open air\n\nRegretfully we thought our stone was “dried” only to take it out of a dark cupboard to find it had mold!\n\nThe peel, dough, and stone should be generously coated with flour and/or corn meal"
+    "text": "##Introduction\nSurvival after in-hospital cardiac arrest (IHCA) has been reported to be worse for arrests at night or during weekends.This study aimed to determine whether measured cardiopulmonary resuscitation (CPR) quality metrics might explain this difference in outcomes.\n\n\nIHCA data was collected by the Pediatric Resuscitation Quality (pediRES-Q) collaborative for patients <18 years. Metrics of CPR quality [chest compression rate, depth and fraction] were measured using monitordefibrillator pads, and events were compared by time of day and day of week.\n\n\n\nWe evaluated 6915 sixty-second epochs of chest compression (CC) data from 239 subjects between October 2015 and March 2019, across 18 hospitals. There was no significant difference in CPR quality metrics during day (07:00–22:59) versus night (23:00–06:59), or weekdays (Monday 07:00 to Friday 22:59) versus weekends (Friday 23:00 to Monday 06:59).There was also no difference in rate of return of circulation. However, survival to hospital discharge was higher for arrests that occurred during the day (39.1%) vs. nights (22.4%, p = 0.015), as well as on weekdays (39.9%) vs. weekends (19.1%, p = 0.003).\n\n\n\nFor pediatric IHCA where CC metrics were obtained, there was no significant difference in CPR quality metrics or rate of return of circulation by time of day or day of week. There was higher survival to hospital discharge when arrests occurred during the day (vs. nights), or on weekdays (vs. weekends), and this difference was not related to disparities in CC quality."
   },
   {
-    "objectID": "bakrs_cookrs/pizza.html#photos",
-    "href": "bakrs_cookrs/pizza.html#photos",
-    "title": "Oven Baked Pizza with Pizza Stone",
-    "section": "Photos",
-    "text": "Photos"
-  },
-  {
-    "objectID": "bakrs_cookrs/pizza.html#resources",
-    "href": "bakrs_cookrs/pizza.html#resources",
-    "title": "Oven Baked Pizza with Pizza Stone",
-    "section": "Resources",
-    "text": "Resources\n\nValentino’s Pizza Crust\n\nMakes enough for two 12” pizza doughs, you can save one in the fridge for a week. Just be sure to let it come to room temperature before attempting the second one.\nI’ve tried a few dough recipes and this one comes out with the perfect consistency every time."
-  },
-  {
-    "objectID": "bakrs_cookrs/snickerdoodles.html",
-    "href": "bakrs_cookrs/snickerdoodles.html",
-    "title": "Snickerdoodle Cookies",
+    "objectID": "publications/automated_couette_viscometer.html",
+    "href": "publications/automated_couette_viscometer.html",
+    "title": "Development of an Automated Couette Viscometer",
     "section": "",
-    "text": "Snickerdoodles are a favorite treat around the holidays. This recipe in particular incorporates coconut oil, giving the cookies extra decadence and making consumers exercise some control after one (or two)."
+    "text": "Our final report as well as our design presentation are also available for you to view.\n\nAs modern medicine increasingly pushes for predictive, prospective action over retrospective response the need for diagnostic devices has become ever more prevalent. This senior design project, developed at Drexel University, looked to produce a device which could employ the theory of Couette flow to measure human blood viscosity. The idea being that blood viscosity can provide strong clinical indications about a person’s health, but producing a device that is inexpensive, fast, and accurate would prove challenging.\nCouette flow involves three main components: a stationary outer cylinder, a rotational inner cylinder, and the fluid trapped between for analysis. Viscosity can be obtained by analyzing the rotational speed of the inner cylinder due to material properties of the test fluid and shear stresses imposed upon it.\n\n\n\nCouette Flow Diagram\n\n\nIn order to minimize costs and provide a device that could be easily incorporated in a hospital environment, the device (which we coined the “Haemopoise”) would act as a stand-alone system and housing capable of interfacing with existing vacutainer technologies. See the image below on what a vacutainer looks like:\n\n\n\nExample Vacutainer\n\n\nI highly encourage checking out the slide deck and report in the links above this page, but I will give a brief summary of how the device works:\n\nBlood is drawn from a patient into the vacutainer.\nThe vacutainer is placed in the receptacle of the Haemopoise device. The vacutainer acts as the outer rotational cylinder for Couette flow.\nAn OEM insert is placed inside of the vacutainer. The insert is a light, buoyant, disposable column which acts as the inner rotational cylinder for Couette flow.\nOn top of the insert is a reflective marker. A component of the insert contains aluminum for interaction with the Eddy current produced by rotational magnets.\nThe Eddy current induced rotation of the inner cylinder while a laser reads the rotational speed of the reflective surface at the top of the insert.\nThis rotational speed correlates with viscosity of the analyzed fluid (blood).\n\nCheck out this link for a demo on the Haemopoise in action (with a real human blood sample): Haemopoise Demo\nI couldn’t very well discuss this project without giving credit to my fantastic team: Michael Sinisi, Dan Nguyen, Austin Farber, and Matt Lorenz under the tutelage and supervision of Dr. Young Cho, PhD."
   },
   {
-    "objectID": "bakrs_cookrs/snickerdoodles.html#photos",
-    "href": "bakrs_cookrs/snickerdoodles.html#photos",
-    "title": "Snickerdoodle Cookies",
-    "section": "Photos",
-    "text": "Photos\n\nPrep Work\n\n\n\n\n\n\n\n\n\n\n\n\nFinal Product"
-  },
-  {
-    "objectID": "bakrs_cookrs/snickerdoodles.html#resources",
-    "href": "bakrs_cookrs/snickerdoodles.html#resources",
-    "title": "Snickerdoodle Cookies",
-    "section": "Resources",
-    "text": "Resources\n\nSnickerdoodles: Bravetart by Stella Parks"
-  },
-  {
-    "objectID": "bakrs_cookrs/sushi.html",
-    "href": "bakrs_cookrs/sushi.html",
-    "title": "Maki Sushi Rolls",
+    "objectID": "publications/city_ih_cpr_nights_weekends.html",
+    "href": "publications/city_ih_cpr_nights_weekends.html",
+    "title": "Paediatric In-hospital cardiopulmonary resuscitation quality and outcomes in children with CHD during nights and weekends",
     "section": "",
-    "text": "Sushi has to be one of my favorite treats, typically we order it after a particularly long week. One of our holiday gifts this year was our own sushi making kit, including a “bazooka” instrument that helps roll and form the sushi roll before placing it on the rolling mat.\nUnfortunately, for two people, we vastly overestimated the amount of fish we needed to buy for our sushi and wound up with way too much (worse problems though, am I right?). But for a first attempt, I’d say it was better than your typical grocery store sushi."
+    "text": "Background\nSurvival after paediatric in-hospital cardiac arrest is worse on nights and weekends without demonstration of disparity in cardiopulmonary resuscitation quality. It is unknown whether these findings differ in children with CHD. This study aimed to determine whether cardiopulmonary resuscitation quality might explain the hypothesised worse outcomes of children with CHD during nights and weekends.\n\n\nMethods\nIn-hospital cardiac arrest data collected by the Pediatric Resuscitation Quality Collaborative for children with CHD. Chest compression quality metrics and survival outcomes were compared between events that occurred during day versus night, and during weekday versus weekend using multivariable logistic regression.\n\n\nResults\nWe evaluated 3614 sixty-second epochs of chest compression data from 132 subjects between 2015 and 2020. There was no difference in chest compression quality metrics during day versus night or weekday versus weekend. Weekday versus weekend was associated with improved survival to hospital discharge (adjusted odds ratio 4.56 [1.29,16.11]; p = 0.02] and survival to hospital discharge with favourable neurological outcomes (adjusted odds ratio 6.35 [1.36,29.6]; p = 0.02), but no difference with rate of return of spontaneous circulation or return of circulation. There was no difference in outcomes for day versus night.\n\n\nConclusion\nFor children with CHD and in-hospital cardiac arrest, there was no difference in chest compression quality metrics by time of day or day of week. Although there was no difference in outcomes for events during days versus nights, there was improved survival to hospital discharge and survival to hospital discharge with favourable neurological outcome for events occurring on weekdays compared to weekends."
   },
   {
-    "objectID": "bakrs_cookrs/sushi.html#photos",
-    "href": "bakrs_cookrs/sushi.html#photos",
-    "title": "Maki Sushi Rolls",
-    "section": "Photos",
-    "text": "Photos\n\nPrep Work\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFinal Product"
-  },
-  {
-    "objectID": "bakrs_cookrs/sushi.html#resources",
-    "href": "bakrs_cookrs/sushi.html#resources",
-    "title": "Maki Sushi Rolls",
-    "section": "Resources",
-    "text": "Resources\n\nAlas Sushi Making Kit"
-  },
-  {
-    "objectID": "bakrs_cookrs.html",
-    "href": "bakrs_cookrs.html",
-    "title": "For BakRs & CookRs",
+    "objectID": "publications/recurrent_arrest.html",
+    "href": "publications/recurrent_arrest.html",
+    "title": "Risk factors and outcomes for recurrent paediatric in-hospital cardiac arrest: Retrospective multicenter cohort study",
     "section": "",
-    "text": "Baking and cooking are side hobbies of mine, this page was made to host some of my favorite recipes (and showcase the most photogenic ones).\nSince this is a data science website primarily, there had to be an R-based theme. Use the categories on the right to look for \"CookR\" and \"BakR\" recipes, all resources are cited at the bottom of their respective pages.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMaki Sushi Rolls\n\n\n\nCookR\n\n\nSushi\n\n\nFish\n\n\n\nSushi prepared using rolling mats and a bazooka press.\n\n\n\n\n\n\nDec 27, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCheddar Scallion Biscuits\n\n\n\nBakR\n\n\nPastry\n\n\nBiscuit\n\n\n\nDecadent, flavorful biscuits for a breakfast treat.\n\n\n\n\n\n\nDec 25, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSnickerdoodle Cookies\n\n\n\nBakR\n\n\nDessert\n\n\nCookie\n\n\n\nSugary, cinnamon cookies with a hit of coconut.\n\n\n\n\n\n\nDec 17, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFalafel\n\n\n\nCookR\n\n\nFalafel\n\n\nMediterranean\n\n\n\nHomemade falafel with tzatziki sauce.\n\n\n\n\n\n\nNov 29, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBaked Cinnamon Sugar Donuts\n\n\n\nBakR\n\n\nDessert\n\n\nDonuts\n\n\n\nOven baked donuts with a cinnamon sugar topping using a donut tray.\n\n\n\n\n\n\nNov 23, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n‘Key’ Lime Pie with Graham Cracker Crust\n\n\n\nBakR\n\n\nPie\n\n\nDessert\n\n\n\nUsing fresh, non-key limes for a custard set in a graham cracker crust.\n\n\n\n\n\n\nNov 23, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHomemade Salted Caramel Apple Pie\n\n\n\nBakR\n\n\nPie\n\n\nDessert\n\n\nPastry\n\n\n\nSalted caramel apple pie with homemade pastry dough and salted caramel sauce.\n\n\n\n\n\n\nNov 21, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOven Baked Pizza with Pizza Stone\n\n\n\nCookR\n\n\nPizza\n\n\n\nOven baked pizza using a pizza stone with homemade tomato sauce, mozzarella, and prosciutto.\n\n\n\n\n\n\nNov 20, 2022\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Recurrent in-hospital cardiac arrest (IHCA) is associated with morbidity and mortality in adults. We aimed to describe the risk factors and outcomes for paediatric recurrent IHCA.\n\n\n\nRetrospective cohort study of patients ≤18 years old with single or recurrent IHCA. Recurrent IHCA was defined as ≥2 IHCA within the same hospitalization. Categorical variables expressed as percentages and compared via Chi square test. Continuous variables expressed as medians with interquartile ranges and compared via rank sum test. Outcomes assessed in a propensity match cohort.\n\n\n\nFrom July 1, 2015 to January 26, 2021, 139/894 (15.5%) patients experienced recurrent IHCA. Compared to patients with a single IHCA, recurrent IHCA patients were more likely to be trauma and less likely to be surgical cardiac patients. Median duration of cardiopulmonary resuscitation (CPR) was shorter in the recurrent IHCA (5 vs. 11 min; p < 0.001) with no difference in IHCA location or immediate cause of CPR. Patients with recurrent IHCA had worse survival to intensive care unit (ICU) discharge (31% vs. 52%; p < 0.001), and worse survival to hospital discharge (30% vs. 48%; p < 0.001) in unadjusted analyses and after propensity matching, patients with recurrent IHCA still had worse survival to ICU (34% vs. 67%; p < 0.001) and hospital (31% vs. 64%; p < 0.001) discharge.\n\n\n\nWhen examining those with a single vs. a recurrent IHCA, event and patient factors including more pre-existing conditions and shorter duration of CPR were associated with risk for recurrent IHCA. Recurrent IHCA is associated with worse survival outcomes following propensity matching."
+  },
+  {
+    "objectID": "publications/viper_cpr_ress_2018.html",
+    "href": "publications/viper_cpr_ress_2018.html",
+    "title": "Verbal Prompts During Pediatric Cardiopulmonary Resuscitation in Emergency Department: A Report From the Videography in Pediatric Emergency Resuscitation (VIPER) Collaborative",
+    "section": "",
+    "text": "The quality of chest compressions (CC) is crucial for good outcomes for pediatric cardiac arrest. Verbal prompts from resuscitation leader or CPR coach may help to optimize it. The objective of this study is to describe the frequency of appropriate verbal prompts during pediatric CPR. We hypothesized that verbal prompts for CC would be given less frequently to infants compared to children.\n\n\n\nA report from the Videography In Pediatric Emergency Resuscitation (VIPER) Collaborative, a prospective observational database from three tertiary PEDs from December 2016 to April 2018. All study sites videorecord and review resuscitations and use a pressure sensor/monitor device during CPR. All events where chest compressions (CC) were performed under videorecorded conditions with the monitor device in use were eligible for inclusion. Events where real-time feedback from monitoring devices for CC was available were excluded (ages > 8). Data on CPR performance was collected by a combination of video review and monitor device; CC rate and depth and ventilation rate were extracted in time periods corresponding to individual CPR providers. Data on verbal prompts (time, who gave prompts, what prompt consisted of) were identified during video review.\n\n\n\nThere were 21 cases with total 182 providers included in database during study periods (infants: n=15, children: n=6). Verbal prompts for compression rate and depth were given in 14/21 (67%) of cases. 19/80 (24%) came from the resuscitation leader; 32/80 (40%) and from a CPR coach. 7 (3.9%) providers doing CC watched ZOLL monitor for feedback. Appropriate verbal prompts for CC rate were given to 4.2 % of providers in infants and 8.8 % in children (p=0.024). And 9.2% in infants and 10.5 % in children (p=0.064) were given to providers for CC depth. After adjusting by confounders, there weren’t any significant differences between age groups for both CC rate: OR1.22 (95%CI 0.49-3.05, P=0.670) and depth: OR 2.82 (95%CI 0.73-10.9, P=0.134).\n\n\n\nVerbal prompts frequency for CC rate and depth during pediatric CPR was described. There weren’t any significant differences between infants and children under 8 years old."
+  },
+  {
+    "objectID": "publications/astct_engraftment_app_manuscript_20230104.html",
+    "href": "publications/astct_engraftment_app_manuscript_20230104.html",
+    "title": "Automation of Stem Cell Transplant Outcomes Reporting Leads to Dramatic Reduction of Errors Reported to Real-World Data Registry",
+    "section": "",
+    "text": "Data on hematopoietic cell transplant engraftment is reported for regulatory purposes\nManual chart review for engraftment dates is complex, time-consuming, and error-prone\nA custom application clearly displays clinical data to simplify engraftment reporting\nApplication use was associated with significantly decreased engraftment error rates\nEmbedded informatics teams can effectively build applications with clinical utility"
+  },
+  {
+    "objectID": "publications/astct_engraftment_app_manuscript_20230104.html#background",
+    "href": "publications/astct_engraftment_app_manuscript_20230104.html#background",
+    "title": "Automation of Stem Cell Transplant Outcomes Reporting Leads to Dramatic Reduction of Errors Reported to Real-World Data Registry",
+    "section": "Background",
+    "text": "Background\nInstitutions that perform hematopoietic cell transplant (HCT) are required by law to report standardized, structured data on transplant outcomes. A key post-transplant outcome is engraftment, the length of time between HCT infusion and reemergence of circulating neutrophils and platelets. At our center, we found manual chart abstraction for engraftment data was highly error-prone."
+  },
+  {
+    "objectID": "publications/astct_engraftment_app_manuscript_20230104.html#objectives",
+    "href": "publications/astct_engraftment_app_manuscript_20230104.html#objectives",
+    "title": "Automation of Stem Cell Transplant Outcomes Reporting Leads to Dramatic Reduction of Errors Reported to Real-World Data Registry",
+    "section": "Objectives",
+    "text": "Objectives\nWe developed a custom R/Shiny application that automatically calculates engraftment dates and displays them in an intuitive format to augment the manual chart review. Our hypothesis was that use of the application to assist with calculating and reporting engraftment dates would be associated with a decreased error rate."
+  },
+  {
+    "objectID": "publications/astct_engraftment_app_manuscript_20230104.html#study-design",
+    "href": "publications/astct_engraftment_app_manuscript_20230104.html#study-design",
+    "title": "Automation of Stem Cell Transplant Outcomes Reporting Leads to Dramatic Reduction of Errors Reported to Real-World Data Registry",
+    "section": "Study Design",
+    "text": "Study Design\nThe study was conducted at a single tertiary care institution. The application was developed in a collaborative, multidisciplinary fashion by members of an embedded cellular therapy informatics team. Retrospective validation of the application’s accuracy was conducted on all malignant HCTs from 2/2016 to 12/2020 (n=198). Real-world use of the application was evaluated prospectively from 4/2021 through 4/2022 (n=53). Welch’s two-sample t-tests were performed to compare error rates pre- and post-implementation. Data were visualized using p charts and standard special cause variation rules were applied."
+  },
+  {
+    "objectID": "publications/astct_engraftment_app_manuscript_20230104.html#results",
+    "href": "publications/astct_engraftment_app_manuscript_20230104.html#results",
+    "title": "Automation of Stem Cell Transplant Outcomes Reporting Leads to Dramatic Reduction of Errors Reported to Real-World Data Registry",
+    "section": "Results",
+    "text": "Results\nAccuracy of reported data post-deployment increased dramatically: engraftment error rate decreased from 15% to 3.8% (p=0.003) for neutrophils and from 28% to 1.9% (p<0.001) for platelets."
+  },
+  {
+    "objectID": "publications/astct_engraftment_app_manuscript_20230104.html#conclusion",
+    "href": "publications/astct_engraftment_app_manuscript_20230104.html#conclusion",
+    "title": "Automation of Stem Cell Transplant Outcomes Reporting Leads to Dramatic Reduction of Errors Reported to Real-World Data Registry",
+    "section": "Conclusion",
+    "text": "Conclusion\nThis study demonstrated the effective deployment of a custom R/Shiny application that was associated with significantly reduced error rates in HCT engraftment reporting for operational, research, and regulatory purposes. Users reported subjective satisfaction with the application and that it addressed difficulties with the legacy manual process. Identifying and correcting erroneous data in engraftment reporting could lead to a more efficient and accurate nationwide assessment of transplant success. Furthermore, we show that it is possible and practical for academic medical centers to stand up embedded informatics teams that can quickly build applications for clinical operations in a manner compliant with regulatory requirements."
   },
   {
     "objectID": "data_science/REDCapTidieR.html#who-am-i",
@@ -305,35 +242,35 @@
     "href": "data_science/REDCapTidieR.html#revisiting-superheroes",
     "title": "REDCapTidieR",
     "section": "Revisiting Superheroes",
-    "text": "Revisiting Superheroes\n\nlibrary(REDCapTidieR)\nsuperheroes_tidy <- read_redcap_tidy(redcap_uri, token)\n\nsuperheroes_tidy\n\n# A tibble: 2 × 3\n  redcap_form_name   redcap_data          structure   \n  <chr>              <list>               <chr>       \n1 super_hero_powers  <tibble [5,966 × 4]> repeating   \n2 heroes_information <tibble [734 × 12]>  nonrepeating\n\n\n\nThe core REDCapTidieR function is read_redcap_tidy, and here we can see the output which might look a little odd, but it’s definitely less overwhelming than the giant table we saw earier. What we have is a tibble where on the left we have the raw names of the instruments from REDCap, these were the two colorful columns on the Record Status Dashboard. On the right is the structure, i.e. “repeating” or “nonrepeating.”\nHere in the middle, under data is where processed data resides in a list column."
+    "text": "Revisiting Superheroes\n\nlibrary(REDCapTidieR)\nsuperheroes_tidy <- read_redcap_tidy(redcap_uri, token)\n\nsuperheroes_tidy\n\n# A tibble: 2 × 9\n  redcap_for…¹ redca…² redcap…³ redcap…⁴ struc…⁵ data_…⁶ data_…⁷ data_…⁸ data_…⁹\n  <chr>        <chr>   <list>   <list>   <chr>     <int>   <int> <lbstr> <formt>\n1 heroes_info… Heroes… <tibble> <tibble> nonrep…     734      12 123.24… 0.23%  \n2 super_hero_… Super … <tibble> <tibble> repeat…    5966       4 180.21… 0%     \n# … with abbreviated variable names ¹​redcap_form_name, ²​redcap_form_label,\n#   ³​redcap_data, ⁴​redcap_metadata, ⁵​structure, ⁶​data_rows, ⁷​data_cols,\n#   ⁸​data_size, ⁹​data_na_pct\n\n\n\nThe core REDCapTidieR function is read_redcap_tidy, and here we can see the output which might look a little odd, but it’s definitely less overwhelming than the giant table we saw earier. What we have is a tibble where on the left we have the raw names of the instruments from REDCap, these were the two colorful columns on the Record Status Dashboard. On the right is the structure, i.e. “repeating” or “nonrepeating.”\nHere in the middle, under data is where processed data resides in a list column."
   },
   {
     "objectID": "data_science/REDCapTidieR.html#revisiting-superheroes-1",
     "href": "data_science/REDCapTidieR.html#revisiting-superheroes-1",
     "title": "REDCapTidieR",
     "section": "Revisiting Superheroes",
-    "text": "Revisiting Superheroes\n\n\nNon-Repeating Hero Information\n\nsuperheroes_tidy$redcap_data[[2]] %>% \n  head(10)\n\n\n\n\n\n \n  \n    record_id \n    name \n    gender \n    eye_color \n    race \n    hair_color \n    height \n    weight \n    publisher \n    skin_color \n    alignment \n    form_status_complete \n  \n \n\n  \n    0 \n    A-Bomb \n    Male \n    yellow \n    Human \n    No Hair \n    203 \n    441 \n    Marvel Comics \n    - \n    good \n    Incomplete \n  \n  \n    1 \n    Abe Sapien \n    Male \n    blue \n    Icthyo Sapien \n    No Hair \n    191 \n    65 \n    Dark Horse Comics \n    blue \n    good \n    Incomplete \n  \n  \n    2 \n    Abin Sur \n    Male \n    blue \n    Ungaran \n    No Hair \n    185 \n    90 \n    DC Comics \n    red \n    good \n    Incomplete \n  \n  \n    3 \n    Abomination \n    Male \n    green \n    Human / Radiation \n    No Hair \n    203 \n    441 \n    Marvel Comics \n    - \n    bad \n    Incomplete \n  \n  \n    4 \n    Abraxas \n    Male \n    blue \n    Cosmic Entity \n    Black \n    -99 \n    -99 \n    Marvel Comics \n    - \n    bad \n    Incomplete \n  \n  \n    5 \n    Absorbing Man \n    Male \n    blue \n    Human \n    No Hair \n    193 \n    122 \n    Marvel Comics \n    - \n    bad \n    Incomplete \n  \n  \n    6 \n    Adam Monroe \n    Male \n    blue \n    - \n    Blond \n    -99 \n    -99 \n    NBC - Heroes \n    - \n    good \n    Incomplete \n  \n  \n    7 \n    Adam Strange \n    Male \n    blue \n    Human \n    Blond \n    185 \n    88 \n    DC Comics \n    - \n    good \n    Incomplete \n  \n  \n    8 \n    Agent 13 \n    Female \n    blue \n    - \n    Blond \n    173 \n    61 \n    Marvel Comics \n    - \n    good \n    Incomplete \n  \n  \n    9 \n    Agent Bob \n    Male \n    brown \n    Human \n    Brown \n    178 \n    81 \n    Marvel Comics \n    - \n    good \n    Incomplete \n  \n\n\n\n\n\n\nRepeating Hero Powers\n\nsuperheroes_tidy$redcap_data[[1]] %>% \n  head(10)\n\n\n\n\n\n \n  \n    record_id \n    redcap_repeat_instance \n    power \n    form_status_complete \n  \n \n\n  \n    0 \n    1 \n    Accelerated Healing \n    Incomplete \n  \n  \n    0 \n    2 \n    Durability \n    Incomplete \n  \n  \n    0 \n    3 \n    Longevity \n    Incomplete \n  \n  \n    0 \n    4 \n    Super Strength \n    Incomplete \n  \n  \n    0 \n    5 \n    Stamina \n    Incomplete \n  \n  \n    0 \n    6 \n    Camouflage \n    Incomplete \n  \n  \n    0 \n    7 \n    Self-Sustenance \n    Incomplete \n  \n  \n    1 \n    1 \n    Agility \n    Incomplete \n  \n  \n    1 \n    2 \n    Accelerated Healing \n    Incomplete \n  \n  \n    1 \n    3 \n    Cold Resistance \n    Incomplete \n  \n\n\n\n\n\n\n\n\nIf we expand the list column elements through indexing, we can take a deeper look at the nonrepeating and repeating dataframe outputs. There are a number of things worth noting here:\n\nFirst in both of these tables we see there are no artificially generated NA artifact values.\nOn the left side, the non-repeating table shows that every record_id has a single row. On the right are repeating record_ids forming a compound key with the redcap_repeat_instance\nAdditionally, the redcap_repeat_ variables only appear in repeating sub tables.\nThis means that only the variables associated with the table will appear in it.\nThe presence of the primary key in the nonrepeating hero information table, and the compound key in the repeating hero powers table allows for easy joining.\n\nWhile this example REDCap only has two tables, most are going to have much more and it is very powerful to be able to join only the data you need and trust that the output contains all the relevant information."
+    "text": "Revisiting Superheroes\n\n\nNon-Repeating Hero Information\n\nsuperheroes_tidy$redcap_data[[2]] %>% \n  head(10)\n\n\n\n\n\n \n  \n    record_id \n    redcap_repeat_instance \n    power \n    form_status_complete \n  \n \n\n  \n    0 \n    1 \n    Accelerated Healing \n    Incomplete \n  \n  \n    0 \n    2 \n    Durability \n    Incomplete \n  \n  \n    0 \n    3 \n    Longevity \n    Incomplete \n  \n  \n    0 \n    4 \n    Super Strength \n    Incomplete \n  \n  \n    0 \n    5 \n    Stamina \n    Incomplete \n  \n  \n    0 \n    6 \n    Camouflage \n    Incomplete \n  \n  \n    0 \n    7 \n    Self-Sustenance \n    Incomplete \n  \n  \n    1 \n    1 \n    Agility \n    Incomplete \n  \n  \n    1 \n    2 \n    Accelerated Healing \n    Incomplete \n  \n  \n    1 \n    3 \n    Cold Resistance \n    Incomplete \n  \n\n\n\n\n\n\nRepeating Hero Powers\n\nsuperheroes_tidy$redcap_data[[1]] %>% \n  head(10)\n\n\n\n\n\n \n  \n    record_id \n    name \n    gender \n    eye_color \n    race \n    hair_color \n    height \n    weight \n    publisher \n    skin_color \n    alignment \n    form_status_complete \n  \n \n\n  \n    0 \n    A-Bomb \n    Male \n    yellow \n    Human \n    No Hair \n    203 \n    441 \n    Marvel Comics \n    - \n    good \n    Incomplete \n  \n  \n    1 \n    Abe Sapien \n    Male \n    blue \n    Icthyo Sapien \n    No Hair \n    191 \n    65 \n    Dark Horse Comics \n    blue \n    good \n    Incomplete \n  \n  \n    2 \n    Abin Sur \n    Male \n    blue \n    Ungaran \n    No Hair \n    185 \n    90 \n    DC Comics \n    red \n    good \n    Incomplete \n  \n  \n    3 \n    Abomination \n    Male \n    green \n    Human / Radiation \n    No Hair \n    203 \n    441 \n    Marvel Comics \n    - \n    bad \n    Incomplete \n  \n  \n    4 \n    Abraxas \n    Male \n    blue \n    Cosmic Entity \n    Black \n    -99 \n    -99 \n    Marvel Comics \n    - \n    bad \n    Incomplete \n  \n  \n    5 \n    Absorbing Man \n    Male \n    blue \n    Human \n    No Hair \n    193 \n    122 \n    Marvel Comics \n    - \n    bad \n    Incomplete \n  \n  \n    6 \n    Adam Monroe \n    Male \n    blue \n    - \n    Blond \n    -99 \n    -99 \n    NBC - Heroes \n    - \n    good \n    Incomplete \n  \n  \n    7 \n    Adam Strange \n    Male \n    blue \n    Human \n    Blond \n    185 \n    88 \n    DC Comics \n    - \n    good \n    Incomplete \n  \n  \n    8 \n    Agent 13 \n    Female \n    blue \n    - \n    Blond \n    173 \n    61 \n    Marvel Comics \n    - \n    good \n    Incomplete \n  \n  \n    9 \n    Agent Bob \n    Male \n    brown \n    Human \n    Brown \n    178 \n    81 \n    Marvel Comics \n    - \n    good \n    Incomplete \n  \n\n\n\n\n\n\n\n\nIf we expand the list column elements through indexing, we can take a deeper look at the nonrepeating and repeating dataframe outputs. There are a number of things worth noting here:\n\nFirst in both of these tables we see there are no artificially generated NA artifact values.\nOn the left side, the non-repeating table shows that every record_id has a single row. On the right are repeating record_ids forming a compound key with the redcap_repeat_instance\nAdditionally, the redcap_repeat_ variables only appear in repeating sub tables.\nThis means that only the variables associated with the table will appear in it.\nThe presence of the primary key in the nonrepeating hero information table, and the compound key in the repeating hero powers table allows for easy joining.\n\nWhile this example REDCap only has two tables, most are going to have much more and it is very powerful to be able to join only the data you need and trust that the output contains all the relevant information."
   },
   {
     "objectID": "data_science/REDCapTidieR.html#revisiting-superheroes-2",
     "href": "data_science/REDCapTidieR.html#revisiting-superheroes-2",
     "title": "REDCapTidieR",
     "section": "Revisiting Superheroes",
-    "text": "Revisiting Superheroes\n\n\nNon-Repeating Hero Information\n\nsuperheroes_tidy$redcap_data[[2]] %>% \n  head(5)\n\n\n\n\n\n \n  \n    record_id \n    --- \n    form_status_complete \n  \n \n\n  \n    0 \n    ... \n    Incomplete \n  \n  \n    1 \n    ... \n    Incomplete \n  \n  \n    2 \n    ... \n    Incomplete \n  \n  \n    3 \n    ... \n    Incomplete \n  \n  \n    4 \n    ... \n    Incomplete \n  \n\n\n\n\n\n\nRepeating Hero Powers\n\nsuperheroes_tidy$redcap_data[[1]] %>% \n  head(5)\n\n\n\n\n\n \n  \n    record_id \n    --- \n    form_status_complete \n  \n \n\n  \n    0 \n    ... \n    Incomplete \n  \n  \n    0 \n    ... \n    Incomplete \n  \n  \n    0 \n    ... \n    Incomplete \n  \n  \n    0 \n    ... \n    Incomplete \n  \n  \n    0 \n    ... \n    Incomplete \n  \n\n\n\n\n\n\n\n\nChange in *_form_status_complete to form_status_complete\n\n\nOne other thing I’d like to point out for those familiar with REDCap is the simplification of the form status completion variable. Typically in a REDCap output you’ll have a “x_form_status_complete” indicating whether a form is complete, incomplete, or unverified.\nSince the name of the form is indicated in the super tibble, we have a single variable that doesn’t change name to indicate completeness. This can be helpful if, for example, you’re relying on only complete data for analysis or want to check on the progression of data entry in your project. The form_status_complete variable will always be located at the end of the dataframe."
+    "text": "Revisiting Superheroes\n\n\nNon-Repeating Hero Information\n\nsuperheroes_tidy$redcap_data[[2]] %>% \n  head(5)\n\n\n\n\n\n \n  \n    record_id \n    --- \n    form_status_complete \n  \n \n\n  \n    0 \n    ... \n    Incomplete \n  \n  \n    0 \n    ... \n    Incomplete \n  \n  \n    0 \n    ... \n    Incomplete \n  \n  \n    0 \n    ... \n    Incomplete \n  \n  \n    0 \n    ... \n    Incomplete \n  \n\n\n\n\n\n\nRepeating Hero Powers\n\nsuperheroes_tidy$redcap_data[[1]] %>% \n  head(5)\n\n\n\n\n\n \n  \n    record_id \n    --- \n    form_status_complete \n  \n \n\n  \n    0 \n    ... \n    Incomplete \n  \n  \n    1 \n    ... \n    Incomplete \n  \n  \n    2 \n    ... \n    Incomplete \n  \n  \n    3 \n    ... \n    Incomplete \n  \n  \n    4 \n    ... \n    Incomplete \n  \n\n\n\n\n\n\n\n\nChange in *_form_status_complete to form_status_complete\n\n\nOne other thing I’d like to point out for those familiar with REDCap is the simplification of the form status completion variable. Typically in a REDCap output you’ll have a “x_form_status_complete” indicating whether a form is complete, incomplete, or unverified.\nSince the name of the form is indicated in the super tibble, we have a single variable that doesn’t change name to indicate completeness. This can be helpful if, for example, you’re relying on only complete data for analysis or want to check on the progression of data entry in your project. The form_status_complete variable will always be located at the end of the dataframe."
   },
   {
     "objectID": "data_science/REDCapTidieR.html#the-default-output",
     "href": "data_science/REDCapTidieR.html#the-default-output",
     "title": "REDCapTidieR",
     "section": "The Default Output",
-    "text": "The Default Output\n\nlibrary(REDCapTidieR)\nsuperheroes_tidy <- read_redcap_tidy(redcap_uri, token)\n\nsuperheroes_tidy\n\n# A tibble: 2 × 3\n  redcap_form_name   redcap_data          structure   \n  <chr>              <list>               <chr>       \n1 super_hero_powers  <tibble [5,966 × 4]> repeating   \n2 heroes_information <tibble [734 × 12]>  nonrepeating\n\n\n\nHowever, indexing isn’t always the best way to go about data extraction. So while the initial tibble we showed earlier is extremely helpful we wanted to also provide a way to make the data accessible."
+    "text": "The Default Output\n\nlibrary(REDCapTidieR)\nsuperheroes_tidy <- read_redcap_tidy(redcap_uri, token)\n\nsuperheroes_tidy\n\n# A tibble: 2 × 9\n  redcap_for…¹ redca…² redcap…³ redcap…⁴ struc…⁵ data_…⁶ data_…⁷ data_…⁸ data_…⁹\n  <chr>        <chr>   <list>   <list>   <chr>     <int>   <int> <lbstr> <formt>\n1 heroes_info… Heroes… <tibble> <tibble> nonrep…     734      12 123.24… 0.23%  \n2 super_hero_… Super … <tibble> <tibble> repeat…    5966       4 180.21… 0%     \n# … with abbreviated variable names ¹​redcap_form_name, ²​redcap_form_label,\n#   ³​redcap_data, ⁴​redcap_metadata, ⁵​structure, ⁶​data_rows, ⁷​data_cols,\n#   ⁸​data_size, ⁹​data_na_pct\n\n\n\nHowever, indexing isn’t always the best way to go about data extraction. So while the initial tibble we showed earlier is extremely helpful we wanted to also provide a way to make the data accessible."
   },
   {
     "objectID": "data_science/REDCapTidieR.html#bind_tables-direct-to-environment",
     "href": "data_science/REDCapTidieR.html#bind_tables-direct-to-environment",
     "title": "REDCapTidieR",
     "section": "bind_tables Direct to Environment",
-    "text": "bind_tables Direct to Environment\nThe function:\n\n# How `bind_tables()` is called:\nbind_tables <- function(.data,\n                        environment = global_env(),\n                        redcap_form_name = NULL,\n                        structure = NULL)\n  \n  # How it looks in practice:\n  read_redcap_tidy(redcap_uri, token) %>% \n  bind_tables()\n\nClear out our envionrment:\n\nrm(list = ls())\nls.str(envir = globalenv())\n\n\nEmpty output, no global environment objects\n\nReload the superheroes_tidy dataset, pipe to bind_tables, check environment:\n\nsuperheroes_tidy %>%\n  bind_tables()\n\nls.str(envir = globalenv())\n\nheroes_information : tibble [734 × 12] (S3: tbl_df/tbl/data.frame)\nsuper_hero_powers : tibble [5,966 × 4] (S3: tbl_df/tbl/data.frame)\nsuperheroes_tidy : tibble [2 × 3] (S3: tbl_df/tbl/data.frame)\n\n\n\nThe second main function we’ve introduced to REDCapTidieR is Stephan’s brain child. Using the bind_tables helper function, we can take the table outputs of the redcap_data column from our TidieR output and place them directly into the global environment or any environment of our choosing.\nFor those of you who don’t know, environments are essentially a variant of lists in R. The most common one you probably work with is the global environment displayed in the panel of your RStudio IDE, but you can also make other environments to call from.\nFor this function, you can specify an environment to load to, the repeat/nonrepeat structure you’re interested in, and any specific tables. However, the default behavior with no arguments supplied will load directly to the global environment with all available objects."
+    "text": "bind_tables Direct to Environment\nThe function:\n\n# How `bind_tables()` is called:\nbind_tables <- function(.data,\n                        environment = global_env(),\n                        redcap_form_name = NULL,\n                        structure = NULL)\n  \n  # How it looks in practice:\n  read_redcap_tidy(redcap_uri, token) %>% \n  bind_tables()\n\nClear out our envionrment:\n\nrm(list = ls())\nls.str(envir = globalenv())\n\n\nEmpty output, no global environment objects\n\nReload the superheroes_tidy dataset, pipe to bind_tables, check environment:\n\nsuperheroes_tidy %>%\n  bind_tables()\n\nls.str(envir = globalenv())\n\nheroes_information : tibble [734 × 12] (S3: tbl_df/tbl/data.frame)\nsuper_hero_powers : tibble [5,966 × 4] (S3: tbl_df/tbl/data.frame)\nsuperheroes_tidy : tibble [2 × 9] (S3: tbl_df/tbl/data.frame)\n\n\n\nThe second main function we’ve introduced to REDCapTidieR is Stephan’s brain child. Using the bind_tables helper function, we can take the table outputs of the redcap_data column from our TidieR output and place them directly into the global environment or any environment of our choosing.\nFor those of you who don’t know, environments are essentially a variant of lists in R. The most common one you probably work with is the global environment displayed in the panel of your RStudio IDE, but you can also make other environments to call from.\nFor this function, you can specify an environment to load to, the repeat/nonrepeat structure you’re interested in, and any specific tables. However, the default behavior with no arguments supplied will load directly to the global environment with all available objects."
   },
   {
     "objectID": "data_science/REDCapTidieR.html#bind_tables-direct-to-environment-1",
@@ -354,14 +291,14 @@
     "href": "data_science/REDCapTidieR.html#redcap-projects-with-arms",
     "title": "REDCapTidieR",
     "section": "REDCap Projects with Arms",
-    "text": "REDCap Projects with Arms\n\n\n\n\n\nredcap_long_arms_tidy <- read_redcap_tidy(redcap_uri, token)\n\nredcap_long_arms_tidy\n\n# A tibble: 3 × 3\n  redcap_form_name redcap_data      structure   \n  <chr>            <list>           <chr>       \n1 repeated         <tibble [9 × 7]> repeating   \n2 nonrepeated      <tibble [8 × 6]> nonrepeating\n3 nonrepeated2     <tibble [3 × 6]> nonrepeating\n\n\n\nIn the front end UI, we have a rudimentary mockup of a database that has all of these elements as well as multiple arms. Notice the inclusion of Events 1, 2, and 3 and Arms 1 and 2 in separate tabs. You can also notice here how things get pretty complicated. Records 1-3 appear in Arm1, events 1 and 2, but Record 4 is only Arm2, events 1 and 3.\nThe output of a read_redcap_tidy call is still the same. The forms we expect appear in the form names, we have dataframe elements, and indicative structure details."
+    "text": "REDCap Projects with Arms\n\n\n\n\n\nredcap_long_arms_tidy <- read_redcap_tidy(redcap_uri, token)\n\nredcap_long_arms_tidy\n\n# A tibble: 3 × 10\n  redcap_fo…¹ redca…² redcap…³ redcap…⁴ redcap…⁵ struc…⁶ data_…⁷ data_…⁸ data_…⁹\n  <chr>       <chr>   <list>   <list>   <list>   <chr>     <int>   <int> <lbstr>\n1 nonrepeated Nonrep… <tibble> <tibble> <tibble> nonrep…       8       6 3.18 kB\n2 nonrepeate… Nonrep… <tibble> <tibble> <tibble> nonrep…       3       6 2.30 kB\n3 repeated    Repeat… <tibble> <tibble> <tibble> repeat…       9       7 4.04 kB\n# … with 1 more variable: data_na_pct <formttbl>, and abbreviated variable\n#   names ¹​redcap_form_name, ²​redcap_form_label, ³​redcap_data,\n#   ⁴​redcap_metadata, ⁵​redcap_events, ⁶​structure, ⁷​data_rows, ⁸​data_cols,\n#   ⁹​data_size\n\n\n\nIn the front end UI, we have a rudimentary mockup of a database that has all of these elements as well as multiple arms. Notice the inclusion of Events 1, 2, and 3 and Arms 1 and 2 in separate tabs. You can also notice here how things get pretty complicated. Records 1-3 appear in Arm1, events 1 and 2, but Record 4 is only Arm2, events 1 and 3.\nThe output of a read_redcap_tidy call is still the same. The forms we expect appear in the form names, we have dataframe elements, and indicative structure details."
   },
   {
     "objectID": "data_science/REDCapTidieR.html#redcap-projects-with-arms-1",
     "href": "data_science/REDCapTidieR.html#redcap-projects-with-arms-1",
     "title": "REDCapTidieR",
     "section": "REDCap Projects with Arms",
-    "text": "REDCap Projects with Arms\n\n\n\nredcap_long_arms_tidy$redcap_data[[1]]\n\n\n\n\n\n \n  \n    record_id \n    redcap_repeat_instance \n    redcap_event \n    redcap_arm \n    repeat_1 \n    repeat_2 \n    form_status_complete \n  \n \n\n  \n    1 \n    1 \n    event_1 \n    1 \n    1 \n    2 \n    Incomplete \n  \n  \n    1 \n    2 \n    event_1 \n    1 \n    3 \n    4 \n    Incomplete \n  \n  \n    1 \n    3 \n    event_1 \n    1 \n    5 \n    6 \n    Incomplete \n  \n  \n    1 \n    1 \n    event_2 \n    1 \n    A \n    B \n    Incomplete \n  \n  \n    1 \n    2 \n    event_2 \n    1 \n    C \n    D \n    Incomplete \n  \n  \n    3 \n    1 \n    event_1 \n    1 \n    C \n    D \n    Incomplete \n  \n  \n    3 \n    1 \n    event_2 \n    1 \n    E \n    F \n    Incomplete \n  \n  \n    3 \n    2 \n    event_2 \n    1 \n    G \n    H \n    Incomplete \n  \n  \n    4 \n    1 \n    event_3 \n    2 \n    R1 \n    R2 \n    Incomplete \n  \n\n\n\n\n\n\n\nredcap_long_arms_tidy$redcap_data[[3]]\n\n\n\n\n\n \n  \n    record_id \n    redcap_event \n    redcap_arm \n    nonrepeat_3 \n    nonrepeat_4 \n    form_status_complete \n  \n \n\n  \n    1 \n    event_1 \n    1 \n    3 \n    4 \n    Incomplete \n  \n  \n    2 \n    event_1 \n    1 \n    5 \n    6 \n    Incomplete \n  \n  \n    3 \n    event_1 \n    1 \n    NA \n    NA \n    Incomplete \n  \n\n\n\n\n\n\n\n\nAnd on the backend, despite all this added complexity, the really nice thing is all that’s changed is the addition of redcap_event and redcap_arm which are just two more elements needed for your compound key joins for unique row identification.\nOne thing I’ll note is REDCapTidieR as a default will automatically detect and remove the arm variable if only 1 arm exists in your longitudinal project."
+    "text": "REDCap Projects with Arms\n\n\n\nredcap_long_arms_tidy$redcap_data[[1]]\n\n\n\n\n\n \n  \n    record_id \n    redcap_event \n    redcap_arm \n    nonrepeat_1 \n    nonrepeat_2 \n    form_status_complete \n  \n \n\n  \n    1 \n    event_1 \n    1 \n    1 \n    2 \n    Incomplete \n  \n  \n    1 \n    event_2 \n    1 \n    1 \n    2 \n    Incomplete \n  \n  \n    2 \n    event_1 \n    1 \n    A \n    B \n    Incomplete \n  \n  \n    2 \n    event_2 \n    1 \n    5 \n    6 \n    Incomplete \n  \n  \n    3 \n    event_1 \n    1 \n    NA \n    NA \n    Incomplete \n  \n  \n    3 \n    event_2 \n    1 \n    NA \n    NA \n    Incomplete \n  \n  \n    4 \n    event_1 \n    2 \n    Red \n    Blue \n    Incomplete \n  \n  \n    4 \n    event_3 \n    2 \n    Green \n    Yellow \n    Incomplete \n  \n\n\n\n\n\n\n\nredcap_long_arms_tidy$redcap_data[[3]]\n\n\n\n\n\n \n  \n    record_id \n    redcap_repeat_instance \n    redcap_event \n    redcap_arm \n    repeat_1 \n    repeat_2 \n    form_status_complete \n  \n \n\n  \n    1 \n    1 \n    event_1 \n    1 \n    1 \n    2 \n    Incomplete \n  \n  \n    1 \n    2 \n    event_1 \n    1 \n    3 \n    4 \n    Incomplete \n  \n  \n    1 \n    3 \n    event_1 \n    1 \n    5 \n    6 \n    Incomplete \n  \n  \n    1 \n    1 \n    event_2 \n    1 \n    A \n    B \n    Incomplete \n  \n  \n    1 \n    2 \n    event_2 \n    1 \n    C \n    D \n    Incomplete \n  \n  \n    3 \n    1 \n    event_1 \n    1 \n    C \n    D \n    Incomplete \n  \n  \n    3 \n    1 \n    event_2 \n    1 \n    E \n    F \n    Incomplete \n  \n  \n    3 \n    2 \n    event_2 \n    1 \n    G \n    H \n    Incomplete \n  \n  \n    4 \n    1 \n    event_3 \n    2 \n    R1 \n    R2 \n    Incomplete \n  \n\n\n\n\n\n\n\n\nAnd on the backend, despite all this added complexity, the really nice thing is all that’s changed is the addition of redcap_event and redcap_arm which are just two more elements needed for your compound key joins for unique row identification.\nOne thing I’ll note is REDCapTidieR as a default will automatically detect and remove the arm variable if only 1 arm exists in your longitudinal project."
   },
   {
     "objectID": "data_science/REDCapTidieR.html#try-it-for-yourself",
@@ -392,13 +329,6 @@
     "text": "To assist research staff with outcomes reporting, we developed a R/Shiny application we refer to as the Stem Cell Engraftment Application. I presented on the development and reception of the app on at R/Medicine 2021 and you can view the video recording here as well as in the links at the top of the page. The repository for this app is private to CHOP and not made publicly available but I welcome any questions any viewers have regarding it.\nStem cell transplantation is a life-saving therapeutic solution for cancers and other malignancies. During the process, a donor provides stem cells from their bone marrow which are separated from the blood using apheresis. Before the stem cells can be provided, the recipient must first have their blood-forming cells destroyed through chemotherapy so that both cancerous and non-cancerous cells are eliminated. The patient then receives the stem cells to replenish the lost cells and produce non-cancerous ones.\nThe key factor to monitor when undergoing this process is known as engraftment: the process when cells of interest re-emerge at appropriate count levels. In this case, we’re most interested in neutrophils (white blood cells responsible for fighting off infection) and platelets (responsible for blood clotting). We want the patient’s neutrophil level to reach a count of 500cells/uL and their platelet count to reach 20cells/uL.\nFor research staff, reporting these outcome values requires labor-intensive and error-prone calculations taken from multiple sources. By using the application, users need only supply a patient medical record number and receive all related transplants with easy to use buttons that copy the automated calculation directly to their clipboard for direct transcription into the data registry. This is further supported with interactive visuals for confirmation that the calculations are correct.\nAfter using the application for just a few months, research staff were able to correct numerous past entry errors as well as effectively eliminate prospective error reporting. Please feel free to watch the video recording to learn more!\n\n\n\nEngraftment App"
   },
   {
-    "objectID": "data_science.html",
-    "href": "data_science.html",
-    "title": "Data Science",
-    "section": "",
-    "text": "REDCapTidieR\n\n\nMaking analysts lives easier through the power of tidy tibbles\n\n\n\n\nR\n\n\nREDCap\n\n\nPackage\n\n\nData Science\n\n\n\n\nThis slide deck was made in {quarto} and presented to the CHOP R User group in preparation of the package’s v0.1.0 release to CRAN.\n\n\n\n\n\n\nAug 18, 2022\n\n\nRichard Hanna\n\n\n\n\n\n\n  \n\n\n\n\nStem Cell Engraftment Application\n\n\n\n\n\n\n\nData Science\n\n\nR\n\n\nShiny\n\n\nGolem\n\n\nStem Cell\n\n\n\n\nWe developed a {shiny} application using the {golem} framework to support research staff in calculating and recording stem cell engraftment that helped eliminate errors in data entry.\n\n\n\n\n\n\nSep 18, 2021\n\n\nRichard Hanna\n\n\n\n\n\n\nNo matching items"
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Richard Hanna",
@@ -406,101 +336,213 @@
     "text": "Thank you for visiting my site. My name is Rich Hanna and, while there are a few others out there, I’m doing my best to be the most “Google-able” one.\nThis site serves professional content of my portfolio as well as some of my hobbies and interests. It’s a pleasure to connect with you.\n\n\n\n\n\nGraduation Cap MS in Biomedical Engineering, 2015\n\n\nDrexel University, Philadelphia\n\n\nGraduation Cap BS in Mechanical Engineering, 2015\n\n\nDrexel University, Philadelphia\n\n\n\n\n\n\n\n\nDatabase Data Scientist\n\n\nChildren’s Hospital of Philadelphia, 2021 - Present\n\n\nDatabase Data Analyst & Programmer\n\n\nChildren’s Hospital of Philadelphia, 2019-2021\n\n\nDatabase Research Project Engineer\n\n\nChildren’s Hospital of Philadelphia, 2017-2019\n\n\nGears Project/Associate Project Engineer\n\n\nGS Medical USA, 2015-2017\n\n\nGears Biomechanics Researcher\n\n\nChildren’s Hospital of Philadelphia, 2014-2015\n\n\n\n\n\n\n\n\nScroll Graduate Certificate in Engineering Management\n\n\nDrexel University, Philadelphia, 2015\n\n\nComputer Solutions Architect - Associate\n\n\nAWS, 2021\n\n\nGears FE/EIT Certified\n\n\nNCEES, 2014"
   },
   {
-    "objectID": "publications/amia_engraftment_app_abstract_20211209.html",
-    "href": "publications/amia_engraftment_app_abstract_20211209.html",
-    "title": "Automation of Stem Cell Transplant Outcomes Reporting Leads to Dramatic Reduction of Errors Reported to Real-World Data Registry",
-    "section": "",
-    "text": "A PDF version of this abstract is available here\n\n\nProposal\nStem cell transplantation is a life-saving therapy for various malignant and non-malignant diseases. To aggregate real-world data on stem cell transplant patients, all cancer centers in the U.S. are required by law to report outcomes such as the time from transplant to the emergence of neutrophils and platelets, known as “engraftment,” to the Center for International Blood and Marrow Transplant Research (CIBMTR).\nTraditionally, engraftment data is curated by data managers who manually look up information in medical records and complete web-based forms. This tedious manual process requires integration of multiple data sources and, at a top-tier pediatric cancer center, was found to have error rates as high as 28%.\nTo mitigate this problem, we developed an application that calculates engraftment dates automatically. We used the AMIA Usability Framework as a guide to create a minimalist and consistent design with informative and useful feedback and error messages. The Engraftment application passed clinical validation, and it is now in day-to-day use by our data managers, having eliminated the manual process. In a post-implementation validation, we found that the rate of incorrect engraftment dates reported to the CIBMTR had decreased to zero.\nIn this Systems Demonstration presentation, we will outline the clinical validation, production engineering, and operationalization of the Engraftment application. We will then demonstrate features built into the application that optimize usability and user experience. Finally, we will discuss how the application could be implemented at other cancer centers."
-  },
-  {
-    "objectID": "publications/amsa_jaha_publication_20210614.html",
-    "href": "publications/amsa_jaha_publication_20210614.html",
-    "title": "Effect of Amplitude Spectral Area on Termination of Fibrillation and Outcomes in Pediatric Cardiac Arrest",
-    "section": "",
-    "text": "Amplitude spectral area (AMSA) predicts termination of fibrillation (TOF) with return of spontaneous circulation (ROSC) and survival in adults but has not been studied in pediatric cardiac arrest. We characterized AMSA during pediatric cardiac arrest from a Pediatric Resuscitation Quality Collaborative and hypothesized that AMSA would be associated with TOF and ROSC."
-  },
-  {
-    "objectID": "publications/amsa_jaha_publication_20210614.html#methods-and-results",
-    "href": "publications/amsa_jaha_publication_20210614.html#methods-and-results",
-    "title": "Effect of Amplitude Spectral Area on Termination of Fibrillation and Outcomes in Pediatric Cardiac Arrest",
-    "section": "Methods and Results",
-    "text": "Methods and Results\nChildren aged <18 years with cardiac arrest and ventricular fibrillation were studied. AMSA was calculated for 2 seconds before shock and averaged for each subject (AMSA‐avg). TOF was defined as termination of ventricular fibrillation 10 seconds after defibrillation to any non‐ventricular fibrillation rhythm. ROSC was defined as >20 minutes without chest compressions. Univariate and multivariable logistic regression analyses controlling for weight, current, and illness category were performed. Primary end points were TOF and ROSC. Secondary end points were 24‐hour survival and survival to discharge. Between 2015 and 2019, 50 children from 14 hospitals with 111 shocks were identified. In univariate analyses AMSA was not associated with TOF and AMS‐Aavg was not associated with ROSC. Multivariable logistic regression showed no association between AMSA and TOF but controlling for defibrillation average current and illness category, there was a trend to significant association between AMSA‐avg and ROSC (odds ratio, 1.10 [1.00‒1.22] P=0.058). There was no significant association between AMSA‐avg and 24‐hour survival or survival to hospital discharge."
-  },
-  {
-    "objectID": "publications/amsa_jaha_publication_20210614.html#conclusions",
-    "href": "publications/amsa_jaha_publication_20210614.html#conclusions",
-    "title": "Effect of Amplitude Spectral Area on Termination of Fibrillation and Outcomes in Pediatric Cardiac Arrest",
-    "section": "Conclusions",
-    "text": "Conclusions\nIn pediatric patients, AMSA was not associated with TOF, whereas AMSA‐avg had a trend to significance for association in ROSC, but not 24‐hour survival or survival to hospital discharge."
-  },
-  {
-    "objectID": "publications/automated_couette_viscometer.html",
-    "href": "publications/automated_couette_viscometer.html",
-    "title": "Development of an Automated Couette Viscometer",
-    "section": "",
-    "text": "Our final report as well as our design presentation are also available for you to view.\n\nAs modern medicine increasingly pushes for predictive, prospective action over retrospective response the need for diagnostic devices has become ever more prevalent. This senior design project, developed at Drexel University, looked to produce a device which could employ the theory of Couette flow to measure human blood viscosity. The idea being that blood viscosity can provide strong clinical indications about a person’s health, but producing a device that is inexpensive, fast, and accurate would prove challenging.\nCouette flow involves three main components: a stationary outer cylinder, a rotational inner cylinder, and the fluid trapped between for analysis. Viscosity can be obtained by analyzing the rotational speed of the inner cylinder due to material properties of the test fluid and shear stresses imposed upon it.\n\n\n\nCouette Flow Diagram\n\n\nIn order to minimize costs and provide a device that could be easily incorporated in a hospital environment, the device (which we coined the “Haemopoise”) would act as a stand-alone system and housing capable of interfacing with existing vacutainer technologies. See the image below on what a vacutainer looks like:\n\n\n\nExample Vacutainer\n\n\nI highly encourage checking out the slide deck and report in the links above this page, but I will give a brief summary of how the device works:\n\nBlood is drawn from a patient into the vacutainer.\nThe vacutainer is placed in the receptacle of the Haemopoise device. The vacutainer acts as the outer rotational cylinder for Couette flow.\nAn OEM insert is placed inside of the vacutainer. The insert is a light, buoyant, disposable column which acts as the inner rotational cylinder for Couette flow.\nOn top of the insert is a reflective marker. A component of the insert contains aluminum for interaction with the Eddy current produced by rotational magnets.\nThe Eddy current induced rotation of the inner cylinder while a laser reads the rotational speed of the reflective surface at the top of the insert.\nThis rotational speed correlates with viscosity of the analyzed fluid (blood).\n\nCheck out this link for a demo on the Haemopoise in action (with a real human blood sample): Haemopoise Demo\nI couldn’t very well discuss this project without giving credit to my fantastic team: Michael Sinisi, Dan Nguyen, Austin Farber, and Matt Lorenz under the tutelage and supervision of Dr. Young Cho, PhD."
-  },
-  {
-    "objectID": "publications/city_ih_cpr_nights_weekends.html",
-    "href": "publications/city_ih_cpr_nights_weekends.html",
-    "title": "Paediatric In-hospital cardiopulmonary resuscitation quality and outcomes in children with CHD during nights and weekends",
-    "section": "",
-    "text": "Background\nSurvival after paediatric in-hospital cardiac arrest is worse on nights and weekends without demonstration of disparity in cardiopulmonary resuscitation quality. It is unknown whether these findings differ in children with CHD. This study aimed to determine whether cardiopulmonary resuscitation quality might explain the hypothesised worse outcomes of children with CHD during nights and weekends.\n\n\nMethods\nIn-hospital cardiac arrest data collected by the Pediatric Resuscitation Quality Collaborative for children with CHD. Chest compression quality metrics and survival outcomes were compared between events that occurred during day versus night, and during weekday versus weekend using multivariable logistic regression.\n\n\nResults\nWe evaluated 3614 sixty-second epochs of chest compression data from 132 subjects between 2015 and 2020. There was no difference in chest compression quality metrics during day versus night or weekday versus weekend. Weekday versus weekend was associated with improved survival to hospital discharge (adjusted odds ratio 4.56 [1.29,16.11]; p = 0.02] and survival to hospital discharge with favourable neurological outcomes (adjusted odds ratio 6.35 [1.36,29.6]; p = 0.02), but no difference with rate of return of spontaneous circulation or return of circulation. There was no difference in outcomes for day versus night.\n\n\nConclusion\nFor children with CHD and in-hospital cardiac arrest, there was no difference in chest compression quality metrics by time of day or day of week. Although there was no difference in outcomes for events during days versus nights, there was improved survival to hospital discharge and survival to hospital discharge with favourable neurological outcome for events occurring on weekdays compared to weekends."
-  },
-  {
-    "objectID": "publications/cpr_transport.html",
-    "href": "publications/cpr_transport.html",
-    "title": "Pediatric cardiopulmonary resuscitation quality during intra-hospital transport",
-    "section": "",
-    "text": "Aim\nTo evaluate pediatric cardiopulmonary resuscitation (CPR) quality during intra-hospital transport to facilitate extracorporeal membrane oxygenation (ECMO)-CPR (ECPR). We compared chest compression (CC) rate, depth, and fraction (CCF) between the pre-transport and intra-transport periods.\n\n\nMethods\nObservational study of children <18 years with either in-hospital cardiac arrest (IHCA) or out-of-hospital cardiac arrest (OHCA) who underwent transport between two care locations within the hospital for ECPR and who had CPR mechanics data available. Descriptive patient and arrest characteristics were summarized. The primary analysis compared pre- to intra-transport CC rate, depth, and fraction. A secondary analysis compared the proportion of pre- versus intra-transport 60-s epochs meeting guideline recommendations for rate (100-120/min), depth (≥4 cm for infants; ≥5 cm for children ≥1 year), and CCF (≥0.80).\n\n\nResults\nSeven patients (four IHCA; three witnessed OHCA) met eligibility criteria. Six (86%) patients survived the event and two (28%) survived to hospital discharge. Median transport CPR duration was 7 [IQR 5.5, 8.5] minutes. There were no differences in pre- vs. intra-transport CC rate (115 [113, 118] vs. 118 [114, 127] CCs/minute; p = 0.18), depth (3.2 [2.7, 4.4] vs. 3.6 [2.5, 4.6] cm; p = 0.50), or CCF (0.89 [0.82, 0.90] vs. 0.92 [0.79, 0.97]; p = 0.31). Equivalent proportions of 60-s CPR epochs met guideline recommendations between pre- and intra-transport (rate: 66% vs. 57% [p = 0.22]; depth: 14% vs. 19% [p = 0.39]; CCF: 80% vs. 75% [p = 0.43]).\n\n\nConclusions\nPediatric CPR quality was maintained during intra-hospital patient transport, suggesting that it is reasonable for ECPR systems to incorporate patient transport to facilitate ECMO cannulation."
-  },
-  {
-    "objectID": "publications/ih_cpr_night_weekend.html",
-    "href": "publications/ih_cpr_night_weekend.html",
-    "title": "Pediatric In-Hospital CPR Quality at Night and on Weekends",
-    "section": "",
-    "text": "##Introduction\nSurvival after in-hospital cardiac arrest (IHCA) has been reported to be worse for arrests at night or during weekends.This study aimed to determine whether measured cardiopulmonary resuscitation (CPR) quality metrics might explain this difference in outcomes.\n\n\nIHCA data was collected by the Pediatric Resuscitation Quality (pediRES-Q) collaborative for patients <18 years. Metrics of CPR quality [chest compression rate, depth and fraction] were measured using monitordefibrillator pads, and events were compared by time of day and day of week.\n\n\n\nWe evaluated 6915 sixty-second epochs of chest compression (CC) data from 239 subjects between October 2015 and March 2019, across 18 hospitals. There was no significant difference in CPR quality metrics during day (07:00–22:59) versus night (23:00–06:59), or weekdays (Monday 07:00 to Friday 22:59) versus weekends (Friday 23:00 to Monday 06:59).There was also no difference in rate of return of circulation. However, survival to hospital discharge was higher for arrests that occurred during the day (39.1%) vs. nights (22.4%, p = 0.015), as well as on weekdays (39.9%) vs. weekends (19.1%, p = 0.003).\n\n\n\nFor pediatric IHCA where CC metrics were obtained, there was no significant difference in CPR quality metrics or rate of return of circulation by time of day or day of week. There was higher survival to hospital discharge when arrests occurred during the day (vs. nights), or on weekdays (vs. weekends), and this difference was not related to disparities in CC quality."
-  },
-  {
-    "objectID": "publications/rear_facing_crs_fitment.html",
-    "href": "publications/rear_facing_crs_fitment.html",
-    "title": "Development of a Small rear Facing Child Restraint System Virtual Surrogate to Evaluate CRS-to-Vehicle Fitment",
-    "section": "",
-    "text": "The publication in SAE was also presented at the Ohio State University Injury Biomechanics Symposium and the publically available write-up is made available here. You can also find an additional write-up on my research by visiting CHOP’s Research Institute Cornerstone blog page and on Chevrolet’s Pressroom.\n\n\nAbstract\nAutomotive interior design optimization must balance the design of the vehicle seat and occupant space for safety, comfort and aesthetics with the accommodation of add-on restraint products such as child restraint systems (CRS). It is important to understand the range of CRS dimensions so that this balance can be successfully negotiated. CRS design is constantly changing. In particular, the introduction of side impact protection for CRS as well as emphasis on ease of CRS installation has likely changed key design points of many child restraints. This ever-changing target creates a challenge for vehicle manufacturers to assure their vehicle seats and occupant spaces are compatible with the range of CRS on the market. To date, there is no accepted method for quantifying the geometry of child seats such that new designs can be catalogued in a simple, straightforward way. In this project, we propose to quantify the geometry of a selection of CRSs currently on the market and develop an easily implementable method to continue to collect this data as new CRSs become available.\nComputer Aided Design (CAD) data was collected for 40 CRS models (Rear-facing infant seats, convertible, and combination CRS). These 40 models represent 72 CRS models on the US market as of April 2013. Twenty-two CRS were scanned and digitized using a novel approach with the Microsoft Kinect Sensor. The scans were converted into surface models and finite element (FE) models using Hypermesh 12.0 (Altair Inc., MI). CRS manufacturers provided digital drawings of 18 additional CRS. The scans and digital drawings were overlapped at typical seat angles from literature data to create virtual surrogates.\nThe use of virtual surrogates by vehicle manufacturers in the design and development of the rear-seat vehicle environment early on in the design-development cycle has the potential to facilitate improved CRS-vehicle fitment."
-  },
-  {
-    "objectID": "publications/recurrent_arrest.html",
-    "href": "publications/recurrent_arrest.html",
-    "title": "Risk factors and outcomes for recurrent paediatric in-hospital cardiac arrest: Retrospective multicenter cohort study",
-    "section": "",
-    "text": "Recurrent in-hospital cardiac arrest (IHCA) is associated with morbidity and mortality in adults. We aimed to describe the risk factors and outcomes for paediatric recurrent IHCA.\n\n\n\nRetrospective cohort study of patients ≤18 years old with single or recurrent IHCA. Recurrent IHCA was defined as ≥2 IHCA within the same hospitalization. Categorical variables expressed as percentages and compared via Chi square test. Continuous variables expressed as medians with interquartile ranges and compared via rank sum test. Outcomes assessed in a propensity match cohort.\n\n\n\nFrom July 1, 2015 to January 26, 2021, 139/894 (15.5%) patients experienced recurrent IHCA. Compared to patients with a single IHCA, recurrent IHCA patients were more likely to be trauma and less likely to be surgical cardiac patients. Median duration of cardiopulmonary resuscitation (CPR) was shorter in the recurrent IHCA (5 vs. 11 min; p < 0.001) with no difference in IHCA location or immediate cause of CPR. Patients with recurrent IHCA had worse survival to intensive care unit (ICU) discharge (31% vs. 52%; p < 0.001), and worse survival to hospital discharge (30% vs. 48%; p < 0.001) in unadjusted analyses and after propensity matching, patients with recurrent IHCA still had worse survival to ICU (34% vs. 67%; p < 0.001) and hospital (31% vs. 64%; p < 0.001) discharge.\n\n\n\nWhen examining those with a single vs. a recurrent IHCA, event and patient factors including more pre-existing conditions and shorter duration of CPR were associated with risk for recurrent IHCA. Recurrent IHCA is associated with worse survival outcomes following propensity matching."
-  },
-  {
-    "objectID": "publications/viper_cpr_ress_2018.html",
-    "href": "publications/viper_cpr_ress_2018.html",
-    "title": "Verbal Prompts During Pediatric Cardiopulmonary Resuscitation in Emergency Department: A Report From the Videography in Pediatric Emergency Resuscitation (VIPER) Collaborative",
-    "section": "",
-    "text": "The quality of chest compressions (CC) is crucial for good outcomes for pediatric cardiac arrest. Verbal prompts from resuscitation leader or CPR coach may help to optimize it. The objective of this study is to describe the frequency of appropriate verbal prompts during pediatric CPR. We hypothesized that verbal prompts for CC would be given less frequently to infants compared to children.\n\n\n\nA report from the Videography In Pediatric Emergency Resuscitation (VIPER) Collaborative, a prospective observational database from three tertiary PEDs from December 2016 to April 2018. All study sites videorecord and review resuscitations and use a pressure sensor/monitor device during CPR. All events where chest compressions (CC) were performed under videorecorded conditions with the monitor device in use were eligible for inclusion. Events where real-time feedback from monitoring devices for CC was available were excluded (ages > 8). Data on CPR performance was collected by a combination of video review and monitor device; CC rate and depth and ventilation rate were extracted in time periods corresponding to individual CPR providers. Data on verbal prompts (time, who gave prompts, what prompt consisted of) were identified during video review.\n\n\n\nThere were 21 cases with total 182 providers included in database during study periods (infants: n=15, children: n=6). Verbal prompts for compression rate and depth were given in 14/21 (67%) of cases. 19/80 (24%) came from the resuscitation leader; 32/80 (40%) and from a CPR coach. 7 (3.9%) providers doing CC watched ZOLL monitor for feedback. Appropriate verbal prompts for CC rate were given to 4.2 % of providers in infants and 8.8 % in children (p=0.024). And 9.2% in infants and 10.5 % in children (p=0.064) were given to providers for CC depth. After adjusting by confounders, there weren’t any significant differences between age groups for both CC rate: OR1.22 (95%CI 0.49-3.05, P=0.670) and depth: OR 2.82 (95%CI 0.73-10.9, P=0.134).\n\n\n\nVerbal prompts frequency for CC rate and depth during pediatric CPR was described. There weren’t any significant differences between infants and children under 8 years old."
-  },
-  {
-    "objectID": "publications/viper_ress_2020.html",
-    "href": "publications/viper_ress_2020.html",
-    "title": "Analysis of CPR quality by individual providers in the pediatric emergency department",
-    "section": "",
-    "text": "To describe chest compression (CC) quality by individual providers in two pediatric emergency departments (EDs) using video review and compression monitor output during pediatric cardiac arrests.\n\n\n\nProspective observational study. Patients <18 yo receiving CC for >1 min were eligible. Data was collected from video review and CC monitor device in a synchronized fashion and reported in ‘segments’ by individual providers. Univariate comparison by age (<1 yo, 1–8 yo, >8 yo) was performed by chi-square testing for dichotomous variables (‘high-quality’ CPR) and nonparametric testing for continuous variables (CC rate and depth). Univariate comparison of ventilation rate (V) was made between segments with an advanced airway versus without.\n\n\n\n524 segments had data available; 42/524 (8%) met criteria for ‘high-quality CC’. Patients >8 yo had more segments meeting criteria (18% vs. 2% and 0.5%; p < 0.001). Segments compliant for rate were less frequent in <1 yo (17% vs. 24% vs. 27%; p = 0.03). Segments compliant for depth were less frequent in <1 year olds and 1–8 year olds (5% and 9% vs. 20%, p < 0.001.) Mean V for segments with an advanced airway was higher than with a natural airway (24 ± 18 vs. 14 ± 10 bpm, p < 0.001). Hyperventilation was more prevalent in CPR segments with an advanced airway (66% vs. 32%, p < 0.001).\n##Conclusions CC depth is rarely guideline compliant in infants. Hyperventilation is more prevalent during CPR periods with an advanced airway in place. Measuring individual provider CPR quality is feasible, allowing future studies to evaluate the impact of CPR training."
-  },
-  {
-    "objectID": "publications/viper_ress_2021.html",
-    "href": "publications/viper_ress_2021.html",
-    "title": "Longitudinal effect of high frequency training on CPR performance during simulated and actual pediatric cardiac arrest",
-    "section": "",
-    "text": "To determine the impact of high-frequency CPR training on performance during simulated and real pediatric CPR events in a pediatric emergency department (ED).\n\n\n\nProspective observational study. A high-frequency CPR training program (Resuscitation Quality Improvement (RQI)) was implemented among ED providers in a children’s hospital. Data on CPR performance was collected longitundinally during quarterly retraining sessions; scores were analyzed between quarter 1 and quarter 4 by nonparametric methods. Data on CPR performance during actual patient events was collected by simultaneous combination of video review and compression monitor devices to allow measurement of CPR quality by individual providers; linear mixed effects models were used to analyze the association between RQI components and CPR quality.\n\n\n\n159 providers completed four consecutive RQI sessions. Scores for all CPR tasks during retraining sessions significantly improved during the study period. 28 actual CPR events were captured during the study period; 49 observations of RQI trained providers performing CPR on children were analyzed. A significant association was found between the number of prior RQI sessions and the percent of compressions meeting guidelines for rate (β coefficient -0.08; standard error 0.04; p = 0.03).\n\n\n\nOver a 15 month period, RQI resulted in improved performance during training sessions for all skills. A significant association was found between number of sessions and adherence to compression rate guidelines during real patient events. Fewer than 30% of providers performed CPR on a patient during the study period. Multicenter studies over longer time periods should be undertaken to overcome the limitation of these rare events."
-  },
-  {
     "objectID": "publications.html",
     "href": "publications.html",
     "title": "Publications",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nJan 21, 2022\n\n\nPaediatric In-hospital cardiopulmonary resuscitation quality and outcomes in children with CHD during nights and weekends\n\n\nPriscilla Yu, Ivie Esangbedo, Xuemei Zhang, Richard Hanna, Dana E. Niles, Vinay Nadkarni, Tia Raymond\n\n\n\n\nDec 9, 2021\n\n\nAutomation of Stem Cell Transplant Outcomes Reporting Leads to Dramatic Reduction of Errors Reported to Real-World Data Registry\n\n\nStephan Kadauke, Richard Hanna\n\n\n\n\nNov 24, 2021\n\n\nRisk factors and outcomes for recurrent paediatric in-hospital cardiac arrest: Retrospective multicenter cohort study\n\n\nMaria E. Frazier, Stephanie R. Brown, Amanda O’Halloran, Tia T. Raymond, Richard Hanna, Dana E. Niles, Monica Kleinman, Robert M. Sutton, Joan Roberts, Ken Tegtmeyer, Heather A.Wolfe, Vinay M. Nadkarni, Maya Dewan\n\n\n\n\nOct 1, 2021\n\n\nLongitudinal effect of high frequency training on CPR performance during simulated and actual pediatric cardiac arrest\n\n\nAaron J. Donoghue, Debra Heard, Russell Griffin, Mary Kate Abbadessa, Shannon Gaines, Sangmo Je, Richard Hanna, John Erbayri, Sage Myers, Dana Niles, Vinay Nadkarni\n\n\n\n\nJun 14, 2021\n\n\nEffect of Amplitude Spectral Area on Termination of Fibrillation and Outcomes in Pediatric Cardiac Arrest\n\n\nTia T. Raymond, Sandeep V. Pandit, Heather Griffis, Xuemei Zhang, Richard Hanna, Dana E. Niles, Annemarie Silver, Javier J. Lasa, Sarah E. Haskell, Dianne L. Atkins, Vinay M. Nadkarni\n\n\n\n\nAug 1, 2020\n\n\nAnalysis of CPR quality by individual providers in the pediatric emergency department\n\n\nAaron J. Donoghue, Sage R. Myers, Benjamin T. Kerrey, Alexis B. Sandler, Ryan Keane, Ichiro Watanabe, Richard Hanna, Mary Kate Abbadessa, Mary Frey, Karen J. O’Connell\n\n\n\n\nMay 15, 2020\n\n\nPediatric cardiopulmonary resuscitation quality during intra-hospital transport\n\n\nMorgan Loaec, Adam S Himebauch, Todd J Kilbaugh, Robert A Berg, Kathryn Graham, Richard Hanna, Heather A Wolfe, Robert M Sutton, Ryan W Morgan\n\n\n\n\nNov 14, 2019\n\n\nPediatric In-Hospital CPR Quality at Night and on Weekends\n\n\nTia T. Raymond, Sandeep V. Pandit, Heather Griffis, Xuemei Zhang, Richard Hanna, Dana E. Niles, Annemarie Silver, Javier J. Lasa, Sarah E. Haskell, Dianne L. Atkins, Vinay M. Nadkarni\n\n\n\n\nNov 5, 2018\n\n\nVerbal Prompts During Pediatric Cardiopulmonary Resuscitation in Emergency Department: A Report From the Videography in Pediatric Emergency Resuscitation (VIPER) Collaborative\n\n\nKaren J. O’Connell, Alexis B. Sandler, Matthew Leda, Benjamin T. Kerrey, Sage R. Myers, Mary Frey, Ichiro Watanabe, Richard Hanna, Aaron J. Donoghue\n\n\n\n\nJul 1, 2015\n\n\nDevelopment of a Small rear Facing Child Restraint System Virtual Surrogate to Evaluate CRS-to-Vehicle Fitment\n\n\nRichard Hanna, Aditya Belwadi\n\n\n\n\nJun 1, 2015\n\n\nDevelopment of an Automated Couette Viscometer\n\n\nRichard Hanna\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nJan 4, 2023\n\n\nAutomation of Stem Cell Transplant Outcomes Reporting Leads to Dramatic Reduction of Errors Reported to Real-World Data Registry\n\n\nDavid S. Anderson, Richard S. Hanna, Victoria Collier, Patricia Hankins, Brandon Loudon, Timothy S. Olson, Amir Reza Pashmineh Azar, Stephan Grupp, Charles A. Phillips, Stephan Kadauke\n\n\n\n\nJan 21, 2022\n\n\nPaediatric In-hospital cardiopulmonary resuscitation quality and outcomes in children with CHD during nights and weekends\n\n\nPriscilla Yu, Ivie Esangbedo, Xuemei Zhang, Richard Hanna, Dana E. Niles, Vinay Nadkarni, Tia Raymond\n\n\n\n\nDec 9, 2021\n\n\nAutomation of Stem Cell Transplant Outcomes Reporting Leads to Dramatic Reduction of Errors Reported to Real-World Data Registry\n\n\nStephan Kadauke, Richard Hanna\n\n\n\n\nNov 24, 2021\n\n\nRisk factors and outcomes for recurrent paediatric in-hospital cardiac arrest: Retrospective multicenter cohort study\n\n\nMaria E. Frazier, Stephanie R. Brown, Amanda O’Halloran, Tia T. Raymond, Richard Hanna, Dana E. Niles, Monica Kleinman, Robert M. Sutton, Joan Roberts, Ken Tegtmeyer, Heather A.Wolfe, Vinay M. Nadkarni, Maya Dewan\n\n\n\n\nOct 1, 2021\n\n\nLongitudinal effect of high frequency training on CPR performance during simulated and actual pediatric cardiac arrest\n\n\nAaron J. Donoghue, Debra Heard, Russell Griffin, Mary Kate Abbadessa, Shannon Gaines, Sangmo Je, Richard Hanna, John Erbayri, Sage Myers, Dana Niles, Vinay Nadkarni\n\n\n\n\nJun 14, 2021\n\n\nEffect of Amplitude Spectral Area on Termination of Fibrillation and Outcomes in Pediatric Cardiac Arrest\n\n\nTia T. Raymond, Sandeep V. Pandit, Heather Griffis, Xuemei Zhang, Richard Hanna, Dana E. Niles, Annemarie Silver, Javier J. Lasa, Sarah E. Haskell, Dianne L. Atkins, Vinay M. Nadkarni\n\n\n\n\nAug 1, 2020\n\n\nAnalysis of CPR quality by individual providers in the pediatric emergency department\n\n\nAaron J. Donoghue, Sage R. Myers, Benjamin T. Kerrey, Alexis B. Sandler, Ryan Keane, Ichiro Watanabe, Richard Hanna, Mary Kate Abbadessa, Mary Frey, Karen J. O’Connell\n\n\n\n\nMay 15, 2020\n\n\nPediatric cardiopulmonary resuscitation quality during intra-hospital transport\n\n\nMorgan Loaec, Adam S Himebauch, Todd J Kilbaugh, Robert A Berg, Kathryn Graham, Richard Hanna, Heather A Wolfe, Robert M Sutton, Ryan W Morgan\n\n\n\n\nNov 14, 2019\n\n\nPediatric In-Hospital CPR Quality at Night and on Weekends\n\n\nTia T. Raymond, Sandeep V. Pandit, Heather Griffis, Xuemei Zhang, Richard Hanna, Dana E. Niles, Annemarie Silver, Javier J. Lasa, Sarah E. Haskell, Dianne L. Atkins, Vinay M. Nadkarni\n\n\n\n\nNov 5, 2018\n\n\nVerbal Prompts During Pediatric Cardiopulmonary Resuscitation in Emergency Department: A Report From the Videography in Pediatric Emergency Resuscitation (VIPER) Collaborative\n\n\nKaren J. O’Connell, Alexis B. Sandler, Matthew Leda, Benjamin T. Kerrey, Sage R. Myers, Mary Frey, Ichiro Watanabe, Richard Hanna, Aaron J. Donoghue\n\n\n\n\nJul 1, 2015\n\n\nDevelopment of a Small rear Facing Child Restraint System Virtual Surrogate to Evaluate CRS-to-Vehicle Fitment\n\n\nRichard Hanna, Aditya Belwadi\n\n\n\n\nJun 1, 2015\n\n\nDevelopment of an Automated Couette Viscometer\n\n\nRichard Hanna\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About Me",
+    "section": "",
+    "text": "Thank you for visiting my site! I’m Rich Hanna, a data scientist with a background in biomedical and mechanical engineering currently developing software and data-driven solutions in pediatric medicine to support cutting-edge clinical research. This site is meant to serve as a portfolio of my work, a space for collaboration, and place for some of my own interests and hobbies."
+  },
+  {
+    "objectID": "about.html#professional-side",
+    "href": "about.html#professional-side",
+    "title": "About Me",
+    "section": "Professional Side",
+    "text": "Professional Side\nAt the Children’s Hospital of Philadelphia, I am a member of the Cell & Gene Therapy Informatics team supporting the Cellular Therapy and Transplant Section, Bone and Marrow Transplant Program, and various parts of the oncology and pathology divisions of the hospital.\nIn the past I have also worked closely with the Critical Care Medicine and Emergency Medicine departments and spent considerable time in the development of data-driven solutions for the Pediatric Resuscitation Quality Collaborative, National Emergency Airway Registry, and Videography in Pediatric Emergency Resuscitation Collaborative.\nR is my premier language, but I enjoy learning wherever possible. I am very proud to be the developer of multiple shiny applications, a CRAN certified R package, and a co-author on multiple publications. I have also worked with Matlab, Python, SQL, and am AWS Solutions Architect certified.\nPrior to entering the world of data science, I worked in medical devices designing spinal implants and with the Center for Injury Research & Prevention researching pediatric automotive safety and restraint system modeling."
+  },
+  {
+    "objectID": "about.html#unprofessional-side",
+    "href": "about.html#unprofessional-side",
+    "title": "About Me",
+    "section": "(Un)professional Side",
+    "text": "(Un)professional Side\nSince I spend most waking hours in front of screens, I like to spend much of my free time away from them.\nI’m an avid “fake-it-till-you-make-it” runner: I have flat feet and asthma, but I’m spiteful enough to keep doing it anyway. When possible, my wife and I like to take hikes, ride out bikes, and explore the world around us.\nAt home I greatly enjoy cooking and baking. To me, culinary creations in the kitchen have a lot in common with engineering: design, precision, and gratification from a well-made (and hopefully tasty) product. When I feel up to being a bit more artistic, I also enjoy drawing and photography. This site will also serve to showcase some of these hobbies."
+  },
+  {
+    "objectID": "bakrs_cookrs/key_lime_pie.html",
+    "href": "bakrs_cookrs/key_lime_pie.html",
+    "title": "‘Key’ Lime Pie with Graham Cracker Crust",
+    "section": "",
+    "text": "I’ve made key lime pie twice now, and it’s very easy to get the flavor right. The hard part is having a set custard and firm crust.\nOriginally I used a recipe from Bravetart by Stella Parks, but this recipe I tried a different one from unpeeled (in Resources below)."
+  },
+  {
+    "objectID": "bakrs_cookrs/key_lime_pie.html#photos",
+    "href": "bakrs_cookrs/key_lime_pie.html#photos",
+    "title": "‘Key’ Lime Pie with Graham Cracker Crust",
+    "section": "Photos",
+    "text": "Photos\n\nPrep Work\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFinal Product"
+  },
+  {
+    "objectID": "bakrs_cookrs/key_lime_pie.html#resources",
+    "href": "bakrs_cookrs/key_lime_pie.html#resources",
+    "title": "‘Key’ Lime Pie with Graham Cracker Crust",
+    "section": "Resources",
+    "text": "Resources\n\nValentino’s Pizza Crust\nHomemade Whipped Cream (not pictured here): Bravetart by Stella Parks"
+  },
+  {
+    "objectID": "bakrs_cookrs/falafel.html",
+    "href": "bakrs_cookrs/falafel.html",
+    "title": "Falafel",
+    "section": "",
+    "text": "Falafel is delicious, when done right it comes out with a nicely crispy exterior and a mealy, crumbly interior.\nUnfortunately I didn’t plan super far ahead for this so my garnishes are lacking, but ideally I would have paired this with some diced tomatoes and an actual pita instead of naan (what I had on hand)."
+  },
+  {
+    "objectID": "bakrs_cookrs/falafel.html#photos",
+    "href": "bakrs_cookrs/falafel.html#photos",
+    "title": "Falafel",
+    "section": "Photos",
+    "text": "Photos\n\nPrep Work\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFrying Time!\n\n\n\n\n\n\n\n\n\n\n\n\nFinal Product"
+  },
+  {
+    "objectID": "bakrs_cookrs/falafel.html#resources",
+    "href": "bakrs_cookrs/falafel.html#resources",
+    "title": "Falafel",
+    "section": "Resources",
+    "text": "Resources\n\nFalafel Recipe: The Complete Mediterranean Cookbook by America’s Test Kitchen (pg.181\nEasy Tzatziki Sauce from Food Network"
+  },
+  {
+    "objectID": "bakrs_cookrs/snickerdoodles.html",
+    "href": "bakrs_cookrs/snickerdoodles.html",
+    "title": "Snickerdoodle Cookies",
+    "section": "",
+    "text": "Snickerdoodles are a favorite treat around the holidays. This recipe in particular incorporates coconut oil, giving the cookies extra decadence and making consumers exercise some control after one (or two)."
+  },
+  {
+    "objectID": "bakrs_cookrs/snickerdoodles.html#photos",
+    "href": "bakrs_cookrs/snickerdoodles.html#photos",
+    "title": "Snickerdoodle Cookies",
+    "section": "Photos",
+    "text": "Photos\n\nPrep Work\n\n\n\n\n\n\n\n\n\n\n\n\nFinal Product"
+  },
+  {
+    "objectID": "bakrs_cookrs/snickerdoodles.html#resources",
+    "href": "bakrs_cookrs/snickerdoodles.html#resources",
+    "title": "Snickerdoodle Cookies",
+    "section": "Resources",
+    "text": "Resources\n\nSnickerdoodles: Bravetart by Stella Parks"
+  },
+  {
+    "objectID": "bakrs_cookrs/cheddar_scallion_biscuits.html",
+    "href": "bakrs_cookrs/cheddar_scallion_biscuits.html",
+    "title": "Cheddar Scallion Biscuits",
+    "section": "",
+    "text": "For Christmas Day this year, we hosted my in-laws for the first time for a holiday brunch. In addition to the usual offerings of coffee and scrambled eggs, this year I decided to try my hand at from-scratch biscuits.\nThese cheddar scallion biscuits are extremely decadent, wonderfully salty, and need nothing additional. Despite how heavy the recipe is, there were almost none left at the end of brunch!"
+  },
+  {
+    "objectID": "bakrs_cookrs/cheddar_scallion_biscuits.html#photos",
+    "href": "bakrs_cookrs/cheddar_scallion_biscuits.html#photos",
+    "title": "Cheddar Scallion Biscuits",
+    "section": "Photos",
+    "text": "Photos\n\nPrep Work\n\n\n\n\n\n\n\nFinal Product"
+  },
+  {
+    "objectID": "bakrs_cookrs/cheddar_scallion_biscuits.html#resources",
+    "href": "bakrs_cookrs/cheddar_scallion_biscuits.html#resources",
+    "title": "Cheddar Scallion Biscuits",
+    "section": "Resources",
+    "text": "Resources\n\nButtermilk Biscuits: The Food Lab by J. Kenji Lopez-Alt"
+  },
+  {
+    "objectID": "bakrs_cookrs/pizza.html",
+    "href": "bakrs_cookrs/pizza.html",
+    "title": "Oven Baked Pizza with Pizza Stone",
+    "section": "",
+    "text": "The pizza stone has for a while been elusive to me. My first few attempts at making pizza were tragedies and what was served more resembled soup than what I had promised my wife would be on the table.\nHere’s what I learned:\n\nThe oven must be at 500°F\nThe pizza stone must be in the oven at 500°F for an hour before placing a pizza on it\nThe pizza stone and wooden peel should seldom be washed, and if they are they should be stored in open air\n\nRegretfully we thought our stone was “dried” only to take it out of a dark cupboard to find it had mold!\n\nThe peel, dough, and stone should be generously coated with flour and/or corn meal"
+  },
+  {
+    "objectID": "bakrs_cookrs/pizza.html#photos",
+    "href": "bakrs_cookrs/pizza.html#photos",
+    "title": "Oven Baked Pizza with Pizza Stone",
+    "section": "Photos",
+    "text": "Photos"
+  },
+  {
+    "objectID": "bakrs_cookrs/pizza.html#resources",
+    "href": "bakrs_cookrs/pizza.html#resources",
+    "title": "Oven Baked Pizza with Pizza Stone",
+    "section": "Resources",
+    "text": "Resources\n\nValentino’s Pizza Crust\n\nMakes enough for two 12” pizza doughs, you can save one in the fridge for a week. Just be sure to let it come to room temperature before attempting the second one.\nI’ve tried a few dough recipes and this one comes out with the perfect consistency every time."
+  },
+  {
+    "objectID": "bakrs_cookrs/sushi.html",
+    "href": "bakrs_cookrs/sushi.html",
+    "title": "Maki Sushi Rolls",
+    "section": "",
+    "text": "Sushi has to be one of my favorite treats, typically we order it after a particularly long week. One of our holiday gifts this year was our own sushi making kit, including a “bazooka” instrument that helps roll and form the sushi roll before placing it on the rolling mat.\nUnfortunately, for two people, we vastly overestimated the amount of fish we needed to buy for our sushi and wound up with way too much (worse problems though, am I right?). But for a first attempt, I’d say it was better than your typical grocery store sushi."
+  },
+  {
+    "objectID": "bakrs_cookrs/sushi.html#photos",
+    "href": "bakrs_cookrs/sushi.html#photos",
+    "title": "Maki Sushi Rolls",
+    "section": "Photos",
+    "text": "Photos\n\nPrep Work\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFinal Product"
+  },
+  {
+    "objectID": "bakrs_cookrs/sushi.html#resources",
+    "href": "bakrs_cookrs/sushi.html#resources",
+    "title": "Maki Sushi Rolls",
+    "section": "Resources",
+    "text": "Resources\n\nAlas Sushi Making Kit"
+  },
+  {
+    "objectID": "bakrs_cookrs/apple_pie.html",
+    "href": "bakrs_cookrs/apple_pie.html",
+    "title": "Homemade Salted Caramel Apple Pie",
+    "section": "",
+    "text": "This was my first attempt at pastry baking, let alone pies. It came recommended from a friend of mine and, after a solid chunk of time over a couple of days, it came out beautifully. Definitely recommend making the pastry dough ahead of time."
+  },
+  {
+    "objectID": "bakrs_cookrs/apple_pie.html#photos",
+    "href": "bakrs_cookrs/apple_pie.html#photos",
+    "title": "Homemade Salted Caramel Apple Pie",
+    "section": "Photos",
+    "text": "Photos\n\nPastry Dough Preparation\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFilling & Lattice Work\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFinal Product"
+  },
+  {
+    "objectID": "bakrs_cookrs/apple_pie.html#resources",
+    "href": "bakrs_cookrs/apple_pie.html#resources",
+    "title": "Homemade Salted Caramel Apple Pie",
+    "section": "Resources",
+    "text": "Resources\n\nSally’s Baking Addiction Salted Caramel Apple Pie\n\nHomemade Pie Crust\nSalted Caramel Sauce"
+  },
+  {
+    "objectID": "bakrs_cookrs/cinnamon_donuts.html",
+    "href": "bakrs_cookrs/cinnamon_donuts.html",
+    "title": "Baked Cinnamon Sugar Donuts",
+    "section": "",
+    "text": "Key points to getting oven baked donuts to come out right:\n\nAdd a little extra spray to the donut trays\nWhen spooning in the batter, spoon all the way around each donut receptacle\n\nIf you don’t the oil from the spray will pool up as the batter fills and it will cause little separations in the final donut\n\nLet cool for ~5 minutes once done baking so you can “tap” the donuts out without having to pry them by hand and risk damaging them"
+  },
+  {
+    "objectID": "bakrs_cookrs/cinnamon_donuts.html#photos",
+    "href": "bakrs_cookrs/cinnamon_donuts.html#photos",
+    "title": "Baked Cinnamon Sugar Donuts",
+    "section": "Photos",
+    "text": "Photos\n\nPrep Work\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFinal Product"
+  },
+  {
+    "objectID": "bakrs_cookrs/cinnamon_donuts.html#resources",
+    "href": "bakrs_cookrs/cinnamon_donuts.html#resources",
+    "title": "Baked Cinnamon Sugar Donuts",
+    "section": "Resources",
+    "text": "Resources\n\nCinnamon Baked Donuts from AllRecipes’ Ina Garten"
+  },
+  {
+    "objectID": "bakrs_cookrs.html",
+    "href": "bakrs_cookrs.html",
+    "title": "For BakRs & CookRs",
+    "section": "",
+    "text": "Baking and cooking are side hobbies of mine, this page was made to host some of my favorite recipes (and showcase the most photogenic ones).\nSince this is a data science website primarily, there had to be an R-based theme. Use the categories on the right to look for \"CookR\" and \"BakR\" recipes, all resources are cited at the bottom of their respective pages.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMaki Sushi Rolls\n\n\n\nCookR\n\n\nSushi\n\n\nFish\n\n\n\nSushi prepared using rolling mats and a bazooka press.\n\n\n\n\n\n\nDec 27, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCheddar Scallion Biscuits\n\n\n\nBakR\n\n\nPastry\n\n\nBiscuit\n\n\n\nDecadent, flavorful biscuits for a breakfast treat.\n\n\n\n\n\n\nDec 25, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSnickerdoodle Cookies\n\n\n\nBakR\n\n\nDessert\n\n\nCookie\n\n\n\nSugary, cinnamon cookies with a hit of coconut.\n\n\n\n\n\n\nDec 17, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFalafel\n\n\n\nCookR\n\n\nFalafel\n\n\nMediterranean\n\n\n\nHomemade falafel with tzatziki sauce.\n\n\n\n\n\n\nNov 29, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBaked Cinnamon Sugar Donuts\n\n\n\nBakR\n\n\nDessert\n\n\nDonuts\n\n\n\nOven baked donuts with a cinnamon sugar topping using a donut tray.\n\n\n\n\n\n\nNov 23, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n‘Key’ Lime Pie with Graham Cracker Crust\n\n\n\nBakR\n\n\nPie\n\n\nDessert\n\n\n\nUsing fresh, non-key limes for a custard set in a graham cracker crust.\n\n\n\n\n\n\nNov 23, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHomemade Salted Caramel Apple Pie\n\n\n\nBakR\n\n\nPie\n\n\nDessert\n\n\nPastry\n\n\n\nSalted caramel apple pie with homemade pastry dough and salted caramel sauce.\n\n\n\n\n\n\nNov 21, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOven Baked Pizza with Pizza Stone\n\n\n\nCookR\n\n\nPizza\n\n\n\nOven baked pizza using a pizza stone with homemade tomato sauce, mozzarella, and prosciutto.\n\n\n\n\n\n\nNov 20, 2022\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "data_science.html",
+    "href": "data_science.html",
+    "title": "Data Science",
+    "section": "",
+    "text": "REDCapTidieR\n\n\nMaking analysts lives easier through the power of tidy tibbles\n\n\n\n\nR\n\n\nREDCap\n\n\nPackage\n\n\nData Science\n\n\n\n\nThis slide deck was made in {quarto} and presented to the CHOP R User group in preparation of the package’s v0.1.0 release to CRAN.\n\n\n\n\n\n\nAug 18, 2022\n\n\nRichard Hanna\n\n\n\n\n\n\n  \n\n\n\n\nStem Cell Engraftment Application\n\n\n\n\n\n\n\nData Science\n\n\nR\n\n\nShiny\n\n\nGolem\n\n\nStem Cell\n\n\n\n\nWe developed a {shiny} application using the {golem} framework to support research staff in calculating and recording stem cell engraftment that helped eliminate errors in data entry.\n\n\n\n\n\n\nSep 18, 2021\n\n\nRichard Hanna\n\n\n\n\n\n\nNo matching items"
   }
 ]

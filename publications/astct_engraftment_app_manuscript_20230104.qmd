@@ -1,0 +1,44 @@
+---
+title: "Automation of Stem Cell Transplant Outcomes Reporting Leads to Dramatic Reduction of Errors Reported to Real-World Data Registry"
+author: David S. Anderson, Richard S. Hanna, Victoria Collier, Patricia Hankins, Brandon Loudon, Timothy S. Olson, Amir Reza Pashmineh Azar, Stephan Grupp, Charles A. Phillips, Stephan Kadauke
+date: 2023-01-04
+description: We developed a custom R/Shiny application that automatically calculates engraftment dates and displays them in an intuitive format to augment the manual chart review. Our hypothesis was that use of the application to assist with calculating and reporting engraftment dates would be associated with a decreased error rate.
+doi: "https://doi.org/10.1016/j.jtct.2022.12.026"
+link-external-newwindow: true
+link-external-icon: true
+categories:
+  - Stem Cell
+  - Shiny
+  - Data Science
+  - R
+---
+
+# Highlights
+
+- Data on hematopoietic cell transplant engraftment is reported for regulatory purposes
+- Manual chart review for engraftment dates is complex, time-consuming, and error-prone
+- A custom application clearly displays clinical data to simplify engraftment reporting
+- Application use was associated with significantly decreased engraftment error rates
+- Embedded informatics teams can effectively build applications with clinical utility
+
+# Abstract
+
+## Background
+
+Institutions that perform hematopoietic cell transplant (HCT) are required by law to report standardized, structured data on transplant outcomes. A key post-transplant outcome is engraftment, the length of time between HCT infusion and reemergence of circulating neutrophils and platelets. At our center, we found manual chart abstraction for engraftment data was highly error-prone.
+
+## Objectives
+
+We developed a custom R/Shiny application that automatically calculates engraftment dates and displays them in an intuitive format to augment the manual chart review. Our hypothesis was that use of the application to assist with calculating and reporting engraftment dates would be associated with a decreased error rate.
+
+## Study Design
+
+The study was conducted at a single tertiary care institution. The application was developed in a collaborative, multidisciplinary fashion by members of an embedded cellular therapy informatics team. Retrospective validation of the application's accuracy was conducted on all malignant HCTs from 2/2016 to 12/2020 (n=198). Real-world use of the application was evaluated prospectively from 4/2021 through 4/2022 (n=53). Welch's two-sample t-tests were performed to compare error rates pre- and post-implementation. Data were visualized using p charts and standard special cause variation rules were applied.
+
+## Results
+
+Accuracy of reported data post-deployment increased dramatically: engraftment error rate decreased from 15% to 3.8% (p=0.003) for neutrophils and from 28% to 1.9% (p<0.001) for platelets.
+
+## Conclusion
+
+This study demonstrated the effective deployment of a custom R/Shiny application that was associated with significantly reduced error rates in HCT engraftment reporting for operational, research, and regulatory purposes. Users reported subjective satisfaction with the application and that it addressed difficulties with the legacy manual process. Identifying and correcting erroneous data in engraftment reporting could lead to a more efficient and accurate nationwide assessment of transplant success. Furthermore, we show that it is possible and practical for academic medical centers to stand up embedded informatics teams that can quickly build applications for clinical operations in a manner compliant with regulatory requirements.

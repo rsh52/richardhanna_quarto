@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Stephan Kadauke, Richard Hanna">
-<meta name="dcterms.date" content="2021-12-09">
-<meta name="description" content="Real-world data on outcomes after stem cell transplant are aggregated in the international CIBMTR registry. The process of determining engraftment, a key outcome after transplant, is manual, tedious, error-prone. In this talk, we present an application we built and deployed at our center that virtually eliminated errors in engraftment dates reported to the CIBMTR.">
+<meta name="author" content="David S. Anderson, Richard S. Hanna, Victoria Collier, Patricia Hankins, Brandon Loudon, Timothy S. Olson, Amir Reza Pashmineh Azar, Stephan Grupp, Charles A. Phillips, Stephan Kadauke">
+<meta name="dcterms.date" content="2023-01-04">
+<meta name="description" content="We developed a custom R/Shiny application that automatically calculates engraftment dates and displays them in an intuitive format to augment the manual chart review. Our hypothesis was that use of the application to assist with calculating and reporting engraftment dates would be associated with a decreased error rate.">
 
 <title>Richard Hanna - Automation of Stem Cell Transplant Outcomes Reporting Leads to Dramatic Reduction of Errors Reported to Real-World Data Registry</title>
 <style>
@@ -133,7 +133,15 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#proposal" id="toc-proposal" class="nav-link active" data-scroll-target="#proposal">Proposal</a></li>
+  <li><a href="#highlights" id="toc-highlights" class="nav-link active" data-scroll-target="#highlights">Highlights</a></li>
+  <li><a href="#abstract" id="toc-abstract" class="nav-link" data-scroll-target="#abstract">Abstract</a>
+  <ul class="collapse">
+  <li><a href="#background" id="toc-background" class="nav-link" data-scroll-target="#background">Background</a></li>
+  <li><a href="#objectives" id="toc-objectives" class="nav-link" data-scroll-target="#objectives">Objectives</a></li>
+  <li><a href="#study-design" id="toc-study-design" class="nav-link" data-scroll-target="#study-design">Study Design</a></li>
+  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results">Results</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -153,7 +161,7 @@ ul.task-list li input[type="checkbox"] {
 
 <div>
   <div class="description">
-    Real-world data on outcomes after stem cell transplant are aggregated in the international CIBMTR registry. The process of determining engraftment, a key outcome after transplant, is manual, tedious, error-prone. In this talk, we present an application we built and deployed at our center that virtually eliminated errors in engraftment dates reported to the CIBMTR.
+    We developed a custom R/Shiny application that automatically calculates engraftment dates and displays them in an intuitive format to augment the manual chart review. Our hypothesis was that use of the application to assist with calculating and reporting engraftment dates would be associated with a decreased error rate.
   </div>
 </div>
 
@@ -163,34 +171,65 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>Stephan Kadauke, Richard Hanna </p>
+             <p>David S. Anderson, Richard S. Hanna, Victoria Collier, Patricia Hankins, Brandon Loudon, Timothy S. Olson, Amir Reza Pashmineh Azar, Stephan Grupp, Charles A. Phillips, Stephan Kadauke </p>
           </div>
   </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">December 9, 2021</p>
+      <p class="date">January 4, 2023</p>
     </div>
   </div>
   
     
+    <div>
+    <div class="quarto-title-meta-heading">Doi</div>
+    <div class="quarto-title-meta-contents">
+      <p class="doi">
+        <a href="https://doi.org/https://doi.org/10.1016/j.jtct.2022.12.026">https://doi.org/10.1016/j.jtct.2022.12.026</a>
+      </p>
+    </div>
+  </div>
   </div>
   
 
 </header>
 
-<blockquote class="blockquote">
-<p>A PDF version of this abstract is available <a href="https://drive.google.com/file/d/1VxdETMle70FDS3jzBI-SyS_rBGl6ddYE/view?usp=share_link">here</a></p>
-</blockquote>
-<section id="proposal" class="level1">
-<h1>Proposal</h1>
-<p>Stem cell transplantation is a life-saving therapy for various malignant and non-malignant diseases. To aggregate real-world data on stem cell transplant patients, all cancer centers in the U.S. are required by law to report outcomes such as the time from transplant to the emergence of neutrophils and platelets, known as “engraftment,” to the Center for International Blood and Marrow Transplant Research (CIBMTR).</p>
-<p>Traditionally, engraftment data is curated by data managers who manually look up information in medical records and complete web-based forms. This tedious manual process requires integration of multiple data sources and, at a top-tier pediatric cancer center, was found to have error rates as high as 28%.</p>
-<p>To mitigate this problem, we developed an application that calculates engraftment dates automatically. We used the AMIA Usability Framework as a guide to create a minimalist and consistent design with informative and useful feedback and error messages. The Engraftment application passed clinical validation, and it is now in day-to-day use by our data managers, having eliminated the manual process. In a post-implementation validation, we found that the rate of incorrect engraftment dates reported to the CIBMTR had decreased to zero.</p>
-<p>In this Systems Demonstration presentation, we will outline the clinical validation, production engineering, and operationalization of the Engraftment application. We will then demonstrate features built into the application that optimize usability and user experience. Finally, we will discuss how the application could be implemented at other cancer centers.</p>
+<section id="highlights" class="level1">
+<h1>Highlights</h1>
+<ul>
+<li>Data on hematopoietic cell transplant engraftment is reported for regulatory purposes</li>
+<li>Manual chart review for engraftment dates is complex, time-consuming, and error-prone</li>
+<li>A custom application clearly displays clinical data to simplify engraftment reporting</li>
+<li>Application use was associated with significantly decreased engraftment error rates</li>
+<li>Embedded informatics teams can effectively build applications with clinical utility</li>
+</ul>
+</section>
+<section id="abstract" class="level1">
+<h1>Abstract</h1>
+<section id="background" class="level2">
+<h2 class="anchored" data-anchor-id="background">Background</h2>
+<p>Institutions that perform hematopoietic cell transplant (HCT) are required by law to report standardized, structured data on transplant outcomes. A key post-transplant outcome is engraftment, the length of time between HCT infusion and reemergence of circulating neutrophils and platelets. At our center, we found manual chart abstraction for engraftment data was highly error-prone.</p>
+</section>
+<section id="objectives" class="level2">
+<h2 class="anchored" data-anchor-id="objectives">Objectives</h2>
+<p>We developed a custom R/Shiny application that automatically calculates engraftment dates and displays them in an intuitive format to augment the manual chart review. Our hypothesis was that use of the application to assist with calculating and reporting engraftment dates would be associated with a decreased error rate.</p>
+</section>
+<section id="study-design" class="level2">
+<h2 class="anchored" data-anchor-id="study-design">Study Design</h2>
+<p>The study was conducted at a single tertiary care institution. The application was developed in a collaborative, multidisciplinary fashion by members of an embedded cellular therapy informatics team. Retrospective validation of the application’s accuracy was conducted on all malignant HCTs from 2/2016 to 12/2020 (n=198). Real-world use of the application was evaluated prospectively from 4/2021 through 4/2022 (n=53). Welch’s two-sample t-tests were performed to compare error rates pre- and post-implementation. Data were visualized using p charts and standard special cause variation rules were applied.</p>
+</section>
+<section id="results" class="level2">
+<h2 class="anchored" data-anchor-id="results">Results</h2>
+<p>Accuracy of reported data post-deployment increased dramatically: engraftment error rate decreased from 15% to 3.8% (p=0.003) for neutrophils and from 28% to 1.9% (p&lt;0.001) for platelets.</p>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>This study demonstrated the effective deployment of a custom R/Shiny application that was associated with significantly reduced error rates in HCT engraftment reporting for operational, research, and regulatory purposes. Users reported subjective satisfaction with the application and that it addressed difficulties with the legacy manual process. Identifying and correcting erroneous data in engraftment reporting could lead to a more efficient and accurate nationwide assessment of transplant success. Furthermore, we show that it is possible and practical for academic medical centers to stand up embedded informatics teams that can quickly build applications for clinical operations in a manner compliant with regulatory requirements.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -325,6 +364,22 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       });
     }
   }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          // default icon
+          link.classList.add("external");
+      }
+    }
 });
 </script>
 </div> <!-- /content -->
