@@ -1,0 +1,35 @@
+---
+title: "Roasted Butternut Squash with Tahini Sauce and Feta"
+date: 2023-01-16
+description: A delicious appetizer that's filling and relatively healthy.
+image: images/roasted_squash_feta_main.png
+categories:
+  - CookR
+  - Mediterranean
+  - Vegetable
+---
+
+## Details
+
+This was my first time preparing a butternut squash, but it was pretty straight forward and the high oven temperature led to a nicely tender and soft texture. The tahini sauce (a combination of tahini, honey, lemon juice, olive oil, and salt) was the star performer here. Combined with the feta, it was a delicious mix of sweet and savory.
+
+Was an absolute hit at our dinner table and couldn't recommend enough!
+
+## Photos
+
+#### Prep Work
+
+![](images/roasted_squash_feta_prep1.png){fig-align="center" width="600"}
+
+![](images/roasted_squash_feta_prep2.png){fig-align="center" width="600"}
+
+#### Final Product
+
+![](images/roasted_squash_feta_final1.png){fig-align="center" width="600"}
+
+![](images/roasted_squash_feta_final2.png){fig-align="center" width="600"}
+
+## Resources
+
+- [America's Test Kitchen - The Complete Mediterranean Cookbook](https://smile.amazon.com/Complete-Mediterranean-Cookbook-Vibrant-Kitchen-Tested/dp/1940352649/ref=sr_1_1?keywords=america%27s+test+kitchen+mediterranean+cookbook&qid=1673915280&sprefix=america%27s+test+kitchen+medi%2Caps%2C94&sr=8-1)
+  - "Roasted Winter Squash with Tahini and Feta"
