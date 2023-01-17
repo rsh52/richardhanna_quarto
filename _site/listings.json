@@ -1,0 +1,40 @@
+[
+  {
+    "listing": "/bakrs_cookrs.html",
+    "items": [
+      "/bakrs_cookrs/roasted_squash_feta.html",
+      "/bakrs_cookrs/sushi.html",
+      "/bakrs_cookrs/cheddar_scallion_biscuits.html",
+      "/bakrs_cookrs/snickerdoodles.html",
+      "/bakrs_cookrs/falafel.html",
+      "/bakrs_cookrs/cinnamon_donuts.html",
+      "/bakrs_cookrs/key_lime_pie.html",
+      "/bakrs_cookrs/apple_pie.html",
+      "/bakrs_cookrs/pizza.html"
+    ]
+  },
+  {
+    "listing": "/data_science.html",
+    "items": [
+      "/data_science/REDCapTidieR.html",
+      "/data_science/stem_cell_engraftment_app.html"
+    ]
+  },
+  {
+    "listing": "/publications.html",
+    "items": [
+      "/publications/astct_engraftment_app_manuscript_20230104.html",
+      "/publications/city_ih_cpr_nights_weekends.html",
+      "/publications/amia_engraftment_app_abstract_20211209.html",
+      "/publications/recurrent_arrest.html",
+      "/publications/viper_ress_2021.html",
+      "/publications/amsa_jaha_publication_20210614.html",
+      "/publications/viper_ress_2020.html",
+      "/publications/cpr_transport.html",
+      "/publications/ih_cpr_night_weekend.html",
+      "/publications/viper_cpr_ress_2018.html",
+      "/publications/rear_facing_crs_fitment.html",
+      "/publications/automated_couette_viscometer.html"
+    ]
+  }
+]
