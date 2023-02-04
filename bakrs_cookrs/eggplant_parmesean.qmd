@@ -1,0 +1,40 @@
+---
+title: "Eggplant Parmesean"
+date: 2023-01-22
+description: A classic take on an arguably Italian dish.
+image: images/eggplant_parm_final1.png
+categories:
+  - CookR
+  - Italian
+  - Vegetable
+---
+
+## Details
+
+While chicken parmesan may be the typical go-to, eggplant parm has a great flavor and is just as enjoyable. The texture is a bit softer and some prep goes in to drying out the eggplant ahead of time, but the end result is easily worth the wait.
+
+This meal we paired with a side of risotto and homemade tomato sauce ("gravy" depending on if my wife is in ear shot).
+
+## Photos
+
+#### Prep Work
+
+![](images/eggplant_parm_prep1.png){fig-align="center" width="600"}
+
+![](images/eggplant_parm_prep2.png){fig-align="center" width="600"}
+
+![](images/eggplant_parm_prep3.png){fig-align="center" width="600"}
+
+### Fryng and Baking
+
+![](images/eggplant_parm_fried.png){fig-align="center" width="600"}
+
+![](images/eggplant_parm_baked1.png){fig-align="center" width="600"}
+
+#### Final Product
+
+![](images/eggplant_parm_final1.png){fig-align="center" width="600"}
+
+## Resources
+
+- [Eggplant Paremesan - Food Network](https://www.foodnetwork.com/recipes/food-network-kitchen/eggplant-parmesan-recipe-2008982)

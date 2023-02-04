@@ -1,0 +1,36 @@
+---
+title: "Chocolate Chip Cookies with Sea Salt"
+date: 2023-01-21
+description: Your standard chocolate chip cookie recipe, improved with nutmeg and coarse sea salt.
+image: images/cc_cookie_final3.png
+categories:
+  - BakR
+  - Cookie
+  - Dessert
+---
+
+## Details
+
+For this recipe I'm going back to Stella Park's Bravetart. Compared to box cookies or usual recipes, the hint of nutmeg and the coarse sea salt on top of the cookies really elevates this home favorite.
+
+## Photos
+
+#### Prep Work
+
+![](images/cc_cookie_prep1.png){fig-align="center" width="600"}
+
+![](images/cc_cookie_prep2.png){fig-align="center" width="600"}
+
+![](images/cc_cookie_prep3.png){fig-align="center" width="600"}
+
+#### Final Product
+
+![](images/cc_cookie_final1.png){fig-align="center" width="600"}
+
+![](images/cc_cookie_final2.png){fig-align="center" width="600"}
+
+![](images/cc_cookie_final3.png){fig-align="center" width="600"}
+
+## Resources
+
+- Chocoalte Chip Cookies: Bravetart by Stella Parks
