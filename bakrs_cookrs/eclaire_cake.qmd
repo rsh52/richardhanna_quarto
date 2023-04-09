@@ -1,7 +1,7 @@
 ---
 title: "Eclair Cake"
 date: 2023-04-01
-description: Capture all the enjoyment of a eclair with none of the headache.
+description: Capture all the enjoyment of an eclair with none of the headache.
 image: images/eclair_cake_final_2.png
 categories:
   - BakR
