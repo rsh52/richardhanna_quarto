@@ -15,7 +15,7 @@ For this recipe I'm going back to Stella Park's Bravetart. Compared to box cooki
 
 ## Photos
 
-#### Prep Work
+### Prep Work
 
 ![](images/cc_cookie_prep1.png){fig-align="center" width="600"}
 
@@ -23,7 +23,7 @@ For this recipe I'm going back to Stella Park's Bravetart. Compared to box cooki
 
 ![](images/cc_cookie_prep3.png){fig-align="center" width="600"}
 
-#### Final Product
+### Final Product
 
 ![](images/cc_cookie_final1.png){fig-align="center" width="600"}
 
@@ -33,4 +33,4 @@ For this recipe I'm going back to Stella Park's Bravetart. Compared to box cooki
 
 ## Resources
 
-- Chocoalte Chip Cookies: Bravetart by Stella Parks
+- Chocolate Chip Cookies: Bravetart by Stella Parks

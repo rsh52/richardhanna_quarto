@@ -15,13 +15,13 @@ Snickerdoodles are a favorite treat around the holidays. This recipe in particul
 
 ## Photos
 
-#### Prep Work
+### Prep Work
 
 ![](images/snickerdoodles_prep.png){fig-align="center" width="600"}
 
 ![](images/snickerdoodles_prep2.png){fig-align="center" width="600"}
 
-#### Final Product
+### Final Product
 
 ![](images/snickerdoodles_final1.png){fig-align="center" width="600"}
 

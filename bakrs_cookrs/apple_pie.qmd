@@ -16,7 +16,7 @@ This was my first attempt at pastry baking, let alone pies. It came recommended 
 
 ## Photos
 
-#### Pastry Dough Preparation
+### Pastry Dough Preparation
 
 ![](images/apple_pie_pastry_dough1.png){fig-align="center" width="600"}
 
@@ -24,7 +24,7 @@ This was my first attempt at pastry baking, let alone pies. It came recommended 
 
 ![](images/apple_pie_pastry_dough3.png){fig-align="center" width="600"}
 
-#### Filling & Lattice Work
+### Filling & Lattice Work
 
 ![](images/apple_pie_filling.png){fig-align="center" width="600"}
 
@@ -32,7 +32,7 @@ This was my first attempt at pastry baking, let alone pies. It came recommended 
 
 ![](images/apple_pie_lattice2.png){fig-align="center" width="600"}
 
-#### Final Product
+### Final Product
 
 ![](images/apple_pie_final1.png){fig-align="center" width="600"}
 

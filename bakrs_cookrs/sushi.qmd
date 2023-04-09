@@ -17,7 +17,7 @@ Unfortunately, for two people, we vastly overestimated the amount of fish we nee
 
 ## Photos
 
-#### Prep Work
+### Prep Work
 
 ![](images/sushi_prep1.png){fig-align="center" width="600"}
 
@@ -25,7 +25,7 @@ Unfortunately, for two people, we vastly overestimated the amount of fish we nee
 
 ![](images/sushi_roll1.png){fig-align="center" width="600"}
 
-#### Final Product
+### Final Product
 
 ![](images/sushi_final1.png){fig-align="center" width="600"}
 

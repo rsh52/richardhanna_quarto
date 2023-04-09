@@ -1,0 +1,46 @@
+---
+title: "Eclair Cake"
+date: 2023-04-01
+description: Capture all the enjoyment of a eclair with none of the headache.
+image: images/eclair_cake_final_2.png
+categories:
+  - BakR
+  - Cake
+  - Dessert
+---
+
+## Details
+
+Without a doubt, this is one of the **best** recipes I've ever made. I guarantee you'll get positive remarks and, if you're like my wife, constant requests for it to be made again. 
+
+The chocolate ganache is super easy and brings everything together. The graham cracker/custard combination give it an almost tiramisu-like quality. Very "eatable" and not too heavy (considering one guest ate 3 pieces in one sitting!).
+
+## Photos
+
+### Prep Work & Making the Custard
+
+![](images/eclair_prep_1.png){fig-align="center" width="600"}
+
+![](images/eclair_custard_prep_1.png){fig-align="center" width="600"}
+
+![](images/eclair_custard_prep_2.png){fig-align="center" width="600"}
+
+### Building the Cake
+
+![](images/eclair_cake_build_1.png){fig-align="center" width="600"}
+
+![](images/eclair_cake_build_2.png){fig-align="center" width="600"}
+
+![](images/eclair_cake_build_3.png){fig-align="center" width="600"}
+
+![](images/eclair_cake_build_4.png){fig-align="center" width="600"}
+
+### Final Product
+
+![](images/eclair_cake_final_1.png){fig-align="center" width="600"}
+
+![](images/eclair_cake_final_2.png){fig-align="center" width="600"}
+
+## Resources
+
+- [Eclair Cake from Makinze Gore on Delish](https://www.delish.com/cooking/recipe-ideas/a39077917/eclair-cake-recipe/?source=nl&utm_source=nl_del&utm_medium=email&date=031323&utm_campaign=nl_welcome1&GID=65de236526c0a554773b5ca7fccdfd2369ea0ab9aef2b9a0e8d79bd5d4454e3e)

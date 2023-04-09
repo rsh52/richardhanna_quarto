@@ -20,7 +20,7 @@ Key points to getting oven baked donuts to come out right:
 
 ## Photos
 
-#### Prep Work
+### Prep Work
 
 ![](images/donuts_prep.png){fig-align="center" width="600"}
 
@@ -30,7 +30,7 @@ Key points to getting oven baked donuts to come out right:
 
 ![](images/donuts_tray2.png){fig-align="center" width="600"}
 
-#### Final Product
+### Final Product
 
 ![](images/donuts_final1.png){fig-align="center" width="600"}
 

@@ -17,7 +17,7 @@ This meal we paired with a side of risotto and homemade tomato sauce ("gravy" de
 
 ## Photos
 
-#### Prep Work
+### Prep Work
 
 ![](images/eggplant_parm_prep1.png){fig-align="center" width="600"}
 
@@ -31,7 +31,7 @@ This meal we paired with a side of risotto and homemade tomato sauce ("gravy" de
 
 ![](images/eggplant_parm_baked1.png){fig-align="center" width="600"}
 
-#### Final Product
+### Final Product
 
 ![](images/eggplant_parm_final1.png){fig-align="center" width="600"}
 

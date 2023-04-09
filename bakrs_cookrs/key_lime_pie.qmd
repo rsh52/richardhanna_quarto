@@ -23,9 +23,11 @@ Originally I used a recipe from Bravetart by Stella Parks, but this recipe I tri
 
 ![](images/keylime_pie_prep2.png){fig-align="center" width="600"}
 
+### Making the Crust
+
 ![](images/keylime_pie_crust.png){fig-align="center" width="600"}
 
-#### Final Product
+### Final Product
 
 ![](images/keylime_pie_final1.png){fig-align="center" width="600"}
 
@@ -33,5 +35,5 @@ Originally I used a recipe from Bravetart by Stella Parks, but this recipe I tri
 
 ## Resources
 
-- [Valentino's Pizza Crust](https://unpeeledjournal.com/key-lime-pie-graham-crust-whipped-cream/)
+- [Key Lime Pie](https://unpeeledjournal.com/key-lime-pie-graham-crust-whipped-cream/)
 - Homemade Whipped Cream (not pictured here): Bravetart by Stella Parks

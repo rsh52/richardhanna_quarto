@@ -17,11 +17,11 @@ These cheddar scallion biscuits are extremely decadent, wonderfully salty, and n
 
 ## Photos
 
-#### Prep Work
+### Prep Work
 
 ![](images/cs_biscuits_prep.png){fig-align="center" width="600"}
 
-#### Final Product
+### Final Product
 
 ![](images/cs_biscuits_final1.png){fig-align="center" width="600"}
 

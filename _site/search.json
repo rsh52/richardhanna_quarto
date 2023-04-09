@@ -81,7 +81,7 @@
     "href": "bakrs_cookrs/chocolate_chip_cookies.html#resources",
     "title": "Chocolate Chip Cookies with Sea Salt",
     "section": "Resources",
-    "text": "Resources\n\nChocoalte Chip Cookies: Bravetart by Stella Parks"
+    "text": "Resources\n\nChocolate Chip Cookies: Bravetart by Stella Parks"
   },
   {
     "objectID": "bakrs_cookrs/cinnamon_donuts.html",
@@ -105,6 +105,48 @@
     "text": "Resources\n\nCinnamon Baked Donuts from AllRecipes’ Ina Garten"
   },
   {
+    "objectID": "bakrs_cookrs/easy_cinnamon_rolls.html",
+    "href": "bakrs_cookrs/easy_cinnamon_rolls.html",
+    "title": "GBBO Easy Cinnamon Rolls",
+    "section": "",
+    "text": "This recipe was taken from Prue Leith’s Apple & Cinnamon Buns from GBBO. Measurements and some ingredients are definitely British, so had to look up some substitutes and instructions on how to accommodate. Namely:\n\nThat “icing sugar” is the same thing as powdered/confectioner’s sugar (i.e. sugar and cornstarch)\nSelf-rising flour (recipe at end)\nCaster Sugar (recipe at end, essentially just processing granulated sugar)\n\nWe also used oat milk that we hand on hand which certainly works, but changes the flavor a bit.\nIf Prue saw these, I’m sure she would remark that I’m missing quite a bit of “finesse,” but I’ll be making these again in the future and they’re so easy without needing the overnight proof of a typical yeasted roll."
+  },
+  {
+    "objectID": "bakrs_cookrs/easy_cinnamon_rolls.html#photos",
+    "href": "bakrs_cookrs/easy_cinnamon_rolls.html#photos",
+    "title": "GBBO Easy Cinnamon Rolls",
+    "section": "Photos",
+    "text": "Photos\n\nPrep Work\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFinal Product"
+  },
+  {
+    "objectID": "bakrs_cookrs/easy_cinnamon_rolls.html#resources",
+    "href": "bakrs_cookrs/easy_cinnamon_rolls.html#resources",
+    "title": "GBBO Easy Cinnamon Rolls",
+    "section": "Resources",
+    "text": "Resources\n\nPrue Leith’s Apple and Cinnamon Buns\nCaster Sugar\nSelf Rising Flour"
+  },
+  {
+    "objectID": "bakrs_cookrs/eclaire_cake.html",
+    "href": "bakrs_cookrs/eclaire_cake.html",
+    "title": "Eclair Cake",
+    "section": "",
+    "text": "Without a doubt, this is one of the best recipes I’ve ever made. I guarantee you’ll get positive remarks and, if you’re like my wife, constant requests for it to be made again.\nThe chocolate ganache is super easy and brings everything together. The graham cracker/custard combination give it an almost tiramisu-like quality. Very “eatable” and not too heavy (considering one guest ate 3 pieces in one sitting!)."
+  },
+  {
+    "objectID": "bakrs_cookrs/eclaire_cake.html#photos",
+    "href": "bakrs_cookrs/eclaire_cake.html#photos",
+    "title": "Eclair Cake",
+    "section": "Photos",
+    "text": "Photos\n\nPrep Work & Making the Custard\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBuilding the Cake\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFinal Product"
+  },
+  {
+    "objectID": "bakrs_cookrs/eclaire_cake.html#resources",
+    "href": "bakrs_cookrs/eclaire_cake.html#resources",
+    "title": "Eclair Cake",
+    "section": "Resources",
+    "text": "Resources\n\nEclair Cake from Makinze Gore on Delish"
+  },
+  {
     "objectID": "bakrs_cookrs/eggplant_parmesean.html",
     "href": "bakrs_cookrs/eggplant_parmesean.html",
     "title": "Eggplant Parmesean",
@@ -116,7 +158,7 @@
     "href": "bakrs_cookrs/eggplant_parmesean.html#photos",
     "title": "Eggplant Parmesean",
     "section": "Photos",
-    "text": "Photos\n\nPrep Work\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFryng and Baking\n\n\n\n\n\n\n\n\n\n\n\nFinal Product"
+    "text": "Photos\n\nPrep Work\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFryng and Baking\n\n\n\n\n\n\n\n\n\n\n\n\nFinal Product"
   },
   {
     "objectID": "bakrs_cookrs/eggplant_parmesean.html#resources",
@@ -158,14 +200,14 @@
     "href": "bakrs_cookrs/key_lime_pie.html#photos",
     "title": "‘Key’ Lime Pie with Graham Cracker Crust",
     "section": "Photos",
-    "text": "Photos\n\nPrep Work\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFinal Product"
+    "text": "Photos\n\nPrep Work\n\n\n\n\n\n\n\n\n\n\n\n\nMaking the Crust\n\n\n\n\n\n\n\nFinal Product"
   },
   {
     "objectID": "bakrs_cookrs/key_lime_pie.html#resources",
     "href": "bakrs_cookrs/key_lime_pie.html#resources",
     "title": "‘Key’ Lime Pie with Graham Cracker Crust",
     "section": "Resources",
-    "text": "Resources\n\nValentino’s Pizza Crust\nHomemade Whipped Cream (not pictured here): Bravetart by Stella Parks"
+    "text": "Resources\n\nKey Lime Pie\nHomemade Whipped Cream (not pictured here): Bravetart by Stella Parks"
   },
   {
     "objectID": "bakrs_cookrs/pizza.html",
@@ -256,7 +298,7 @@
     "href": "bakrs_cookrs.html",
     "title": "For BakRs & CookRs",
     "section": "",
-    "text": "Baking and cooking are side hobbies of mine, this page was made to host some of my favorite recipes (and showcase the most photogenic ones).\nSince this is a data science website primarily, there had to be an R-based theme. Use the categories on the right to look for \"CookR\" and \"BakR\" recipes, all resources are cited at the bottom of their respective pages.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEggplant Parmesean\n\n\n\nCookR\n\n\nItalian\n\n\nVegetable\n\n\n\nA classic take on an arguably Italian dish.\n\n\n\n\n\n\nJan 22, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nChocolate Chip Cookies with Sea Salt\n\n\n\nBakR\n\n\nCookie\n\n\nDessert\n\n\n\nYour standard chocolate chip cookie recipe, improved with nutmeg and coarse sea salt.\n\n\n\n\n\n\nJan 21, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRoasted Butternut Squash with Tahini Sauce and Feta\n\n\n\nCookR\n\n\nMediterranean\n\n\nVegetable\n\n\n\nA delicious appetizer that’s filling and relatively healthy.\n\n\n\n\n\n\nJan 16, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMaki Sushi Rolls\n\n\n\nCookR\n\n\nSushi\n\n\nFish\n\n\n\nSushi prepared using rolling mats and a bazooka press.\n\n\n\n\n\n\nDec 27, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCheddar Scallion Biscuits\n\n\n\nBakR\n\n\nPastry\n\n\nBiscuit\n\n\n\nDecadent, flavorful biscuits for a breakfast treat.\n\n\n\n\n\n\nDec 25, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSnickerdoodle Cookies\n\n\n\nBakR\n\n\nDessert\n\n\nCookie\n\n\n\nSugary, cinnamon cookies with a hit of coconut.\n\n\n\n\n\n\nDec 17, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFalafel\n\n\n\nCookR\n\n\nFalafel\n\n\nMediterranean\n\n\n\nHomemade falafel with tzatziki sauce.\n\n\n\n\n\n\nNov 29, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBaked Cinnamon Sugar Donuts\n\n\n\nBakR\n\n\nDessert\n\n\nDonuts\n\n\n\nOven baked donuts with a cinnamon sugar topping using a donut tray.\n\n\n\n\n\n\nNov 23, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n‘Key’ Lime Pie with Graham Cracker Crust\n\n\n\nBakR\n\n\nPie\n\n\nDessert\n\n\n\nUsing fresh, non-key limes for a custard set in a graham cracker crust.\n\n\n\n\n\n\nNov 23, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHomemade Salted Caramel Apple Pie\n\n\n\nBakR\n\n\nPie\n\n\nDessert\n\n\nPastry\n\n\n\nSalted caramel apple pie with homemade pastry dough and salted caramel sauce.\n\n\n\n\n\n\nNov 21, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOven Baked Pizza with Pizza Stone\n\n\n\nCookR\n\n\nPizza\n\n\n\nOven baked pizza using a pizza stone with homemade tomato sauce, mozzarella, and prosciutto.\n\n\n\n\n\n\nNov 20, 2022\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Baking and cooking are side hobbies of mine, this page was made to host some of my favorite recipes (and showcase the most photogenic ones).\nSince this is a data science website primarily, there had to be an R-based theme. Use the categories on the right to look for \"CookR\" and \"BakR\" recipes, all resources are cited at the bottom of their respective pages.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEclair Cake\n\n\n\nBakR\n\n\nCake\n\n\nDessert\n\n\n\nCapture all the enjoyment of a eclair with none of the headache.\n\n\n\n\n\n\nApr 1, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGBBO Easy Cinnamon Rolls\n\n\n\nBakR\n\n\nDessert\n\n\nPastry\n\n\n\nDigging into our home’s Great British Bake Off addiciton with these easy, non-proof rolls.\n\n\n\n\n\n\nMar 18, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEggplant Parmesean\n\n\n\nCookR\n\n\nItalian\n\n\nVegetable\n\n\n\nA classic take on an arguably Italian dish.\n\n\n\n\n\n\nJan 22, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nChocolate Chip Cookies with Sea Salt\n\n\n\nBakR\n\n\nCookie\n\n\nDessert\n\n\n\nYour standard chocolate chip cookie recipe, improved with nutmeg and coarse sea salt.\n\n\n\n\n\n\nJan 21, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRoasted Butternut Squash with Tahini Sauce and Feta\n\n\n\nCookR\n\n\nMediterranean\n\n\nVegetable\n\n\n\nA delicious appetizer that’s filling and relatively healthy.\n\n\n\n\n\n\nJan 16, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMaki Sushi Rolls\n\n\n\nCookR\n\n\nSushi\n\n\nFish\n\n\n\nSushi prepared using rolling mats and a bazooka press.\n\n\n\n\n\n\nDec 27, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCheddar Scallion Biscuits\n\n\n\nBakR\n\n\nPastry\n\n\nBiscuit\n\n\n\nDecadent, flavorful biscuits for a breakfast treat.\n\n\n\n\n\n\nDec 25, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSnickerdoodle Cookies\n\n\n\nBakR\n\n\nDessert\n\n\nCookie\n\n\n\nSugary, cinnamon cookies with a hit of coconut.\n\n\n\n\n\n\nDec 17, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFalafel\n\n\n\nCookR\n\n\nFalafel\n\n\nMediterranean\n\n\n\nHomemade falafel with tzatziki sauce.\n\n\n\n\n\n\nNov 29, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBaked Cinnamon Sugar Donuts\n\n\n\nBakR\n\n\nDessert\n\n\nDonuts\n\n\n\nOven baked donuts with a cinnamon sugar topping using a donut tray.\n\n\n\n\n\n\nNov 23, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n‘Key’ Lime Pie with Graham Cracker Crust\n\n\n\nBakR\n\n\nPie\n\n\nDessert\n\n\n\nUsing fresh, non-key limes for a custard set in a graham cracker crust.\n\n\n\n\n\n\nNov 23, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHomemade Salted Caramel Apple Pie\n\n\n\nBakR\n\n\nPie\n\n\nDessert\n\n\nPastry\n\n\n\nSalted caramel apple pie with homemade pastry dough and salted caramel sauce.\n\n\n\n\n\n\nNov 21, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOven Baked Pizza with Pizza Stone\n\n\n\nCookR\n\n\nPizza\n\n\n\nOven baked pizza using a pizza stone with homemade tomato sauce, mozzarella, and prosciutto.\n\n\n\n\n\n\nNov 20, 2022\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "data_science/REDCapTidieR.html#who-am-i",

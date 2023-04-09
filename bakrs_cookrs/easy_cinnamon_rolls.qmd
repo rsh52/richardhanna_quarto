@@ -1,0 +1,50 @@
+---
+title: "GBBO Easy Cinnamon Rolls"
+date: 2023-03-18
+description: Digging into our home's Great British Bake Off addiciton with these easy, non-proof rolls.
+image: images/ecrolls_final_4.png
+categories:
+  - BakR
+  - Dessert
+  - Pastry
+---
+
+## Details
+
+This recipe was taken from Prue Leith's Apple & Cinnamon Buns from GBBO. Measurements and some ingredients are definitely British, so had to look up some substitutes and instructions on how to accommodate. Namely:
+
+- That "icing sugar" is the same thing as powdered/confectioner's sugar (i.e. sugar and cornstarch)
+- Self-rising flour (recipe at end)
+- Caster Sugar (recipe at end, essentially just processing granulated sugar)
+
+We also used oat milk that we hand on hand which certainly works, but changes the flavor a bit.
+
+If Prue saw these, I'm sure she would remark that I'm missing quite a bit of "finesse," but I'll be making these again in the future and they're so easy without needing the overnight proof of a typical yeasted roll.
+
+## Photos
+
+### Prep Work
+
+![](images/ecrolls_prep_1.png){fig-align="center" width="600"}
+
+![](images/ecrolls_prep_2.png){fig-align="center" width="600"}
+
+![](images/ecrolls_prep_3.png){fig-align="center" width="600"}
+
+![](images/ecrolls_prep_4.png){fig-align="center" width="600"}
+
+### Final Product
+
+![](images/ecrolls_final_1.png){fig-align="center" width="600"}
+
+![](images/ecrolls_final_2.png){fig-align="center" width="600"}
+
+![](images/ecrolls_final_3.png){fig-align="center" width="600"}
+
+![](images/ecrolls_final_4.png){fig-align="center" width="600"}
+
+## Resources
+
+- [Prue Leith's Apple and Cinnamon Buns](https://thegreatbritishbakeoff.co.uk/recipes/all/prue-leith-apple-and-cinnamon-buns/)
+- [Caster Sugar](https://www.allrecipes.com/article/what-is-caster-sugar/)
+- [Self Rising Flour](https://www.allrecipes.com/recipe/149310/self-rising-flour/)
