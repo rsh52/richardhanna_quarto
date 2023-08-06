@@ -1,7 +1,7 @@
 ---
 title: "Richard Hanna"
 about:
-  image: "docs/images/profile_drawing_cropped.png"
+  image: "docs/images/rhanna_headshot.jpeg"
   image-width: 14em
   template: trestles
   image-shape: rounded
@@ -30,10 +30,10 @@ hobbies and interests. It's a pleasure to connect with you.
 ### Education
 
 <div class="topbr">
-<p class="custom-subtitle">`r fontawesome::fa("graduation-cap", fill = "#008cba", a11y = "sem")` **MS in Biomedical Engineering, 2015**</p>  
+<p class="custom-subtitle">{{< fa graduation-cap >}} **MS in Biomedical Engineering, 2015**</p>  
 <p class="custom-subtitle2">Drexel University, Philadelphia</p>
 
-<p class="custom-subtitle">`r fontawesome::fa("graduation-cap", fill = "#008cba", a11y = "sem")` **BS in Mechanical Engineering, 2015**</p>  
+<p class="custom-subtitle">{{< fa graduation-cap >}} **BS in Mechanical Engineering, 2015**</p>  
 <p class="custom-subtitle2">Drexel University, Philadelphia</p>
 </div>
 
@@ -42,19 +42,19 @@ hobbies and interests. It's a pleasure to connect with you.
 ### Experience
 
 <div class="topbr">
-<p class="custom-subtitle">`r fontawesome::fa("database", fill = "#008cba", a11y = "sem")` **Data Scientist**</p>  
+<p class="custom-subtitle">{{< fa database >}} **Data Scientist**</p>  
 <p class="custom-subtitle2">Children's Hospital of Philadelphia, 2021 - Present</p>
 
-<p class="custom-subtitle">`r fontawesome::fa("database", fill = "#008cba", a11y = "sem")` **Data Analyst & Programmer**</p>  
+<p class="custom-subtitle">{{< fa database >}} **Data Analyst & Programmer**</p>  
 <p class="custom-subtitle2">Children's Hospital of Philadelphia, 2019-2021</p>
 
-<p class="custom-subtitle">`r fontawesome::fa("database", fill = "#008cba", a11y = "sem")` **Research Project Engineer**</p>  
+<p class="custom-subtitle">{{< fa database >}} **Research Project Engineer**</p>  
 <p class="custom-subtitle2">Children's Hospital of Philadelphia, 2017-2019</p>
 
-<p class="custom-subtitle">`r fontawesome::fa("gears", fill = "#008cba", a11y = "sem")` **Project/Associate Project Engineer**</p>  
+<p class="custom-subtitle">{{< fa gears >}} **Project/Associate Project Engineer**</p>  
 <p class="custom-subtitle2">GS Medical USA, 2015-2017</p>
 
-<p class="custom-subtitle">`r fontawesome::fa("gears", fill = "#008cba", a11y = "sem")` **Biomechanics Researcher**</p>  
+<p class="custom-subtitle">{{< fa gears >}} **Biomechanics Researcher**</p>  
 <p class="custom-subtitle2">Children's Hospital of Philadelphia, 2014-2015</p>
 </div>
 
@@ -63,13 +63,13 @@ hobbies and interests. It's a pleasure to connect with you.
 ### Certifications
 
 <div class="topbr">
-<p class="custom-subtitle">`r fontawesome::fa("scroll", fill = "#008cba", a11y = "sem")` **Graduate Certificate in Engineering Management**</p>  
+<p class="custom-subtitle">{{< fa scroll >}} **Graduate Certificate in Engineering Management**</p>  
 <p class="custom-subtitle2">Drexel University, Philadelphia, 2015</p>
 
-<p class="custom-subtitle">`r fontawesome::fa("computer", fill = "#008cba", a11y = "sem")` [**Solutions Architect - Associate**](https://www.credly.com/badges/44361ea8-9eb9-4f27-99ca-05b582f5b962?source=linked_in_profile)</p>  
+<p class="custom-subtitle">{{< fa computer >}} [**Solutions Architect - Associate**](https://www.credly.com/badges/44361ea8-9eb9-4f27-99ca-05b582f5b962?source=linked_in_profile)</p>  
 <p class="custom-subtitle2">AWS, 2021</p>
 
-<p class="custom-subtitle">`r fontawesome::fa("gears", fill = "#008cba", a11y = "sem")` [**FE/EIT Certified**](https://account.ncees.org/rn/1522538-735396-d9a0ace)</p>  
+<p class="custom-subtitle">{{< fa gears >}} [**FE/EIT Certified**](https://account.ncees.org/rn/1522538-735396-d9a0ace)</p>  
 <p class="custom-subtitle2">NCEES, 2014</p>
 </div>
 
