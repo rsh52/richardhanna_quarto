@@ -3,6 +3,7 @@ title: "REDCapTidieR"
 subtitle: "Making analysts lives easier through the power of tidy tibbles"
 description: "This slide deck was made in {quarto} and presented to the CHOP R User group in preparation of the package's v0.1.0 release to CRAN."
 date: "2022-08-18"
+image: images/REDCapTidieR/hexes.png
 author: "Richard Hanna"
 format:
   revealjs:
@@ -394,13 +395,13 @@ So we went over the problem, now let's bring in the solution: `REDCapTidieR`. At
 #| eval: true
 #| cache: true
 library(REDCapTidieR)
-superheroes_tidy <- read_redcap_tidy(redcap_uri, token)
+superheroes_tidy <- read_redcap(redcap_uri, token)
 
 superheroes_tidy
 ```
 
 ::: notes
-The core `REDCapTidieR` function is `read_redcap_tidy`, and here we can see the output which might look a little odd, but it's definitely less overwhelming than the giant table we saw earier. What we have is a `tibble` where on the left we have the raw names of the instruments from REDCap, these were the two colorful columns on the Record Status Dashboard. On the right is the structure, i.e. "repeating" or "nonrepeating."
+The core `REDCapTidieR` function is `read_redcap`, and here we can see the output which might look a little odd, but it's definitely less overwhelming than the giant table we saw earier. What we have is a `tibble` where on the left we have the raw names of the instruments from REDCap, these were the two colorful columns on the Record Status Dashboard. On the right is the structure, i.e. "repeating" or "nonrepeating."
 
 Here in the middle, under `data` is where processed data resides in a list column.
 :::
@@ -532,7 +533,7 @@ Since the name of the form is indicated in the super tibble, we have a single va
 #| eval: true
 #| cache: true
 library(REDCapTidieR)
-superheroes_tidy <- read_redcap_tidy(redcap_uri, token)
+superheroes_tidy <- read_redcap(redcap_uri, token)
 
 superheroes_tidy
 ```
@@ -577,7 +578,7 @@ ls.str(envir = globalenv())
 #| cache: true
 redcap_uri <- Sys.getenv("REDCAP_URI")
 token <- Sys.getenv("SUPERHEROES_REDCAP_API")
-superheroes_tidy <- read_redcap_tidy(redcap_uri, token)
+superheroes_tidy <- read_redcap(redcap_uri, token)
 rm(redcap_uri)
 rm(token)
 ```
@@ -588,13 +589,13 @@ Reload the `superheroes_tidy` dataset, pipe to `bind_tables`, check environment:
 #| eval: true
 #| cache: true
 superheroes_tidy %>%
-  bind_tables()
+  bind_tibbles()
 
 ls.str(envir = globalenv())
 ```
 
 ::: notes
-The second main function we've introduced to `REDCapTidieR` is Stephan's brain child. Using the `bind_tables` helper function, we can take the table outputs of the `redcap_data` column from our `TidieR` output and place them directly into the global environment or any environment of our choosing.
+The second main function we've introduced to `REDCapTidieR` is Stephan's brain child. Using the `bind_tibbles` helper function, we can take the table outputs of the `redcap_data` column from our `TidieR` output and place them directly into the global environment or any environment of our choosing.
 
 For those of you who don't know, environments are essentially a variant of `list`s in R. The most common one you probably work with is the global environment displayed in the panel of your RStudio IDE, but you can also make other environments to call from.
 
@@ -650,7 +651,7 @@ token <- Sys.getenv("REDCAPTIDIER_LONGITUDINAL_API")
 #| echo: true
 #| eval: true
 #| cache: true
-redcap_long_arms_tidy <- read_redcap_tidy(redcap_uri, token)
+redcap_long_arms_tidy <- read_redcap(redcap_uri, token)
 
 redcap_long_arms_tidy
 ```

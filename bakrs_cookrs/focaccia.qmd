@@ -1,0 +1,56 @@
+---
+title: "Pizza al Taglio / Focaccia"
+date: 2023-08-06
+description: A pizza dough base that easily can become a tasty focaccia bread.
+image: images/focaccia_final_1.jpeg
+categories:
+  - CookR
+  - Pizza
+  - Bread
+---
+
+## Details
+
+Using Marc Vetri's "[Mastering Pizza](https://www.amazon.com/Mastering-Pizza-Practice-Handmade-Focaccia/dp/0399579222/ref=asc_df_0399579222/?tag=hyprod-20&linkCode=df0&hvadid=311990507415&hvpos=&hvnetw=g&hvrand=7376325597122196026&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9007268&hvtargid=pla-524879127995&psc=1)", this focaccia can be made in a single day (though it is recommended to let it ferment over two for best taste). The end result is a light, crispy, and absolutely flavorful bread that can be turned into a pizza of your liking or served as an appetizer to a meal.
+
+## Preparation
+
+First, preparing for this recipe is very simple. The only real ingredients are unbleached bread flour, salt, water, and active dry yeast.
+
+![](images/focaccia_prep.jpeg){fig-align="center" width="600"}
+
+## Dough Fermentation
+
+After a few sets of folds, the dough turns from a shaggy ball into a smooth, almost too wet, mass. Then, after fermenting and rising for a day, we get a smooth and extremely pliable dough.
+
+![](images/focaccia_dough_1.jpeg){fig-align="center" width="600"}
+
+![](images/focaccia_dough_2.jpeg){fig-align="center" width="600"}
+
+![](images/focaccia_dough_3.jpeg){fig-align="center" width="600"}
+
+Look at those bubbles forming!
+
+## Baking
+
+Spreading the dough out over an oiled pan is a bit tricky. You want to avoid popping any of the bubbles that have formed, but as you work the dough it starts stretching itself right out of your hands! All in all, the actual hands-on work with this recipe is pretty short and feels relatively forgiving.
+
+![](images/focaccia_bake_1.jpeg){fig-align="center" width="600"}
+
+![](images/focaccia_bake_2.jpeg){fig-align="center" width="600"}
+
+![](images/focaccia_bake_3.jpeg){fig-align="center" width="600"}
+
+## Final Results
+
+The final dough is crispy, airy, and delicious. Best fresh out of the oven, but easily enjoable reheated in the toaster.
+
+![](images/focaccia_final_1.jpeg){fig-align="center" width="600"}
+![](images/focaccia_final_2.jpeg){fig-align="center" width="600"}
+
+![](images/focaccia_final_3.jpeg){fig-align="center" width="600"}
+
+## Resources
+
+-   [Mastering Pizza](https://www.amazon.com/Mastering-Pizza-Practice-Handmade-Focaccia/dp/0399579222/ref=asc_df_0399579222/?tag=hyprod-20&linkCode=df0&hvadid=311990507415&hvpos=&hvnetw=g&hvrand=7376325597122196026&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9007268&hvtargid=pla-524879127995&psc=1) by Marc Vetri
+- Al Taglio dough at 80% hydration

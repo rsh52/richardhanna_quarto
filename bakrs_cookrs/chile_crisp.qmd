@@ -1,0 +1,28 @@
+---
+title: "Chili Crisp"
+date: 2023-07-01
+description: A simple condiment that packs a flavor bomb.
+image: images/chili_crisp_final.jpeg
+categories:
+  - CookR
+  - Condiment
+  - Spicy
+---
+
+## Details
+
+I had never heard of chile crisp till this year, but recently it's become a huge thing. When fresh, it's crunchy, oily, decadent, and incredibly falvorful without being too spicy (if you make it that way). There are many types, kinds, and ways to make it your own, but the one I found follows [Bon Appetit's recipe](https://www.bonappetit.com/recipe/chile-crisp).
+
+Chile crisp can cost a whopping $9-16 for a measly 6oz jar depending on where and what you're buying. This is much more economic while giving you a large mason jar that lasts over a month. 
+
+Be forewarned, this will make your house smell and the eyes water of those who reside in it.
+
+## Photos
+
+![](images/chili_crisp_prep.jpeg){fig-align="center" width="600"}
+
+![](images/chili_crisp_final.jpeg){fig-align="center" width="600"}
+
+## Resources
+
+- [Bon Appetit's Chile Crisp](https://www.bonappetit.com/recipe/chile-crisp)

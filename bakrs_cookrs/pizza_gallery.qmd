@@ -1,0 +1,29 @@
+---
+title: "Pizza Gallery"
+date: 2023-08-06
+image: images/pizza_gallery.jpg
+description: Additional pizzas we've made since the original
+categories:
+  - CookR
+  - Pizza
+---
+
+## Details
+
+This will serve as a compilation of the pizzas we've made, for more information on the dough visit [Oven Bakced PIzza with Pizza Stone](https://www.richardshanna.com/bakrs_cookrs/pizza).
+
+## Traditional Pizza with Basil
+
+![](images/pizza_3.jpeg){fig-align="center" width="600"}
+
+## Pizza with Whole Tomatoes, Olive Oil, Ricotta, Chicken
+
+![](images/pizza_tomato_ricotta.jpeg){fig-align="center" width="600"}
+
+## Pizza with Anchovies, Capers, Sun Dried Tomatoes, and Basil
+
+![](images/pizza_anchovies_capers.jpeg){fig-align="center" width="600"}
+
+### Pizza with Ricotta, Mozarella, and Fresh Basil
+
+![](images/pizza_tomato_mozz_basil.jpeg){fig-align="center" width="600"}

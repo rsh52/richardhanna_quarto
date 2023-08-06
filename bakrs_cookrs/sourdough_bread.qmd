@@ -1,0 +1,48 @@
+---
+title: "Sourdough Bread"
+date: 2023-06-04
+description: An easy intro to sourdough bread (given you have a starter).
+image: images/sourdough_final_2.jpeg
+categories:
+  - CookR
+  - Bread
+---
+
+## Details
+
+Leading up to making my first sourdough required making my first starter. After about 14 days and a couple of failed attempted, I finally got my starter lively and hungry. I won't go into much detail about making a starter, but I did find this video from [Whispering Willow Farm](https://www.youtube.com/watch?v=SeZw_jGl2Xs) to be one of the most straightforward. Just look at how Demeter grew!
+
+![](images/sourdough_starter.jpeg){fig-align="center" width="600"}
+
+Yes, I gave it a name since everyone does and I named it after the Greek god of harvest and grain. It seemed fitting to have an immortal being in my fridge to take up space for all of time much to my wife's disdain.
+
+For the sourdough itself I use [this recipe](https://www.theclevercarrot.com/2014/01/sourdough-bread-a-beginners-guide/) from the Clever Carrot. It's pretty easy to follow, makes a great loaf, and the only hard part is just planning your bake in advance. I've made this now about 8 times and it's a near-weekly staple in our house.
+
+## Preparing the Dough
+
+Preparing the dough requires an active starter, bread flour, water, salt, olive oil, and time.
+
+![](images/sourdough_dough_1.jpeg){fig-align="center" width="600"}
+
+![](images/sourdough_dough_2.jpeg){fig-align="center" width="600"}
+
+![](images/sourdough_dough_3.jpeg){fig-align="center" width="600"}
+
+## Final Results
+
+The finished product is a beautiful loaf that we wind up having with breakfast and eggs.
+
+![](images/sourdough_final_1.jpeg){fig-align="center" width="600"}
+
+![](images/sourdough_final_2.jpeg){fig-align="center" width="600"}
+
+### Bonus: Sourdough Pancakes
+
+Another fun application of starter is sourdough pancakes which have a nice tangy flavor!
+
+![](images/sourdough_pancakes.jpeg){fig-align="center" width="600"}
+
+## Resources
+
+- [Sourdough Starter by Whispering Willow Farm](https://www.youtube.com/watch?v=SeZw_jGl2Xs)
+- [Clever Carrot Sourdough](https://www.theclevercarrot.com/2014/01/sourdough-bread-a-beginners-guide/)
