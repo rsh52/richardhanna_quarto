@@ -4,7 +4,7 @@ date: 2023-08-06
 description: A pizza dough base that easily can become a tasty focaccia bread.
 image: images/focaccia_final_1.jpeg
 categories:
-  - CookR
+  - BakR
   - Pizza
   - Bread
 ---

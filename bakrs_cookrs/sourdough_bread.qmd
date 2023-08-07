@@ -4,7 +4,7 @@ date: 2023-06-04
 description: An easy intro to sourdough bread (given you have a starter).
 image: images/sourdough_final_2.jpeg
 categories:
-  - CookR
+  - BakR
   - Bread
 ---
 
