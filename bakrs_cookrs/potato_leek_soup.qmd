@@ -1,0 +1,29 @@
+---
+title: "Pineapple Upside Down Cake"
+date: 2023-10-21
+description: A hearty, decadent soup perfect for fall.
+image: images/pl_soup_final2.jpeg
+categories:
+  - CookR
+  - Soup
+---
+
+## Details
+
+Potato leek soup is a delicious and hearty soup, with a balance of blended potatoes combined with rich heavy cream for a satisfying flavor. Not many photos to share here, but the recipe from "Once Upon a Chef" was very easy to follow and a hit here.
+
+## Photos
+
+### Prep Work
+
+![](images/pl_soup_prep.jpeg){fig-align="center" width="600"}
+
+### Final Product
+
+![](images/pl_soup_final1.jpeg){fig-align="center" width="600"}
+
+![](images/pl_soup_final2.jpeg){fig-align="center" width="600"}
+
+## Resources
+
+- [Potato Leek Soup by Once Upon a Chef](https://www.onceuponachef.com/recipes/potato-leek-soup.html)

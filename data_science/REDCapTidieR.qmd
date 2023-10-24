@@ -785,7 +785,7 @@ token <- Sys.getenv("REDCAPTIDIER_CLASSIC_API")
 
 ```{r}
 #| echo: true
-#| eval: true
+#| eval: FALSE
 #| cache: true
 metadata <- redcap_metadata_read(redcap_uri, token)$data
 

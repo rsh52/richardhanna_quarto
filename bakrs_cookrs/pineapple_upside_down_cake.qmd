@@ -1,0 +1,34 @@
+---
+title: "Pineapple Upside Down Cake"
+date: 2023-10-21
+description: A delicious and simple bake that's served warm.
+image: images/pineapple_ud_final2.jpeg
+categories:
+  - BakR
+  - Cake
+  - Dessert
+---
+
+## Details
+
+For a warm, sweet, and tangy cake you can put together in under an hour look no further than the pineapple upside down cake. While this recipe calls for fresh pineapple, honestly you can probably get away with the canned variant. One of the fun things with this recipe is the bake happens in a cast iron skillet... just be careful when flipping it out!
+
+## Photos
+
+### Prep Work
+
+![](images/pineapple_ud_prep1.jpeg){fig-align="center" width="600"}
+
+![](images/pineapple_ud_prep2.jpeg){fig-align="center" width="600"}
+
+### Final Product
+
+![](images/pineapple_ud_bake1.jpeg){fig-align="center" width="600"}
+
+![](images/pineapple_ud_final1.jpeg){fig-align="center" width="600"}
+
+![](images/pineapple_ud_final2.jpeg){fig-align="center" width="600"}
+
+## Resources
+
+- Pineapple Upside Down Cake: Bravetart by Stella Parks
