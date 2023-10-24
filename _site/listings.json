@@ -17,6 +17,13 @@
     ]
   },
   {
+    "listing": "/data_science.html",
+    "items": [
+      "/data_science/REDCapTidieR.html",
+      "/data_science/stem_cell_engraftment_app.html"
+    ]
+  },
+  {
     "listing": "/bakrs_cookrs.html",
     "items": [
       "/bakrs_cookrs/pineapple_upside_down_cake.html",
@@ -38,13 +45,6 @@
       "/bakrs_cookrs/key_lime_pie.html",
       "/bakrs_cookrs/apple_pie.html",
       "/bakrs_cookrs/pizza.html"
-    ]
-  },
-  {
-    "listing": "/data_science.html",
-    "items": [
-      "/data_science/REDCapTidieR.html",
-      "/data_science/stem_cell_engraftment_app.html"
     ]
   }
 ]

@@ -1,5 +1,5 @@
 ---
-title: "Pineapple Upside Down Cake"
+title: "Potato Leek Soup"
 date: 2023-10-21
 description: A hearty, decadent soup perfect for fall.
 image: images/pl_soup_final2.jpeg
