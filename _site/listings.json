@@ -2,6 +2,7 @@
   {
     "listing": "/publications.html",
     "items": [
+      "/publications/cytotherapy_ml_manuscript_20231023.html",
       "/publications/astct_engraftment_app_manuscript_20230104.html",
       "/publications/city_ih_cpr_nights_weekends.html",
       "/publications/amia_engraftment_app_abstract_20211209.html",
@@ -14,13 +15,6 @@
       "/publications/viper_cpr_ress_2018.html",
       "/publications/rear_facing_crs_fitment.html",
       "/publications/automated_couette_viscometer.html"
-    ]
-  },
-  {
-    "listing": "/data_science.html",
-    "items": [
-      "/data_science/REDCapTidieR.html",
-      "/data_science/stem_cell_engraftment_app.html"
     ]
   },
   {
@@ -45,6 +39,13 @@
       "/bakrs_cookrs/key_lime_pie.html",
       "/bakrs_cookrs/apple_pie.html",
       "/bakrs_cookrs/pizza.html"
+    ]
+  },
+  {
+    "listing": "/data_science.html",
+    "items": [
+      "/data_science/REDCapTidieR.html",
+      "/data_science/stem_cell_engraftment_app.html"
     ]
   }
 ]

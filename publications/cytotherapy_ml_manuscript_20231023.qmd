@@ -1,0 +1,33 @@
+---
+title: "A machine-learning model that incorporates CD45 surface expression predicts hematopoietic progenitor cell recovery after freeze–thaw"
+author: Arwa Z. Al-Riyami, Elena Maryamchik, Richard S. Hanna, Amir Reza Pashmineh Azar, Xingwu Zheng, Shilpa Choudhari, Colleen Finn, Nicholas Giacobbe, Rene Machietto, Robert Rieser, Farzaneh Ghasemi Tahrir, Xiaoyong Zhang, Stephan Kadauke, Yongping Wang
+date: 2023-10-23
+description: We developed a machine learning model for prediction of viable CD34+ HPC procurement after cryopreservation.
+doi: "https://doi.org/10.1016/j.jcyt.2023.05.007"
+link-external-newwindow: true
+link-external-icon: true
+categories:
+  - Stem Cell
+  - Machine Learning
+  - Data Science
+  - R
+  - TidyModels
+---
+
+# Abstract
+
+## Background aims
+
+Sufficient doses of viable CD34+ (vCD34) hematopoietic progenitor cells (HPCs) are crucial for engraftment. Additional-day apheresis collections can compensate for potential loss during cryopreservation but incur high cost and additional risk. To aid predicting such losses for clinical decision support, we developed a machine-learning model using variables obtainable on the day of collection.
+
+## Methods
+
+In total, 370 consecutive autologous HPCs, apheresis-collected since 2014 at the Children's Hospital of Philadelphia, were retrospectively reviewed. Flow cytometry was used to assess vCD34% on fresh products and thawed quality control vials. The ratio of vCD34% thawed to fresh, which we call “post-thaw index,” was used as an outcome measure, with a “poor” post-thaw index defined as <70%. HPC CD45 normalized mean fluorescence intensity (MFI) was calculated by dividing CD45 MFI of HPCs to the CD45 MFI of lymphocytes in the same sample. We trained XGBoost, k-nearest neighbor and random forest models for the prediction and calibrated the best model to minimize falsely-reassuring predictions.
+
+## Results
+
+In total, 63 of 370 (17%) products had a poor post-thaw index. The best model was XGBoost, with an area under the receiver operator curve of 0.83 evaluated on an independent test data set. The most important predictor for a poor post-thaw index was the HPC CD45 normalized MFI. Transplants after 2015, based on the lower of the two vCD34% values, showed faster engraftment than older transplants, which were based on fresh vCD34% only (average 10.6 vs 11.7 days, P = 0.0006).
+
+## Conclusions
+
+Transplants taking into account post-thaw vCD34% improved engraftment time in our patients; however, it came at the cost of unnecessary multi-day collections. The results from applying our predictive algorithm retrospectively to our data suggest that more than one-third of additional-day collections could have been avoided. Our investigation also identified CD45 nMFI as a novel marker for assessing HPC health post-thaw.
