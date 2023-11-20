@@ -1,0 +1,55 @@
+---
+title: "Chocolate Babka"
+date: 2023-10-28
+description: A decadent half-bread-half-cake Jewish treat.
+image: images/babka_final_cover.jpeg
+categories:
+  - BakR
+  - Bread
+  - Cake
+  - Dessert
+---
+
+## Details
+
+As of writing this, it may be one of my favorite recipes I've ever attempted! And it was surprisingly not too bad, though the idea of braiding has always intimidated me. The end result is reminiscent of pound cake with a decadent, dark chocolate filling that is good warm out of the oven or plain at room temperature.
+
+## Photos
+
+### Prep Work
+
+**Pastry preparation**
+
+![](images/babka_pastry_prep.jpeg){fig-align="center" width="600"}
+
+**Filling preparation**
+
+![](images/babka_filling_prep.jpeg){fig-align="center" width="600"}
+
+![](images/babka_prep_pastry.jpeg){fig-align="center" width="600"}
+
+### Making the Pastry
+
+![](images/babka_pastry_rollout.jpeg){fig-align="center" width="600"}
+
+![](images/babka_pastry_filling.jpeg){fig-align="center" width="600"}
+
+![](images/babka_pastry_rolled.jpeg){fig-align="center" width="600"}
+
+![](images/babka_pastry_cut.jpeg){fig-align="center" width="600"}
+
+![](images/babka_pastry_braid.jpeg){fig-align="center" width="600"}
+
+### Final Product
+
+![](images/babka_final_2.jpeg){fig-align="center" width="600"}
+
+![](images/babka_final_1.jpeg){fig-align="center" width="600"}
+
+![](images/babka_final_3.jpeg){fig-align="center" width="600"}
+
+![](images/babka_final_4.jpeg){fig-align="center" width="600"}
+
+## Resources
+
+- [Chocolate Babka by the Preppy Kitchen](https://preppykitchen.com/chocolate-babka/)
