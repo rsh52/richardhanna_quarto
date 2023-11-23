@@ -138,7 +138,16 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#background" id="toc-background" class="nav-link active" data-scroll-target="#background">Background</a></li>
+  <li><a href="#statement-of-need" id="toc-statement-of-need" class="nav-link" data-scroll-target="#statement-of-need">Statement of Need</a></li>
+  <li><a href="#the-solution" id="toc-the-solution" class="nav-link" data-scroll-target="#the-solution">The Solution</a></li>
+  <li><a href="#im-sold-lets-see-it-in-action" id="toc-im-sold-lets-see-it-in-action" class="nav-link" data-scroll-target="#im-sold-lets-see-it-in-action">I’m Sold, Let’s See it in Action!</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -185,6 +194,23 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="background" class="level1">
+<h1>Background</h1>
+<p>As I’m sure we’re all aware by now, a certain someone purchased the social media application, Twitter, for an ungodly amount of money some time ago and rebranded it as X. Whatever your thoughts on the matter, a side effect of the changes to the internals of X became an incompatibility with another beloved social app: Discord.</p>
+<p>During the Twitter era, simply posting a link to a tweet would render the it for users to see without needing to go to Twitter itself to see it. These days, links no longer render and just stay as… well, links. One workaround is to edit the link from “twitter.com” or “x.com” to “fxtwitter.com” or “fixupx.com,” thanks to the wonderful maintainers of <strong><a href="https://github.com/FixTweet/FixTweet">FixTweet</a></strong>.</p>
+</section>
+<section id="statement-of-need" class="level1">
+<h1>Statement of Need</h1>
+<p>While FixTweet provides us with the solution of rendering, it’s not exactly the most convenient for all use cases. My bot, <strong><a href="https://github.com/rsh52/fixTwitter">fixTwitter</a></strong> seeks to make this ever so slightly more convenient.</p>
+<p>It can be a pain to input the hyperlink fix in the middle of a link, especially when on a mobile device. What typically winds up happening is a user pastes the link, drags the cursor to the right spot, then edits to the FixTweet destination. Usually, the mobile device will auto-space what the edit is and if the user doesn’t notice in time the link will be broken… making them have to edit it all over again.</p>
+</section>
+<section id="the-solution" class="level1">
+<h1>The Solution</h1>
+<p>Instead, fixTwitter lets users specify a prepender to enter that will prompt the bot. For my personal servers, I chose <code>??</code>. So what does this look like?</p>
+<p>All this means is a user should enter <code>??</code> and then they can paste as normal. The bot is smart enough to convert to the appropriate Twitter/X hyperlink regardless of what the user prompts it with. On the backend, the bot deletes the original post and instead returns its own with the fixed link and a authorship tag for who posted it.</p>
+</section>
+<section id="im-sold-lets-see-it-in-action" class="level1">
+<h1>I’m Sold, Let’s See it in Action!</h1>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/fixTwitter_bot/example.gif" class="img-fluid figure-img"></p>
@@ -193,6 +219,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

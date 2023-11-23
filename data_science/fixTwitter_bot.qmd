@@ -12,6 +12,27 @@ categories:
   - Bot
 ---
 
+# Background
+
+As I'm sure we're all aware by now, a certain someone purchased the social media application, Twitter, for an ungodly amount of money some time ago and rebranded it as X. Whatever your thoughts on the matter, a side effect of the changes to the internals of X became an incompatibility with another beloved social app: Discord.
+
+During the Twitter era, simply posting a link to a tweet would render the it for users to see without needing to go to Twitter itself to see it. These days, links no longer render and just stay as... well, links. One workaround is to edit the link from "twitter.com" or "x.com" to "fxtwitter.com" or "fixupx.com," thanks to the wonderful maintainers of **[FixTweet](https://github.com/FixTweet/FixTweet)**.
+
+# Statement of Need
+
+While FixTweet provides us with the solution of rendering, it's not exactly the most convenient for all use cases. My bot, **[fixTwitter](https://github.com/rsh52/fixTwitter)** seeks to make this ever so slightly more convenient.
+
+It can be a pain to input the hyperlink fix in the middle of a link, especially when on a mobile device. What typically winds up happening is a user pastes the link, drags the cursor to the right spot, then edits to the FixTweet destination. Usually, the mobile device will auto-space what the edit is and if the user doesn't notice in time the link will be broken... making them have to edit it all over again.
+
+# The Solution
+
+Instead, fixTwitter lets users specify a prepender to enter that will prompt the bot. For my personal servers, I chose `??`. So what does this look like?
+
+All this means is a user should enter `??` and then they can paste as normal. The bot is smart enough to convert to the appropriate Twitter/X hyperlink regardless of what the user prompts it with. On the backend, the bot deletes the original post and instead returns its own with the fixed link and a authorship tag for who posted it.
+
+# I'm Sold, Let's See it in Action!
 
 
 ![fixTwitter Example GIF](images/fixTwitter_bot/example.gif)
+
+# Extra Features and Notes
