@@ -19,57 +19,59 @@ about:
 
 ## Welcome!
 
-Thank you for visiting my site. My name is Rich Hanna and, while there are a few
-others out there, I'm doing my best to be the most "Google-able" one. 
-
-This site serves professional content of my portfolio as well as some of my
-hobbies and interests. It's a pleasure to connect with you.
+Thank you for visiting my corner of the internet.This site serves to host professional content of my portfolio as well as some of my hobbies and interests. It's a pleasure to connect with you!
 
 --------------------------------------------------------------------------------
 
-### Education
-
+<details>
+<summary> <strong>{{< fa graduation-cap >}} Education</strong> </summary>
+<br>
 <div class="topbr">
-<p class="custom-subtitle">{{< fa graduation-cap >}} **MS in Biomedical Engineering, 2015**</p>  
+<p class="custom-subtitle">**MS in Biomedical Engineering, 2015**</p>  
 <p class="custom-subtitle2">Drexel University, Philadelphia</p>
 
-<p class="custom-subtitle">{{< fa graduation-cap >}} **BS in Mechanical Engineering, 2015**</p>  
+<p class="custom-subtitle">**BS in Mechanical Engineering, 2015**</p>  
 <p class="custom-subtitle2">Drexel University, Philadelphia</p>
 </div>
+</details>
 
 --------------------------------------------------------------------------------
 
-### Experience
-
+<details>
+<summary> <strong>{{< fa database >}} Experience</strong> </summary>
+<br>
 <div class="topbr">
-<p class="custom-subtitle">{{< fa database >}} **Data Scientist**</p>  
+<p class="custom-subtitle">**Data Scientist**</p>  
 <p class="custom-subtitle2">Children's Hospital of Philadelphia, 2021 - Present</p>
 
-<p class="custom-subtitle">{{< fa database >}} **Data Analyst & Programmer**</p>  
+<p class="custom-subtitle">**Data Analyst & Programmer**</p>  
 <p class="custom-subtitle2">Children's Hospital of Philadelphia, 2019-2021</p>
 
-<p class="custom-subtitle">{{< fa database >}} **Research Project Engineer**</p>  
+<p class="custom-subtitle">**Research Project Engineer**</p>  
 <p class="custom-subtitle2">Children's Hospital of Philadelphia, 2017-2019</p>
 
-<p class="custom-subtitle">{{< fa gears >}} **Project/Associate Project Engineer**</p>  
+<p class="custom-subtitle">**Project/Associate Project Engineer**</p>  
 <p class="custom-subtitle2">GS Medical USA, 2015-2017</p>
 
-<p class="custom-subtitle">{{< fa gears >}} **Biomechanics Researcher**</p>  
+<p class="custom-subtitle">**Biomechanics Researcher**</p>  
 <p class="custom-subtitle2">Children's Hospital of Philadelphia, 2014-2015</p>
 </div>
+</details>
 
 --------------------------------------------------------------------------------
 
-### Certifications
-
+<details>
+<summary> <strong>{{< fa scroll >}} Certifications</strong> </summary>
+<br>
 <div class="topbr">
-<p class="custom-subtitle">{{< fa scroll >}} **Graduate Certificate in Engineering Management**</p>  
+<p class="custom-subtitle">**Graduate Certificate in Engineering Management**</p>  
 <p class="custom-subtitle2">Drexel University, Philadelphia, 2015</p>
 
-<p class="custom-subtitle">{{< fa computer >}} [**Solutions Architect - Associate**](https://www.credly.com/badges/44361ea8-9eb9-4f27-99ca-05b582f5b962?source=linked_in_profile)</p>  
+<p class="custom-subtitle">[**Solutions Architect - Associate**](https://www.credly.com/badges/44361ea8-9eb9-4f27-99ca-05b582f5b962?source=linked_in_profile)</p>  
 <p class="custom-subtitle2">AWS, 2021</p>
 
-<p class="custom-subtitle">{{< fa gears >}} [**FE/EIT Certified**](https://account.ncees.org/rn/1522538-735396-d9a0ace)</p>  
+<p class="custom-subtitle">[**FE/EIT Certified**](https://account.ncees.org/rn/1522538-735396-d9a0ace)</p>  
 <p class="custom-subtitle2">NCEES, 2014</p>
 </div>
+</details>
 
