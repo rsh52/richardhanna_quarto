@@ -24,7 +24,8 @@ website:
         icon: "file-earmark-person"
   page-footer: 
     background: light
-    center: "Made using [Quarto](https://quarto.org/), Copyright 2022, Richard Hanna"
+    center: "Made using [Quarto](https://quarto.org/), Copyright 2023, Richard Hanna"
+  favicon: /docs/images/favicon.png
     
         
 format:
