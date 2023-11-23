@@ -45,6 +45,7 @@
   {
     "listing": "/data_science.html",
     "items": [
+      "/data_science/fixTwitter_bot.html",
       "/data_science/REDCapTidieR.html",
       "/data_science/stem_cell_engraftment_app.html"
     ]

@@ -1,0 +1,17 @@
+---
+title: "fixTwitter Discord Bot Development"
+author: Richard Hanna
+date: 2023-11-24
+description: "I developed a bot to convert Twitter and X links posted by users in Discord to fixupx links for better rendering."
+link-external-newwindow: true
+link-external-icon: true
+categories:
+  - Python
+  - Discord
+  - API
+  - Bot
+---
+
+
+
+![fixTwitter Example GIF](images/fixTwitter_bot/example.gif)
