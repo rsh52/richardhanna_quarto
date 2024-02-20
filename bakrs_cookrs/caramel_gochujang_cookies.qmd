@@ -1,0 +1,42 @@
+---
+title: "Caramel Gochujang Cookies"
+date: 2023-12-30
+description: A novel sweet-and-spicy take on sugar cookies.
+image: images/caramel_gochujang_cookies_final_2.jpeg
+categories:
+  - BakR
+  - Cookie
+  - Dessert
+---
+
+## Details
+
+The Instagram algorithm finally got to me, and I got spammed enough times with the NYT recipe for this that I had to try it. I'm a big fan of using gochujang in cooking (stir frys, marinades, etc.), and the idea of a dessert that incorporated it intrigued me. 
+
+The end result was certainly "novel" with a chewy sweet cookie that packed a bit of heat when you found an iconic red swirl.
+
+## Photos
+
+### Prep Work
+
+![](images/caramel_gochujang_cookies_prep_1.jpeg){fig-align="center" width="600"}
+
+![](images/caramel_gochujang_cookies_prep_2.jpeg){fig-align="center" width="600"}
+
+![](images/caramel_gochujang_cookies_prep_3.jpeg){fig-align="center" width="600"}
+
+![](images/caramel_gochujang_cookies_prep_4.jpeg){fig-align="center" width="600"}
+
+![](images/caramel_gochujang_cookies_prep_5.jpeg){fig-align="center" width="600"}
+
+
+
+### Final Product
+
+![](images/caramel_gochujang_cookies_final_1.jpeg){fig-align="center" width="600"}
+
+![](images/caramel_gochujang_cookies_final_2.jpeg){fig-align="center" width="600"}
+
+## Resources
+
+- [Gochujang Caramel Cookies from the New York Times Cooking, by Eric Kim](https://cooking.nytimes.com/recipes/1023675-gochujang-caramel-cookies)

@@ -1,0 +1,36 @@
+---
+title: "Koshari"
+date: 2024-01-13
+description: A hearty, spiced flavor bomb perfect for any time of year.
+image: images/koshari_final_1.jpeg
+categories:
+  - CookR
+  - Egyptian
+---
+
+## Details
+
+Koshari/koshary is the national dish of Egypt and an incredibly popular street food. The flavors of unparalleled, with a mix of tangy, spicy tomato sauce combined with bold, rich fried onions and made filling with chickpeas and lentils. It takes a bit of time and it's helpful to have a second pair of hands, but I highly recommend trying it out!
+
+## Photos
+
+### Prep Work
+
+![](images/koshari_prep_1.jpeg){fig-align="center" width="600"}
+
+### Cooking
+
+![](images/koshari_onions.jpeg){fig-align="center" width="600"}
+
+![](images/koshari_rice.jpeg){fig-align="center" width="600"}
+
+![](images/koshari_sauce.jpeg){fig-align="center" width="600"}
+
+### Final Product
+
+![](images/koshari_final_2.jpeg){fig-align="center" width="600"}
+
+## Resources
+
+- [America's Test Kitchen - The Complete Mediterranean Cookbook](https://smile.amazon.com/Complete-Mediterranean-Cookbook-Vibrant-Kitchen-Tested/dp/1940352649/ref=sr_1_1?keywords=america%27s+test+kitchen+mediterranean+cookbook&qid=1673915280&sprefix=america%27s+test+kitchen+medi%2Caps%2C94&sr=8-1)
+  - "Koshari"
