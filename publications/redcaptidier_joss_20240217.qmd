@@ -1,0 +1,28 @@
+---
+title: "REDCapTidieR: Extracting complex REDCap databases into tidy tables"
+author: Richard Hanna, Ezra Porter, Stephany Romero, Paul Wildenhain, William Beasley, Stephan Kadauke
+date: 2024-02-17
+description: We developed an open source package to help R users convert complex REDCap databases into tidy tables.
+doi: "https://doi.org/10.21105/joss.06277"
+link-external-newwindow: true
+link-external-icon: true
+categories:
+  - Data Science
+  - R
+  - REDCap
+  - Tidyverse
+---
+
+We developed the [`REDCapTidieR`](https://github.com/CHOP-CGTInformatics/REDCapTidieR) package to meet the needs of analysts working with complex REDCap databases in R. Prompted by our team's own needs internally for various projects, we saw an opportunity to give back to the open source community and develop a standard set or practices and solutions for converting REDCap projects into tidy tables that abide by [tidy data principles](https://www.jstatsoft.org/article/view/v059i10).
+
+`REDCapTidieR` was released to v1.0.0 on CRAN as is the culmination of work and effort by many individuals.
+
+You can read more about the package in our [extensive documentation](https://chop-cgtinformatics.github.io/REDCapTidieR/).
+
+You can read our [paper](https://joss.theoj.org/papers/10.21105/joss.06277) at the Journal of Open Source Software for free.
+
+And you can install the package directly from CRAN with:
+
+```{r, eval=FALSE}
+install.packages("REDCapTidieR")
+```
