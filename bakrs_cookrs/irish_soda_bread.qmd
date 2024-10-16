@@ -2,7 +2,7 @@
 title: "Irish Soda Bread"
 date: 2024-09-01
 description: Decadent, crumbly, and super simple to make.
-image: images/lb_tart_final_2.png
+image: images/irish_soda_bread_final_1.png
 categories:
   - BakR
   - Bread
