@@ -1,0 +1,30 @@
+---
+title: "Irish Soda Bread"
+date: 2024-09-01
+description: Decadent, crumbly, and super simple to make.
+image: images/lb_tart_final_2.png
+categories:
+  - BakR
+  - Bread
+---
+
+## Photos
+
+### Prep Work
+
+![](images/irish_soda_bread_prep_1.png){fig-align="center" width="600"}
+
+![](images/irish_soda_bread_prep_2.png){fig-align="center" width="600"}
+
+### Final Product
+
+![](images/irish_soda_bread_final_1.png){fig-align="center" width="600"}
+
+![](images/irish_soda_bread_final_2.png){fig-align="center" width="600"}
+
+
+![](images/irish_soda_bread_final_3.png){fig-align="center" width="600"}
+
+## Resources
+
+- [Grandma's Irish Soda Bread by Sally's Baking Addiction](https://sallysbakingaddiction.com/grandmas-irish-soda-bread/)

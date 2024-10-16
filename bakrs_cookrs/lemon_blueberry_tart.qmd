@@ -2,7 +2,7 @@
 title: "Lemon Blueberry Tart"
 date: 2024-10-13
 description: A light and delicious filling with a savory shortbread crust.
-image: images/lb_tart_final_1.png
+image: images/lb_tart_final_2.png
 categories:
   - BakR
   - Dessert
@@ -28,4 +28,4 @@ categories:
 
 ## Resources
 
-- Lemon Blueberry Tart by Sally's Baking Addiction](https://sallysbakingaddiction.com/lemon-blueberry-tart/)
+- [Lemon Blueberry Tart by Sally's Baking Addiction](https://sallysbakingaddiction.com/lemon-blueberry-tart/)
