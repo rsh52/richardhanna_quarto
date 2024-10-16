@@ -1,0 +1,36 @@
+---
+title: "Millionaire Shortbread"
+date: 2024-05-06
+description: A decadent cross between candy and cookie.
+image: images/mshort_final_5.png
+categories:
+  - BakR
+  - Dessert
+---
+
+## Photos
+
+### Prep Work
+
+![](images/mshort_prep_caramel.png){fig-align="center" width="600"}
+
+![](images/mshort_prep_ganache.png){fig-align="center" width="600"}
+
+![](images/mshort_final_2.png){fig-align="center" width="600"}
+
+![](images/mshort_final_3.png){fig-align="center" width="600"}
+
+
+### Final Product
+
+![](images/mshort_final_1.png){fig-align="center" width="600"}
+
+![](images/mshort_final_4.png){fig-align="center" width="600"}
+
+![](images/mshort_final_5.png){fig-align="center" width="600"}
+
+![](images/mshort_final_6.png){fig-align="center" width="600"}
+
+## Resources
+
+- [Millionarie's Shortbread by The Preppy Kitchen](https://preppykitchen.com/millionaires-shortbread/)
