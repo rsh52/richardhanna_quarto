@@ -20,11 +20,11 @@ website:
         icon: "github"
       - href: https://www.linkedin.com/in/richard-hanna-ms-0164162a/
         icon: "linkedin"
-      - href: "docs/Richard_S._Hanna’s_Resume.pdf"
+      - href: "docs/Richard_S_Hanna_Resume.pdf"
         icon: "file-earmark-person"
   page-footer: 
     background: light
-    center: "Made using [Quarto](https://quarto.org/), Copyright 2023, Richard Hanna"
+    center: "Made using [Quarto](https://quarto.org/), Copyright 2024, Richard Hanna"
   favicon: /docs/images/favicon.png
     
         

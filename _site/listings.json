@@ -19,14 +19,6 @@
     ]
   },
   {
-    "listing": "/data_science.html",
-    "items": [
-      "/data_science/fixTwitter_bot.html",
-      "/data_science/REDCapTidieR.html",
-      "/data_science/stem_cell_engraftment_app.html"
-    ]
-  },
-  {
     "listing": "/bakrs_cookrs.html",
     "items": [
       "/bakrs_cookrs/lemon_blueberry_tart.html",
@@ -54,6 +46,14 @@
       "/bakrs_cookrs/key_lime_pie.html",
       "/bakrs_cookrs/apple_pie.html",
       "/bakrs_cookrs/pizza.html"
+    ]
+  },
+  {
+    "listing": "/data_science.html",
+    "items": [
+      "/data_science/fixTwitter_bot.html",
+      "/data_science/REDCapTidieR.html",
+      "/data_science/stem_cell_engraftment_app.html"
     ]
   }
 ]

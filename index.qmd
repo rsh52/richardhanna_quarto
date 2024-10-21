@@ -12,7 +12,7 @@ about:
       - href: https://www.linkedin.com/in/richard-hanna-ms-0164162a/
         icon: "linkedin"
         text: LinkedIn
-      - href: "docs/Richard_S._Hanna’s_Resume.pdf"
+      - href: "docs/Richard_S_Hanna_Resume.pdf"
         icon: "file-earmark-person"
         text: CV
 ---
